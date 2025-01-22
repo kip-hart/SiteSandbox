@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Home
+in_menu: True
+sort_info: 1
 ---
 
 # Welcome to My Jekyll Site
