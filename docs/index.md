@@ -10,4 +10,4 @@ permalink: /
 
 This is a minimal example of a Jekyll site built from markdown files in the `docs/` folder.
 
-- [New Page]({{ site.baseurl }}{% link newpage.md %})
+- [New Page]({% link docs/newpage.md %})
