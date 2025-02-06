@@ -10,4 +10,4 @@ permalink: /
 
 This is a minimal example of a Jekyll site built from markdown files in the `docs/` folder.
 
-- [New Page](newpage.html)
+- [New Page](/newpage/)
