@@ -1,5 +1,5 @@
 main:
   - title: "Quick-Start Guide"
-    url: /docs/index/
+    url: /
   - title: "New Page"
-    url: /docs/newpage/
+    url: /newpage/
