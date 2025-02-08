@@ -115,10 +115,10 @@ analytics:
 author:
   name             : "Dr. Kip Hart"
   avatar           : /assets/images/bio-photo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "GNC engineer at Blue Origin.  
-                     B.S. AE '13, UMD  
-                     M.S. AE '15, GT  
-                     Ph.D. AE '21, GT"
+  bio              : "GNC engineer at Blue Origin.<br>
+                     B.S. AE from UMD<br>
+                     M.S. AE from Georgia Tech<br>
+                     Ph.D. AE from Georgia Tech"
   location         : "Kent, WA"
   email            :
   links:
