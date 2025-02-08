@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Dr. Kip Hart"
   avatar           : /assets/images/bio-photo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "GNC engineer at Blue Origin.<br>
+  bio              : "GNC engineer at Blue Origin<br>
                      B.S. AE from UMD<br>
                      M.S. AE from Georgia Tech<br>
                      Ph.D. AE from Georgia Tech"
@@ -124,22 +124,16 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:khart1@umd.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kip-hart"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    - label: "Google Scholar"
+      icon: "fa-brands fa-google-scholar"
+      url: "https://scholar.google.com/citations?user=6XQth9QAAAAJ"
 
 # Site Footer
 footer:
