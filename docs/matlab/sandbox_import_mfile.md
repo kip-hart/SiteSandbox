@@ -4,3 +4,7 @@ permalink: /matlab/sandbox/import/
 ---
 
 This page will import an m-file.
+
+```matlab
+a = sqrt(81)
+```
