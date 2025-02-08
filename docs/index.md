@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Home
-in_menu: True
-sort_info: 1
 permalink: /
 ---
 

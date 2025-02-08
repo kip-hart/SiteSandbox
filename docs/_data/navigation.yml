@@ -1,5 +1,16 @@
 main:
-  - title: "Quick-Start Guide"
-    url: /
+  - title: "MATLAB"
+    url: /matlab/
   - title: "New Page"
     url: /newpage/
+
+matlab:
+  - title: "Home"
+    url: /matlab/
+  - title: "Basics"
+    children:
+      - title: "Variables"
+        url: /
+      - title: "Scripts"
+        url: /
+  - title: "Intermediate"
