@@ -7,8 +7,6 @@ main:
     url: /about/
 
 matlab:
-  - title: "Home"
-    url: /matlab/
   - title: "Basics"
     children:
       - title: "Variables"
@@ -18,10 +16,6 @@ matlab:
   - title: "Intermediate"
 
 cpp:
-  - title: ""
-    children:
-      - title: "Home"
-        url: /cpp/
   - title: "Basics"
     children:
       - title: "Variables"
