@@ -329,3 +329,10 @@ defaults:
     values:
       sidebar:
         nav: "matlab"
+  # C++
+  - scope:
+      path: "cpp"
+      type: pages
+    values:
+      sidebar:
+        nav: "cpp"

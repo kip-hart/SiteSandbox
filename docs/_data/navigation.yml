@@ -1,12 +1,25 @@
 main:
   - title: "MATLAB"
     url: /matlab/
+  - title: "C++"
+    url: /cpp/
   - title: "About"
     url: /about/
 
 matlab:
   - title: "Home"
     url: /matlab/
+  - title: "Basics"
+    children:
+      - title: "Variables"
+        url: /
+      - title: "Scripts"
+        url: /
+  - title: "Intermediate"
+
+cpp:
+  - title: "Home"
+    url: /cpp/
   - title: "Basics"
     children:
       - title: "Variables"
