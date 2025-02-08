@@ -18,8 +18,10 @@ matlab:
   - title: "Intermediate"
 
 cpp:
-  - title: "Home"
-    url: /cpp/
+  - title: ""
+    children:
+      - title: "Home"
+        url: /cpp/
   - title: "Basics"
     children:
       - title: "Variables"
