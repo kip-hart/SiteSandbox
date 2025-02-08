@@ -1,8 +1,8 @@
 main:
   - title: "MATLAB"
     url: /matlab/
-  - title: "New Page"
-    url: /newpage/
+  - title: "About"
+    url: /about/
 
 matlab:
   - title: "Home"
