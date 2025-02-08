@@ -19,8 +19,8 @@ locale                   : "en-US"
 rtl                      : false # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Fundamentals of Computing Course Notes"
 title_separator          : "-"
-subtitle                 : "Summer II at UMD" # site tagline that appears below site title in masthead
-name                     : "Dr. Kip Hart"
+subtitle                 : "UMD Summer II ENAE/ENME202" # site tagline that appears below site title in masthead
+name                     : "Kip Hart"
 description              : "Course notes for the Summer II session of ENAE/ENME202 at the University of Maryland."
 url                      : https://kip-hart.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : /SiteSandbox # the subpath of your site, e.g. "/blog"
@@ -69,7 +69,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : true # true, false (default)
 search                   : true # true, false (default)
-search_full_content      : # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : true # true, false (default)
@@ -114,8 +114,11 @@ analytics:
 # Site Author
 author:
   name             : "Dr. Kip Hart"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "GNC engineer at Blue Origin. _B.S. AE '13_"
+  avatar           : /assets/images/bio-photo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "GNC engineer at Blue Origin.  
+                     B.S. AE '13, UMD  
+                     M.S. AE '15, GT  
+                     Ph.D. AE '21, GT"
   location         : "Kent, WA"
   email            :
   links:
