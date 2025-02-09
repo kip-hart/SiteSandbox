@@ -37,10 +37,7 @@ jobs:
           command: >
             file = 'docs/matlab/sandbox_script.m';
             [path, name, ext] = fileparts(file);
-            dy_path = ['matlab_out/' path];
-            dy_file = fullfile(dy_path, [name '.diary']);
-            disp(dy_file);
-            mkdir(dy_path);
+            dy_file = fullfile(path, [name '.diary']);
             diary(dy_file);
             run(file);
             diary off;
