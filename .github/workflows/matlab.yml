@@ -23,7 +23,7 @@ jobs:
             file = 'docs/matlab/sandbox_script.m';
             [path, name, ext] = fileparts(file);
             dy_path = ['tmp/' path];
-            dy_file = [dy_path name '.diary'];
+            dy_file = [dy_path name '.diary']
             mkdir(dy_path);
             diary(dy_file);
             run(file);
