@@ -18,6 +18,8 @@ matlab:
     children:
       - title: "Import M-File"
         url: /matlab/sandbox/import/
+      - title: "Run M-File"
+        url: /matlab/sandbox/run/
 
 cpp:
   - title: "Basics"
