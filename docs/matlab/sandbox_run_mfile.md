@@ -12,4 +12,4 @@ This is the input:
 {% include_relative {{ page.matlab_run_01 }}.m %}
 ```
 
-This page is located at `{{ page.dir }}`.
+This page is located at `{{ page.path }}`.
