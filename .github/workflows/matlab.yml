@@ -19,20 +19,6 @@ jobs:
       - name: Set script name in MATLAB
         uses: matlab-actions/run-command@v2
         with:
-          command: file = 'docs/matlab/sandbox_script.m';
-
-      - name: Create MATLAB Diary
-        uses: matlab-actions/run-command@v2
-        with:
-          command: [filepath,name,ext] = fileparts(file); dy_path = ['tmp/' filepath]; mkdir(dy_path); dy_file = [dy_path name '.diary']; diary(dy_file);
-
-      - name: Run MATLAB script
-        uses: matlab-actions/run-command@v2
-        with:
-          command: run(file)
-
-      - name: Archive code coverage results
-        uses: actions/upload-artifact@v4
-        with:
-          name: diary
-          path: tmp/docs/matlab/sandbox_script.diary
+          command: >
+            file = 'docs/matlab/sandbox_script.m';
+            run(file);
