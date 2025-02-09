@@ -19,4 +19,4 @@ jobs:
       - name: Run MATLAB script
         uses: matlab-actions/run-command@v2
         with:
-          command: docs/matlab/sandbox_script.m
+          command: cd docs/matlab; sandbox_script.m
