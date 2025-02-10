@@ -77,7 +77,7 @@ jobs:
           rsync -av --ignore-existing ${{ env.MATLAB_DIR }}/ matlab/
       - name: Remove temp directory
         run: |
-          rmdir ${{ env.MATLAB_DIR }}
+          rm -rf ${{ env.MATLAB_DIR }}
       - name: Display structure of downloaded files (3)
         run: ls -R
 
