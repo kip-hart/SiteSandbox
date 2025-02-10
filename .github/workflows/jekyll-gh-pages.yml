@@ -66,14 +66,14 @@ jobs:
       - name: Display structure of downloaded files (1)
         run: ls -R
       - name: Unzip MATLAB artifacts
-        run: tar xvf $MATLAB_DIR/artifact.tar -C $MATLAB_DIR
+        run: tar xvf ${{ env.MATLAB_DIR }}/artifact.tar -C ${{ env.MATLAB_DIR }}
       - name: Display structure of downloaded files (2)
         run: ls -R
       - name: Merge MATLAB artifacts into directory
         run: |
-          rm $MATLAB_DIR/artifact.tar
-          mv -n $MATLAB_DIR/* .
-          rmdir $MATLAB_DIR
+          rm ${{ env.MATLAB_DIR }}/artifact.tar
+          mv -n ${{ env.MATLAB_DIR }}/* .
+          rmdir ${{ env.MATLAB_DIR }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
