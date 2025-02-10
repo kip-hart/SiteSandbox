@@ -64,9 +64,15 @@ jobs:
       - name: Display structure of downloaded files (1)
         run: ls -R
       - name: Unzip MATLAB artifacts
-        run: tar xvf matlab_artifacts/artifacts.tar
+        run: tar xvf matlab_artifacts/artifact.tar
       - name: Display structure of downloaded files (2)
         run: ls -R
+      - name: Merge MATLAB artifacts into directory
+        run: |
+          rm matlab_artifacts/artifact.tar
+          mv -n matlab_artifacts/* .
+          rmdir matlab_artifacts
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
