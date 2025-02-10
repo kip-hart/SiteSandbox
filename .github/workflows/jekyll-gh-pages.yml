@@ -44,6 +44,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
             name: matlab-artifacts
+            path: matlab
+            retention-days: 1
 
 
   # Build job
@@ -57,7 +59,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: matlab-artifacts
-          path: matlab_out
+          path: tmp
       - name: Display structure of downloaded files
         run: ls -R
       - name: Setup Pages
