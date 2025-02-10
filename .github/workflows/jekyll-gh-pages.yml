@@ -34,12 +34,17 @@ jobs:
         uses: matlab-actions/run-command@v2
         with:
           command: >
-            file = 'docs/matlab/sandbox_script.m';
+            file = 'matlab/sandbox_script.m';
             [path, name, ext] = fileparts(file);
             dy_file = fullfile(path, [name '.diary']);
             diary(dy_file);
             run(file);
             diary off;
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+            name: matlab-artifacts
+
 
   # Build job
   build:
@@ -48,6 +53,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Download MATLAB artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: matlab-artifacts
+          path: matlab_out
+      - name: Display structure of downloaded files
+        run: ls -R
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
