@@ -62,23 +62,25 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: matlab-artifacts
-          path: ${{ env.MATLAB_DIR }}
+          path: ${MATLAB_DIR}
       - name: Display structure of downloaded files (1)
         run: ls -R
       - name: Unzip MATLAB artifacts
-        run: tar xvf ${{ env.MATLAB_DIR }}/artifact.tar -C ${{ env.MATLAB_DIR }}
+        run: tar xvf ${MATLAB_DIR}/artifact.tar -C ${MATLAB_DIR}
       - name: Display structure of downloaded files (2)
         run: ls -R
       - name: Remove tar
         run: |
-          rm ${{ env.MATLAB_DIR }}/artifact.tar
+          rm ${MATLAB_DIR}/artifact.tar
       - name: Merge MATLAB artifacts into directory
         run: |
           mkdir -p _include/matlab
-          mv ${{ env.MATLAB_DIR }}/ _include/matlab/
+          mv ${MATLAB_DIR}/ _include/matlab/
+      - name: Display structure of downloaded files (2.5)
+        run: ls -R
       - name: Remove temp directory
         run: |
-          rmdir ${{ env.MATLAB_DIR }}
+          rmdir ${MATLAB_DIR}
       - name: Display structure of downloaded files (3)
         run: ls -R
 
