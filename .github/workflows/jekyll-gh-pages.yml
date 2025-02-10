@@ -46,8 +46,7 @@ jobs:
             name: matlab-artifacts
             retention-days: 1
             path: |
-              *
-              !_*
+              matlab
 
   # Build job
   build:
