@@ -72,15 +72,17 @@ jobs:
       - name: Merge MATLAB artifacts into directory
         run: |
           rm ${{ env.MATLAB_DIR }}/artifact.tar
-          mv -n ${{ env.MATLAB_DIR }}/* .
+          mv -n ${{ env.MATLAB_DIR }}/* matlab/
           rmdir ${{ env.MATLAB_DIR }}
+      - name: Display structure of downloaded files (3)
+        run: ls -R
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: docs/
+          source: ./
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
