@@ -9,6 +9,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+env:
+  MATLAB_ARTIFACTS_DIR: matlab_artifacts
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -60,18 +63,18 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: matlab-artifacts
-          path: matlab_artifacts
+          path: $MATLAB_ARTIFACTS_DIR
       - name: Display structure of downloaded files (1)
         run: ls -R
       - name: Unzip MATLAB artifacts
-        run: tar xvf matlab_artifacts/artifact.tar
+        run: tar xvf $MATLAB_ARTIFACTS_DIR/artifact.tar -C $MATLAB_ARTIFACTS_DIR
       - name: Display structure of downloaded files (2)
         run: ls -R
       - name: Merge MATLAB artifacts into directory
         run: |
-          rm matlab_artifacts/artifact.tar
-          mv -n matlab_artifacts/* .
-          rmdir matlab_artifacts
+          rm $MATLAB_ARTIFACTS_DIR/artifact.tar
+          mv -n $MATLAB_ARTIFACTS_DIR/* .
+          rmdir $MATLAB_ARTIFACTS_DIR
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
