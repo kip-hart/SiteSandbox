@@ -36,7 +36,8 @@ jobs:
           command: >
             file = 'matlab/sandbox_script.m';
             [path, name, ext] = fileparts(file);
-            dy_file = fullfile(path, [name '.diary']);
+            copyfile(file, fullfile('_include', file));
+            dy_file = fullfile('_include', path, [name '.diary']);
             diary(dy_file);
             run(file);
             diary off;
@@ -45,7 +46,7 @@ jobs:
         with:
             name: matlab-artifacts
             retention-days: 1
-            path: matlab/
+            path: _include/matlab/
 
   # Build job
   build:
@@ -74,7 +75,7 @@ jobs:
           rm ${{ env.MATLAB_DIR }}/artifact.tar
       - name: Merge MATLAB artifacts into directory
         run: |
-          rsync -av --ignore-existing ${{ env.MATLAB_DIR }}/ matlab/
+          rsync -av --ignore-existing ${{ env.MATLAB_DIR }}/ _include/matlab/
       - name: Remove temp directory
         run: |
           rm -rf ${{ env.MATLAB_DIR }}
