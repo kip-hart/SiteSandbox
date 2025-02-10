@@ -1,7 +1,7 @@
 ---
 title: Run an m-file
 permalink: /matlab/sandbox/run/
-matlab_run_01: sandbox_script
+matlab_run_01: ../../matlab/sandbox_script
 ---
 
 This page imports and runs an m-file.

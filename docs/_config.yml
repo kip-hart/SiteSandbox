@@ -296,10 +296,6 @@ compress_html:
   ignore:
     envs: development
 
-navigation:
-  enabled: true
-  file: docs/_data/navigation.yml
-
 
 # Defaults
 defaults:
