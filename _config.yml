@@ -26,7 +26,7 @@ url                      : https://kip-hart.github.io # the base hostname & prot
 baseurl                  : /SiteSandbox # the subpath of your site, e.g. "/blog"
 repository               : kip-hart/SiteSandbox # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/.github/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/.github/docs/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Dr. Kip Hart"
-  avatar           : /.github/images/bio-photo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /.github/docs/images/bio-photo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "GNC engineer at Blue Origin<br>
                      B.S. AE from UMD<br>
                      M.S. AE from Georgia Tech<br>
@@ -151,7 +151,7 @@ include:
   - .htaccess
   - _pages
   - matlab
-  - .github/docs/*
+  - .github/docs
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -177,7 +177,7 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
+  # - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
