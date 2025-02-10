@@ -74,7 +74,8 @@ jobs:
           rm ${{ env.MATLAB_DIR }}/artifact.tar
       - name: Merge MATLAB artifacts into directory
         run: |
-          rsync -av --ignore-existing ${{ env.MATLAB_DIR }}/ _include/matlab/
+          mkdir _include/matlab
+          mv ${{ env.MATLAB_DIR }}/ _include/matlab/
       - name: Remove temp directory
         run: |
           rm -rf ${{ env.MATLAB_DIR }}
