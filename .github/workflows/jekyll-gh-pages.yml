@@ -75,7 +75,7 @@ jobs:
       - name: Merge MATLAB artifacts into directory
         run: |
           mkdir -p _include/matlab
-          mv ${{ env.MATLAB_DIR }}/ _include/matlab/
+          mv ${{ env.MATLAB_DIR }}/* _include/matlab/
       - name: Display structure of downloaded files (2.5)
         run: ls -R
       - name: Remove temp directory
