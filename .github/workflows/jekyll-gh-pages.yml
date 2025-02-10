@@ -46,8 +46,7 @@ jobs:
             name: matlab-artifacts
             retention-days: 1
             path: |
-            !_*
-
+              !_*
 
   # Build job
   build:
@@ -58,11 +57,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: matlab-artifacts
-          path: matlab.tar
+          path: matlab_artifacts.tar
       - name: Display structure of downloaded files (1)
         run: ls -R
       - name: Unzip MATLAB artifacts
-        run: tar xvf matlab.tar
+        run: tar xvf matlab_artifacts.tar
       - name: Display structure of downloaded files (2)
         run: ls -R
       - name: Setup Pages
