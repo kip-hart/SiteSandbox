@@ -74,8 +74,8 @@ jobs:
           rm ${{ env.MATLAB_DIR }}/artifact.tar
       - name: Merge MATLAB artifacts into directory
         run: |
-          mkdir -p _includes/matlab
-          mv ${{ env.MATLAB_DIR }}/* _includes/matlab/
+          mkdir -p docs/_includes/matlab
+          mv ${{ env.MATLAB_DIR }}/* docs/_includes/matlab/
       - name: Display structure of downloaded files (2.5)
         run: ls -R
       - name: Remove temp directory
