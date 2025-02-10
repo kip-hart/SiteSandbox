@@ -62,7 +62,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: matlab-artifacts
-          path: $MATLAB_DIR
+          path: ${{ env.MATLAB_DIR }}
       - name: Display structure of downloaded files (1)
         run: ls -R
       - name: Unzip MATLAB artifacts
