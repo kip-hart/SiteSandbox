@@ -16,5 +16,5 @@ This page is located at `{{ page.path }}`.
 
 This is the output
 ```text
-{% include_relative ../tmp/matlab/{{ page.matlab_run_01 }}.diary %}
+{% include_relative {{ page.matlab_run_01 }}.diary %}
 ```
