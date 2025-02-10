@@ -36,8 +36,7 @@ jobs:
           command: >
             file = 'matlab/sandbox_script.m';
             [path, name, ext] = fileparts(file);
-            copyfile(file, fullfile('_include', file));
-            dy_file = fullfile('_include', path, [name '.diary']);
+            dy_file = fullfile(path, [name '.diary']);
             diary(dy_file);
             run(file);
             diary off;
@@ -46,7 +45,7 @@ jobs:
         with:
             name: matlab-artifacts
             retention-days: 1
-            path: _include/matlab/
+            path: matlab/
 
   # Build job
   build:
