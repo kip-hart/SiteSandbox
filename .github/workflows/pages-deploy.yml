@@ -52,8 +52,8 @@ jobs:
       - name: Unzip and merge MATLAB artifacts
         run: |
           mkdir zip_dir
-          cp cpp/    zip_dir/
-          cp matlab/ zip_dir/
+          cp -r cpp/    zip_dir/
+          cp -r matlab/ zip_dir/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
