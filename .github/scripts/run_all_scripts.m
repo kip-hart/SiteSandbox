@@ -25,6 +25,12 @@ end
 function flag = isFunction(fullPath)
     % Read the first line of the file
     fid = fopen(fullPath, 'r');
+    
+    % Error check for file opening
+    if fid == -1
+        error('Could not open file: %s', fullPath);
+    end
+    
     firstLine = fgetl(fid);
     fclose(fid);
 
@@ -34,7 +40,8 @@ end
 function run_single_script(fullPath)
     dyPath = diary_filename(fullPath);
     
-    diary('off'); % Ensure any open diary is closed
+    % Ensure any open diary is closed before opening a new one
+    diary('off');
     diary(dyPath);
     
     try
@@ -43,10 +50,11 @@ function run_single_script(fullPath)
         fprintf('Error running %s: %s\n', fullPath, ME.message);
     end
     
-    diary('off'); % Ensure diary is closed
+    % Ensure the diary is closed after running the script
+    diary('off');
 end
 
 function dyPath = diary_filename(fullPath)
-    [path, name, ext] = fileparts(fullPath);
+    [path, name, ~] = fileparts(fullPath);
     dyPath = fullfile(path, [name '.diary']);
 end
