@@ -34,9 +34,7 @@ jobs:
         uses: matlab-actions/run-command@v2
         with:
           command: >
-            disp(path);
             addpath('.github/scripts');
-            disp(path);
             run_all_scripts('matlab');
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
