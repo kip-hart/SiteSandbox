@@ -56,33 +56,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Display structure of downloaded files (0)
-        run: ls -R
       - name: Download MATLAB artifacts
         uses: actions/download-artifact@v4
         with:
           name: matlab-artifacts
           path: ${{ env.MATLAB_DIR }}
-      - name: Display structure of downloaded files (1)
-        run: ls -R
-      - name: Unzip MATLAB artifacts
-        run: tar xvf ${{ env.MATLAB_DIR }}/artifact.tar -C ${{ env.MATLAB_DIR }}
-      - name: Display structure of downloaded files (2)
-        run: ls -R
-      - name: Remove tar
+      - name: Unzip and merge MATLAB artifacts
         run: |
+          tar xvf ${{ env.MATLAB_DIR }}/artifact.tar -C ${{ env.MATLAB_DIR }}
           rm ${{ env.MATLAB_DIR }}/artifact.tar
-      - name: Merge MATLAB artifacts into directory
-        run: |
           mkdir -p docs/_includes/matlab
           mv ${{ env.MATLAB_DIR }}/* docs/_includes/matlab/
-      - name: Display structure of downloaded files (2.5)
-        run: ls -R
-      - name: Remove temp directory
-        run: |
           rm -rf ${{ env.MATLAB_DIR }}
-      - name: Display structure of downloaded files (3)
-        run: ls -R
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
