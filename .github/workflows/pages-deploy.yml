@@ -34,12 +34,8 @@ jobs:
         uses: matlab-actions/run-command@v2
         with:
           command: >
-            file = 'matlab/sandbox_script.m';
-            [path, name, ext] = fileparts(file);
-            dy_file = fullfile(path, [name '.diary']);
-            diary(dy_file);
-            run(file);
-            diary off;
+            addpath('.github/scripts')
+            run_all_scripts('matlab')
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
