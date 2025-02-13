@@ -34,10 +34,10 @@ jobs:
         uses: matlab-actions/run-command@v2
         with:
           command: >
-            path
-            addpath('.github/scripts')
-            path
-            run_all_scripts('matlab')
+            disp(path);
+            addpath('.github/scripts');
+            disp(path);
+            run_all_scripts('matlab');
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
