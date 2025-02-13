@@ -10,18 +10,19 @@ function run_all_scripts(directory)
         end
         
         % Get the full path of the item
-        fullPath = fullfile(directory, files(i).name);
+        fullPath = fullfile(directory, files(i).name)
         [~, ~, ext] = fileparts(fullPath);
-        
+        %{
         % If the item is a folder, recursively call the function
         if files(i).isdir
             run_all_scripts(fullPath);
         elseif strcmp(ext, '.m') && ~isFunction(fullPath)
             run_single_script(fullPath);
         end
+        %}
     end
 end
-
+%{
 function flag = isFunction(fullPath)
     % Read the first line of the file
     fid = fopen(fullPath, 'r');
@@ -58,3 +59,4 @@ function dyPath = diary_filename(fullPath)
     [path, name, ~] = fileparts(fullPath);
     dyPath = fullfile(path, [name '.diary']);
 end
+%}
