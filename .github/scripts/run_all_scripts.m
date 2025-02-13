@@ -8,7 +8,7 @@ function run_all_scripts(directory)
 
     disp('pwd')
     disp(pwd)
-    
+    %{
     % Loop through each item in the directory
     for i = 1:length(files)
         % Skip '.' and '..' directories
@@ -28,6 +28,7 @@ function run_all_scripts(directory)
         end
         %}
     end
+    %}
 end
 %{
 function flag = isFunction(fullPath)
