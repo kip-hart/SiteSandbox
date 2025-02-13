@@ -6,7 +6,7 @@ function run_all_scripts(directory)
     for i = 1:length(files)
         % Skip '.' and '..' directories
         if strcmp(files(i).name, '.') || strcmp(files(i).name, '..')
-            continue
+            continue;
         end
         
         % Get the full path of the item
@@ -33,13 +33,17 @@ end
 
 function run_single_script(fullPath)
     dyPath = diary_filename(fullPath);
-    diary(dyPath)
+    
+    diary('off'); % Ensure any open diary is closed
+    diary(dyPath);
+    
     try
         run(fullPath);
     catch ME
         fprintf('Error running %s: %s\n', fullPath, ME.message);
     end
-    diary off
+    
+    diary('off'); % Ensure diary is closed
 end
 
 function dyPath = diary_filename(fullPath)
