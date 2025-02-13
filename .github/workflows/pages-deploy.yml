@@ -49,14 +49,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Unzip and merge MATLAB artifacts
+        run: |
+          mkdir zip_dir
+          cp cpp/    zip_dir/
+          cp matlab/ zip_dir/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
             name: zip-artifacts
             retention-days: 1
-            path: |
-              matlab/
-              cpp/
+            path: zip_dir/
 
 
   # Build job
