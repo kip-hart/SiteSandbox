@@ -54,7 +54,9 @@ jobs:
         with:
             name: zip-artifacts
             retention-days: 1
-            path: matlab/ cpp/
+            path: |
+              matlab/
+              cpp/
 
 
   # Build job
