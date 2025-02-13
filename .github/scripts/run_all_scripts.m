@@ -1,4 +1,9 @@
 function run_all_scripts(directory)
+    disp('Hello World!')
+end
+
+%{
+function run_all_scripts(directory)
     disp('directory')
     disp(directory)
     % Get the list of all files and folders in the directory
@@ -30,7 +35,7 @@ function run_all_scripts(directory)
     end
     %}
 end
-%{
+
 function flag = isFunction(fullPath)
     % Read the first line of the file
     fid = fopen(fullPath, 'r');
