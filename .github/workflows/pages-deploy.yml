@@ -35,7 +35,7 @@ jobs:
         with:
           command: >
             addpath('.github/scripts')
-            run_all_scripts('matlab')
+            % run_all_scripts('matlab')
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
