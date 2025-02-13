@@ -1,6 +1,13 @@
 function run_all_scripts(directory)
+    disp('directory')
+    disp(directory)
     % Get the list of all files and folders in the directory
     files = dir(directory);
+    disp('files')
+    disp(files)
+
+    disp('pwd')
+    disp(pwd)
     
     % Loop through each item in the directory
     for i = 1:length(files)
@@ -10,7 +17,7 @@ function run_all_scripts(directory)
         end
         
         % Get the full path of the item
-        fullPath = fullfile(directory, files(i).name)
+        fullPath = fullfile(directory, files(i).name);
         [~, ~, ext] = fileparts(fullPath);
         %{
         % If the item is a folder, recursively call the function
