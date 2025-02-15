@@ -15,7 +15,12 @@ for dir in  "$BASE_DIR"/*; do
               
         # Run the executable and pipe the output to a unique log file
         echo "running project"
-        project > output.log 2>&1
+        project > screen_output.log 2>&1
+        cat screen_output.log
+
+        # Delete the executable
+        echo "deleting executable"
+        rm project
 
         cd -
     fi
