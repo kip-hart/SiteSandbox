@@ -3,7 +3,7 @@
 # Base directory containing subdirectories with cpp files
 BASE_DIR="cpp"
 echo "$BASE_DIR/*/"
-for dir in  "$BASE_DIR/*/"; do
+for dir in  "$BASE_DIR"/*/; do
     echo $dir
     if [ -d "$dir" ]; then
         echo "Processing directory: $dir"
