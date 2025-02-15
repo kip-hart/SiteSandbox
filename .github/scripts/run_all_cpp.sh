@@ -9,7 +9,7 @@ for dir in  "$BASE_DIR"/*; do
         echo "Processing directory: $dir"
               
         # Compile all .cpp files into an executable named 'project'
-        g++ "$dir/*.cpp" -o "$dir/project"
+        g++ *.cpp -I $dir -o "$dir/project"
               
         # Run the executable and pipe the output to a unique log file
         "$dir/project" > "$dir/output.log" 2>&1
