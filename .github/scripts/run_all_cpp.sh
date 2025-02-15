@@ -12,6 +12,9 @@ for dir in  "$BASE_DIR"/*; do
         # Compile all .cpp files into an executable named 'project'
         echo "compiling project"
         g++ *.cpp -o project
+
+        echo "files"
+        ls
               
         # Run the executable and pipe the output to a unique log file
         echo "running project"
