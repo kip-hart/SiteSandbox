@@ -29,3 +29,7 @@ cpp:
       - title: "Scripts"
         url: /
   - title: "Intermediate"
+  - title: "Sandbox Pages"
+    children:
+      - title: "Hello World"
+        url: /cpp/hello_world

@@ -305,17 +305,23 @@ defaults:
     values:
       layout: single
       author_profile: false
-  # MATLAB
-  - scope:
-      path: "matlab"
-      type: pages
-    values:
-      sidebar:
-        nav: "matlab"
+      root: 
+      permalink: :root/:title/
+      cpp_dir: cpp/
+      matlab_dir: matlab/
   # C++
   - scope:
       path: "cpp"
       type: pages
     values:
+      root: "/cpp"
       sidebar:
         nav: "cpp"
+  # MATLAB
+  - scope:
+      path: "matlab"
+      type: pages
+    values:
+      root: "/matlab"
+      sidebar:
+        nav: "matlab"
