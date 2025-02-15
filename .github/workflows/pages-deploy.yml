@@ -79,6 +79,7 @@ jobs:
           path: ${{ env.MATLAB_DIR }}
       - name: Unzip and merge MATLAB artifacts
         run: |
+          ls -R
           tar xvf ${{ env.MATLAB_DIR }}/artifact.tar -C ${{ env.MATLAB_DIR }}
           rm ${{ env.MATLAB_DIR }}/artifact.tar
           mkdir -p docs/_includes/matlab
