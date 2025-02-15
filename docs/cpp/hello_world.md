@@ -17,5 +17,5 @@ This page is located at `{{ page.path }}`.
 
 This is the output
 ```text
-{% include {{ site.cpp_dir }}{{ page.src }}output.log %}
+{% include {{ site.cpp_dir }}{{ page.src }}screen_output.log %}
 ```
