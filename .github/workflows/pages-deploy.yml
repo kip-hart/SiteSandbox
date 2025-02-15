@@ -38,8 +38,9 @@ jobs:
       - name: Upload log files
         uses: actions/upload-artifact@v4
         with:
-          name: cpp-logs
-          path: '**/output.log'
+          name: cpp-artifacts
+          retention_days: 1
+          path: cpp/
 
   # MATLAB job
   matlab:
@@ -67,7 +68,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: [cpp, matlab]
     env:
-      MATLAB_DIR: matlab_artifacts
+      MATLAB_DIR: artifacts/matlab
+      CPP_DIR: artifacts/cpp
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -77,14 +79,24 @@ jobs:
         with:
           name: matlab-artifacts
           path: ${{ env.MATLAB_DIR }}
-      - name: Unzip and merge MATLAB artifacts
+      - name: Download C++ Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: cpp-artifacts
+          path: ${{ env.CPP_DIR }}
+          
+      - name: Merge MATLAB artifacts
         run: |
           ls -R
-          tar xvf ${{ env.MATLAB_DIR }}/artifact.tar -C ${{ env.MATLAB_DIR }}
-          rm ${{ env.MATLAB_DIR }}/artifact.tar
           mkdir -p docs/_includes/matlab
           mv ${{ env.MATLAB_DIR }}/* docs/_includes/matlab/
           rm -rf ${{ env.MATLAB_DIR }}
+      - name: Merge C++
+        run: |
+          ls -R
+          mkdir -p docs/_includes/cpp
+          mv ${{ env.CPP_DIR }}/* docs/_includes/cpp/
+          rm -rf ${{ env.CPP_DIR }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
