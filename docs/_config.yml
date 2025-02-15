@@ -308,14 +308,11 @@ defaults:
     values:
       layout: single
       author_profile: false
-      root: 
-      permalink: :root/:title/
   # C++
   - scope:
       path: "cpp"
       type: pages
     values:
-      root: "/cpp"
       sidebar:
         nav: "cpp"
   # MATLAB
@@ -323,6 +320,5 @@ defaults:
       path: "matlab"
       type: pages
     values:
-      root: "/matlab"
       sidebar:
         nav: "matlab"
