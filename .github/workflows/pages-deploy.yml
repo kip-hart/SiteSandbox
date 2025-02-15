@@ -35,11 +35,11 @@ jobs:
       - name: Find and compile C++ projects
         run: bash .github/scripts/run_all_cpp.sh
 
-      - name: Upload log files
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: cpp-artifacts
-          retention_days: 1
+          retention-days: 1
           path: cpp/
 
   # MATLAB job
