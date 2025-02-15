@@ -9,7 +9,7 @@ This page imports and runs a C++ file.
 
 
 This is the input:
-```matlab
+```cpp
 {% include {{ site.cpp_dir }}{{ page.src }}{{ page.src_01 }} %}
 ```
 
