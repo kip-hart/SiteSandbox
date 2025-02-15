@@ -296,6 +296,9 @@ compress_html:
   ignore:
     envs: development
 
+# Code Source Files
+cpp_dir: cpp/
+matlab_dir: matlab/
 
 # Defaults
 defaults:
@@ -307,8 +310,6 @@ defaults:
       author_profile: false
       root: 
       permalink: :root/:title/
-      cpp_dir: cpp/
-      matlab_dir: matlab/
   # C++
   - scope:
       path: "cpp"
