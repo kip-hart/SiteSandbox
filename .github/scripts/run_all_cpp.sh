@@ -7,11 +7,16 @@ for dir in  "$BASE_DIR"/*; do
     echo $dir
     if [ -d "$dir" ]; then
         echo "Processing directory: $dir"
-              
+        cd $dir
+        
         # Compile all .cpp files into an executable named 'project'
-        g++ *.cpp -I $dir -o "$dir/project"
+        echo "compiling project"
+        g++ *.cpp -o project
               
         # Run the executable and pipe the output to a unique log file
-        "$dir/project" > "$dir/output.log" 2>&1
+        echo "running project"
+        project > output.log 2>&1
+
+        cd -
     fi
 done
