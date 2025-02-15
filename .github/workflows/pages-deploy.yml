@@ -29,6 +29,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install C++ compiler
+        run: sudo apt-get update && sudo apt-get install -y g++
+
+      - name: Find and compile C++ projects
+        run: bash .github/scripts/run_all_cpp.sh
+
+      - name: Upload log files
+        uses: actions/upload-artifact@v2
+        with:
+          name: cpp-logs
+          path: '**/output.log'
+
   # MATLAB job
   matlab:
     runs-on: ubuntu-latest
