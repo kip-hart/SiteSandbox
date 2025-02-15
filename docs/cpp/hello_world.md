@@ -9,9 +9,9 @@ This page imports and runs a C++ file.
 
 
 This is the input:
-```cpp
+{% highlight cpp linenos %}
 {% include {{ site.cpp_dir }}{{ page.src }}{{ page.src_01 }} %}
-```
+{% endhighlight %}
 
 This page is located at `{{ page.path }}`.
 
