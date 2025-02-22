@@ -62,6 +62,12 @@ jobs:
             name: matlab-artifacts
             retention-days: 1
             path: matlab/
+      - name: Cache MATLAB artifacts
+        uses: actions/cache@v3
+        with:
+          path: matlab_artifacts/
+          key: matlab-artifacts-${{ hashFiles('**/*.m') }}
+          restore-keys: matlab-artifacts-
 
   # Build job
   build:
