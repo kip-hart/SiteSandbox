@@ -7,6 +7,12 @@ main:
     url: /about/
 
 matlab:
+  - title: "Home"
+    url: /matlab/
+  - title: "Table of Contents"
+    url: /matlab/contents/
+  - title: "List of Examples"
+    url: /matlab/examples/
   - title: "Basics"
     children:
       - title: "Variables"
