@@ -82,6 +82,7 @@ jobs:
           mkdir -p ${{ env.ZIP_DIR }}
           cp -r cpp ${{ env.ZIP_DIR }}
           cp -r matlab ${{ env.ZIP_DIR }}
+          mkdir -p "$(dirname ${{ env.ZIP_FILE }})"
           zip -r ${{ env.ZIP_FILE }} ${{ env.ZIP_DIR }}
           rm -rf ${{ env.ZIP_DIR }}
 
