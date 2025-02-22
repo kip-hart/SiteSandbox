@@ -243,13 +243,14 @@ pagination:
     after: 2
 
 
-# Plugins (previously gems:)
+# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-latex-pdf
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -295,6 +296,11 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# PDF
+pdf:
+  pdf_engine: lualatex
+  author: The Default Author
 
 # Code Source Files
 cpp_dir: cpp/

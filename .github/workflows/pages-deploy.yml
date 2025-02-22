@@ -49,13 +49,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Cache MATLAB build
-        uses: actions/cache@v3
-        with:
-          path: matlab/
-          key: matlab-build-${{ hashFiles('**/*.m') }}
-          restore-keys: matlab-build-
-
       - name: Set up MATLAB
         uses: matlab-actions/setup-matlab@v2
       - name: Run MATLAB Sandbox Script
@@ -70,12 +63,6 @@ jobs:
             name: matlab-artifacts
             retention-days: 1
             path: matlab/
-      - name: Cache MATLAB artifacts
-        uses: actions/cache@v3
-        with:
-          path: matlab_artifacts/
-          key: matlab-artifacts-${{ hashFiles('**/*.m') }}
-          restore-keys: matlab-artifacts-
 
   # Build job
   build:
