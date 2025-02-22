@@ -69,12 +69,22 @@ jobs:
     runs-on: ubuntu-latest
     needs: [cpp, matlab]
     env:
-      MATLAB_DIR: artifacts/matlab
       CPP_DIR: artifacts/cpp
+      MATLAB_DIR: artifacts/matlab
+      ZIP_DIR: tmp_code_examples/
+      ZIP_FILE: docs/_includes/code_examples.zip
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        # TODO: create a zip of matlab and cpp dirs
+
+      - name: Create Source Zip File
+        run: |
+          mkdir -p ${{ env.ZIP_DIR }}
+          cp -r cpp ${{ env.ZIP_DIR }}
+          cp -r matlab ${{ env.ZIP_DIR }}
+          zip -r ${{ env.ZIP_FILE }} ${{ env.ZIP_DIR }}
+          rm -rf ${{ env.ZIP_DIR }}
+
       - name: Download MATLAB artifacts
         uses: actions/download-artifact@v4
         with:
@@ -85,19 +95,19 @@ jobs:
         with:
           name: cpp-artifacts
           path: ${{ env.CPP_DIR }}
-          
+
+      - name: Merge C++ artifacts
+        run: |
+          ls -R
+          mkdir -p docs/_includes/cpp
+          mv ${{ env.CPP_DIR }}/* docs/_includes/cpp/
+          rm -rf ${{ env.CPP_DIR }}
       - name: Merge MATLAB artifacts
         run: |
           ls -R
           mkdir -p docs/_includes/matlab
           mv ${{ env.MATLAB_DIR }}/* docs/_includes/matlab/
           rm -rf ${{ env.MATLAB_DIR }}
-      - name: Merge C++
-        run: |
-          ls -R
-          mkdir -p docs/_includes/cpp
-          mv ${{ env.CPP_DIR }}/* docs/_includes/cpp/
-          rm -rf ${{ env.CPP_DIR }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
