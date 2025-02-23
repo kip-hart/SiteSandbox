@@ -1,5 +1,5 @@
 ---
-title: "Splash Page"
+title: "Fundamentals of Computing Course Notes"
 layout: splash
 permalink: /
 date: 2016-03-23T11:48:41-04:00
@@ -11,9 +11,9 @@ header:
     - label: "<i class='fas fa-download'></i> Download Examples"
       url: _includes/code_examples.zip
   caption: "Photo credit: Blue Origin"
-excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
+excerpt: "Course notes for the Summer II session of ENAE/ENME202 at the University of Maryland."
 intro: 
-  - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
+  - excerpt: "Choose a programming language below to get started."
 feature_row:
   - image_path: assets/images/unsplash-gallery-image-1-th.jpg
     alt: "placeholder image 1"
@@ -57,3 +57,5 @@ feature_row4:
 ---
 
 {% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
