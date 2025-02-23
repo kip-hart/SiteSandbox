@@ -23,10 +23,10 @@ feature_row:
   - image_path: /images/cpp_logo_267x300.png
     alt: "C++"
     title: "C++"
-    excerpt: "Object-oriented programming language, for large-scale computing and embedded software."
+    excerpt: "Lower-level language ideal for large-scale computing."
     url: "/cpp/"
     btn_class: "btn--primary"
     btn_label: "Learn more"   
 ---
 
-{% include feature_row type="center"%}
+{% include feature_row type="center" %}
