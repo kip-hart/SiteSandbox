@@ -72,7 +72,7 @@ jobs:
       CPP_DIR: artifacts/cpp
       MATLAB_DIR: artifacts/matlab
       ZIP_DIR: tmp_code_examples/
-      ZIP_FILE: docs/_includes/code_examples.zip
+      ZIP_FILE: docs/assets/code_examples.zip
     steps:
       - name: Checkout
         uses: actions/checkout@v4
