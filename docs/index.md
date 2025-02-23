@@ -1,5 +1,5 @@
 ---
-title: "Fundamentals of Computing Course Notes"
+title: "Fundamentals of Computing<br />Course Notes"
 layout: splash
 permalink: /
 date: 2016-03-23T11:48:41-04:00
@@ -14,26 +14,19 @@ header:
 excerpt: "Course notes for the Summer II session of ENAE/ENME202 at the University of Maryland."
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png
-    alt: "customizable"
-    title: "Super customizable"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
+    alt: "MATLAB"
+    title: "MATLAB"
+    excerpt: "Technical computing with convenient built-ins."
     url: "/docs/configuration/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/mm-responsive-feature.png
-    alt: "fully responsive"
-    title: "Responsive layouts"
-    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
+    alt: "C++"
+    title: "C++"
+    excerpt: "Object-oriented programming language, for large-scale computing and embedded software."
     url: "/docs/layouts/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/mm-free-feature.png
-    alt: "100% free"
-    title: "100% free"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"      
+    btn_label: "Learn more"   
 ---
 
 {% include feature_row %}
