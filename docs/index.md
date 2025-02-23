@@ -13,20 +13,20 @@ header:
   caption: "Photo credit: Blue Origin"
 excerpt: "Course notes for the Summer II session of ENAE/ENME202 at the University of Maryland."
 feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
+  - image_path: /images/matlab_logo_600x537.png
     alt: "MATLAB"
     title: "MATLAB"
     excerpt: "Technical computing with convenient built-ins."
-    url: "/docs/configuration/"
+    url: "/matlab/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-responsive-feature.png
+  - image_path: /images/cpp_logo_533x600.png
     alt: "C++"
     title: "C++"
     excerpt: "Object-oriented programming language, for large-scale computing and embedded software."
-    url: "/docs/layouts/"
+    url: "/cpp/"
     btn_class: "btn--primary"
     btn_label: "Learn more"   
 ---
 
-{% include feature_row %}
+{% include feature_row type="center"%}
