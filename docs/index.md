@@ -8,7 +8,7 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/banner_rocket.jpg
   actions:
-    - label: "<i class='fas fa-download'></i> Download Examples"
+    - label: "<i class='fas fa-download'></i> Download Code Examples"
       url: assets/code_examples.zip
   caption: "Photo credit: Blue Origin"
 excerpt: "Course notes for the Summer II session of ENAE/ENME202 at the University of Maryland."
