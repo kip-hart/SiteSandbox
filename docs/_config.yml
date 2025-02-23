@@ -115,12 +115,14 @@ analytics:
 author:
   name             : "Dr. Kip Hart"
   avatar           : /assets/images/bio-photo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "GNC engineer at Blue Origin<br>
+  bio              : "ENAE/ENME202 Lecturer 2023-2025<br>
+                     <br>
+                     GNC engineer at Blue Origin<br>
                      B.S. AE from UMD<br>
                      M.S. AE from Georgia Tech<br>
                      Ph.D. AE from Georgia Tech"
-  location         : "Kent, WA"
-  email            :
+  #location         : "Kent, WA"
+  email            : "khart1@umd.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -134,16 +136,19 @@ author:
     - label: "Google Scholar"
       icon: "fa-brands fa-google-scholar"
       url: "https://scholar.google.com/citations?user=6XQth9QAAAAJ"
+    - label: "Faculty Page"
+      icon: "fa-solid fa-building-columns"
+      url: "https://aero.umd.edu/clark/faculty/1895/Kip-Hart"
 
 # Site Footer
 footer:
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
     - label: "Canvas"
       icon: "fa-solid fa-users"
       url: https://elms.umd.edu/
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: https://github.com/kip-hart/SiteSandbox
 
 
 # Reading Files
