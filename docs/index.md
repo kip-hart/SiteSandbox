@@ -16,7 +16,7 @@ feature_row:
   - image_path: /assets/images/matlab_logo_335x300.png
     alt: "MATLAB"
     title: "MATLAB"
-    excerpt: "Technical computing with convenient built-ins."
+    excerpt: "Technical computing language with convenient built-ins."
     url: "/matlab/"
     btn_class: "btn--primary"
     btn_label: "Learn more"

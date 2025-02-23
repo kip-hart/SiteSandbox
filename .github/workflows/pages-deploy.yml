@@ -71,7 +71,6 @@ jobs:
     env:
       CPP_DIR: artifacts/cpp
       MATLAB_DIR: artifacts/matlab
-      ZIP_DIR: tmp_code_examples/
       ZIP_FILE: docs/assets/code_examples.zip
     steps:
       - name: Checkout
@@ -79,12 +78,8 @@ jobs:
 
       - name: Create Source Zip File
         run: |
-          mkdir -p ${{ env.ZIP_DIR }}
-          cp -r cpp ${{ env.ZIP_DIR }}
-          cp -r matlab ${{ env.ZIP_DIR }}
           mkdir -p "$(dirname ${{ env.ZIP_FILE }})"
-          zip -r ${{ env.ZIP_FILE }} ${{ env.ZIP_DIR }}
-          rm -rf ${{ env.ZIP_DIR }}
+          zip -r ${{ env.ZIP_FILE }} cpp matlab
 
       - name: Download MATLAB artifacts
         uses: actions/download-artifact@v4
