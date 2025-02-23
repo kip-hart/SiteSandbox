@@ -20,7 +20,7 @@ feature_row:
     url: "/matlab/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /images/cpp_logo_267x300.png
+  - image_path: /assets/images/cpp_logo_267x300.png
     alt: "C++"
     title: "C++"
     excerpt: "Lower-level language ideal for large-scale computing."
