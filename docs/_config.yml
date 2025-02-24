@@ -150,6 +150,8 @@ footer:
       icon: "fab fa-fw fa-github"
       url: https://github.com/kip-hart/SiteSandbox
 
+footer_scripts:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML
 
 # Reading Files
 include:
