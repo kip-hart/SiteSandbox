@@ -2,27 +2,12 @@
 title: Units Example
 permalink: /matlab/sandbox/units/
 matlab_run_01: matlab/units_example
-usemathjax: true
 ---
 
 Here's an example of how to use the units function.
 
 
-This is the input:
-```matlab
-{% include {{ page.matlab_run_01 }}.m %}
-```
-
-This page is located at `{{ page.path }}`.
-
-This is the output
-```text
-{% include {{ page.matlab_run_01 }}.diary %}
-```
-
-
 {% capture notice-text %}
-#### Example: Mixed Units
 ##### Question
 If a conical space capsule has a diameter of 5.1 meters, a height
 of 129 in, and weighs 30,000 lbm, what is its density?
@@ -59,5 +44,6 @@ the units you want your answer to be in.
 {% endcapture %}
 
 <div class="notice--info">
+  <h4 class="no-toc"> Example: Mixed Units </h4>
   {{ notice-text | markdownify }}
 </div>

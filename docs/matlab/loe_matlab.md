@@ -3,4 +3,8 @@ title: MATLAB List of Examples
 permalink: /matlab/examples/
 ---
 
-This is the list of examples for the MATLAB section.
+## Scripts
+[units_example.m]({% link mfile_units_example.md %})
+
+## Functions
+[units.m]({% link mfiles/mfile_units.md %})
