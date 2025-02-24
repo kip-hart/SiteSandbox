@@ -1,4 +1,4 @@
-% ---------------------------------------------------------------------- %
+% ---------------------------------------------------------------- %
 %% Units function
 %
 % This function contains the unit conversion factors for metric and
@@ -11,22 +11,25 @@
 %   * Help strings
 %   * Raising errors
 %
-% Using this function in homework for other cases will help you avoid
-% unit conversion mistakes! You will often encounter constants defined in
-% metric, such as the universal gas constant, while working on a problem
-% with givens that are Imperial. Don't let this be a barrier. Convert
-% all your inputs to the same unit system, calculate your answer, and
-% choose which units to use for your output.
+% Using this function in homework for other cases will help you
+% avoid unit conversion mistakes! You will often encounter constants
+% defined in metric, such as the universal gas constant, while
+% working on a problem with givens that are Imperial.
+%
+% ** Don't let this be a barrier. **
+% 
+% Convert all your inputs to the same unit system, calculate your
+% answer, and choose which units to use for your output.
 %
 % Author: Kip Hart // 23 FEB 2025
-% ---------------------------------------------------------------------- %
+% ---------------------------------------------------------------- %
 
 function U = units(sys)
 % UNITS  Unit conversion factors
 %   U = units('metric') generates conversion factors to metric.
 %   U = units('imperial') generates conversion factors to imperial.
 %
-%   To apply units to numbers, multiply the appropriate conversion factor.
+%   To apply units to numbers, multiply its conversion factor.
 %   To convert to a different unit, divide by the conversion factor.
 %
 %   Example usage:
@@ -42,12 +45,14 @@ function U = units(sys)
 %   ans =
 %        120
 %
-%   Here, a distance is input in feet and saved in the dist variable in
-%   meters. Calculatiions and formulas can be applied to this variable.
-%   To output a variable in a specific unit, divide by that unit.
+%   Here, a distance is input in feet and saved in the dist variable
+%   in meters. Calculatiions and formulas can be applied to this
+%   variable. To output a variable in a specific unit, divide by
+%   that unit.
 %
 %   Source: <a href="matlab:
-%   web('https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9')">NIST Guide to the SI, Appendix B.9</a>
+%   web('https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9')">
+%   NIST Guide to the SI, Appendix B.9</a>
 %
 
     %% Load base units
