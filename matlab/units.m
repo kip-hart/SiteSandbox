@@ -90,7 +90,7 @@ function U = units(sys)
 
     %% Energy and Work
     U.J       = U.KG*U.M^2/U.S^2;
-    U.KJ      = 1000*J;
+    U.KJ      = 1000*U.J;
     U.ERG     = 1e-7*U.J;
     
     U.CAL_IT  = 4.1868*U.J;
