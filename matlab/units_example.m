@@ -14,7 +14,7 @@
 % calculate the density I need to find the volume of the capsule
 % then divide the mass by volume. The volume of a cone is given by:
 %
-%        1          3
+%        1          2
 %   V = --- * pi * r  h
 %        3
 %
@@ -30,7 +30,7 @@ m = 30e3*U.LBM;
 
 %% Volume
 r = d/2;
-V = (1/3)*pi*r^3*h;
+V = (1/3)*pi*r^2*h;
 
 %% Density
 rho = m/V;
