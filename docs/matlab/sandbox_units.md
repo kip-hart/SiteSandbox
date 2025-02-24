@@ -2,6 +2,7 @@
 title: Units Example
 permalink: /matlab/sandbox/units/
 matlab_run_01: matlab/units_example
+usemathjax: true
 ---
 
 Here's an example of how to use the units function.
