@@ -5,5 +5,5 @@ mfile: matlab/units_example.m
 ---
 
 ```matlab
-{% include {{ page.mfile }}.m %}
+{% include {{ page.mfile }} %}
 ```
