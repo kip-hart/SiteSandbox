@@ -26,6 +26,8 @@ matlab:
         url: /matlab/sandbox/import/
       - title: "Run M-File"
         url: /matlab/sandbox/run/
+      - title: "Units Example"
+        url: /matlab/sandbox/units/
 
 cpp:
   - title: "Basics"
