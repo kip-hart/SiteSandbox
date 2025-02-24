@@ -57,6 +57,6 @@ the units you want your answer to be in.
 {% endcapture %}
 
 <div class="notice--info">
-  <h4 class="no_toc">Example: Mixed Units</h4>
+  <h4>Example: Mixed Units</h4>
   {{ notice-text | markdownify }}
 </div>

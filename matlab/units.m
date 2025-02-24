@@ -9,9 +9,8 @@
 %   * Switch/case statements
 %   * Defensive programming
 %   * Help strings
-%   * Raising errors
 %
-% Using this function in homework for other cases will help you
+% Using this function in homework for other classes will help you
 % avoid unit conversion mistakes! You will often encounter constants
 % defined in metric, such as the universal gas constant, while
 % working on a problem with givens that are Imperial.
