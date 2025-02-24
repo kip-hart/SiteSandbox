@@ -21,6 +21,7 @@ This is the output
 
 
 {% capture notice-text %}
+#### Example: Mixed Units
 ##### Question
 If a conical space capsule has a diameter of 5.1 meters, a height
 of 129 in, and weighs 30,000 lbm, what is its density?
@@ -32,7 +33,7 @@ unit system. Either will work, so lets use metric. Next, we need
 to calculate the volume of the capsule. Finally, we divide the
 mass by volume to get the density. The volume of a cone is given by:
 
-(formula)
+$$ V = \frac{1}{3} \pi r^2 h $$
 
 In MATLAB, this looks like:
 ```matlab
@@ -57,6 +58,5 @@ the units you want your answer to be in.
 {% endcapture %}
 
 <div class="notice--info">
-  <h4>Example: Mixed Units</h4>
   {{ notice-text | markdownify }}
 </div>
