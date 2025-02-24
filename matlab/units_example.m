@@ -34,4 +34,4 @@ V = (1/3)*pi*r^3*h;
 
 %% Density
 rho = m/V;
-disp(['Density [kg/m^3]:' num2str(rho/(U.KG/U.M^3))])
+disp(['Density: ' num2str(rho/(U.KG/U.M^3)) ' kg/m^3'])
