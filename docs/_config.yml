@@ -159,7 +159,6 @@ include:
   - _pages
   - matlab
   - docs
-  - docs/matlab
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
