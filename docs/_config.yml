@@ -159,6 +159,7 @@ include:
   - _pages
   - matlab
   - docs
+  - docs/matlab
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -312,6 +313,8 @@ pdf:
 # Code Source Files
 cpp_dir: cpp/
 matlab_dir: matlab/
+
+# Collections
 
 # Defaults
 defaults:
