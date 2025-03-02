@@ -18,31 +18,31 @@ matlab:
   - title: "Week 1"
     children:
       - title: "Architecture, Conventions, Limitations"
-        url: /matlab/
+        url: /matlab/foo
       - title: "Arithmetic, Variables, and Arrays"
-        url: /matlab/
+        url: /matlab/foo
       - title: "Native Functions and Scripts"
-        url: /matlab/
+        url: /matlab/foo
       - title: "Plotting"
-        url: /matlab/
+        url: /matlab/foo
   - title: "Week 2"
     children:
       - title: "Complex Numbers"
-        url: /matlab/
+        url: /matlab/foo
       - title: "Polynomials"
-        url: /matlab/
+        url: /matlab/foo
       - title: "Vector and Matrix Operations"
-        url: /matlab/
+        url: /matlab/foo
       - title: "Functions"
-        url: /matlab/
+        url: /matlab/foo
   - title: "Week 3"
     children:
       - title: "Logical Expressions"
-        url: /matlab/
+        url: /matlab/foo
       - title: "Conditionals"
-        url: /matlab/
+        url: /matlab/foo
       - titel: "For and While Loops"
-        url: /matlab/
+        url: /matlab/foo
   - title: "Sandbox Pages"
     children:
       - title: "Import M-File"
