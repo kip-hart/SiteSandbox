@@ -26,17 +26,17 @@ In MATLAB, this looks like:
 {% include {{ page.matlab_run_01 }}.m %}
 ```
 
-where the [`units()`]({{ site.baseurl }}{% link matlab/examples/units.md %}) function
+The [`units()`]({{ site.baseurl }}{% link matlab/examples/units.md %}) function
 generates a structure containing unit conversion factors.
+After running this script, the result in the Command Window is:
 
-The result of running the script is:
 ```text
 {% include {{ page.matlab_run_01 }}.diary %}
 ```
 
 This function is useful for containing unit conversion factors.
-In practice, you can write scripts and functions that implement
-equations that do not specify units (e.g. $F=m a$). You apply units
+In practice, you can write scripts/functions that implement
+equations without specifying units (e.g. $F=m a$). You apply units
 to the inputs, the equations create an output, then you divide by
 the units you want your answer to be in.
 {% endcapture %}
