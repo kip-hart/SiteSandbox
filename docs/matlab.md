@@ -1,5 +1,7 @@
 ---
 title: MATLAB Course Notes
+sidebar:
+    nav: "matlab"
 ---
 
 {% include figure image_path="/assets/images/matlab_logo_banner.png" alt="MATLAB logo" %}

@@ -1,5 +1,7 @@
 ---
 title: C++ Course Notes
+sidebar:
+    nav: "cpp"
 ---
 
 {% include figure image_path="/assets/images/cpp_logo_banner.png" alt="C++ logo" %}
