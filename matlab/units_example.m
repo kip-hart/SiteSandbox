@@ -1,4 +1,3 @@
-
 %% Units Example
 %
 % This is a word problem with a mix of metric and Imperial units.
