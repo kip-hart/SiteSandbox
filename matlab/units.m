@@ -28,7 +28,10 @@ function U = units(sys)
 %   web('https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9')">
 %   NIST Guide to the SI, Appendix B.9</a>
 %
-%   Author: Kip Hart // 23 FEB 2025
+%   Author: Kip Hart
+%   Last Modified: 23 FEB 2025
+%
+%   See also UNITS_EXAMPLE
 %
 
     %% Load base units
