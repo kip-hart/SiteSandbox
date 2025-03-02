@@ -41,7 +41,7 @@ matlab:
         url: /matlab/foo
       - title: "Conditionals"
         url: /matlab/foo
-      - titel: "For and While Loops"
+      - title: "For and While Loops"
         url: /matlab/foo
   - title: "Sandbox Pages"
     children:
