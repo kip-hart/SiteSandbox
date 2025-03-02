@@ -1,28 +1,3 @@
-% ---------------------------------------------------------------- %
-%% Units function
-%
-% This function contains the unit conversion factors for metric and
-% Imperial units. It demonstrates these concepts:
-%
-%   * Fuctions
-%   * Structures
-%   * Switch/case statements
-%   * Defensive programming
-%   * Help strings
-%
-% Using this function in homework for other classes will help you
-% avoid unit conversion mistakes! You will often encounter constants
-% defined in metric, such as the universal gas constant, while
-% working on a problem with givens that are Imperial.
-%
-% ** Don't let this be a barrier. **
-% 
-% Convert all your inputs to the same unit system, calculate your
-% answer, and choose which units to use for your output.
-%
-% Author: Kip Hart // 23 FEB 2025
-% ---------------------------------------------------------------- %
-
 function U = units(sys)
 % UNITS  Unit conversion factors
 %   U = units('metric') generates conversion factors to metric.
@@ -52,6 +27,8 @@ function U = units(sys)
 %   Source: <a href="matlab:
 %   web('https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9')">
 %   NIST Guide to the SI, Appendix B.9</a>
+%
+%   Author: Kip Hart // 23 FEB 2025
 %
 
     %% Load base units
