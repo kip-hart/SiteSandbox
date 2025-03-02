@@ -36,7 +36,7 @@ The result of running the script is:
 
 This function is useful for containing unit conversion factors.
 In practice, you can write scripts and functions that implement
-equations that do not specify units (e.g. F=ma). You apply units
+equations that do not specify units (e.g. $F=m a$). You apply units
 to the inputs, the equations create an output, then you divide by
 the units you want your answer to be in.
 {% endcapture %}
