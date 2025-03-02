@@ -28,6 +28,8 @@ matlab:
         url: /matlab/sandbox/run/
       - title: "Units Example"
         url: /matlab/sandbox/units/
+      - title: "Plot Example"
+        url: /matlab/sandbox/plot/
 
 cpp:
   - title: "Basics"

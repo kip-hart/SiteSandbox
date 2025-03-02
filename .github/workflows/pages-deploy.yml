@@ -57,12 +57,21 @@ jobs:
           command: >
             addpath('.github/scripts');
             run_all_scripts('matlab');
-      - name: Upload artifact
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
             name: matlab-artifacts
             retention-days: 1
             path: matlab/
+      - name: Upload figures
+        uses: actions/upload-artifact@v4
+        with:
+            name: matlab-figures
+            retention-days: 1
+            path: figures/
+        
+      - name: Display structure of repo files (3)
+        run: ls -R
 
   # Build job
   build:
@@ -70,6 +79,7 @@ jobs:
     needs: [cpp, matlab]
     env:
       CPP_DIR: docs/_includes/cpp
+      FIGS_DIR: docs/assets/images/figures
       MATLAB_DIR: docs/_includes/matlab
       ZIP_FILE: docs/assets/code_examples.zip
     steps:
@@ -81,21 +91,27 @@ jobs:
           mkdir -p "$(dirname ${{ env.ZIP_FILE }})"
           zip -r ${{ env.ZIP_FILE }} cpp matlab
 
-      - name: Create artifacts includes directories
+      - name: Create artifacts directories
         run: |
           mkdir -p ${{ env.CPP_DIR }}
           mkdir -p ${{ env.MATLAB_DIR }}
+          mkdir -p ${{ env.FIGS_DIR }}
 
-      - name: Download MATLAB artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: matlab-artifacts
-          path: ${{ env.MATLAB_DIR }}
       - name: Download C++ Artifacts
         uses: actions/download-artifact@v4
         with:
           name: cpp-artifacts
           path: ${{ env.CPP_DIR }}
+      - name: Download Figure Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: matlab-figures
+          path: ${{ env.FIGS_DIR }}
+      - name: Download MATLAB artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: matlab-artifacts
+          path: ${{ env.MATLAB_DIR }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

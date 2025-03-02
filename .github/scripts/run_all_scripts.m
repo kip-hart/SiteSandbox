@@ -39,4 +39,20 @@ function run_single_script(fullPath)
     
     % Ensure the diary is closed after running the script
     diary('off');
+
+    % Save current figures
+    FigList = findobj(allchild(0), 'flat', 'Type', 'figure');
+    if ~isempty(FigList)
+        FolderName = fullfile('figures', path, name)
+        mkdir(FolderName);
+    end
+
+    for iFig = 1:length(FigList)
+        FigHandle = FigList(iFig);
+        FigName   = get(FigHandle, 'Name');
+        FigName   = matlab.lang.makeValidName(FigName);
+        saveas(FigHandle, fullfile(FolderName, FigName, '.png'));
+    end
+
+    close all
 end
