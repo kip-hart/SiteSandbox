@@ -6,7 +6,7 @@ mfile: matlab/units.m
 This function contains the unit conversion factors for metric and
 Imperial units. It demonstrates these concepts:
 
-* Fuctions
+* Functions
 * Structures
 * Switch/case statements
 * Defensive programming
