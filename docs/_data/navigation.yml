@@ -9,17 +9,40 @@ main:
 matlab:
   - title: "Home"
     url: /matlab/
-  - title: "Table of Contents"
-    url: /matlab/contents/
+  #- title: "Table of Contents"
+  #  url: /matlab/contents/
   - title: "List of Examples"
     url: /matlab/examples/
-  - title: "Basics"
+  - title: "Getting Started"
+    url: /matlab/getting-started
+  - title: "Week 1"
     children:
-      - title: "Variables"
-        url: /
-      - title: "Scripts"
-        url: /
-  - title: "Intermediate"
+      - title: "Architecture, Conventions, Limitations"
+        url: /matlab/
+      - title: "Arithmetic, Variables, and Arrays"
+        url: /matlab/
+      - title: "Native Functions and Scripts"
+        url: /matlab/
+      - title: "Plotting"
+        url: /matlab/
+  - title: "Week 2"
+    children:
+      - title: "Complex Numbers"
+        url: /matlab/
+      - title: "Polynomials"
+        url: /matlab/
+      - title: "Vector and Matrix Operations"
+        url: /matlab/
+      - title: "Functions"
+        url: /matlab/
+  - title: "Week 3"
+    children:
+      - title: "Logical Expressions"
+        url: /matlab/
+      - title: "Conditionals"
+        url: /matlab/
+      - titel: "For and While Loops"
+        url: /matlab/
   - title: "Sandbox Pages"
     children:
       - title: "Import M-File"
