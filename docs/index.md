@@ -23,7 +23,7 @@ feature_row:
   - image_path: /assets/images/cpp_logo_banner.png
     alt: "C++"
     title: "C++"
-    excerpt: "Lower-level language ideal for large-scale computing."
+    excerpt: "Object-oriented language ideal for embedded and large-scale computing."
     url: "/cpp/"
     btn_class: "btn--primary"
     btn_label: "Learn more"   
