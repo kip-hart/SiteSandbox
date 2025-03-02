@@ -11,5 +11,4 @@ This page explains the site.
 * Update C++ Table of Contents
 * Generate list of code examples
 * Update About text
-* Create rescaled images for MATLAB and C++ logos
 * Investigate auto table of contents
