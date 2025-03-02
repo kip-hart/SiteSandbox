@@ -7,6 +7,7 @@ Here's an example of how to use the units function.
 
 
 {% capture notice-text %}
+#### Example: Mixed Units
 ##### Question
 If a conical space capsule has a diameter of 5.1 meters, a height
 of 129 in, and weighs 30,000 lbm, what is its density?
@@ -25,10 +26,8 @@ In MATLAB, this looks like:
 {% include {{ page.matlab_run_01 }}.m %}
 ```
 
-where the `units()` function is:
-```matlab
-{% include matlab/units.m %}
-```
+where the [`units()`]({{ site.baseurl }}{% link matlab/examples/units.md %}) function
+generates a structure containing unit conversion factors.
 
 The result of running the script is:
 ```text
@@ -42,7 +41,4 @@ to the inputs, the equations create an output, then you divide by
 the units you want your answer to be in.
 {% endcapture %}
 
-<div class="notice--info">
-  <h4 class="no-toc"> Example: Mixed Units </h4>
-  {{ notice-text | markdownify }}
-</div>
+<div class="notice--info">{{ notice-text | markdownify }}</div>
