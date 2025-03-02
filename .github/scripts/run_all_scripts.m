@@ -49,9 +49,8 @@ function run_single_script(fullPath)
 
     for iFig = 1:length(FigList)
         FigHandle = FigList(iFig);
-        FigName   = get(FigHandle, 'Name')
-        FigName   = matlab.lang.makeValidName(FigName)
-        saveas(FigHandle, fullfile(FolderName, FigName, '.png'));
+        FigName   = ['Figure_' num2str(iFig) '.png']
+        saveas(FigHandle, fullfile(FolderName, FigName));
     end
 
     close all
