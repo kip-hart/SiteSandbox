@@ -9,10 +9,6 @@ main:
 matlab:
   - title: "Home"
     url: /matlab/
-  #- title: "Table of Contents"
-  #  url: /matlab/contents/
-  - title: "List of Examples"
-    url: /matlab/examples/
   - title: "Getting Started"
     url: /matlab/getting-started
   - title: "Week 1"
@@ -43,16 +39,10 @@ matlab:
         url: /matlab/foo
       - title: "For and While Loops"
         url: /matlab/foo
+  - title: "List of Examples"
+    url: /matlab/examples/
   - title: "Sandbox Pages"
-    children:
-      - title: "Import M-File"
-        url: /matlab/sandbox/import/
-      - title: "Run M-File"
-        url: /matlab/sandbox/run/
-      - title: "Units Example"
-        url: /matlab/sandbox/units/
-      - title: "Plot Example"
-        url: /matlab/sandbox/plot/
+    url: /matlab/sandbox
 
 cpp:
   - title: "Basics"

@@ -5,7 +5,7 @@ permalink: /matlab/
 
 {% include figure image_path="/assets/images/matlab_logo_banner.png" alt="MATLAB logo" %}
 
-MATLAB&reg; is a high-level programming language and interactive development environment published by MathWorks&reg;.
+[MATLAB&reg;](https://www.mathworks.com/products/matlab) is a high-level programming language and interactive development environment published by [MathWorks&reg;](https://www.mathworks.com).
 It is widely used in science, technology, engineering, and mathematics (STEM) fields.
 MATLAB provides a platform for numerical computation, data analysis, algorithm development, and data visualization.
 Its comprehensive library of built-in functions and graphical capabilities make it ideal for solving complex problems and
