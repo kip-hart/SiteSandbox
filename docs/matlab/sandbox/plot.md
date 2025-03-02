@@ -3,7 +3,7 @@ title: Make a plot
 matlab_run_01: matlab/sandbox_plot
 ---
 
-This page imports and runs an m-file.
+This page imports and runs an m-file that makes a plot.
 
 
 This is the input:
@@ -18,6 +18,8 @@ This is the text output
 {% include {{ page.matlab_run_01 }}.diary %}
 ```
 
-This is the image output
-![alt]({{ site.url }}{{ site.baseurl }}/assets/images/figures/sandbox_plot/Figure_1.png)
+This is the image output:
+{% include figure popup=true image_path="/assets/images/figures/matlab/sandbox_plot/Figure_1.png" alt="Example figure" caption="This is an example of using figures." %}
+
+image link: `{{ site.url }}{{ site.baseurl }}/assets/images/figures/matlab/sandbox_plot/Figure_1.png`.
 
