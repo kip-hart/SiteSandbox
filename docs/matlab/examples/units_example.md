@@ -10,5 +10,5 @@ mfile: matlab/units_example
 The output from running this script is:
 
 ```text
-{% include {{ page.matlab_run_01 }}.diary %}
+{% include {{ page.mfile }}.diary %}
 ```
