@@ -4,7 +4,7 @@ permalink: /matlab/examples/
 ---
 
 ## Scripts
-[units_example.m]({{ site.baseurl }}{% link matlab/mfile_units_example.md %})
+[units_example.m]({{ site.baseurl }}{% link matlab/example/units_example.md %})
 
 ## Functions
 [units.m]({{ site.baseurl }}{% link matlab/examples/units.md %})

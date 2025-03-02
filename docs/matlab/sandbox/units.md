@@ -1,6 +1,5 @@
 ---
 title: Units Example
-permalink: /matlab/sandbox/units/
 matlab_run_01: matlab/units_example
 ---
 

@@ -15,7 +15,7 @@ Imperial units. It demonstrates these concepts:
 In your coursework, you will encounter physical constants defined in metric,
 while working on a problem with givens that are Imperial.
 
-** Don't let this be a barrier. **
+**Don't let units be a barrier.**
 
 Instead, convert all your inputs to the same unit system, calculate your
 answer, and choose which units to use for your output.
