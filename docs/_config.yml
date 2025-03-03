@@ -334,3 +334,11 @@ defaults:
     values:
       sidebar:
         nav: "matlab"
+      toc: true
+  - scope:
+      path: "matlab/examples"
+      type: pages
+    values:
+      sidebar:
+        nav: "matlab"
+      toc: false

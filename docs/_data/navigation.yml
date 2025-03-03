@@ -10,7 +10,7 @@ matlab:
   - title: "Home"
     url: /matlab/
   - title: "Getting Started"
-    url: /matlab/getting-started
+    url: /matlab/getting_started
   - title: "Week 1"
     children:
       - title: "Computer Architecture"
@@ -45,6 +45,8 @@ matlab:
         url: /matlab/foo
       - title: "File Input/Output"
         url: /matlab/foo
+      - title: "Publishing"
+        url: /matlab/foo
   - title: "Week 3"
     children:
       - title: "Switch-Case Statements"
@@ -58,6 +60,8 @@ matlab:
       - title: "While Loops"
         url: /matlab/foo
       - title: "Classes"
+        url: /matlab/foo
+      - title: "Profiling"
         url: /matlab/foo
   - title: "List of Examples"
     url: /matlab/examples/
