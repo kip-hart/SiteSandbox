@@ -62,7 +62,7 @@ function U = units(sys)
     %% Electricity and Magnetism
     U.AMPERE = 1;
     U.MA     = 1e-3*U.AMPERE;
-    U.C      = 1*U.AMPERE*U.S;
+    U.C      = U.AMPERE*U.S;
     
     U.V      = U.KG*U.M^2/(U.S^2*U.C);
     U.OHM    = U.V/U.AMPERE;
@@ -162,12 +162,13 @@ function U = units(sys)
     
     U.FPS    = U.FT/U.S;
     U.MPH    = U.MI/U.HR;
+    U.KNOT   = U.NMILE/U.HR;
 
     U.RPM    = U.HZ/60;
 
     %% Viscosity
     U.POISE  = 0.1*U.PA*U.S;
-    U.CP     = U.PA*U.S/100;
+    U.CP     = U.POISE/100;
 
     U.ST     = 1e-4*U.M^2/U.S;
     U.CST    = U.ST/100;
@@ -196,8 +197,8 @@ function U = base_metric()
     U.K      = 1;
     U.MOL    = 1;
 
-    U.SLUG   = 1.459390e1*U.KG;
-    U.FT     = 3.048006e-1*U.M;
+    U.SLUG   = 14.59390*U.KG;
+    U.FT     = 0.3048006*U.M;
     U.R      = 1.8*U.K;
     U.LBMOL  = 453.59237*U.MOL;
 end
@@ -209,8 +210,8 @@ function U = base_imperial()
     U.R      = 1;
     U.LBMOL  = 1;
 
-    U.KG   = U.SLUG/1.459390e1;
-    U.M    = U.FT/3.048006e-1;
+    U.KG   = U.SLUG/14.59390;
+    U.M    = U.FT/0.3048006;
     U.K    = U.R/1.8;
     U.MOL  = U.LBMOL/453.59237;
 end
