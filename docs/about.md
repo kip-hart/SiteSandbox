@@ -32,8 +32,8 @@ Twenty20s Award, and the Georgia Tech Thank a Teacher Progam Award.
 At Blue Origin, Kip has contributed to New Glenn and to mutlple R&D projects.
 This includes both GNC and modeling/simulation work on these programs.
 He regularly uses MATLAB and Simulink.
-Outside of work, Kip also contributes to open-source Python projects.
-He is also an avid Lego fan and a rock collector.
+Outside of work, Kip contributes to open-source Python projects.
+He is also an avid Lego fan, a rock collector, and a sailor.
 
 
 ## To Do List

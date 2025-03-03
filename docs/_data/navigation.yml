@@ -13,11 +13,19 @@ matlab:
     url: /matlab/getting-started
   - title: "Week 1"
     children:
-      - title: "Architecture, Conventions, Limitations"
+      - title: "Computer Architecture"
         url: /matlab/foo
-      - title: "Arithmetic, Variables, and Arrays"
+      - title: "Arithmetic"
         url: /matlab/foo
-      - title: "Native Functions and Scripts"
+      - title: "Variables"
+        url: /matlab/foo
+      - title: "User Scripts"
+        url: /matlab/foo
+      - title: "Structures"
+        url: /matlab/foo
+      - title: "Arrays"
+        url: /matlab/foo
+      - title: "Native Functions"
         url: /matlab/foo
       - title: "Plotting"
         url: /matlab/foo
@@ -27,17 +35,29 @@ matlab:
         url: /matlab/foo
       - title: "Polynomials"
         url: /matlab/foo
+      - title: "Random Numbers"
+        url: /matlab/foo
       - title: "Vector and Matrix Operations"
         url: /matlab/foo
-      - title: "Functions"
+      - title: "User Functions"
+        url: /matlab/foo
+      - title: "Global and Persistent Variables"
+        url: /matlab/foo
+      - title: "File Input/Output"
         url: /matlab/foo
   - title: "Week 3"
     children:
+      - title: "Switch-Case Statements"
+        url: /matlab/foo
       - title: "Logical Expressions"
         url: /matlab/foo
       - title: "Conditionals"
         url: /matlab/foo
-      - title: "For and While Loops"
+      - title: "For Loops"
+        url: /matlab/foo
+      - title: "While Loops"
+        url: /matlab/foo
+      - title: "Classes"
         url: /matlab/foo
   - title: "List of Examples"
     url: /matlab/examples/
