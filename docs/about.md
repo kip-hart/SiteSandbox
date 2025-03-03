@@ -26,10 +26,10 @@ He received his Ph.D. in aerospace engineering from the Georgia Institute of Tec
 where his research focused on planetary entry, descent, and landing.
 He has published 15 academic papers on a variety of aerospace topics.
 While at UMD, he was a member of Sigma Gamma Tau, Tau Beta Pi, and Omicron Delta Kappa.
-Kip has also recived the Sigma Gamma Tau Mid-Atlantic Regional Award, the AviationWeek
-Twenty20s Award, and the Georgia Tech Thank a Teacher Progam Award.
+Kip has also received the Sigma Gamma Tau Mid-Atlantic Regional Award, the AviationWeek
+Twenty20s Award, and the Georgia Tech Thank a Teacher Program Award.
 
-At Blue Origin, Kip has contributed to New Glenn and to mutlple R&D projects.
+At Blue Origin, Kip has contributed to New Glenn and to multiple R&D projects.
 This includes both GNC and modeling/simulation work on these programs.
 He regularly uses MATLAB and Simulink.
 Outside of work, Kip contributes to open-source Python projects.
@@ -38,5 +38,6 @@ He is also an avid Lego fan, a rock collector, and a sailor.
 
 ## To Do List
 
+* Add details to User Interface on MATLAB Getting Started.
 * Update C++ Table of Contents
 * Generate list of code examples

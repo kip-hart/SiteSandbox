@@ -25,3 +25,15 @@ up 100% of the time while you're coding.
 MATLAB Online is also a relatively new tool.
 There may be some differences between how it works and the local program.
 These course notes do not take those differences into account.
+
+## Running MATLAB
+{% include figure image_path="/assets/images/matlab_logo_banner.png" alt="MATLAB logo" %}
+
+To run MATLAB click on its shortcut, which looks like the image above.
+You may need to search for "MATLAB" if you did not create one during installation.
+MATLAB can take some time to load, especially the first time, so be
+patient.
+If you click the shortcut repeatedly, your computer will try to run
+multiple instances at once.
+
+## User Interface

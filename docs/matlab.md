@@ -14,4 +14,4 @@ conducting numerical simulations.
 With its graphical user interface and extensive documentation, MATLAB simplifies the learning process for beginners and
 offers advanced features for experienced users. It is a valuable tool in both academic and professional settings.
 
-Visit the GETTING STARTED page to complete the first-time setup for MATLAB.
+Visit the [Getting Started]({{ site.baseurl }}{% link matlab/getting_started.md %}) page to complete the first-time setup for MATLAB.
