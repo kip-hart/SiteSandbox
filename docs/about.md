@@ -38,6 +38,6 @@ He is also an avid Lego fan, a rock collector, and a sailor.
 
 ## To Do List
 
+* Build out MATLAB Week 1 pages
+* Build out C++ Week 1 pages
 * Add details to User Interface on MATLAB Getting Started.
-* Update C++ Table of Contents
-* Generate list of code examples

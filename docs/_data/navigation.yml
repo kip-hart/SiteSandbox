@@ -11,7 +11,7 @@ matlab:
     url: /matlab/
   - title: "Getting Started"
     url: /matlab/getting_started
-  - title: "Week 1"
+  - title: "Basics"
     children:
       - title: "Computer Architecture"
         url: /matlab/foo
@@ -29,7 +29,7 @@ matlab:
         url: /matlab/foo
       - title: "Plotting"
         url: /matlab/foo
-  - title: "Week 2"
+  - title: "Intermediate"
     children:
       - title: "Complex Numbers"
         url: /matlab/foo
@@ -47,7 +47,7 @@ matlab:
         url: /matlab/foo
       - title: "Publishing"
         url: /matlab/foo
-  - title: "Week 3"
+  - title: "Advanced"
     children:
       - title: "Switch-Case Statements"
         url: /matlab/foo
@@ -69,14 +69,53 @@ matlab:
     url: /matlab/sandbox
 
 cpp:
+  - title: "Home"
+    url: /cpp/
+  - title: "Getting Started"
+    url: /cpp/getting_started
   - title: "Basics"
     children:
-      - title: "Variables"
-        url: /
-      - title: "Scripts"
-        url: /
+      - title: "Program Structure"
+        url: /cpp/foo
+      - title: "Compiling & Executing"
+        url: /cpp/foo
+      - title: "Variables & Data Types"
+        url: /cpp/foo
+      - title: "Screen Output"
+        url: /cpp/foo
+      - title: "Keyboard Input"
+        url: /cpp/foo
+      - title: "Conditionals"
+        url: /cpp/foo
+      - title: "For and While Loops"
+        url: /cpp/foo
+      - title: "User Defined Functions"
+        url: /cpp/foo
   - title: "Intermediate"
-  - title: "Sandbox Pages"
     children:
-      - title: "Hello World"
-        url: /cpp/hello_world
+      - title: "Argument Passing Conventions"
+        url: /cpp/foo
+      - title: "Arrays"
+        url: /cpp/foo
+      - title: "Static and Dynamic Memory Allocations"
+        url: /cpp/foo
+      - title: "Pointers"
+        url: /cpp/foo
+      - title: "File Input and Output"
+        url: /cpp/foo
+      - title: "Structures"
+        url: /cpp/foo
+      - title: "Structure Arrays"
+        url: /cpp/foo
+  - title: "Advanced"
+    children:
+      - title: "Overloading"
+        url: /cpp/foo
+      - title: "Classes"
+        url: /cpp/foo
+      - title: "Memory Management"
+        url: /cpp/foo
+      - title: "Templating"
+        url: /cpp/foo
+  - title: "Sandbox Pages"
+    url: /cpp/sandbox
