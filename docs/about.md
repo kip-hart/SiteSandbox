@@ -40,4 +40,6 @@ He is also an avid Lego fan, a rock collector, and a sailor.
 
 * Build out MATLAB Week 1 pages
 * Build out C++ Week 1 pages
+* Add a C++ getting started page
+    + Figure out online IDE for C++
 * Add details to User Interface on MATLAB Getting Started.
