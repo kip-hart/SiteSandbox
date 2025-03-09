@@ -117,5 +117,7 @@ cpp:
         url: /cpp/foo
       - title: "Templating"
         url: /cpp/foo
+  - title: "List of Examples"
+    url: /cpp/examples/
   - title: "Sandbox Pages"
     url: /cpp/sandbox
