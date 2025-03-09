@@ -327,14 +327,8 @@ defaults:
     values:
       sidebar:
         nav: "cpp"
-  # MATLAB
-  - scope:
-      path: "matlab"
-      type: pages
-    values:
-      sidebar:
-        nav: "matlab"
       toc: true
+  # MATLAB
   - scope:
       path: "matlab/examples"
       type: pages
@@ -342,3 +336,10 @@ defaults:
       sidebar:
         nav: "matlab"
       toc: false
+  - scope:
+      path: "matlab"
+      type: pages
+    values:
+      sidebar:
+        nav: "matlab"
+      toc: true
