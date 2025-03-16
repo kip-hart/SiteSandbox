@@ -14,58 +14,64 @@ matlab:
     url: /matlab/
   - title: "Getting Started"
     url: /matlab/getting_started
-  - title: "Basics"
+  - title: "Background"
     children:
+      - title: "History"
+        url: /matlab/history
       - title: "Computer Architecture"
         url: /matlab/computer_architecture
+      - title: "Binary"
+        url: /matlab/binary
+  - title: "Basics"
+    children:
       - title: "Arithmetic"
-        url: /matlab/foo
+        url: /matlab/arithmetic
       - title: "Variables"
-        url: /matlab/foo
+        url: /matlab/variables
       - title: "User Scripts"
-        url: /matlab/foo
+        url: /matlab/scripts
       - title: "Structures"
-        url: /matlab/foo
+        url: /matlab/structures
       - title: "Arrays"
-        url: /matlab/foo
+        url: /matlab/arrays
       - title: "Native Functions"
-        url: /matlab/foo
+        url: /matlab/native_functions
       - title: "Plotting"
-        url: /matlab/foo
+        url: /matlab/plotting
   - title: "Intermediate"
     children:
       - title: "Complex Numbers"
-        url: /matlab/foo
+        url: /matlab/complex
       - title: "Polynomials"
-        url: /matlab/foo
+        url: /matlab/polynomials
       - title: "Random Numbers"
-        url: /matlab/foo
+        url: /matlab/random
       - title: "Vector and Matrix Operations"
-        url: /matlab/foo
+        url: /matlab/vector_matrix
       - title: "User Functions"
-        url: /matlab/foo
+        url: /matlab/user_functions
       - title: "Global and Persistent Variables"
-        url: /matlab/foo
+        url: /matlab/global_persistent
       - title: "File Input/Output"
-        url: /matlab/foo
+        url: /matlab/file_io
       - title: "Publishing"
-        url: /matlab/foo
+        url: /matlab/publishing
   - title: "Advanced"
     children:
       - title: "Switch-Case Statements"
-        url: /matlab/foo
+        url: /matlab/switch_case
       - title: "Logical Expressions"
-        url: /matlab/foo
+        url: /matlab/logicals
       - title: "Conditionals"
-        url: /matlab/foo
+        url: /matlab/conditionals
       - title: "For Loops"
-        url: /matlab/foo
+        url: /matlab/for_loops
       - title: "While Loops"
-        url: /matlab/foo
+        url: /matlab/while_loops
       - title: "Classes"
-        url: /matlab/foo
+        url: /matlab/classes
       - title: "Profiling"
-        url: /matlab/foo
+        url: /matlab/profiling
   - title: "List of Examples"
     url: /matlab/examples/
   - title: "Sandbox Pages"
