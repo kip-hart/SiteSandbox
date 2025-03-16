@@ -1,3 +1,4 @@
+# Header Nav
 main:
   - title: "MATLAB"
     url: /matlab/
@@ -6,6 +7,8 @@ main:
   - title: "About"
     url: /about/
 
+
+# MATLAB Nav
 matlab:
   - title: "Home"
     url: /matlab/
@@ -14,7 +17,7 @@ matlab:
   - title: "Basics"
     children:
       - title: "Computer Architecture"
-        url: /matlab/foo
+        url: /matlab/computer_architecture
       - title: "Arithmetic"
         url: /matlab/foo
       - title: "Variables"
@@ -68,6 +71,8 @@ matlab:
   - title: "Sandbox Pages"
     url: /matlab/sandbox
 
+
+# C++ Nav
 cpp:
   - title: "Home"
     url: /cpp/
