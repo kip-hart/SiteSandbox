@@ -36,7 +36,7 @@ What is the decimal equivalent of the binary number 100111010?
 #### Solution
 Following the formula above, we can write the binary number in a table:
 
-<div align="center">
+<div style="text-align: center;">
 | $i$ | $2^{N-i}$ | $b_i$ |
 |-----|----------:|------:|
 |   1 |       256 |     1 |
@@ -66,6 +66,17 @@ Follow these steps to convert to binary:
 2. Subtract that power of 2 from the integer
 3. Put a 1 in that power of 2's place
 4. Take the remainder and return to Step 1
+
+{% capture notice-text %}
+### Example: Binary to Decimal Conversion
+#### Question
+Convert the number 87 to binary.
+
+#### Solution
+Following the steps above 
+{% endcapture %}
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
 ## Signed Integers
