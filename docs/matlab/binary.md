@@ -7,13 +7,58 @@ The binary system is a method of representing numbers using only two symbols: 0 
 Unlike the decimal system, which uses ten digits (0–9) to represent numbers, binary uses only these two states.
 Binary is a base-2 system, meaning each digit, or "bit," represents a power of 2.
 
-For example, binary 101 equals decimal 5 because $1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0 = 4 + 0 + 1 = 5$.
+For example, binary 10010 equals decimal 18 because $1 \cdot 2^4 + 0 \cdot 2^3 + 0 \cdot 2^2 + 1 \cdot 2^1 + 0 \cdot 2^0 = 18$.
 
-{% include figure popup=true image_path="/assets/images/binary_number.png" alt="Conversion from binary to decimal" caption="Conversion of binary number to decimal. Image credit: Micromelon Robotics." %}
+<figure style="width: 150px" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/binary_number.png" 
+    alt="Conversion from binary to decimal">
+  <figcaption>Conversion of binary number to decimal. Image credit: Micromelon Robotics.</figcaption>
+</figure> 
 
 ## Converting Binary to Decimal
+As demonstrated above, the process for converting from binary to decimal is a matter of adding powers of two.
+For starters, consider this seemingly trivial statement:
+
+$$ 314 = 3 \cdot 100 + 1 \cdot 10 + 4 \cdot 1 = 3 \cdot 10^2 + 1 \cdot 10^1 + 4 \cdot 10^0 $$
+
+This 314 is in base 10, so we interpret it as 3 hundreds, 1 ten, and 4 ones.
+Binary is a base 2 system, so a similar process converts binary numbers into decimal.
+If each power of 2 in a binary number is given by $b_i$ and the binary number is $N$ digits long,
+then conversion to decimal follows this formula:
+
+$$ d = \sum_{i=1}^{N} b_i 2^{N-i} $$ 
+
+{% capture notice-text %}
+### Example: Binary to Decimal Conversion
+#### Question
+What is the decimal equivalent of the binary number 100111010?
+
+#### Solution
+Following the formula above, we can write the binary number in a table:
+
+| i | $2^{N-i}$ | $b_i$ |
+|---|----------:|------:|
+| 1 |       256 |     1 |
+| 2 |       128 |     0 |
+| 3 |        64 |     0 |
+| 4 |        32 |     1 |
+| 5 |        16 |     1 |
+| 6 |         8 |     1 | 
+| 7 |         4 |     0 |
+| 8 |         2 |     1 |
+| 9 |         1 |     0 |
+
+The decimal equivalent is therefore:
+
+$$ d = 256 + 32 + 16 + 8 + 2 = 314 $$
+
+{% endcapture %}
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Converting Decimal to Binary
+
+## Signed Integers
 
 ## Floating Point Numbers
 
