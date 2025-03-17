@@ -36,7 +36,7 @@ What is the decimal equivalent of the binary number 100111010?
 #### Solution
 Following the formula above, we can write the binary number in a table:
 
-<p style="text-align:center">
+<div align="center">
 | $i$ | $2^{N-i}$ | $b_i$ |
 |-----|----------:|------:|
 |   1 |       256 |     1 |
@@ -48,7 +48,7 @@ Following the formula above, we can write the binary number in a table:
 |   7 |         4 |     0 |
 |   8 |         2 |     1 |
 |   9 |         1 |     0 |
-</p>
+</div>
 
 The decimal equivalent is therefore:
 
@@ -60,6 +60,12 @@ $$ d = 256 + 32 + 16 + 8 + 2 = 314 $$
 
 ## Converting Decimal to Binary
 While converting from binary to decimal requires a single calculation, converting decimal to binary is a more involved process.
+Follow these steps to convert to binary:
+
+1. Find the largest power of 2 less than the integer
+2. Subtract that power of 2 from the integer
+3. Put a 1 in that power of 2's place
+4. Take the remainder and return to Step 1
 
 
 ## Signed Integers
