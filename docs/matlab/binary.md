@@ -31,9 +31,11 @@ $$ d = \sum_{i=1}^{N} b_i 2^{N-i} $$
 {% capture notice-text %}
 ### Example: Binary to Decimal Conversion
 #### Question
+{:.no_toc}
 What is the decimal equivalent of the binary number 100111010?
 
 #### Solution
+{:.no_toc}
 Following the formula above, we can write the binary number in a table:
 
 <div style="display: flex; justify-content: center;">
