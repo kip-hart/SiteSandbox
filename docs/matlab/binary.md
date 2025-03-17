@@ -36,6 +36,7 @@ What is the decimal equivalent of the binary number 100111010?
 #### Solution
 Following the formula above, we can write the binary number in a table:
 
+<p style="text-align:center">
 | $i$ | $2^{N-i}$ | $b_i$ |
 |-----|----------:|------:|
 |   1 |       256 |     1 |
@@ -47,7 +48,7 @@ Following the formula above, we can write the binary number in a table:
 |   7 |         4 |     0 |
 |   8 |         2 |     1 |
 |   9 |         1 |     0 |
-{: .text-center}
+</p>
 
 The decimal equivalent is therefore:
 
