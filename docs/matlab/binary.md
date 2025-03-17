@@ -9,7 +9,7 @@ Binary is a base-2 system, meaning each digit, or "bit," represents a power of 2
 
 For example, binary 10010 equals decimal 18 because $1 \cdot 2^4 + 0 \cdot 2^3 + 0 \cdot 2^2 + 1 \cdot 2^1 + 0 \cdot 2^0 = 18$.
 
-<figure style="width: 150px" class="align-center">
+<figure style="width: 300px" class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/binary_number.png" 
     alt="Conversion from binary to decimal">
   <figcaption>Conversion of binary number to decimal. Image credit: Micromelon Robotics.</figcaption>
@@ -57,6 +57,8 @@ $$ d = 256 + 32 + 16 + 8 + 2 = 314 $$
 <div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Converting Decimal to Binary
+While converting from binary to decimal requires a single calculation, converting decimal to binary is a more involved process.
+
 
 ## Signed Integers
 
