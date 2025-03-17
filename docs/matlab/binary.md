@@ -36,17 +36,18 @@ What is the decimal equivalent of the binary number 100111010?
 #### Solution
 Following the formula above, we can write the binary number in a table:
 
-| i | $2^{N-i}$ | $b_i$ |
-|---|----------:|------:|
-| 1 |       256 |     1 |
-| 2 |       128 |     0 |
-| 3 |        64 |     0 |
-| 4 |        32 |     1 |
-| 5 |        16 |     1 |
-| 6 |         8 |     1 | 
-| 7 |         4 |     0 |
-| 8 |         2 |     1 |
-| 9 |         1 |     0 |
+| $i$ | $2^{N-i}$ | $b_i$ |
+|-----|----------:|------:|
+|   1 |       256 |     1 |
+|   2 |       128 |     0 |
+|   3 |        64 |     0 |
+|   4 |        32 |     1 |
+|   5 |        16 |     1 |
+|   6 |         8 |     1 | 
+|   7 |         4 |     0 |
+|   8 |         2 |     1 |
+|   9 |         1 |     0 |
+{: .text-center}
 
 The decimal equivalent is therefore:
 
