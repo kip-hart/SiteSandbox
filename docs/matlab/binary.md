@@ -44,7 +44,7 @@ Following the formula above, we can write the binary number in a table:
 |   3 |        64 |     0 |
 |   4 |        32 |     1 |
 |   5 |        16 |     1 |
-|   6 |         8 |     1 | 
+|   6 |         8 |     1 |
 |   7 |         4 |     0 |
 |   8 |         2 |     1 |
 |   9 |         1 |     0 |
@@ -75,12 +75,25 @@ Convert the number 87 to binary.
 #### Solution
 Following the steps above, the highest power of 2 less than 87 is 64.
 Subtracting 64 from 87 yields a remainder of 23.
-The next highest power of 2 is 16, so subtract that from 23 yields a remainder of 5.
-The next highest power of 2 is 4, so subtracting that from 5 yields a remainder of 1.
+The next highest power of 2 is 16, so subtract that from 23 yields a remainder of 7.
+The next highest power of 2 is 4, so subtracting that from 7 yields a remainder of 3.
+The next highest power of 2 is 2, so subtracting that from 3 yields a remainder of 1.
 The next highest power of 2 is 1, so subtracting that from 1 yields a remainder of 0.
-Putting all this together yields 1010101.
+Putting all this together yields **1010111**.
 Note that the zeros here are put in powers of 2 that do not appear in the remainder-finding process.
-Tabulating the results 
+To make this clearer, here is a table with the conversion of 87 to binary.
+
+| $i$ | $2^{N-i}$ | $b_i$ |
+|-----|----------:|------:|
+|   1 |        64 |     1 |
+|   2 |        32 |     0 |
+|   3 |        16 |     1 |
+|   4 |         8 |     0 |
+|   5 |         4 |     1 |
+|   6 |         2 |     1 |
+|   7 |         1 |     1 |
+
+
 {% endcapture %}
 
 <div class="notice--info">{{ notice-text | markdownify }}</div>
@@ -101,6 +114,7 @@ This simplicity allows for reliable data representation and processing within el
 
  * A single character, like 'A', is represented by a binary code using standards such as ASCII. 'A' in ASCII is 01000001. The table below shows the decimal and binary representations for all capital letters in ASCII.
 
+<div style="text-align: center;">
 | Letter | Decimal | Binary     |
 |--------|---------|------------|
 | A      | 65      | 01000001   |
@@ -129,6 +143,7 @@ This simplicity allows for reliable data representation and processing within el
 | X      | 88      | 01011000   |
 | Y      | 89      | 01011001   |
 | Z      | 90      | 01011010   |
+</div>
 
 2. Logic and Operations: Binary is the foundation of logic gates, which are the building blocks of a computer's processor. Logic gates perform operations like AND, OR, and NOT using binary input.
 
