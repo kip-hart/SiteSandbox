@@ -72,9 +72,11 @@ Follow these steps to convert to binary:
 {% capture notice-text %}
 ### Example: Binary to Decimal Conversion
 #### Question
+{:.no_toc}
 Convert the number 87 to binary.
 
 #### Solution
+{:.no_toc}
 Following the steps above, the highest power of 2 less than 87 is 64.
 Subtracting 64 from 87 yields a remainder of 23.
 The next highest power of 2 is 16, so subtract that from 23 yields a remainder of 7.
