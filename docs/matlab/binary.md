@@ -36,7 +36,7 @@ What is the decimal equivalent of the binary number 100111010?
 #### Solution
 Following the formula above, we can write the binary number in a table:
 
-<div style="text-align: center;">
+<div style="display: flex; justify-content: center;">
 | $i$ | $2^{N-i}$ | $b_i$ |
 |-----|----------:|------:|
 |   1 |       256 |     1 |
@@ -62,10 +62,10 @@ $$ d = 256 + 32 + 16 + 8 + 2 = 314 $$
 While converting from binary to decimal requires a single calculation, converting decimal to binary is a more involved process.
 Follow these steps to convert to binary:
 
-1. Find the largest power of 2 less than the integer
+1. Find the largest power of 2 less than or equal to the integer
 2. Subtract that power of 2 from the integer
 3. Put a 1 in that power of 2's place
-4. Take the remainder and return to Step 1
+4. If the remainder is greater than 0, return to Step 1 with the remainder
 
 {% capture notice-text %}
 ### Example: Binary to Decimal Conversion
@@ -73,7 +73,14 @@ Follow these steps to convert to binary:
 Convert the number 87 to binary.
 
 #### Solution
-Following the steps above 
+Following the steps above, the highest power of 2 less than 87 is 64.
+Subtracting 64 from 87 yields a remainder of 23.
+The next highest power of 2 is 16, so subtract that from 23 yields a remainder of 5.
+The next highest power of 2 is 4, so subtracting that from 5 yields a remainder of 1.
+The next highest power of 2 is 1, so subtracting that from 1 yields a remainder of 0.
+Putting all this together yields 1010101.
+Note that the zeros here are put in powers of 2 that do not appear in the remainder-finding process.
+Tabulating the results 
 {% endcapture %}
 
 <div class="notice--info">{{ notice-text | markdownify }}</div>
