@@ -148,7 +148,7 @@ This simplicity allows for reliable data representation and processing within el
 
 2. Logic and Operations: Binary is the foundation of logic gates, which are the building blocks of a computer's processor.
    Logic gates perform operations like AND, OR, and NOT using binary input.
-   
+
    * The AND gate outputs 1 only if both inputs are 1.
    * The OR gate outputs 1 if at least one input is 1.
    * The NOT gate outputs 1 if the input is 0.
@@ -157,12 +157,12 @@ This simplicity allows for reliable data representation and processing within el
 
 4. Arithmetic Operations: Computers perform calculations in binary. For example, adding two binary numbers like 101 and 011 follows the same rules as decimal addition, with carryovers:
 
-```text
-    101
-  + 011
-  -----
-   1000
-```
+   ```text
+     101
+   + 011
+   -----
+    1000
+   ```
 
 ## The Importance of Binary
 The binary system is fundamental to the operation of modern mechanical and aerospace engineering systems.
