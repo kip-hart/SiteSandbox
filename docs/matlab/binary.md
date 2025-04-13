@@ -112,9 +112,10 @@ These states can easily be represented as 1 (on) and 0 (off) in binary.
 This simplicity allows for reliable data representation and processing within electronic circuits.
 
 ## How Computers Use Binary
-1. Data Representation: Every piece of data in a computer — whether it's text, images, audio, or video—is ultimately stored as binary numbers. For example:
-
- * A single character, like 'A', is represented by a binary code using standards such as ASCII. 'A' in ASCII is 01000001. The table below shows the decimal and binary representations for all capital letters in ASCII.
+1. Data Representation: Every piece of data in a computer — whether it's text, images, audio, or video—is ultimately stored as binary numbers.
+For example a single character, such as 'A', is represented by a binary code using standards such as ASCII.
+'A' in ASCII is 01000001.
+The table below shows the decimal and binary representations for all capital letters in ASCII.
 
 | Letter | Decimal | Binary     |
 |--------|---------|------------|
