@@ -38,16 +38,12 @@ was designed to look like a slide rule from above.
     <figcaption>Diagram showing the use of a slide rule.</figcaption>
 </figure>
 
----
-
 ## The Age of Machines: 17th to 19th Century
 The pursuit of automation led to groundbreaking inventions like **Blaise Pascal's Pascaline** in 1642, a mechanical calculator capable of addition and subtraction. Later, **Charles Babbage's Analytical Engine** (1837) introduced concepts that closely resemble modern computers, including programmable instructions via punch cards.
 
 **Ada Lovelace**, often regarded as the first programmer, conceptualized using the Analytical Engine to compute more than mere numbers—pioneering the idea of general-purpose computation.
 
 **Suggested Image:** An illustration of Pascal’s calculator alongside a conceptual diagram of the Analytical Engine.
-
----
 
 ## The Rise of Electronic Computing: 20th Century
 The early 20th century saw a shift from mechanical to electronic computation. Key milestones include:
@@ -59,7 +55,6 @@ During this time, aerospace engineers began using computation to simulate flight
 
 **Suggested Image:** A photograph of the ENIAC computer in operation, with engineers working alongside the machine.
 
----
 
 ## Computational Power in Engineering: Late 20th Century
 The introduction of personal computers in the 1980s democratized access to computation. Engineers adopted software like MATLAB (introduced in 1984) and CAD tools for precision design and analysis.
@@ -68,7 +63,6 @@ Parallel computing and supercomputers became instrumental in solving large-scale
 
 **Suggested Image:** A timeline showing the progression of computational tools like MATLAB, CAD software, and supercomputers.
 
----
 
 ## The Modern Era: 21st Century and Beyond
 Modern computation is marked by advancements in artificial intelligence (AI), cloud computing, and quantum computing:
@@ -80,11 +74,7 @@ Today, engineers leverage computational power to innovate in autonomous systems,
 
 **Suggested Image:** A futuristic rendering of a quantum computer connected to engineering simulations.
 
----
-
 ## Conclusion
 The history of computation is a story of human ingenuity, driven by the desire to solve complex problems efficiently. From ancient mechanical devices to cutting-edge quantum systems, computation continues to empower mechanical and aerospace engineers to push boundaries and explore new frontiers.
 
 **Suggested Image:** A conceptual image of an engineer working in a modern computational environment, with overlays of simulations and calculations.
-
----
