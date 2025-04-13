@@ -28,8 +28,8 @@ was designed to look like a slide rule from above.
 {: .notice}
 
 <figure>
-	<a title="Jccsvq, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg">
-    <img width="512" alt="Traditional suanpan (Chinese abacus) illustrating the use of suspended beads" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg/512px-Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg"></a>
+	<a href="https://upload.wikimedia.org/wikipedia/commons/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg">
+    <img alt="Traditional suanpan (Chinese abacus) illustrating the use of suspended beads" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg/512px-Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg"></a>
 	<figcaption>Traditional suanpan (Chinese abacus) illustrating the use of suspended beads.</figcaption>
 </figure>
 
