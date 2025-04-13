@@ -33,9 +33,9 @@ was designed to look like a slide rule from above.
 	<figcaption>Traditional suanpan (Chinese abacus) illustrating the use of suspended beads.</figcaption>
 </figure>
 
-<figure>
+<figure class="align-center">
     <a title="Pearson Scott Foresman, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Slide_Rule_%28PSF%29.png"><img width="512" alt="Slide Rule (PSF)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Slide_Rule_%28PSF%29.png/512px-Slide_Rule_%28PSF%29.png?20200326085333"></a>
-    <figcaption>Diagram showing the use of a slide rule.</figcaption>
+    <figcaption class="figure-caption text-center">Diagram showing the use of a slide rule.</figcaption>
 </figure>
 
 ## The Age of Machines: 17th to 19th Century
