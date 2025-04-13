@@ -118,7 +118,6 @@ This simplicity allows for reliable data representation and processing within el
 
  * A single character, like 'A', is represented by a binary code using standards such as ASCII. 'A' in ASCII is 01000001. The table below shows the decimal and binary representations for all capital letters in ASCII.
 
-<div style="display: flex; justify-content: center;">
 | Letter | Decimal | Binary     |
 |--------|---------|------------|
 | A      | 65      | 01000001   |
@@ -147,7 +146,7 @@ This simplicity allows for reliable data representation and processing within el
 | X      | 88      | 01011000   |
 | Y      | 89      | 01011001   |
 | Z      | 90      | 01011010   |
-</div>
+{: style="text-align: center;"}
 
 2. Logic and Operations: Binary is the foundation of logic gates, which are the building blocks of a computer's processor. Logic gates perform operations like AND, OR, and NOT using binary input.
 
