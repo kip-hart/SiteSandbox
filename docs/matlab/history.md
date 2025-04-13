@@ -27,6 +27,12 @@ Glenn L. Martin Hall, on the University of Maryland College Park campus,
 was designed to look like a slide rule from above. ([aerial view](https://hdl.handle.net/1903.1/58268))
 {: .notice}
 
+It is worth noting at this point that the abacus adds and subtracts in discrete steps, while the slide rule is continuous.
+For example, an abacus cannot add an irrational number (e.g. $$\pi$$) without rounding first.
+Slide rules can be used without rounding, limited instead by the user's ability to line up the rules and cursor.
+Though this may seem like an advantage for continuous computing machines, discrete machines would overtake them as technology advanced. 
+Finer resolution, analogous to having many rows on an abacus for the tenths, hundredths, thousandths, and so on, would make round-off error nearly imperceptible.
+
 <figure class="align-center">
 	<a title="Jccsvq, CC0, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg">
     <img alt="Traditional suanpan (Chinese abacus) illustrating the use of suspended beads" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg/512px-Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg"></a>
@@ -40,15 +46,27 @@ was designed to look like a slide rule from above. ([aerial view](https://hdl.ha
 
 ## The Age of Machines: 17th to 19th Century
 While the slide rule accelerated a long list of mathematical operations, addition and subtraction were not on that list.
-Decades later in 1642, [Blaise Pascal](https://www.britannica.com/biography/Blaise-Pascal) invented the [Pascaline](https://www.britannica.com/technology/Pascaline): a mechanical calculator capable of addition and subtraction.
+Decades later in 1642, [Blaise Pascal](https://lemelson.mit.edu/resources/blaise-pascal) invented the Pascaline: a mechanical calculator capable of addition and subtraction.
 It used a series of interlocking gears and dials, where each dial represented a digit.
-Turning the dials would rotate the gears, automating calculations and enabling users to compute sums efficiently.
+Turning the dials would rotate the gears, calculating sums and differences automatically.
+
+[Gottfried Wilhelm Leibniz](http://ds-wordpress.haverford.edu/bitbybit/bit-by-bit-contents/chapter-one/1-8-leibniz-and-the-stepped-reckoner/)
+improved on the Pascaline in 1673 with the invention of the Leibniz wheel.
+The wheel was a gear where the teeth had different widths,
+so adding a specific number was a matter of sliding the wheel to set how many teeth engaged an axle.
+All four fundamental arithmetic operations could be performed with a single Leibniz step reckoner,
+a machine with a Leibniz wheel representing each of the tens places.
+The stepped reckoner would remain the primary arithmetic machine in use for the next 150 years.
+
+**Image List**
+- Pascaline
+- Stepped reckoner
 
 Later, **Charles Babbage's Analytical Engine** (1837) introduced concepts that closely resemble modern computers, including programmable instructions via punch cards.
 
 **Ada Lovelace**, often regarded as the first programmer, conceptualized using the Analytical Engine to compute more than mere numbers—pioneering the idea of general-purpose computation.
 
-**Suggested Image:** An illustration of Pascal’s calculator alongside a conceptual diagram of the Analytical Engine.
+**Image List**
 
 ## The Rise of Electronic Computing: 20th Century
 The early 20th century saw a shift from mechanical to electronic computation. Key milestones include:
