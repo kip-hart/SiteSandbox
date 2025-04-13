@@ -23,8 +23,8 @@ In the early 1620s, [William Oughtred](https://www.britannica.com/biography/Will
 Use of the slide rule only declined in the 1970s when they were replaced by handheld calculators.
 To learn more about multiplying and dividing with a slide rule, visit [Basic Slide Rule Use](https://efcms.engr.utk.edu/ef105-2024-01/slide_rule_fun.pdf).
 
-Glenn L. Martin Hall, on the University of Maryland College Park campus,
-was designed to look like a slide rule from above. 
+[Glenn L. Martin Hall](https://hdl.handle.net/1903.1/58268), on the University of Maryland College Park campus,
+was designed to look like a slide rule from above.
 {: .notice}
 
 <figure class="align-center">
