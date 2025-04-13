@@ -27,14 +27,14 @@ Glenn L. Martin Hall, on the University of Maryland College Park campus,
 was designed to look like a slide rule from above. 
 {: .notice}
 
-<figure>
+<figure class="align-center">
 	<a href="https://upload.wikimedia.org/wikipedia/commons/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg">
     <img alt="Traditional suanpan (Chinese abacus) illustrating the use of suspended beads" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg/512px-Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg"></a>
 	<figcaption>Traditional suanpan (Chinese abacus) illustrating the use of suspended beads.</figcaption>
 </figure>
 
 <figure>
-    <a title="Pearson Scott Foresman, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Slide_Rule_(PSF).png"><img width="512" alt="Slide Rule (PSF)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Slide_Rule_%28PSF%29.png/512px-Slide_Rule_%28PSF%29.png?20200326085333"></a>
+    <a title="Pearson Scott Foresman, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Slide_Rule_%28PSF%29.png"><img width="512" alt="Slide Rule (PSF)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Slide_Rule_%28PSF%29.png/512px-Slide_Rule_%28PSF%29.png?20200326085333"></a>
     <figcaption>Diagram showing the use of a slide rule.</figcaption>
 </figure>
 
