@@ -116,7 +116,6 @@ This simplicity allows for reliable data representation and processing within el
 For example a single character, such as 'A', is represented by a binary code using standards such as ASCII.
 'A' in ASCII is 01000001.
 The table below shows the decimal and binary representations for all capital letters in ASCII.
-
 | Letter | Decimal | Binary     |
 |--------|---------|------------|
 | A      | 65      | 01000001   |
