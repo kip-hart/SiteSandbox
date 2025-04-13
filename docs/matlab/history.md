@@ -18,8 +18,8 @@ The foundations of computation began with mechanical devices designed to aid cal
 Ancient cultures like the Babylonians and Egyptians used tools such as the abacus for arithmetic tasks.
 Farmers would keep track of how many cattle they owned, for example, using the abacus.
 
-A significant leap occurred in 1614, when John Napier invented logarithms.
-Shortly after, the slide rule was invented and fundamentally changed the way we performed multiplication, division, exponentiation, trigonometry, and solving the quadratic formula.
+A significant leap occurred in 1614, when [John Napier](https://www.britannica.com/biography/John-Napier) invented logarithms.
+In the early 1620s, [William Oughtred](https://www.britannica.com/biography/William-Oughtred) invented the slide rule and fundamentally changed the way we performed multiplication, division, exponentiation, trigonometry, and solving the quadratic formula.
 Use of the slide rule only declined in the 1970s when they were replaced by handheld calculators.
 To learn more about multiplying and dividing with a slide rule, visit [Basic Slide Rule Use](https://efcms.engr.utk.edu/ef105-2024-01/slide_rule_fun.pdf).
 
@@ -39,7 +39,8 @@ was designed to look like a slide rule from above.
 </figure>
 
 ## The Age of Machines: 17th to 19th Century
-The pursuit of automation led to groundbreaking inventions like **Blaise Pascal's Pascaline** in 1642, a mechanical calculator capable of addition and subtraction. Later, **Charles Babbage's Analytical Engine** (1837) introduced concepts that closely resemble modern computers, including programmable instructions via punch cards.
+While 
+The pursuit of automation led to groundbreaking inventions like Blaise Pascal's Pascaline in 1642, a mechanical calculator capable of addition and subtraction. Later, **Charles Babbage's Analytical Engine** (1837) introduced concepts that closely resemble modern computers, including programmable instructions via punch cards.
 
 **Ada Lovelace**, often regarded as the first programmer, conceptualized using the Analytical Engine to compute more than mere numbers—pioneering the idea of general-purpose computation.
 
