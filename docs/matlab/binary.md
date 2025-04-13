@@ -38,7 +38,6 @@ What is the decimal equivalent of the binary number 100111010?
 {:.no_toc}
 Following the formula above, we can write the binary number in a table:
 
-<p align="center">
 | $i$ | $2^{N-i}$ | $b_i$ |
 |-----|----------:|------:|
 |   1 |       256 |     1 |
@@ -50,7 +49,6 @@ Following the formula above, we can write the binary number in a table:
 |   7 |         4 |     0 |
 |   8 |         2 |     1 |
 |   9 |         1 |     0 |
-</p>
 
 The decimal equivalent is therefore:
 
@@ -118,8 +116,6 @@ This simplicity allows for reliable data representation and processing within el
 
  * A single character, like 'A', is represented by a binary code using standards such as ASCII. 'A' in ASCII is 01000001. The table below shows the decimal and binary representations for all capital letters in ASCII.
 
-<center>
-
 | Letter | Decimal | Binary     |
 |--------|---------|------------|
 | A      | 65      | 01000001   |
@@ -148,8 +144,6 @@ This simplicity allows for reliable data representation and processing within el
 | X      | 88      | 01011000   |
 | Y      | 89      | 01011001   |
 | Z      | 90      | 01011010   |
-
-</center>
 
 2. Logic and Operations: Binary is the foundation of logic gates, which are the building blocks of a computer's processor. Logic gates perform operations like AND, OR, and NOT using binary input.
 
