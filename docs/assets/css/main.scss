@@ -1,7 +1,8 @@
 @charset "utf-8";
 
+// custom CSS
+@import "table_centering";
+
+// defaults
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
-// custom table centering
-@import "table_centering";

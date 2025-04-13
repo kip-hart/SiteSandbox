@@ -23,8 +23,8 @@ In the early 1620s, [William Oughtred](https://www.britannica.com/biography/Will
 Use of the slide rule only declined in the 1970s when they were replaced by handheld calculators.
 To learn more about multiplying and dividing with a slide rule, visit [Basic Slide Rule Use](https://efcms.engr.utk.edu/ef105-2024-01/slide_rule_fun.pdf).
 
-[Glenn L. Martin Hall](https://hdl.handle.net/1903.1/58268), on the University of Maryland College Park campus,
-was designed to look like a slide rule from above.
+Glenn L. Martin Hall, on the University of Maryland College Park campus,
+was designed to look like a slide rule from above. ([aerial view](https://hdl.handle.net/1903.1/58268))
 {: .notice}
 
 <figure class="align-center">
@@ -39,8 +39,12 @@ was designed to look like a slide rule from above.
 </figure>
 
 ## The Age of Machines: 17th to 19th Century
-While 
-The pursuit of automation led to groundbreaking inventions like Blaise Pascal's Pascaline in 1642, a mechanical calculator capable of addition and subtraction. Later, **Charles Babbage's Analytical Engine** (1837) introduced concepts that closely resemble modern computers, including programmable instructions via punch cards.
+While the slide rule accelerated a long list of mathematical operations, addition and subtraction were not on that list.
+Decades later in 1642, [Blaise Pascal](https://www.britannica.com/biography/Blaise-Pascal) invented the [Pascaline](https://www.britannica.com/technology/Pascaline): a mechanical calculator capable of addition and subtraction.
+It used a series of interlocking gears and dials, where each dial represented a digit.
+Turning the dials would rotate the gears, automating calculations and enabling users to compute sums efficiently.
+
+Later, **Charles Babbage's Analytical Engine** (1837) introduced concepts that closely resemble modern computers, including programmable instructions via punch cards.
 
 **Ada Lovelace**, often regarded as the first programmer, conceptualized using the Analytical Engine to compute more than mere numbers—pioneering the idea of general-purpose computation.
 
