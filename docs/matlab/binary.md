@@ -116,6 +116,7 @@ This simplicity allows for reliable data representation and processing within el
 For example a single character, such as 'A', is represented by a binary code using standards such as ASCII.
 'A' in ASCII is 01000001.
 The table below shows the decimal and binary representations for all capital letters in ASCII.
+<br>
 | Letter | Decimal | Binary     |
 |--------|---------|------------|
 | A      | 65      | 01000001   |
@@ -147,9 +148,9 @@ The table below shows the decimal and binary representations for all capital let
 
 2. Logic and Operations: Binary is the foundation of logic gates, which are the building blocks of a computer's processor. Logic gates perform operations like AND, OR, and NOT using binary input.
 
- * The AND gate outputs 1 only if both inputs are 1.
- * The OR gate outputs 1 if at least one input is 1.
- * The NOT gate outputs 1 if the input is 0.
+  * The AND gate outputs 1 only if both inputs are 1.
+  * The OR gate outputs 1 if at least one input is 1.
+  * The NOT gate outputs 1 if the input is 0.
 
 3. Storage: Binary is also used in computer memory. A bit is the smallest unit of data, and groups of 8 bits form a byte, which is the standard unit for storing information. The letters in the above ASCII table all use 8 bits. Therefore, each letter is a single byte. Similarly, integers can be stored in several common multiples of 8 bits. Using 32 and 64 bits are common, however this is entirely dependent on the use case. For example, a quadrotor drone has 4 rotors, so only 2 bits are necessary to identify a rotor.
 
