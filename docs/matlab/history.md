@@ -7,16 +7,18 @@ Computation, at its core, involves the processing of data and execution of instr
 From ancient mechanical devices to modern supercomputers, the field of computation has revolutionized how
 engineers, scientists, and mathematicians address complex challenges.
 
-Modern engineers often perform computations on personal computers when it is more time-intensive or
-more error-prone to do by hand.
+Modern engineers often perform computations on personal computers, when it would be more time-intensive or
+error-prone to do by hand.
 Some computations, such as simulating turbulent flows, may grow beyond the limits of a personal computer and require
 the use of computer clusters.
-Lastly, some computations must be performed remotely, such as a rover navigating on Mars or a rocket steering itself through launch.
+Others may be performed remotely, such as a rocket steering itself through launch.
+This page highlights the most important computing advances through history, from the abacus to the modern computer.
 
 ## Early Beginnings: Mechanical Computation
 The foundations of computation began with mechanical devices designed to aid calculations.
 Ancient cultures like the Babylonians and Egyptians used tools such as the abacus for arithmetic tasks.
-Farmers would keep track of how many cattle they owned, for example, using the abacus.
+Farmers, for example, would use the abacus to track how many heads of cattle they owned.
+The Inca used a system of knots to both add large numbers and record the individual terms of the sum.
 
 A significant leap occurred in 1614, when [John Napier](https://www.britannica.com/biography/John-Napier) invented logarithms.
 In the early 1620s, [William Oughtred](https://www.britannica.com/biography/William-Oughtred) invented the slide rule and fundamentally changed the way we performed multiplication, division, exponentiation, trigonometry, and solving the quadratic formula.
@@ -71,13 +73,14 @@ The stepped reckoner would remain the primary arithmetic machine in use for the 
 The Industrial Revolution enabled mass production of nearly everything, including textiles and arithmetic machines.
 In 1804, [Joseph Marie Jacquard](https://www.britannica.com/biography/Joseph-Marie-Jacquard) invented a programmable loom that could weave a wide variety of complex patterns,
 with each pattern punched into a sequence of cards.
-This improvement in automation, along with several other innovations, lead to significant job losses for skilled textile workers,ignited conflicts across England, and highlighted the social impact of automating people's jobs.
+This improvement in automation, along with several other innovations, lead to significant job losses for skilled textile workers,
+ignited conflicts across England, and highlighted the social impact of automating people's jobs.
 In 1820, [Charles Xavier Thomas](http://ds-wordpress.haverford.edu/bitbybit/bit-by-bit-contents/chapter-two/the-arithmometer-and-numerical-tables/)
 used the same operating principles as the step reckoner, improving on it with a design that could be mass produced.
-His design would not reach the market until 1851, in part due to the British government shifting focus to the difference
+His design would not reach the market until 1851, in part due to a shift in the British government's focus to the difference
 engine invented by [Charles Babbage](https://www.britannica.com/biography/Charles-Babbage).
 
-The Babbage [difference engine](https://www.britannica.com/technology/Difference-Engine) was notable for its ability to evaluate polynomials. 
+The Babbage [difference engine](https://www.britannica.com/technology/Difference-Engine) was notable for its ability to evaluate polynomials.
 Previously, transcendental functions like sine and cosine were evaluated by looking up values in tables.
 The publishers for these tables calculated and recorded values by hand - for a limited number of angles.
 It was known for a century by this point that these functions could be approximated by a polynomial series, such as
@@ -87,11 +90,11 @@ $$\sin(x) \approx x - \frac{x^3}{3!} + \frac{x^5}{5!} + ...$$
 Babbage's difference engine could be set with the coefficients of a polynomial, then evaluated for a specific input value.
 Despite his success with the difference engine, Babbage was inspired by Jacquard to develop a programmable machine - one
 capable of performing any calculation.
-He set to work on the mechanical design of an [analytical engine](https://blogs.bodleian.ox.ac.uk/adalovelace/2018/07/26/ada-lovelace-and-the-analytical-engine/), while [Ada Lovelace](https://www.britannica.com/biography/Ada-Lovelace) wrote instructions for the machine, making her the first programmer.
-The significant advancement with the analytical engine was that the output of one calculation could be passed as input to another calculation.
-The specific operations performed in each calculation step would be defined using a punch card system,
+He set to work on the mechanical design of an [analytical engine](https://blogs.bodleian.ox.ac.uk/adalovelace/2018/07/26/ada-lovelace-and-the-analytical-engine/), while [Ada Lovelace](https://www.britannica.com/biography/Ada-Lovelace) wrote instructions for the machine, making her the first computer programmer.
+The significant improvement with the analytical engine was that the output of one calculation could be passed as input to another calculation.
+The specific operations in each calculation step would be defined by the user with a punch card system,
 inspired by the Jacquard looms. 
-Though the analytical engine would never be built, the concepts of listing operations and storing values in memory are
+Though the analytical engine would never be built, the concepts of listing operations and storing values in memory became
 fundamental to modern computing.
 
 <figure class="align-center">
@@ -114,7 +117,7 @@ fundamental to modern computing.
     <figcaption class="figure-caption text-center">Babbage analytical engine, with the "CPU" on the left and "memory" on the right. Science Museum (London).</figcaption>
 </figure>
 
-The video below demonstrates the working of Babbage's Difference Engine No. 2, an improved design that was never realized until 1991.
+The video below demonstrates the working of Babbage's Difference Engine No. 2, an improved design that was realized later in 1991.
 
 {% include video id="0anIyVGeWOI" provider="youtube" %}
 
