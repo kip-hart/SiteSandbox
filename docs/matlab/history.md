@@ -71,7 +71,7 @@ The stepped reckoner would remain the primary arithmetic machine in use for the 
 The Industrial Revolution enabled mass production of nearly everything, including textiles and arithmetic machines.
 In 1804, [Joseph Marie Jacquard](https://www.britannica.com/biography/Joseph-Marie-Jacquard) invented a programmable loom that could weave a wide variety of complex patterns,
 with each pattern punched into a sequence of cards.
-This improvement in automation, along with several other innovations, lead to significant job losses for skilled textile workers,ignited conflicts across England, and highlighted the impact of automating people's jobs.
+This improvement in automation, along with several other innovations, lead to significant job losses for skilled textile workers,ignited conflicts across England, and highlighted the social impact of automating people's jobs.
 In 1820, [Charles Xavier Thomas](http://ds-wordpress.haverford.edu/bitbybit/bit-by-bit-contents/chapter-two/the-arithmometer-and-numerical-tables/)
 used the same operating principles as the step reckoner, improving on it with a design that could be mass produced.
 His design would not reach the market until 1851, in part due to the British government shifting focus to the difference
@@ -94,11 +94,25 @@ inspired by the Jacquard looms.
 Though the analytical engine would never be built, the concepts of listing operations and storing values in memory are
 fundamental to modern computing.
 
-**Image List**
-- Jacquard loom
-- Arithmometer
-- Difference engine
-- analytic engine
+<figure class="align-center">
+    <a title="Tulipasylvestris, CC0, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/e/e5/Jacquardv%C3%A4vstol_med_stansade_h%C3%A5lkort_Norrk%C3%B6pings_stadsmuseum.jpg"><img width="256" alt="Jacquardvävstol med stansade hålkort Norrköpings stadsmuseum" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Jacquardv%C3%A4vstol_med_stansade_h%C3%A5lkort_Norrk%C3%B6pings_stadsmuseum.jpg/256px-Jacquardv%C3%A4vstol_med_stansade_h%C3%A5lkort_Norrk%C3%B6pings_stadsmuseum.jpg?20210904193817"></a>
+    <figcaption class="figure-caption text-center">Jacquard loom in Norrkoping City Museum (Sweden).</figcaption>
+</figure>
+
+<figure class="align-center">
+    <a title="Ezrdr, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/1/13/Arithmometre_%28cropped%29.jpg"><img width="512" alt="Arithmometre (cropped)" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Arithmometre_%28cropped%29.jpg?20231116170352"></a>
+    <figcaption class="figure-caption text-center">Arithmometer from the late 1890s.</figcaption>
+</figure>
+
+<figure class="align-center">
+    <a title="Sebastian Wallroth, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/f/f9/Babbages_difference_engine_1832.jpg"><img width="512" alt="Babbages difference engine 1832" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Babbages_difference_engine_1832.jpg/512px-Babbages_difference_engine_1832.jpg?20120506181435"></a>
+    <figcaption class="figure-caption text-center">Babbage difference engine No. 1 in Science Museum (London).</figcaption>
+</figure>
+
+<figure class="align-center">
+    <a href="https://computerhistory.org/wp-content/uploads/2019/07/engine-structure.jpg"><img src="https://computerhistory.org/wp-content/uploads/2019/07/engine-structure.jpg" alt="drawing of the Babbage analytical engine."></a>
+    <figcaption class="figure-caption text-center">Babbage analytical engine, with the "CPU" on the left and "memory" on the right. Science Museum (London).</figcaption>
+</figure>
 
 The video below demonstrates the working of Babbage's Difference Engine No. 2, an improved design that was never realized until 1991.
 
