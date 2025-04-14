@@ -83,14 +83,56 @@ engine invented by [Charles Babbage](https://www.britannica.com/biography/Charle
 The Babbage [difference engine](https://www.britannica.com/technology/Difference-Engine) was notable for its ability to evaluate polynomials.
 Previously, transcendental functions like sine and cosine were evaluated by looking up values in tables.
 The publishers for these tables calculated and recorded values by hand - for a limited number of angles.
+Babbage wanted to eliminate all sources of human error from tabulating these values and devised a machine that could
+calculate the next row in a table based on the previous row and some intermediate values.
 It was known for a century by this point that these functions could be approximated by a polynomial series, such as
 
 $$\sin(x) \approx x - \frac{x^3}{3!} + \frac{x^5}{5!} + ...$$
 
 Babbage's difference engine could be set with the coefficients of a polynomial, then evaluated for a specific input value.
-Despite his success with the difference engine, Babbage was inspired by Jacquard to develop a programmable machine - one
-capable of performing any calculation.
+Charles Babbage spent 19 years developing and building the difference engine, 
+abandoning the project to create a programmable machine like the Jacquard looms - an engine capable of performing any sequence of calculations.
 He set to work on the mechanical design of an [analytical engine](https://blogs.bodleian.ox.ac.uk/adalovelace/2018/07/26/ada-lovelace-and-the-analytical-engine/), while [Ada Lovelace](https://www.britannica.com/biography/Ada-Lovelace) wrote instructions for the machine, making her the first computer programmer.
+
+{% capture notice-text %}
+### Example: Finite Difference Table
+#### Question
+{:.no_toc}
+Compute the first 5 entries in a finite difference table for the polynomial $f(x) = x-1000 x^5$, starting from $x=0$ and using a step size of $\Delta x = 0.01$. 
+Compare the final value of $f(x)$ in the table with $sin(x)$ computed by calculator and find the percent error.
+Use the following pre-computed differences:
+
+| x | f(x) | \Delta f | \Delta_2 f | \Delta_3 f | \Delta_4 f | \Delta_5 f |
+|---|------|----------|------------|------------|------------|------------|
+| 0 |    0 |     0.01 |      -3e-6 |     -1.5e5 |    -2.4e-5 |    -1.2e-5 |
+
+
+#### Solution
+{:.no_toc}
+
+We start by populating the first row with the pre-computed differences.
+In the next row, $\Delta_5$ remains constant, while $\Delta_4^{(new)}=\Delta_4^{(old)} + \Delta_5^{(old)}$.
+The same applies for $\Delta_3$ and so on for the entire row.
+This procedure is repeated for each row until we have 5 new rows.
+Values below are given with 3 significant digits, but calculated with machine precision.
+
+| x    | f(x)    | \Delta f | \Delta_2 f | \Delta_3 f | \Delta_4 f | \Delta_5 f |
+|------|---------|----------|------------|------------|------------|------------|
+| 0    |    0    |     0.01 |   -3.00e-6 |   -1.50e-5 |   -2.40e-5 |   -1.20e-5 |
+| 0.01 | 1.00e-2 |     0.01 |   -1.80e-5 |   -3.90e-5 |   -3.60e-5 |   -1.20e-5 |
+| 0.02 | 2.00e-2 |  9.98e-3 |   -5.70e-5 |   -7.50e-5 |   -4.80e-5 |   -1.20e-5 |
+| 0.03 | 3.00e-2 |  9.92e-3 |   -1.32e-4 |   -1.23e-4 |   -6.00e-5 |   -1.20e-5 |
+| 0.04 | 3.99e-2 |  9.79e-3 |   -2.55e-4 |   -1.83e-4 |   -7.20e-5 |   -1.20e-5 |
+| 0.05 | 4.97e-2 |  9.53e-3 |   -4.38e-4 |   -2.55e-4 |   -8.40e-5 |   -1.20e-5 |
+
+The final value in the table is 0.0496875.
+Computing the polynomial directly, using Microsoft Excel, yields 0.0496875.
+There is 0% error between the method of finite differences and the direct calculation.
+
+{% endcapture %}
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>
+
 The significant improvement with the analytical engine was that the output of one calculation could be passed as input to another calculation.
 The specific operations in each calculation step would be defined by the user with a punch card system,
 inspired by the Jacquard looms. 
