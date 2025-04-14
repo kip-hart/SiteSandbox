@@ -58,9 +58,15 @@ All four fundamental arithmetic operations could be performed with a single Leib
 a machine with a Leibniz wheel representing each of the tens places.
 The stepped reckoner would remain the primary arithmetic machine in use for the next 150 years.
 
-**Image List**
-- Pascaline
-- Stepped reckoner
+<figure class="align-center">
+    <a title="Daderot, CC0, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/3/39/Calculating_machine_replica%2C_Blaise_Pascal%2C_c._1642%2C_TM21265_-_Tekniska_museet_-_Stockholm%2C_Sweden_-_DSC01564.JPG"><img width="512" alt="Calculating machine replica, Blaise Pascal, c. 1642, TM21265 - Tekniska museet - Stockholm, Sweden - DSC01564" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Calculating_machine_replica%2C_Blaise_Pascal%2C_c._1642%2C_TM21265_-_Tekniska_museet_-_Stockholm%2C_Sweden_-_DSC01564.JPG/512px-Calculating_machine_replica%2C_Blaise_Pascal%2C_c._1642%2C_TM21265_-_Tekniska_museet_-_Stockholm%2C_Sweden_-_DSC01564.JPG?20150816224806"></a>
+    <figcaption class="figure-caption text-center">Pascaline replica at the National Museum of Science and Technology (Sweden).</figcaption>
+</figure>
+
+<figure class="align-center">
+    <a title="J. A. V. Turck, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Leibniz_Stepped_Reckoner.png"><img width="512" alt="Leibnitz calculator (‘Staffelwalze’ = lit. step drum/cylinder ‘Stepped Reckoner’), 1694" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Leibniz_Stepped_Reckoner.png/512px-Leibniz_Stepped_Reckoner.png?20080116124853"></a>
+    <figcaption class="figure-caption text-center">Photograph of a Leibniz stepped reckoner discovered in 1879.</figcaption>
+</figure>
 
 The Industrial Revolution enabled mass production of nearly everything, including textiles and arithmetic machines.
 In 1804, [Joseph Marie Jacquard](https://www.britannica.com/biography/Joseph-Marie-Jacquard) invented a programmable loom that could weave a wide variety of complex patterns,
