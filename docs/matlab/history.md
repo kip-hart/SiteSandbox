@@ -62,11 +62,41 @@ The stepped reckoner would remain the primary arithmetic machine in use for the 
 - Pascaline
 - Stepped reckoner
 
-Later, **Charles Babbage's Analytical Engine** (1837) introduced concepts that closely resemble modern computers, including programmable instructions via punch cards.
+The Industrial Revolution enabled mass production of nearly everything, including textiles and arithmetic machines.
+In 1804, [Joseph Marie Jacquard](https://www.britannica.com/biography/Joseph-Marie-Jacquard) invented a programmable loom that could weave a wide variety of complex patterns,
+with each pattern punched into a sequence of cards.
+This improvement in automation, along with several other innovations, lead to significant job losses for skilled textile workers,ignited conflicts across England, and highlighted the impact of automating people's jobs.
+In 1820, [Charles Xavier Thomas](http://ds-wordpress.haverford.edu/bitbybit/bit-by-bit-contents/chapter-two/the-arithmometer-and-numerical-tables/)
+used the same operating principles as the step reckoner, improving on it with a design that could be mass produced.
+His design would not reach the market until 1851, in part due to the British government shifting focus to the difference
+engine invented by [Charles Babbage](https://www.britannica.com/biography/Charles-Babbage).
 
-**Ada Lovelace**, often regarded as the first programmer, conceptualized using the Analytical Engine to compute more than mere numbers—pioneering the idea of general-purpose computation.
+The Babbage [difference engine](https://www.britannica.com/technology/Difference-Engine) was notable for its ability to evaluate polynomials. 
+Previously, transcendental functions like sine and cosine were evaluated by looking up values in tables.
+The publishers for these tables calculated and recorded values by hand - for a limited number of angles.
+It was known for a century by this point that these functions could be approximated by a polynomial series, such as
+
+$$\sin(x) \approx x - \frac{x^3}{3!} + \frac{x^5}{5!} + ...$$
+
+Babbage's difference engine could be set with the coefficients of a polynomial, then evaluated for a specific input value.
+Despite his success with the difference engine, Babbage was inspired by Jacquard to develop a programmable machine - one
+capable of performing any calculation.
+He set to work on the mechanical design of an [analytical engine](https://blogs.bodleian.ox.ac.uk/adalovelace/2018/07/26/ada-lovelace-and-the-analytical-engine/), while [Ada Lovelace](https://www.britannica.com/biography/Ada-Lovelace) wrote instructions for the machine, making her the first programmer.
+The significant advancement with the analytical engine was that the output of one calculation could be passed as input to another calculation.
+The specific operations performed in each calculation step would be defined using a punch card system,
+inspired by the Jacquard looms. 
+Though the analytical engine would never be built, the concepts of listing operations and storing values in memory are
+fundamental to modern computing.
 
 **Image List**
+- Jacquard loom
+- Arithmometer
+- Difference engine
+- analytic engine
+
+The video below demonstrates the working of Babbage's Difference Engine No. 2, an improved design that was never realized until 1991.
+
+{% include video id="0anIyVGeWOI" provider="youtube" %}
 
 ## The Rise of Electronic Computing: 20th Century
 The early 20th century saw a shift from mechanical to electronic computation. Key milestones include:
