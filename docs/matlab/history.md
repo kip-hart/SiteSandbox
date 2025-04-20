@@ -155,7 +155,7 @@ fundamental to modern computing.
 </figure>
 
 <figure class="align-center">
-    <a href="https://computerhistory.org/wp-content/uploads/2019/07/engine-structure.jpg"><img src="https://computerhistory.org/wp-content/uploads/2019/07/engine-structure.jpg" alt="drawing of the Babbage analytical engine."></a>
+    <a title="Tim Robinson, The Analytical Engine: 28 Plans and Counting" href="https://computerhistory.org/wp-content/uploads/2019/07/engine-structure.jpg"><img src="https://computerhistory.org/wp-content/uploads/2019/07/engine-structure.jpg" alt="drawing of the Babbage analytical engine."></a>
     <figcaption class="figure-caption text-center">Babbage analytical engine, with the "CPU" on the left and "memory" on the right. Science Museum (London).</figcaption>
 </figure>
 

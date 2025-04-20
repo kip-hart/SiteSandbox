@@ -102,8 +102,116 @@ To make this clearer, here is a table with the conversion of 87 to binary.
 
 
 ## Signed Integers
+The integers discussed so far have been positive in sign, but negative integers can be expressed in much the same way.
+Most modern encoding schemes use the two's complement method to handle negative integers.
+The steps of the method are:
+
+1. Starting with the unsigned integer, flip all the zeros to ones and the ones to zeros
+2. Add 1 to this value.
+
+To convert a binary number to a signed integer, follow the steps in reverse.
+First subtract 1 from the number, then 
+
+{% capture notice-text %}
+### Example: Negative Integer in Binary
+#### Question
+{:.no_toc}
+Convert the number -9 to binary.
+If this were misinterpreted as an unsigned integer, what would the decimal value be?
+
+#### Solution
+{:.no_toc}
+
+Following the steps above, we start with the unsigned integer 9.
+In binary, this would be represented as 1001, with a one in the 8s place and in the 1s place.
+Flipping the ones and zeros yields 0110.
+Adding one to that gives a final answer of 0111.
+
+If this was misinterpreted as an unsigned integer, the decimal value would be 4+2+1=7.
+
+{% endcapture %}
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Floating Point Numbers
+
+In engineering it is far more common to work with non-integer numbers than with integers.
+For example, the acceleration due to gravity is 9.807 m/s².
+In the context of computer programming, these are called *floating point* numbers, or *floats*.
+These numbers can be represented in binary starting with scientific notation in base 2.
+Taking gravity as an example again, the base 2 logarithm is 3.2938, so it can be expressed as $2^{0.2938}\times 2^3=1.2258\times 2^3$.
+
+$$ 9.807 = 1.2258 \times 2^3 $$
+
+A feature of scientific notation in base 2 is that the number on the left, the *mantissa*, will always be 1 followed by a fraction.
+This fraction can be **approximated** using the negative powers of 2.
+Continuing with the gravity example, the fraction 0.2258 is approximately 1/8+1/16+1/32+1/256=0.2227.
+We can include the other powers of two by rewriting this as: 
+
+$$ 0.2258 \approx \frac{0}{2} + \frac{0}{4} + \frac{1}{8} + \frac{1}{16} + \frac{1}{32} + \frac{0}{64} + \frac{0}{128} + \frac{1}{256} = 0.2227 $$
+
+Pulling all the numbers from the top of the fractions gives us the binary number 00111001.
+That takes care of the mantissa, with the final task being the exponent 3.
+Since this is an integer, we convert it to binary using the rules for integers.
+In this case, 3 becomes 11 in binary.
+
+Modern computers commonly use 32 bits, equal to 4 bytes, to contain a floating point number.
+This is known as a *single precision* float or *single* for short.
+There are also half precision floats, double precision, quadruple precision, and so on - each using varying numbers of bytes to store floats.
+The single precision float allocates those 32 bits in the following manner:
+
+* 1 bit for the sign
+* 8 bits for the exponent
+* 23 bits for the mantissa
+
+This definition was published by the Institute for Electrical and Electronics Engineers (IEEE) in [IEEE-754]](https://doi.org/10.1109%2FIEEESTD.1985.82928).
+Multiple floating point standards exist due to the variety of applications.
+Working on a desktop computer with a small amount of numbers would lend itself to very high precision floats.
+If the data is being transmitted from a satellite, for example, it may be more valuable to send lower precision floats at a faster rate.
+
+While integers can be exactly represented in binary, nearly all floating point numbers are approximations.
+Modern computers use enough bits to make the approximation error vanishingly small, but cannot eliminate it entirely.
+{: .notice}
+
+One final note is that rational numbers are not commonly supported.
+Dividing one integer by another produces a floating point number.
+
+{% capture notice-text %}
+### Example: One byte of pi
+#### Question
+{:.no_toc}
+Convert the constant $\pi$ to an 8-bit floating point. The bits are as follows:
+
+* One bit for the sign
+* Four bits for the exponent
+* Three bits for the mantissa
+
+What is the exact value of the stored variable?
+What percent error is there between the stored value and the exact value?
+
+#### Solution
+{:.no_toc}
+
+To convert this value to an 8-bit float, first start by converting it to base-2 scientific notation.
+
+$$ \pi = 2^{1.6514\dots} = 1.5707\dots 2^1 $$
+
+This number is positive, so the sign bit is 0.
+The exponent 1 is the same in binary.
+Using leading zeros to pad it to 4 bits gives 0001.
+
+The fractional part of the mantissa can be approximated by:
+
+$$ 0.5707\dots \approx \frac{1}{2} + \frac{0}{4} + \frac{1}{8} = 0.625 $$
+
+Putting the components together, the full 8-bit representation of $\pi$ is **00001101**.
+The exact value stored in this float is 1.625x2¹ = 3.25.
+The percent error between the stored value and exact value of $\pi$ is **3.5%**. 
+
+{% endcapture %}
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>
+
 
 ## Why Binary in Computers?
 Computers use binary because they operate on electrical signals, which have two distinct states: on and off.
