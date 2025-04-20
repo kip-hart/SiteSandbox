@@ -102,9 +102,9 @@ Compute the first 5 entries in a finite difference table for the polynomial $f(x
 Compare the final value of $f(x)$ in the table with $sin(x)$ computed by calculator and find the percent error.
 Use the following pre-computed differences:
 
-| x | f(x) | \Delta f | \Delta_2 f | \Delta_3 f | \Delta_4 f | \Delta_5 f |
-|---|------|----------|------------|------------|------------|------------|
-| 0 |    0 |     0.01 |      -3e-6 |     -1.5e5 |    -2.4e-5 |    -1.2e-5 |
+| $x$ | $f(x)$ | $\Delta f$ | $\Delta_2 f$ | $\Delta_3 f$ | $\Delta_4 f$ | $\Delta_5 f$ |
+|-----|--------|------------|--------------|--------------|--------------|--------------|
+|   0 |      0 |       0.01 |        -3e-6 |       -1.5e5 |      -2.4e-5 |      -1.2e-5 |
 
 
 #### Solution
@@ -116,14 +116,14 @@ The same applies for $\Delta_3$ and so on for the entire row.
 This procedure is repeated for each row until we have 5 new rows.
 Values below are given with 3 significant digits, but calculated with machine precision.
 
-| x    | f(x)    | \Delta f | \Delta_2 f | \Delta_3 f | \Delta_4 f | \Delta_5 f |
-|------|---------|----------|------------|------------|------------|------------|
-| 0    |    0    |     0.01 |   -3.00e-6 |   -1.50e-5 |   -2.40e-5 |   -1.20e-5 |
-| 0.01 | 1.00e-2 |     0.01 |   -1.80e-5 |   -3.90e-5 |   -3.60e-5 |   -1.20e-5 |
-| 0.02 | 2.00e-2 |  9.98e-3 |   -5.70e-5 |   -7.50e-5 |   -4.80e-5 |   -1.20e-5 |
-| 0.03 | 3.00e-2 |  9.92e-3 |   -1.32e-4 |   -1.23e-4 |   -6.00e-5 |   -1.20e-5 |
-| 0.04 | 3.99e-2 |  9.79e-3 |   -2.55e-4 |   -1.83e-4 |   -7.20e-5 |   -1.20e-5 |
-| 0.05 | 4.97e-2 |  9.53e-3 |   -4.38e-4 |   -2.55e-4 |   -8.40e-5 |   -1.20e-5 |
+| $x$    | $f(x)$    | $\Delta f$ | $\Delta_2 f$ | $\Delta_3 f$ | $\Delta_4 f$ | $\Delta_5 f$ |
+|--------|-----------|------------|--------------|--------------|--------------|--------------|
+| 0      |      0    |       0.01 |     -3.00e-6 |     -1.50e-5 |     -2.40e-5 |     -1.20e-5 |
+| 0.01   |   1.00e-2 |       0.01 |     -1.80e-5 |     -3.90e-5 |     -3.60e-5 |     -1.20e-5 |
+| 0.02   |   2.00e-2 |    9.98e-3 |     -5.70e-5 |     -7.50e-5 |     -4.80e-5 |     -1.20e-5 |
+| 0.03   |   3.00e-2 |    9.92e-3 |     -1.32e-4 |     -1.23e-4 |     -6.00e-5 |     -1.20e-5 |
+| 0.04   |   3.99e-2 |    9.79e-3 |     -2.55e-4 |     -1.83e-4 |     -7.20e-5 |     -1.20e-5 |
+| 0.05   |   4.97e-2 |    9.53e-3 |     -4.38e-4 |     -2.55e-4 |     -8.40e-5 |     -1.20e-5 |
 
 The final value in the table is 0.0496875.
 Computing the polynomial directly, using Microsoft Excel, yields 0.0496875.
