@@ -166,7 +166,7 @@ The single precision float allocates those 32 bits in the following manner:
 
 <figure class="align-center">
 <a title="Codekaizen, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/e/e8/IEEE_754_Single_Floating_Point_Format.svg"><img width="512" alt="IEEE 754 Single Floating Point Format" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/IEEE_754_Single_Floating_Point_Format.svg/512px-IEEE_754_Single_Floating_Point_Format.svg.png?20211006203109"></a>
-	<figcaption class="figure-caption text-center">Memory allocation for single-precision floating point numbers. Image credit: Codekaizen.</figcaption>
+	<figcaption class="figure-caption text-center">Memory allocation for single-precision floating point numbers.<br>Image credit: Codekaizen.</figcaption>
 </figure>
 
 This definition was published by the Institute for Electrical and Electronics Engineers (IEEE) in [IEEE-754](https://doi.org/10.1109%2FIEEESTD.1985.82928).
