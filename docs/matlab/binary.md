@@ -164,7 +164,12 @@ The single precision float allocates those 32 bits in the following manner:
 * 8 bits for the exponent
 * 23 bits for the mantissa
 
-This definition was published by the Institute for Electrical and Electronics Engineers (IEEE) in [IEEE-754]](https://doi.org/10.1109%2FIEEESTD.1985.82928).
+<figure class="align-center">
+<a title="Codekaizen, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/e/e8/IEEE_754_Single_Floating_Point_Format.svg"><img width="512" alt="IEEE 754 Single Floating Point Format" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/IEEE_754_Single_Floating_Point_Format.svg/512px-IEEE_754_Single_Floating_Point_Format.svg.png?20211006203109"></a>
+	<figcaption class="figure-caption text-center">Memory allocation for single-precision floating point numbers. Image credit: Codekaizen.</figcaption>
+</figure>
+
+This definition was published by the Institute for Electrical and Electronics Engineers (IEEE) in [IEEE-754](https://doi.org/10.1109%2FIEEESTD.1985.82928).
 Multiple floating point standards exist due to the variety of applications.
 Working on a desktop computer with a small amount of numbers would lend itself to very high precision floats.
 If the data is being transmitted from a satellite, for example, it may be more valuable to send lower precision floats at a faster rate.
@@ -194,7 +199,7 @@ What percent error is there between the stored value and the exact value?
 
 To convert this value to an 8-bit float, first start by converting it to base-2 scientific notation.
 
-$$ \pi = 2^{1.6514\dots} = 1.5707\dots 2^1 $$
+$$ \pi = 2^{1.6514\dots} = 1.5707\dots \times 2^1 $$
 
 This number is positive, so the sign bit is 0.
 The exponent 1 is the same in binary.
