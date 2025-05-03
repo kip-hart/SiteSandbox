@@ -147,7 +147,7 @@ fundamental to modern computing.
 
 During this time, Henri Giffard invented a steam-powered dirigible and Otto Lilienthal developed winged gliders.
 Their work was primarily experimental, supplemented by calculations made with slide rules and graphical techniques.
-The Wright brothers similarly relied on experimental methods, supplemented with slide rules and graphical techniques for calculations.
+The Wright brothers similarly relied on experimental methods, though they also performed calculations with slide rules and charts.
 {: .notice}
 
 <figure class="align-center">
@@ -207,6 +207,11 @@ This concept became the basis for modern digital computers.
 Although Turing did not build a physical Turing Machine, his ideas directly influenced real-world computers.
 During World War II, he worked at **Bletchley Park**, where he helped design the **Bombe**, an electromechanical device used to break German Enigma codes.
 Later, his work contributed to the development of early computers like the **ACE (Automatic Computing Engine)**.
+
+The V2 rocket, developed by the Germans during World War II, was the first long-range guided ballistic missile.
+It had an onboard analog computing device that measured voltages from gyroscopes and commanded a system of exhaust vanes and rudders to stabilize the vehicle.
+This system was more of a signal processor than a computer, however that did not diminish its effectiveness.
+{: .notice}
 
 {% capture notice-text %}
 ### Example: Turing Machine  
