@@ -164,37 +164,37 @@ The video below demonstrates the working of Babbage's Difference Engine No. 2, a
 {% include video id="0anIyVGeWOI" provider="youtube" %}
 
 ## The Rise of Electronic Computing: 20th Century  
-The early 20th century marked a pivotal shift from mechanical computation to electronic systems.  
-As technological capabilities grew, engineers sought faster, more reliable ways to process information.  
+The early 20th century marked a pivotal shift from mechanical computation to electronic systems.
+As technological capabilities grew, engineers sought faster, more reliable ways to process information.
 
 ### Theoretical Foundations  
 In 1936, **Alan Turing** introduced the concept of the [Turing Machine](https://informatecdigital.com/en/the-turing-machine/).  
-This abstract mathematical model defined the principles of computation.  
-His work laid the theoretical groundwork for modern computer science.  
-It demonstrated that any algorithmic process could be represented with a set of logical steps.  
+This abstract mathematical model defined the principles of computation.
+His work laid the theoretical groundwork for modern computer science.
+It demonstrated that any algorithmic process could be represented with a set of logical steps.
 
-A Turing Machine operates like a basic mechanical computer that follows a set of rules to manipulate symbols on an infinite tape.  
-Imagine the tape as a long row of boxes, each containing a single character.  
-A **read/write head** moves along the tape, examining one box at a time and following predefined instructions.  
-At each step, the machine can:  
-- Read the symbol in the current box.  
-- Write a new symbol in the box, replacing the old one.  
-- Move left or right along the tape to examine the next box.  
-- Change its internal state, which helps track progress in solving a problem.  
+A Turing Machine operates like a basic mechanical computer that follows a set of rules to manipulate symbols on an infinite tape.
+Imagine the tape as a long row of boxes, each containing a single character.
+A **read/write head** moves along the tape, examining one box at a time and following predefined instructions.
+At each step, the machine can:
+- Read the symbol in the current box.
+- Write a new symbol in the box, replacing the old one.
+- Move left or right along the tape to examine the next box.
+- Change its internal state, which helps track progress in solving a problem.
 
-Although this machine is simple, it is capable of performing any step-by-step computational task.  
-Modern computers work similarly—they process information by following sequences of instructions stored in memory.  
-Just as a Turing Machine can execute a series of logical steps, today’s processors execute programs by manipulating numbers and symbols according to rules set by a programmer.  
-The fundamental ideas behind the Turing Machine—storing, reading, and modifying data sequentially—are key to understanding how software operates on hardware.  
+Although this machine is simple, it is capable of performing any step-by-step computational task.
+Modern computers work similarly—they process information by following sequences of instructions stored in memory.
+Just as a Turing Machine can execute a series of logical steps, today’s processors execute programs by manipulating numbers and symbols according to rules set by a programmer.
+The fundamental ideas behind the Turing Machine—storing, reading, and modifying data sequentially—are key to understanding how software operates on hardware.
 
-This simple yet powerful model established the theoretical limits of computation.  
-It led to the **Church-Turing Thesis**, which states that any function computable by an algorithm can be computed by a Turing Machine.  
-This principle underpins modern programming languages and computer architecture.  
+This simple yet powerful model established the theoretical limits of computation.
+It led to the **Church-Turing Thesis**, which states that any function computable by an algorithm can be computed by a Turing Machine.
+This principle underpins modern programming languages and computer architecture.
 Turing’s work also influenced the development of stored-program computers, where instructions and data are treated similarly.  
-This concept became the basis for modern digital computers.  
+This concept became the basis for modern digital computers.
 
-Although Turing did not build a physical Turing Machine, his ideas directly influenced real-world computers.  
-During World War II, he worked at **Bletchley Park**, where he helped design the **Bombe**, an electromechanical device used to break German Enigma codes.  
+Although Turing did not build a physical Turing Machine, his ideas directly influenced real-world computers.
+During World War II, he worked at **Bletchley Park**, where he helped design the **Bombe**, an electromechanical device used to break German Enigma codes.
 Later, his work contributed to the development of early computers like the **ACE (Automatic Computing Engine)**.
 
 {% capture notice-text %}
@@ -207,122 +207,116 @@ should be the binary for 8, `1000`.
 
 #### Solution  
 {:.no_toc}  
-The machine starts at the rightmost digit of the binary number.  
-It follows these rules:  
-1. If the digit is **0**, change it to **1** and halt.  
-2. If the digit is **1**, change it to **0** and move left.  
-3. Repeat step 2 until a **0** is found or a new digit is added to the tape.  
+The machine starts at the rightmost digit of the binary number.
+It follows these rules:
+1. If the digit is **0**, change it to **1** and halt.
+2. If the digit is **1**, change it to **0** and move left.
+3. Repeat step 2 until a **0** is found or a new digit is added to the tape.
 
-Processing steps:  
+Processing steps:
 
-| Step | Tape Content | Read Digit | Action        | Updated Tape | Move Direction |  
-|------|--------------|------------|---------------|--------------|----------------|  
-| 1    | `0111`       | `1`        | Change to `0` | `0110`       | Left           |  
-| 2    | `0110`       | `1`        | Change to `0` | `0100`       | Left           |  
-| 3    | `0100`       | `1`        | Change to `0` | `0000`       | Left           |  
-| 4    | `0000`       | `0`        | Change to `1` | `1000`       | Halt           |  
+| Step | Tape Content | Read Digit | Action        | Updated Tape | Move Direction |
+|------|--------------|------------|---------------|--------------|----------------|
+| 1    | `0111`       | `1`        | Change to `0` | `0110`       | Left           |
+| 2    | `0110`       | `1`        | Change to `0` | `0100`       | Left           |
+| 3    | `0100`       | `1`        | Change to `0` | `0000`       | Left           |
+| 4    | `0000`       | `0`        | Change to `1` | `1000`       | Halt           |
 
-The final tape content is `1000`.  
-This correctly represents the binary increment of 7 to 8.  
+The final tape content is `1000`.
+This correctly represents the binary increment of 7 to 8.
 
 {% endcapture %}  
 
 <div class="notice--info">{{ notice-text | markdownify }}</div>   
 
 ### Pioneering Electronic Machines  
-The first practical application of electronic computation came in the 1940s.  
-It was developed with the **ENIAC** (Electronic Numerical Integrator and Computer).  
-Completed in 1945, ENIAC was the first general-purpose electronic computer.  
-It was capable of performing thousands of calculations per second.  
-It was primarily used for military applications, including artillery trajectory calculations.  
+The first practical application of electronic computation came in the 1940s.
+It was developed with the **ENIAC** (Electronic Numerical Integrator and Computer).
+Completed in 1945, ENIAC was the first general-purpose electronic computer.
+It was capable of performing thousands of calculations per second.
+It was primarily used for military applications, including artillery trajectory calculations.
 
-In 1953, IBM introduced the **Model 650**.  
-This was one of the earliest commercial computers designed specifically for engineering applications.  
-Unlike previous systems that relied on vacuum tubes, the Model 650 incorporated magnetic drum memory.  
-This improved data storage and processing capabilities.  
-It made computers more accessible to universities and research institutions.  
+In 1953, IBM introduced the **Model 650**.
+This was one of the earliest commercial computers designed specifically for engineering applications.
+Unlike previous systems that relied on vacuum tubes, the Model 650 incorporated magnetic drum memory.
+This improved data storage and processing capabilities.
+It made computers more accessible to universities and research institutions.
 
 ### Computational Applications in Aerospace  
-During this era, aerospace engineers began using electronic computation to model flight dynamics.  
-They also used it to analyze structural integrity.  
-Early electronic computers allowed for complex aerodynamic simulations.  
-These simulations would have been impossible with purely mechanical devices.  
+During this era, aerospace engineers began using electronic computation to model flight dynamics.
+They also used it to analyze structural integrity.
+Early electronic computers allowed for complex aerodynamic simulations.
+These simulations would have been impossible with purely mechanical devices.
 
-**Suggested Image:** A photograph of the ENIAC computer in operation, with engineers working alongside the massive machine.  
-
----
+**Suggested Image:** A photograph of the ENIAC computer in operation, with engineers working alongside the massive machine.
 
 ## Computational Power in Engineering: Late 20th Century  
-The late 20th century witnessed rapid advancements in computational hardware and software.  
-These advancements transformed engineering fields.  
+The late 20th century witnessed rapid advancements in computational hardware and software.
+These advancements transformed engineering fields.
 
-### The Rise of Personal Computing  
-The introduction of personal computers in the 1980s revolutionized computation.  
-It made powerful tools accessible to engineers worldwide.  
-Previously, large mainframes dominated the industry.  
-Smaller computers provided flexibility and efficiency.  
+### The Rise of Personal Computing
+The introduction of personal computers in the 1980s revolutionized computation.
+It made powerful tools accessible to engineers worldwide.
+Previously, large mainframes dominated the industry.
+Smaller computers provided flexibility and efficiency.
 
-Key software innovations emerged during this period.  
-One of these was **MATLAB** (introduced in 1984).  
-It allowed engineers to perform numerical computations, analyze data, and create simulations.  
-MATLAB quickly became a staple in scientific and engineering research.  
-Its ease of use and robust mathematical capabilities made it invaluable.  
+Key software innovations emerged during this period.
+One of these was **MATLAB** (introduced in 1984).
+It allowed engineers to perform numerical computations, analyze data, and create simulations.
+MATLAB quickly became a staple in scientific and engineering research.
+Its ease of use and robust mathematical capabilities made it invaluable.
 
-**Computer-Aided Design (CAD)** tools also gained prominence.  
-They enabled engineers to develop precise digital models of mechanical components, buildings, and complex systems.  
-This shift significantly improved design accuracy and efficiency.  
+**Computer-Aided Design (CAD)** tools also gained prominence.
+They enabled engineers to develop precise digital models of mechanical components, buildings, and complex systems.
+This shift significantly improved design accuracy and efficiency.
 
-### Supercomputing and Parallel Processing  
-By the 1990s, supercomputers played a crucial role in solving large-scale engineering problems.  
-**Parallel computing** became instrumental in fields such as:  
-- **Finite Element Analysis**: Modeling stress distributions in materials.  
-- **Fluid Dynamics Simulations**: Predicting airflow around aircraft and spacecraft.  
-- **Weather and Climate Modeling**: Analyzing large-scale atmospheric patterns.  
+### Supercomputing and Parallel Processing
+By the 1990s, supercomputers played a crucial role in solving large-scale engineering problems.
+**Parallel computing** became instrumental in fields such as:
+- **Finite Element Analysis**: Modeling stress distributions in materials.
+- **Fluid Dynamics Simulations**: Predicting airflow around aircraft and spacecraft.
+- **Weather and Climate Modeling**: Analyzing large-scale atmospheric patterns.
 
-These advancements paved the way for increasingly sophisticated engineering applications.  
+These advancements paved the way for increasingly sophisticated engineering applications.
 
-**Suggested Image:** A timeline showing the progression of computational tools like MATLAB, CAD software, and supercomputers.  
+**Suggested Image:** A timeline showing the progression of computational tools like MATLAB, CAD software, and supercomputers.
 
----
+## The Modern Era: 21st Century and Beyond
+Modern computation continues to evolve rapidly.
+It enables engineers to tackle increasingly complex challenges.
 
-## The Modern Era: 21st Century and Beyond  
-Modern computation continues to evolve rapidly.  
-It enables engineers to tackle increasingly complex challenges.  
+### Artificial Intelligence and Machine Learning
+The integration of **AI and Machine Learning** has transformed engineering workflows.
+Predictive modeling, automated data analysis, and optimization algorithms assist in designing efficient aircraft.
+They also help manage mechanical systems and advance robotics.
 
-### Artificial Intelligence and Machine Learning  
-The integration of **AI and Machine Learning** has transformed engineering workflows.  
-Predictive modeling, automated data analysis, and optimization algorithms assist in designing efficient aircraft.  
-They also help manage mechanical systems and advance robotics.  
+### Cloud Computing and Distributed Processing
+With the rise of **cloud computing**, engineers can now perform complex simulations remotely.
+They can collaborate across different locations without requiring dedicated high-performance hardware on-site.
+This innovation has improved accessibility and efficiency in research and industry.
 
-### Cloud Computing and Distributed Processing  
-With the rise of **cloud computing**, engineers can now perform complex simulations remotely.  
-They can collaborate across different locations without requiring dedicated high-performance hardware on-site.  
-This innovation has improved accessibility and efficiency in research and industry.  
+### Quantum Computing: The Next Frontier
+Emerging **quantum computing** technologies offer revolutionary possibilities for engineering computation.
+Unlike classical computers that process information as binary bits (0s and 1s), quantum computers leverage qubits.
+Qubits exist in multiple states simultaneously.
+This approach could dramatically accelerate calculations for fields like:
+- **Aerodynamic modeling**: Simulating turbulence at unprecedented resolution.
+- **Structural engineering**: Optimizing materials for extreme conditions.
+- **Cryptography**: Enhancing security in aerospace communications.
 
-### Quantum Computing: The Next Frontier  
-Emerging **quantum computing** technologies offer revolutionary possibilities for engineering computation.  
-Unlike classical computers that process information as binary bits (0s and 1s), quantum computers leverage qubits.  
-Qubits exist in multiple states simultaneously.  
-This approach could dramatically accelerate calculations for fields like:  
-- **Aerodynamic modeling**: Simulating turbulence at unprecedented resolution.  
-- **Structural engineering**: Optimizing materials for extreme conditions.  
-- **Cryptography**: Enhancing security in aerospace communications.  
+### The Future of Engineering Computation
+Today, engineers continue to push boundaries using advanced computational power in:
+- **Autonomous Systems**: AI-driven control mechanisms for spacecraft, drones, and robots.
+- **Energy Efficiency**: Optimizing fuel consumption and renewable energy sources.
+- **Space Exploration**: Simulating deep-space missions and planetary environments.
 
-### The Future of Engineering Computation  
-Today, engineers continue to push boundaries using advanced computational power in:  
-- **Autonomous Systems**: AI-driven control mechanisms for spacecraft, drones, and robots.  
-- **Energy Efficiency**: Optimizing fuel consumption and renewable energy sources.  
-- **Space Exploration**: Simulating deep-space missions and planetary environments.  
+**Suggested Image:** A futuristic rendering of a quantum computer connected to engineering simulations.
 
-**Suggested Image:** A futuristic rendering of a quantum computer connected to engineering simulations.  
+## Conclusion
+The history of computation is a story of human ingenuity.
+It is driven by the desire to solve complex problems efficiently.
+From ancient mechanical devices to cutting-edge quantum systems, computation continues to evolve.
+It empowers engineers, scientists, and mathematicians to push boundaries and explore new frontiers.
 
----
-
-## Conclusion  
-The history of computation is a story of human ingenuity.  
-It is driven by the desire to solve complex problems efficiently.  
-From ancient mechanical devices to cutting-edge quantum systems, computation continues to evolve.  
-It empowers engineers, scientists, and mathematicians to push boundaries and explore new frontiers.  
-
-**Suggested Image:** A conceptual image of an engineer working in a modern computational environment.  
+**Suggested Image:** A conceptual image of an engineer working in a modern computational environment.
 This environment includes overlays of simulations and calculations.
