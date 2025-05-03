@@ -208,9 +208,9 @@ Although Turing did not build a physical Turing Machine, his ideas directly infl
 During World War II, he worked at **Bletchley Park**, where he helped design the **Bombe**, an electromechanical device used to break German Enigma codes.
 Later, his work contributed to the development of early computers like the **ACE (Automatic Computing Engine)**.
 
-The V2 rocket, developed by the Germans during World War II, was the first long-range guided ballistic missile.
-It had an onboard analog computing device that measured voltages from gyroscopes and commanded a system of exhaust vanes and rudders to stabilize the vehicle.
-This system was more of a signal processor than a computer, however that did not diminish its effectiveness.
+During this time, the Germans developed the V2 rocket, the first long-range guided ballistic missile.
+It had an onboard analog computing device that measured voltages from gyroscopes and commanded a system of exhaust vanes and rudders, which stabilized the vehicle during flight.
+This system was more of a signal processor than a computer, however, and a lack of course corrections made them unlikely to reach their target.
 {: .notice}
 
 {% capture notice-text %}
