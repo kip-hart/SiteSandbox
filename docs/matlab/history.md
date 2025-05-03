@@ -219,12 +219,12 @@ Processing steps:
 
 | Step | Tape Content | Read Digit | Action        | Updated Tape | Move Direction |
 |------|--------------|------------|---------------|--------------|----------------|
-| 1    | `0111`       | `1`        | Change to `0` | `0110`       | Left           |
-| 2    | `0110`       | `1`        | Change to `0` | `0100`       | Left           |
-| 3    | `0100`       | `1`        | Change to `0` | `0000`       | Left           |
-| 4    | `0000`       | `0`        | Change to `1` | `1000`       | Halt           |
+| 1    | 011**1**     | 1          | Change to 0   | 0110         | Left           |
+| 2    | 01**1**0     | 1          | Change to 0   | 0100         | Left           |
+| 3    | 0**1**00     | 1          | Change to 0   | 0000         | Left           |
+| 4    | **0**000     | 0          | Change to 1   | 1000         | Halt           |
 
-The final tape content is `1000`, the binary representation for 8.
+The final tape content is 1000, the binary representation for 8.
 
 
 {% endcapture %}  
