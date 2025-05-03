@@ -60,6 +60,12 @@ All four fundamental arithmetic operations could be performed with a single Leib
 a machine with a Leibniz wheel representing each of the tens places.
 The stepped reckoner would remain the primary arithmetic machine in use for the next 150 years.
 
+The Montgolfier brothers began ballooning in 1783.
+Their flights were the start of human aviation, notably including a flight over Paris.
+It is unlikely they used arithmetic machines, however, as their work was primarily experimental.
+{: .notice}
+
+
 <figure class="align-center">
     <a title="Daderot, CC0, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/3/39/Calculating_machine_replica%2C_Blaise_Pascal%2C_c._1642%2C_TM21265_-_Tekniska_museet_-_Stockholm%2C_Sweden_-_DSC01564.JPG"><img width="512" alt="Calculating machine replica, Blaise Pascal, c. 1642, TM21265 - Tekniska museet - Stockholm, Sweden - DSC01564" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Calculating_machine_replica%2C_Blaise_Pascal%2C_c._1642%2C_TM21265_-_Tekniska_museet_-_Stockholm%2C_Sweden_-_DSC01564.JPG/512px-Calculating_machine_replica%2C_Blaise_Pascal%2C_c._1642%2C_TM21265_-_Tekniska_museet_-_Stockholm%2C_Sweden_-_DSC01564.JPG?20150816224806"></a>
     <figcaption class="figure-caption text-center">Pascaline replica at the National Museum of Science and Technology (Sweden).</figcaption>
@@ -138,6 +144,11 @@ The specific operations in each calculation step would be defined by the user wi
 inspired by the Jacquard looms. 
 Though the analytical engine would never be built, the concepts of listing operations and storing values in memory became
 fundamental to modern computing.
+
+During this time, Henri Giffard invented a steam-powered dirigible and Otto Lilienthal developed winged gliders.
+Their work was primarily experimental, supplemented by calculations made with slide rules and graphical techniques.
+The Wright brothers similarly relied on experimental methods, supplemented with slide rules and graphical techniques for calculations.
+{: .notice}
 
 <figure class="align-center">
     <a title="Tulipasylvestris, CC0, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/e/e5/Jacquardv%C3%A4vstol_med_stansade_h%C3%A5lkort_Norrk%C3%B6pings_stadsmuseum.jpg"><img width="256" alt="Jacquardvävstol med stansade hålkort Norrköpings stadsmuseum" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Jacquardv%C3%A4vstol_med_stansade_h%C3%A5lkort_Norrk%C3%B6pings_stadsmuseum.jpg/256px-Jacquardv%C3%A4vstol_med_stansade_h%C3%A5lkort_Norrk%C3%B6pings_stadsmuseum.jpg?20210904193817"></a>
