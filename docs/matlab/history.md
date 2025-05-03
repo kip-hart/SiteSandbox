@@ -168,7 +168,7 @@ The early 20th century marked a pivotal shift from mechanical computation to ele
 As technological capabilities grew, engineers sought faster, more reliable ways to process information.
 
 ### Theoretical Foundations  
-In 1936, **Alan Turing** introduced the concept of the [Turing Machine](https://informatecdigital.com/en/the-turing-machine/).  
+In 1936, [Alan Turing](https://www.britannica.com/biography/Alan-Turing) introduced the concept of the [Turing Machine](https://www.britannica.com/technology/Turing-machine).
 This abstract mathematical model defined the principles of computation.
 His work laid the theoretical groundwork for modern computer science.
 It demonstrated that any algorithmic process could be represented with a set of logical steps.
@@ -202,8 +202,10 @@ Later, his work contributed to the development of early computers like the **ACE
 #### Question  
 {:.no_toc}  
 Create the list of steps for a Turing machine that adds 1 to a 4-bit unsigned integer.
-For example, if the tape holds the binary for 7, `0111`, the end result of the list of steps
+For example, if the tape holds the binary for 7, `0111`, the end result of the steps
 should be the binary for 8, `1000`.
+
+For more information about integers in binary, visit [Binary]({{ site.baseurl }}{% link matlab/binary.md %}).
 
 #### Solution  
 {:.no_toc}  
@@ -222,8 +224,8 @@ Processing steps:
 | 3    | `0100`       | `1`        | Change to `0` | `0000`       | Left           |
 | 4    | `0000`       | `0`        | Change to `1` | `1000`       | Halt           |
 
-The final tape content is `1000`.
-This correctly represents the binary increment of 7 to 8.
+The final tape content is `1000`, the binary representation for 8.
+
 
 {% endcapture %}  
 
