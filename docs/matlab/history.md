@@ -249,23 +249,23 @@ The final tape content is 1000, the binary representation for 8.
 
 ### Pioneering Electronic Machines
  
-The first practical application of electronic computing emerged in the 1940s with the development of **ENIAC** (Electronic Numerical Integrator and Computer).  
-Completed in 1945, ENIAC was the first general-purpose electronic computer, meaning it could be programmed to perform different types of calculations instead of being built for a single task.  
-Unlike earlier machines that relied on mechanical components, ENIAC used vacuum tubes—small electronic switches—to process information much faster.  
-This allowed it to perform thousands of calculations per second, a groundbreaking achievement at the time.  
+The first practical application of electronic computing emerged in the 1940s with the development of **ENIAC** (Electronic Numerical Integrator and Computer).
+Completed in 1945, ENIAC was the first general-purpose electronic computer, meaning it could be programmed to perform different types of calculations instead of being built for a single task.
+Unlike earlier machines that relied on mechanical components, ENIAC used vacuum tubes—small electronic switches—to process information much faster.
+This allowed it to perform thousands of calculations per second, a groundbreaking achievement at the time.
 
-ENIAC was primarily designed for military applications, particularly artillery trajectory calculations, which required complex mathematical computations.  
-Its ability to automate these calculations was a significant advantage, as it drastically reduced the time needed to produce firing tables for weapons.  
-While massive—occupying an entire room—it demonstrated the potential of electronic computers in scientific and engineering fields.  
+ENIAC was primarily designed for military applications, particularly artillery trajectory calculations, which required complex mathematical computations.
+Its ability to automate these calculations was a significant advantage, as it drastically reduced the time needed to produce firing tables for weapons.
+While massive—occupying an entire room—it demonstrated the potential of electronic computers in scientific and engineering fields.
 
-As computing technology advanced, companies began developing commercial machines for broader applications.  
-In 1953, **IBM** introduced the **Model 650**, one of the earliest computers designed specifically for businesses and universities.  
-Unlike previous systems that relied on vacuum tubes, the Model 650 incorporated **magnetic drum memory**, a precursor to modern storage devices.  
-This provided a more efficient way to store and retrieve data, making computing more accessible to research institutions and engineers who needed powerful tools for data analysis.  
+As computing technology advanced, companies began developing commercial machines for broader applications.
+In 1953, **IBM** introduced the **Model 650**, one of the earliest computers designed specifically for businesses and universities.
+Unlike previous systems that relied on vacuum tubes, the Model 650 incorporated **magnetic drum memory**, a precursor to modern storage devices.
+This provided a more efficient way to store and retrieve data, making computing more accessible to research institutions and engineers who needed powerful tools for data analysis.
 
-These early machines laid the foundation for the rapid evolution of computing in the decades that followed.  
-They proved that electronic computers could handle complex tasks efficiently, leading to innovations in fields ranging from business and engineering to scientific research.  
-Today’s computers are vastly more powerful, but they owe their existence to these pioneering machines that demonstrated the incredible potential of electronic computation.  
+These early machines laid the foundation for the rapid evolution of computing in the decades that followed.
+They proved that electronic computers could handle complex tasks efficiently, leading to innovations in fields ranging from business and engineering to scientific research.
+Today’s computers are vastly more powerful, but they owe their existence to these pioneering machines that demonstrated the incredible potential of electronic computation.
 
 ### Computational Applications in Aerospace  
 During this era, aerospace engineers began using electronic computation to model flight dynamics.
