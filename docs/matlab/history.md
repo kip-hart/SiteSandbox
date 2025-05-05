@@ -267,11 +267,10 @@ These early machines laid the foundation for the rapid evolution of computing in
 They proved that electronic computers could handle complex tasks efficiently, leading to innovations in fields ranging from business and engineering to scientific research.
 Today’s computers are vastly more powerful, but they owe their existence to these pioneering machines that demonstrated the incredible potential of electronic computation.
 
-### Computational Applications in Aerospace  
-During this era, aerospace engineers began using electronic computation to model flight dynamics.
-They also used it to analyze structural integrity.
-Early electronic computers allowed for complex aerodynamic simulations.
-These simulations would have been impossible with purely mechanical devices.
+Before electronic, programmable computers were widely available, aerospace engineers used a variety of purpose-built analog computing devices.
+The governing equations for fluid flow, for example, could be approximated with an electrical circuits. The voltage difference between two points could be measured with a voltmeter, then converted into a pressure difference in the flowfield.
+There was also a water-based computer, where the water level in various reservoirs stored values in the calculation.
+{: .notice}
 
 **Suggested Image:** A photograph of the ENIAC computer in operation, with engineers working alongside the massive machine.
 
