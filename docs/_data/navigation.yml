@@ -1,5 +1,7 @@
 # Header Nav
 main:
+  - title: "General"
+    url: /general/
   - title: "MATLAB"
     url: /matlab/
   - title: "C++"
@@ -8,20 +10,24 @@ main:
     url: /about/
 
 
+# General Nav
+general:
+  - title: "Home"
+    url: /general/
+  - title: "History"
+    url: /general/history
+  - title: "Computer Architecture"
+    url: /general/computer_architecture
+  - title: "Binary"
+    url: /general/binary
+
+
 # MATLAB Nav
 matlab:
   - title: "Home"
     url: /matlab/
   - title: "Getting Started"
     url: /matlab/getting_started
-  - title: "Background"
-    children:
-      - title: "History"
-        url: /matlab/history
-      - title: "Computer Architecture"
-        url: /matlab/computer_architecture
-      - title: "Binary"
-        url: /matlab/binary
   - title: "Basics"
     children:
       - title: "Arithmetic"

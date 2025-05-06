@@ -320,6 +320,14 @@ defaults:
     values:
       layout: single
       author_profile: false
+  # General
+  - scope:
+      path: "general"
+      type: pages
+    values:
+      sidebar:
+        nav: "general"
+      toc: true
   # C++
   - scope:
       path: "cpp"

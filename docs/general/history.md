@@ -221,7 +221,7 @@ Create the list of steps for a Turing machine that adds 1 to a 4-bit unsigned in
 For example, if the tape holds the binary for 7, `0111`, the end result of the steps
 should be the binary for 8, `1000`.
 
-For more information about integers in binary, visit [Binary]({{ site.baseurl }}{% link matlab/binary.md %}).
+For more information about integers in binary, visit [Binary]({{ site.baseurl }}{% link general/binary.md %}).
 
 #### Solution  
 {:.no_toc}  
