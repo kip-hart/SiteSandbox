@@ -16,10 +16,10 @@ general:
     url: /general/
   - title: "History"
     url: /general/history
-  - title: "Computer Architecture"
-    url: /general/computer_architecture
   - title: "Binary"
     url: /general/binary
+  - title: "Computer Architecture"
+    url: /general/computer_architecture
 
 
 # MATLAB Nav
