@@ -306,8 +306,6 @@ By the 1990s, supercomputers played a crucial role in solving large-scale engine
 
 These advancements paved the way for increasingly sophisticated engineering applications.
 
-**Suggested Image:** A timeline showing the progression of computational tools like MATLAB, CAD software, and supercomputers.
-
 ## The Modern Era: 21st Century and Beyond
 Modern computation continues to evolve rapidly.
 It enables engineers to tackle increasingly complex challenges.
@@ -331,19 +329,10 @@ This approach could dramatically accelerate calculations for fields like:
 - **Structural engineering**: Optimizing materials for extreme conditions.
 - **Cryptography**: Enhancing security in aerospace communications.
 
-### The Future of Engineering Computation
-Today, engineers continue to push boundaries using advanced computational power in:
-- **Autonomous Systems**: AI-driven control mechanisms for spacecraft, drones, and robots.
-- **Energy Efficiency**: Optimizing fuel consumption and renewable energy sources.
-- **Space Exploration**: Simulating deep-space missions and planetary environments.
-
-**Suggested Image:** A futuristic rendering of a quantum computer connected to engineering simulations.
-
-## Conclusion
-The history of computation is a story of human ingenuity.
-It is driven by the desire to solve complex problems efficiently.
-From ancient mechanical devices to cutting-edge quantum systems, computation continues to evolve.
-It empowers engineers, scientists, and mathematicians to push boundaries and explore new frontiers.
-
-**Suggested Image:** A conceptual image of an engineer working in a modern computational environment.
-This environment includes overlays of simulations and calculations.
+## Summary
+The history of computing is a story of continuous innovation, shaping the way humans process information, solve complex problems, and interact with technology.
+Early mechanical devices laid the foundation of representing numbers with the state of the machine, and programmable machines ushered the dawn of computer science.
+Vacuum tubes, and later transistors, reduced the physical size of the devices storing numbers and accelerated the rate of computation.
+Though modern hand-held devices contain more computing power than the early room-sized computers, we continue to use large-scale
+computer clusters and supercomputers for increasingly sophisticated calculations.
+Today, computing is woven into every aspect of life, driving scientific discoveries, business operations, and global communication.
