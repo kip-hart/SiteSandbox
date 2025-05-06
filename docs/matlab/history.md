@@ -272,7 +272,10 @@ The governing equations for fluid flow, for example, could be approximated with 
 There was also a water-based computer, where the water level in various reservoirs stored values in the calculation.
 {: .notice}
 
-**Suggested Image:** A photograph of the ENIAC computer in operation, with engineers working alongside the massive machine.
+<figure class="align-center">
+    <a title="U.S. Army Photo, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/d/d3/Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg"><img width="512" alt="ENIAC at Aberdeen Proving Ground, Maryland. Glen Beck (background) and Betty Snyder (foreground) program the ENIAC in building 328 at the Ballistic Research Laboratory" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg/512px-Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg?20220704165421"></a>
+    <figcaption class="figure-caption text-center">ENIAC at Aberdeen Proving Ground, Maryland. Glen Beck (background) and Betty Snyder (foreground) program the ENIAC in building 328 at the Ballistic Research Laboratory.</figcaption>
+</figure>
 
 ## Computational Power in Engineering: Late 20th Century  
 The late 20th century witnessed rapid advancements in computational hardware and software.
