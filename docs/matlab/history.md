@@ -336,3 +336,21 @@ Vacuum tubes, and later transistors, reduced the physical size of the devices st
 Though modern hand-held devices contain more computing power than the early room-sized computers, we continue to use large-scale
 computer clusters and supercomputers for increasingly sophisticated calculations.
 Today, computing is woven into every aspect of life, driving scientific discoveries, business operations, and global communication.
+
+## Reading Questions
+
+1. Which arithmetic operations (add, subtract, multiply, divide, exponentiation, logarithm) are done with the abacus?
+
+2. Which arithmetic operations are done with a slide rule?
+
+3. Which part of the Jacquard looms was adapted for computing machines?
+
+4. How did Babbage's Analytical Engine improve on the Difference Engine?
+
+5. What was Ada Lovelace's role with the Analytical Engine?
+
+6. How did the Turing Machine impact computer design?
+
+7. Why is the ENIAC considered a revolutionary machine?
+
+8. How did the widespread adoption of personal computers, beginning in the 1980s, changed the practice of engineering?
