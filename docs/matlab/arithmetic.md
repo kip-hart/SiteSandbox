@@ -99,6 +99,32 @@ In MATLAB, this looks like:
 
 <div class="notice--info">{{ notice-text | markdownify }}</div>
 
+{% capture notice-text %}
+### Example: Mach Number
+#### Question
+{:.no_toc}
+
+$$ M = \frac{v}{a} $$
+
+The Mach number is the ratio of an object's speed to the local speed of sound.
+When the Apollo capsule returned from the Moon, it was initially traveling 10,973 m/s
+in air where the local speed of sound was 289 m/s.
+Use MATLAB to calculate the Mach number of the capsule.
+
+#### Solution
+{:.no_toc}
+
+To find the Mach number, we plug in values for the speed, $v$, and the
+speed of sound, $a$.
+In MATLAB, this looks like:
+
+```matlab
+>> {% include matlab/arithmetic_div_mach.m %}
+{% include matlab/arithmetic_div_mach.diary %}
+```
+{% endcapture %}
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Exponentiation
 
