@@ -37,7 +37,7 @@ In MATLAB, this looks like:
 
 ```matlab
 >> {% include matlab/arithmetic_add_altitude.m %}
-{% include matlab/arithmetic_add_altitude.m.diary %}
+{% include matlab/arithmetic_add_altitude.diary %}
 ```
 {% endcapture %}
 
@@ -60,7 +60,7 @@ In MATLAB, this looks like:
 
 ```matlab
 >> {% include matlab/arithmetic_sub_steel.m %}
-{% include matlab/arithmetic_sub_steel.m.diary %}
+{% include matlab/arithmetic_sub_steel.diary %}
 ```
 {% endcapture %}
 
@@ -70,7 +70,10 @@ In MATLAB, this looks like:
 
 Multiplication is performed with the `*` sign,
 while division is performed with the `/` sign.
-The `x` does not work for multiplication in MATLAB. 
+The `x` key does not work for multiplication in MATLAB,
+and there is no ÷ for division.
+
+
 
 ## Exponentiation
 
