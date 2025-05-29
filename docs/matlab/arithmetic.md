@@ -153,6 +153,43 @@ In MATLAB, this looks like:
 {% endcapture %}
 
 <div class="notice--info">{{ notice-text | markdownify }}</div>
-## Order of Operations
 
-PEMDAS
+## Order of Operations
+MATLAB follows standard PEMDAS for order of operations.
+Their [Order of Precedence](https://www.mathworks.com/help/matlab/matlab_prog/operator-precedence.html) goes into
+full details including other operators not included in the PEMDAS mnemonic.
+
+**P** Parentheses
+
+**E** Exponentiation
+
+**MD** Multiplication and Division
+
+**AS** Addition and Subtraction
+
+Since parentheses are at the top of the list, lower-precedence operations can be promoted using parentheses.
+
+{% capture notice-text %}
+### Example: Asset Depreciation
+#### Question
+{:.no_toc}
+
+You operate a factory containing $250M of equipment that depreciates in value at a rate of 10% per year.
+Use MATLAB to calculate the value of that equipment after 5 years of operations.
+The formula for the future value is:
+
+$$ FV = PV (1-r)^n %%
+
+#### Solution
+{:.no_toc}
+
+To find the future value of the equipment, we plug the givens into the above formula.
+In MATLAB, this looks like:
+
+```matlab
+>> {% include matlab/arithmetic_pemdas_depr.m %}
+{% include matlab/arithmetic_pemdas_depr.diary %}
+```
+{% endcapture %}
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>

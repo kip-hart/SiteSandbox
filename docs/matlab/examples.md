@@ -11,6 +11,8 @@ title: List of MATLAB Examples
 
 [arithmetic_mult_earth.m]({{ site.baseurl }}{% link matlab/examples/arithmetic_mult_earth.md %})
 
+[arithmetic_pemdas_depr.m]({{ site.baseurl }}{% link matlab/examples/arithmetic_pemdas_depr.md %})
+
 [arithmetic_sub_steel.m]({{ site.baseurl }}{% link matlab/examples/arithmetic_sub_steel.md %})
 
 [units_example.m]({{ site.baseurl }}{% link matlab/examples/units_example.md %})
