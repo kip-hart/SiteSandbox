@@ -1,6 +1,6 @@
 ---
 title: units_example.m
-mfile: matlab/arithmetic_sub_steel
+mfile: matlab/arithmetic_mult_earth
 ---
 
 ```matlab
