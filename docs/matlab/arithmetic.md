@@ -72,7 +72,32 @@ Multiplication is performed with the `*` sign,
 while division is performed with the `/` sign.
 The `x` key does not work for multiplication in MATLAB,
 and there is no ÷ for division.
+Lastly, the `%` symbol has special meaning in MATLAB and does not turn a number into a percent.
 
+{% capture notice-text %}
+### Example: Tangential Speed
+#### Question
+{:.no_toc}
+The earth revolves around the sun at a rate of $7.173\times 10^-4$ rad/hr,
+with an average radius of $92.96\times 10^6$ miles.
+Use MATLAB to find the tangential speed of the earth, in units of mph, given the formula:
+
+$$v = \omega r$$
+
+#### Solution
+{:.no_toc}
+
+To find the tangential speed, we plug in values for the rotation rate, $\omega$, and the
+radius, $r$.
+In MATLAB, this looks like:
+
+```matlab
+>> {% include matlab/arithmetic_mult_earth.m %}
+{% include matlab/arithmetic_mult_earth.diary %}
+```
+{% endcapture %}
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 
 ## Exponentiation
