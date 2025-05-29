@@ -36,8 +36,31 @@ from the lake to the plane.
 In MATLAB, this looks like:
 
 ```matlab
-{% include {{ matlab/arithmetic_add_altitude.m }}.m %}
-{% include {{ matlab/arithmetic_add_altitude.m.diary }}.m %}
+>> {% include {{ matlab/arithmetic_add_altitude.m }} %}
+{% include {{ matlab/arithmetic_add_altitude.m.diary }} %}
+```
+{% endcapture %}
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>
+
+Subtraction is carried out with the `-` sign, in the same manner as addition.
+
+{% capture notice-text %}
+### Example: Red Hot Steel
+#### Question
+{:.no_toc}
+A steel part is heated up and glowing cherry red, corresponding to a temperature of 1100 K.
+Given that 0 degrees Celsius is 273.15 K, what is the part's temperature in Celsius?
+
+#### Solution
+{:.no_toc}
+
+To find the temperature in degrees Celsius, we subtract 273.15 from 1100 K.
+In MATLAB, this looks like:
+
+```matlab
+>> {% include {{ matlab/arithmetic_sub_steel.m }} %}
+{% include {{ matlab/arithmetic_sub_steel.m.diary }} %}
 ```
 {% endcapture %}
 
