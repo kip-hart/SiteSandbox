@@ -157,7 +157,7 @@ In MATLAB, this looks like:
 ## Order of Operations
 MATLAB follows standard PEMDAS for order of operations.
 Their [Order of Precedence](https://www.mathworks.com/help/matlab/matlab_prog/operator-precedence.html) goes into
-full details including other operators not included in the PEMDAS mnemonic.
+full details including other operators that are not part of the PEMDAS mnemonic.
 
 **P** Parentheses
 
