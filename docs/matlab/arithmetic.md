@@ -168,6 +168,8 @@ full details including other operators not included in the PEMDAS mnemonic.
 **AS** Addition and Subtraction
 
 Since parentheses are at the top of the list, lower-precedence operations can be promoted using parentheses.
+If an operation does not need to be promoted because the precedence is correct,
+using parentheses is unnecessary.
 
 {% capture notice-text %}
 ### Example: Asset Depreciation
