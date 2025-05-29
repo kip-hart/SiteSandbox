@@ -193,3 +193,12 @@ In MATLAB, this looks like:
 {% endcapture %}
 
 <div class="notice--info">{{ notice-text | markdownify }}</div>
+
+## Reading Questions
+
+1. Which symbol indicates multiplication in MATLAB?
+2. How does MATLAB determine order of operations when evaluating expressions?
+3. How would you convert 4 feet to meters in MATLAB?
+4. How would you convert 80 degrees Fahrenheit to degrees Celsius?
+5. What mistakes might occur if parentheses are not included in an arithmetic expression?
+6. When are parentheses unnecessary in an arithmetic expression?
