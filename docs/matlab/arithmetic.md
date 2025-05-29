@@ -175,10 +175,10 @@ Since parentheses are at the top of the list, lower-precedence operations can be
 {:.no_toc}
 
 You operate a factory containing $250M of equipment that depreciates in value at a rate of 10% per year.
-Use MATLAB to calculate the value of that equipment after 5 years of operations.
+Use MATLAB to calculate the value of that equipment after 5 years of operations, in millions of dollars.
 The formula for the future value is:
 
-$$ FV = PV (1-r)^n %%
+$$ FV = PV (1-r)^n $$
 
 #### Solution
 {:.no_toc}
