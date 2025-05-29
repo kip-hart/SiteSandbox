@@ -128,6 +128,31 @@ In MATLAB, this looks like:
 
 ## Exponentiation
 
+Exponentiation raises one number to the power of another, and
+is performed in MATLAB with the `^` sign.
+The number to the left of the `^` is raised to the power of the number on the right.
+
+{% capture notice-text %}
+### Example: Volume of a Cube
+#### Question
+{:.no_toc}
+
+A concrete cube compression test uses a standard cube with side lengths of 15 cm.
+Use MATLAB to calculate the volume of the cube, in units of cubic centimeters.
+
+#### Solution
+{:.no_toc}
+
+To find the volume, we raise the side length to the power 3.
+In MATLAB, this looks like:
+
+```matlab
+>> {% include matlab/arithmetic_exp_cube.m %}
+{% include matlab/arithmetic_exp_cube.diary %}
+```
+{% endcapture %}
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>
 ## Order of Operations
 
 PEMDAS
