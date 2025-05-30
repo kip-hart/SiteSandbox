@@ -96,10 +96,11 @@ To clear all variables in the workspace:
 2. How does the `=` operator in MATLAB differ from the equals sign, =, in mathematics?
 3. Why is `area = base * height` valid syntax but `base * height = area` is not?
 3. Which of these variable names are valid?
-    * `double_speed`
-    * `2xSpeed`
-    * `_2xSpeed`
-    * `v_2x`
+    1. `double_speed`  
+    2. `2xSpeed`  
+    3. `_2xSpeed`  
+    4. `v_2x`  
+    5. `v_200%`  
 4. What are the pro's and con's of putting units in variable names?
 5. What are two ways to check the value of a variable?
 6. What does adding `;` to the end of a line do?
