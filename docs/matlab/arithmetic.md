@@ -72,6 +72,7 @@ Multiplication is performed with the `*` sign,
 while division is performed with the `/` sign.
 The `x` key does not work for multiplication in MATLAB,
 and there is no ÷ for division.
+MATLAB also does not support implicit multiplication, so `0.5 10` will not work but `0.5 * 10` will.
 Lastly, the `%` symbol has special meaning in MATLAB and does not turn a number into a percent.
 
 {% capture notice-text %}
