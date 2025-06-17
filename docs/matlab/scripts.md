@@ -43,7 +43,7 @@ The script `center_of_mass_737.m` contains:
 
 ```matlab
 {% include matlab/center_of_mass_737.m %}
-``
+```
 
 Running it in the Console Window produces:
 
