@@ -1,5 +1,6 @@
 %% Center of Mass of a 737
-% Dr. Kip Hart
+% **Dr. Kip Hart**
+%
 % 17 June 2025
 %
 % This script calculates the center of mass of a Boeing 737
@@ -10,6 +11,8 @@
 % $$ \bar{x} = \frac{\sum_i m_i x_i}{\sum_i m_i} $$
 
 %% Givens
+% The values below are taken from the table in the problem statement.
+
 % Empty Weight
 empty_mass = 41e3;
 empty_dist = 16.7;
