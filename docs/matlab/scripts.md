@@ -12,8 +12,8 @@ This process is called publishing the script, and can be useful for completing h
 MATLAB live scripts work like published scripts, but have the benefit of showing the results instantly - live.
 
 {% capture notice-text %}
-### Example: Center of Mass
-#### Question
+## Example: Center of Mass
+### Question
 {:.no_toc}
 The Boeing 737 airliner is made of several components: the empty weight, the crew and equipment, the passengers, the cargo, and the fuel.
 
@@ -35,7 +35,7 @@ Recall that the center of mass is mass-weighted average distance:
 $$ \bar{x} = \frac{\sum_i m_i x_i}{\sum_i m_i} $$
 
 
-#### Solution
+### Solution
 {:.no_toc}
 In a MATLAB script, the data in the table above are organized into sections with comments.
 The three center of mass values are then calculated using the equation above.
@@ -169,6 +169,18 @@ The PDF produced by this command is:
 
 <object data="matlab/html/center_of_mass_737.pdf" width="1000" height="1000" type='application/pdf'/>
 
+Here's a whole bunch of links to help debug:
+
+`{{ site.url }}{{ site.baseurl }}/assets/images/figures/matlab/sandbox_plot/Figure_1.png`
+[Figure 1]({{ site.url }}{{ site.baseurl }}/assets/images/figures/matlab/sandbox_plot/Figure_1.png)
+
+<object data={% link matlab/html/center_of_mass_737.pdf %} width="1000" height="1000" type='application/pdf'/>
+
+and this
+
+<object data={{ site.baseurl }}{% link matlab/html/center_of_mass_737.pdf %} width="1000" height="1000" type='application/pdf'/>
+
+link: [second]({{ site.baseurl }}{% link matlab/html/center_of_mass_737.pdf %})
 
 
 ## Live Scripts
