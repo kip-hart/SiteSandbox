@@ -217,7 +217,7 @@ They are mainly two assumptions: 1) that variables will be named exactly as you 
 In the case of `analyze_engine.m`, if you use `T_H` instead of `T_hot` then MATLAB will error out.
 It will not look for similarly named variables, so if you write `analyze_engine.m` assuming one naming convention and `engine_1.m` assuming another there will be errors.
 The second assumption is that the script you call does not redefine or overwrite values in variables you have defined.
-For example, if `analyze_engine.m` ended with the line `T_hot=1000;` then any code after the `analyze_engine` line will use a value of 1000 for `T_hot` instead of 800.
+For example, if `analyze_engine.m` ended with the line `T_hot=1000;` then any code after `analyze_engine` will use a value of 1000 for `T_hot` instead of 800.
 This would be difficult to spot if both scripts defined many variables with similar names.
 To keep variable definitions contained and isolated from each other, it is better to write [User Functions]({{ site.baseurl }}{% link matlab/user_functions.md %}).
 
