@@ -1,5 +1,5 @@
 %% Center of Mass of a 737
-% **Dr. Kip Hart**
+% *Dr. Kip Hart*
 %
 % 17 June 2025
 %
