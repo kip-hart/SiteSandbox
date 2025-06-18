@@ -171,16 +171,7 @@ The PDF produced by this command is:
 
 Here's a whole bunch of links to help debug:
 
-`{{ site.url }}{{ site.baseurl }}/assets/images/figures/matlab/sandbox_plot/Figure_1.png`
-[Figure 1]({{ site.url }}{{ site.baseurl }}/assets/images/figures/matlab/sandbox_plot/Figure_1.png)
-
-<object data={% link matlab/html/center_of_mass_737.pdf %} width="1000" height="1000" type='application/pdf'/>
-
-and this
-
-<object data={{ site.baseurl }}{% link matlab/html/center_of_mass_737.pdf %} width="1000" height="1000" type='application/pdf'/>
-
-link: [second]({{ site.baseurl }}{% link matlab/html/center_of_mass_737.pdf %})
+[Download PDF](/matlab/html/center_of_mass_737.pdf)
 
 
 ## Live Scripts
