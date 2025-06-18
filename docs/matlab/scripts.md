@@ -162,7 +162,7 @@ it contains slow operations.
 To convert a script into a PDF (or other formats), use the `publish` command. For example:
 
 ```matlab
-{% include matlab/publish_center_of_mass_737.m %}
+publish('center_of_mass_737.m', 'pdf');
 ```
 
 The PDF produced by this command is:
