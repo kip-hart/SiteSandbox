@@ -59,6 +59,10 @@ jobs:
           command: >
             addpath('.github/scripts');
             run_all_scripts('matlab');
+      - name: Move Published Artifacts
+        run: |
+          mkdir -p published
+          mv matlab/html published
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -71,6 +75,12 @@ jobs:
             name: matlab-figures
             retention-days: 1
             path: figures/
+      - name: Upload published documents
+        uses: actions/upload-artifact@v4
+        with:
+            name: matlab-published
+            retention-days: 1
+            path: published/
         
       - name: Display structure of repo files (3)
         run: ls -R
@@ -82,6 +92,7 @@ jobs:
     env:
       CPP_DIR: docs/_includes/cpp
       FIGS_DIR: docs/assets/images/figures
+      PUBS_DIR: docs/assets/published
       MATLAB_DIR: docs/_includes/matlab
       ZIP_FILE: docs/assets/code_examples.zip
     steps:
@@ -109,6 +120,11 @@ jobs:
         with:
           name: matlab-figures
           path: ${{ env.FIGS_DIR }}
+      - name: Download Published Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: matlab-published
+          path: ${{ env.PUBS_DIR }}
       - name: Download MATLAB artifacts
         uses: actions/download-artifact@v4
         with:
