@@ -45,7 +45,7 @@ The script `center_of_mass_737.m` contains:
 {% include matlab/center_of_mass_737.m %}
 ```
 
-Running it in the Console Window produces:
+Running it in the Command Window produces:
 
 ```matlab
 >> center_of_mass_737
@@ -61,6 +61,27 @@ which is clearer than if we repeated the sum but without the fuel terms.
 <div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Diary
+MATLAB includes a built-in function named `diary` that will record your commands from the Command Window. 
+If you prefer to work and develop in the Command Window, you can start with `diary on` or `diary <filename>`,
+type your commands into the Command Window, then save your work to a file with `diary off`.
+For example:
+
+```matlab
+{% include matlab/diary_example.m %}
+```
+
+will write to a diary file named `my_commands.diary` that contains:
+
+```matlab
+{% include matlab/my_commands.diary %}
+```
+This file contains everything, including the printed output from lines missing a `;` at the end.
+It also includes mistakes, old versions of commands, etc.
+Nonetheless, you can copy paste lines from the diary into a script.
+
+Personally, I start with a script and never use `diary`.
+That being said, it is a tool and if you find it helpful please use it.
+The MATLAB documentation has more information about [diary](https://www.mathworks.com/help/matlab/ref/diary.html).
 
 ## Comments
 
