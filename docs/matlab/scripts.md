@@ -145,8 +145,9 @@ You can also use comments like hashtags, then find all instances of that word in
 For example:
 
 ```matlab
-width = 3; %TODO this value is a wild guess, need to check if it has changed
+width = 3; %TODO check this value, it was a wild guess
 ```
+
 In MATLAB you can search for all instances of `%TODO`, which makes a to-do list.
 Another common keyword is `%FIXME`, for code you know needs to be fixed but you have not had the time.
 
