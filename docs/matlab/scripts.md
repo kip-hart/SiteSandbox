@@ -168,7 +168,7 @@ publish('center_of_mass_737.m', 'pdf');
 
 The PDF produced by this command is [center_of_mass_737.pdf]({{ site.baseurl }}/assets/published/center_of_mass_737.pdf).
 
-<object data="{{ site.baseurl }}/assets/published/center_of_mass_737.pdf" type="application/pdf" width="100%" height="150px">
+<object data="{{ site.baseurl }}/assets/published/center_of_mass_737.pdf" type="application/pdf" width="100%" height="120px">
     <p>Unable to display PDF.</p>
 </object>
 
