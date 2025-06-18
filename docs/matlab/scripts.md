@@ -151,6 +151,25 @@ In MATLAB you can search for all instances of `%TODO`, which makes a to-do list.
 Another common keyword is `%FIXME`, for code you know needs to be fixed but you have not had the time.
 
 ## Publishing
+MATLAB scripts are written in plain text `.m` files, which can be difficult to read and
+do not contain any of the results from running the script.
+Publishing the script converts the plain text to rich text PDFs that are easy to read and contain the results.
+With the Boeing 737 example, The comments certainly clarify what the script is doing,
+but it would be easier to read as a PDF.
+A PDF is also easier to share with someone who does not have MATLAB installed, or does not have time to rerun your script if
+it contains slow operations.
+
+To convert a script into a PDF (or other formats), use the `publish` command. For example:
+
+```matlab
+{% include matlab/publish_center_of_mass_737.m %}
+```
+
+The PDF produced by this command is:
+
+<object data="center_of_mass_737.pdf" width="1000" height="1000" type='application/pdf'/>
+
+
 
 ## Live Scripts
 

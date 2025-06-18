@@ -5,6 +5,9 @@
 % This script calculates the center of mass of a Boeing 737
 % in several scenarios. Mass values are in kilograms.
 % Distances are in meters from the nose of the aircraft.
+%
+% The center of mass equation is given by:
+% $$ \bar{x} = \frac{\sum_i m_i x_i}{\sum_i m_i} $$
 
 %% Givens
 % Empty Weight
