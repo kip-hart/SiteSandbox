@@ -139,7 +139,16 @@ len_CB = 10;
 ```
 In this script, the block comments contain a rough sketch of the geometry and provide context for the variable definitions.
 
+Commenting your code is the best habit you can develop while learning to program.
+It gives you the opportunity to document what you're doing, why it is being done this way, and where your numbers came from.
+You can also use comments like hashtags, then find all instances of that word in your file.
+For example:
 
+```matlab
+width = 3; %TODO this value is a wild guess, need to check if it has changed
+```
+In MATLAB you can search for all instances of `%TODO`, which makes a to-do list.
+Another common keyword is `%FIXME`, for code you know needs to be fixed but you have not had the time.
 
 ## Publishing
 
