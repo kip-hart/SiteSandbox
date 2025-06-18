@@ -215,6 +215,7 @@ Each member of the team can run their own separate analyzes, then when they disc
 While scripting is a necessary aspect of programming in MATLAB, it does have a couple drawbacks.
 They are mainly two assumptions: 1) that variables will be named exactly as you expect and 2) that scripts will not redefine any of your variables.
 In the case of `analyze_engine.m`, if you use `T_H` instead of `T_hot` then MATLAB will error out.
+It will not look for similarly named variables, so if you write `analyze_engine.m` assuming one naming convention and `engine_1.m` assuming another there will be errors.
 The second assumption is that the script you call does not redefine or overwrite values in variables you have defined.
 For example, if `analyze_engine.m` ended with the line `T_hot=1000;` then any code after the `analyze_engine` line will use a value of 1000 for `T_hot` instead of 800.
 This would be difficult to spot if both scripts defined many variables with similar names.
