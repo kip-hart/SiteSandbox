@@ -101,6 +101,45 @@ That being said, it is a tool and if you find it helpful please use it.
 The MATLAB documentation has more information about [diary](https://www.mathworks.com/help/matlab/ref/diary.html).
 
 ## Comments
+Comments are text in the script that MATLAB does not interpret as a command.
+Everything after the `%` symbol is not interpreted.
+This can be at the beginning of the line or in the middle.
+For example:
+
+```matlab
+% Parachute parameters
+chute_mass = 2;  % lbm
+chute_area = 32; % m^2, from Table 6 in Chapter 3
+```
+
+To create a comment that spans multiple lines, you can either start each line with the `%` symbol or
+start the block comment with `%{` and end it with `%}`.
+For example:
+
+```matlab
+%{
+
+The beam cross section geometry is defined as:
+
+          B ------- D
+        / |       / |
+       /  |      /  |
+      /   |     /   |
+     /    |    /    |
+    /     |   /     |
+   /      |  /      |
+  /       | /       |
+A ------- C ------- E
+
+%}
+
+len_AC = 12;
+len_CE = 15;
+len_CB = 10;
+```
+In this script, the block comments contain a rough sketch of the geometry and provide context for the variable definitions.
+
+
 
 ## Publishing
 
