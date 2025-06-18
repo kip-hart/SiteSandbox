@@ -171,8 +171,8 @@ Here's a whole bunch of links to help debug:
 
 [Download PDF]({{ site.baseurl }}/assets/published/center_of_mass_737.pdf)
 
-<object data="/assets/published/center_of_mass_737.pdf" type="application/pdf" width="100%" height="600px">
-    <p>Unable to display PDF. <a href="/assets/published/center_of_mass_737.pdf">Download it here</a>.</p>
+<object data="{{ site.baseurl }}/assets/published/center_of_mass_737.pdf" type="application/pdf" width="100%" height="600px">
+    <p>Unable to display PDF. <a href="{{ site.baseurl }}/assets/published/center_of_mass_737.pdf">Download it here</a>.</p>
 </object>
 
 and the original wonky thing:
@@ -186,4 +186,13 @@ and the original wonky thing:
 
 ## Scripts Within Scripts
 
+what about here
+
+
 ## Reading Questions
+
+
+
+heres a lot of text at the bottom
+
+the hope is to get the PDF to display properly
