@@ -167,7 +167,7 @@ publish('center_of_mass_737.m', 'pdf');
 
 The PDF produced by this command is:
 
-<object data="center_of_mass_737.pdf" width="1000" height="1000" type='application/pdf'/>
+<object data="matlab/html/center_of_mass_737.pdf" width="1000" height="1000" type='application/pdf'/>
 
 
 
