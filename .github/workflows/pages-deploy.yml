@@ -62,7 +62,7 @@ jobs:
       - name: Move Published Artifacts
         run: |
           mkdir -p published
-          mv matlab/html published
+          mv matlab/html/* published
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
