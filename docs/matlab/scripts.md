@@ -67,13 +67,30 @@ type your commands into the Command Window, then save your work to a file with `
 For example:
 
 ```matlab
-{% include matlab/diary_example.m %}
+>> diary my_commands.diary
+>> x = 3;
+>> y = x^2
+
+y =
+
+     9
+
+>> z = 2 + y;
+>> z = 2 - y;
 ```
 
 will write to a diary file named `my_commands.diary` that contains:
 
 ```matlab
-{% include matlab/my_commands.diary %}
+x = 3;
+y = x^2
+
+y =
+
+     9
+
+z = 2 + y;
+z = 2 - y;
 ```
 This file contains everything, including the printed output from lines missing a `;` at the end.
 It also includes mistakes, old versions of commands, etc.
