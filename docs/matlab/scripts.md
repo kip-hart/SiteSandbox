@@ -155,7 +155,7 @@ Another common keyword is `%FIXME`, for code you know needs to be fixed but you 
 MATLAB scripts are written in plain text `.m` files, which can be difficult to read and
 do not contain any of the results from running the script.
 Publishing the script converts the plain text to rich text PDFs that are easy to read and contain the results.
-With the Boeing 737 example, The comments certainly clarify what the script is doing,
+With the Boeing 737 example, the comments certainly clarify what the script is doing,
 but it would be easier to read as a PDF.
 A PDF is also easier to share with someone who does not have MATLAB installed, or does not have time to rerun your script if
 it contains slow operations.

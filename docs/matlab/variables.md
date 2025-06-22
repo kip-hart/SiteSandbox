@@ -90,6 +90,38 @@ To clear all variables in the workspace:
 >> clear
 ```
 
+## Pre-Defined Variables
+
+MATLAB includes several variables that are defined automatically when you start the program.
+Most notable are the following:
+
+| Variable | Description                                                                                                      |
+|----------|------------------------------------------------------------------------------------------------------------------|
+| pi       | Returns the value of π up to 15 significant digits.                                                              |
+| i, j     | Predefined variables for representing the imaginary unit in complex numbers.                                     |
+| inf      | Represents infinity. For example, 1/0 yields `Inf`.                                                              |
+| NaN      | Stands for “Not a Number.” Result of undefined or unrepresentable operations (e.g., 0/0).                        |
+| eps      | Machine epsilon: the smallest increment between distinct floating-point numbers.                                 |
+| ans      | Default variable storing the most recent result when no output variable is specified in a command.               |
+
+You can use these variables even though they do not appear in the workspace.
+For example:
+
+```matlab
+>> radius = 10
+
+radius =
+
+     10
+
+>> area = pi * radius^2
+
+area =
+
+     314.16
+
+```
+
 ## Reading Questions
 
 1. What is a variable in MATLAB?
