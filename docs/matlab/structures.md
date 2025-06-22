@@ -58,6 +58,7 @@ Given the definitions below for the tire height and overall diameter,
 write a MATLAB script that calculates the overall diameter in inches.
 
 $$AR = \frac{h}{w}$$
+
 $$d_{total} = d_{rim} + h$$
 
 #### Solution

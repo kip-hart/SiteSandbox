@@ -8,6 +8,6 @@ tire.max_load = 2094;  % lb
 tire.weight = 31;  % lb
 
 height = tire.width * tire.aspect_ratio;
-total_diameter = rim_diameter + height_inches;
+total_diameter = tire.rim_diameter + height;
 
 total_diameter / U.in
