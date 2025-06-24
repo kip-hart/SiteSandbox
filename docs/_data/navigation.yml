@@ -38,10 +38,10 @@ matlab:
         url: /matlab/scripts
       - title: "Structures"
         url: /matlab/structures
-      - title: "Arrays"
-        url: /matlab/arrays
       - title: "Native Functions"
         url: /matlab/native_functions
+      - title: "Arrays and Matrices"
+        url: /matlab/arrays_matrices
       - title: "Plotting"
         url: /matlab/plotting
   - title: "Intermediate"
