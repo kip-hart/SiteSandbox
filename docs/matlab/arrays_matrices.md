@@ -2,14 +2,160 @@
 title: Arrays and Matrices
 ---
 
-In engineering, we often collect and analyze data in bulk—multiple sensor readings, loads across structural elements, or temperatures over time.  
-In MATLAB, **arrays and matrices are the foundational tools** for storing and manipulating grouped data efficiently.
+While structures allow us to organize data with fields associated to values, we often need to organize data in arrays.
+Arrays can be lists, lists of lists, lists of lists of lists, and so on.
+Lists of lists are often referred to as matrices.
+Non-matrix data would include data tables, such as recording pressure and temperature at different times.
+In MATLAB, **arrays and matrices store ordered data** which is especially useful for computing matrix/vector operations and for storing measured data.
 
-The MATLAB documentation on [array basics](https://www.mathworks.com/help/matlab/numeric-types.html) offers more in-depth information, but this page provides a structured starting point.
+Visit [Matrices & Arrays](https://www.mathworks.com/help/matlab/learn_matlab/matrices-and-arrays.html) in the MATLAB Help Center for their documentation.
 
 ## Arrays in MATLAB
+To create an array in MATLAB, enclose the elements of the array with square brackets, `[]`, and separate the elements with commas, `,`.
+The commas are optional, you can just leave spaces between them and MATLAB will interpret that as separate elements, however the commas improve readability.
+See the examples below for how to create arrays.
+Can you tell how many elements there are in `formulas` when there are no commas?
 
-A one-dimensional array stores a list of values of the same type—such as measured wind speeds at different times:
+```matlab
+speed_measurements = [1338 1657 1892 1771 1601 1548];
+speed_measurements = [1338, 1657, 1892, 1771, 1601, 1548];
+
+formulas = [m*x + b e - m * c^2 rho * R * T];
+formulas = [m*x + b, e - m * c^2, rho * R * T]; 
+```
+
+The [Constructing a Matrix of Data](https://www.mathworks.com/help/matlab/math/creating-and-concatenating-matrices.html#OverviewCreatingAndConcatenatingExample-1) section of the MATLAB Help Center
+also describes creating arrays.
+
+### Accessing Array Elements
+When an array is defined in the workspace, you can access individual values in the array using the parentheses, `()`.
+The *index* of the first element in the array is 1, the second is 2, and so on.
+You can access the *last* element of an array using the index `end`, no matter how long it is.
+The second to last element is `end-1`, third to last is `end-2`, and so on.
+For example:
+
+```matlab
+speed_measurements = [1338, 1657, 1892, 1771, 1601, 1548];
+first_speed = speed_measurements(1)
+second_speed = speed_measurements(2)
+last_speed = speed_measurements(6)
+last_speed = speed_measurements(end)
+second_to_last = speed_measurements(end-1)
+```
+
+As seen in this example, the special `end` index is not necessary if you know how many elements are in the list.
+If you are writing code that needs to work on lists with different lengths, then using `end` makes your intention clearer.
+
+You can also index into an array with an *array of indices*.
+These indices must be whole numbers, but can include the `end` index.
+To specify a range of indices, use the `:` operator like `<start>:<stop>`.
+If you want to increment in larger steps, you can use `<start>:<step>:<stop>`.
+For example:
+
+```matlab
+speed_measurements = [1338, 1657, 1892, 1771, 1601, 1548];
+first_and_last = speed_measurements([1, end])
+first_two = speed_measurements([1, 2])
+first_two = speed_measurements(1:2)
+three_onward = speed_measurements(3:end)
+odd_indices = speed_measurements(1:2:end)
+```
+
+You can also access array elements with a *logical mask*.
+This is an array of 0s and 1s that has the same length as the array you are indexing.
+They can be valuable when you want to isolate a specific part of an array or filter out irrelevant data.
+For example, if you conduct a test and start the data recorder for several seconds before the test begins, you would want to *mask* those recordings out of your analysis.
+Continuing with the `speed_measurements` example:
+
+```matlab
+speed_measurements = [1338, 1657, 1892, 1771, 1601, 1548];
+peak_mask = speed_measurements > 1650
+peak_measurements = speed_measurements(peak_mask)
+```
+
+The [Array Indexing](https://www.mathworks.com/help/matlab/learn_matlab/array-indexing.html) page in the MATLAB Help Center also describes indexing into arrays.
+
+### Extending Arrays
+
+To add a value onto the end of an existing array, there are four options:
+
+```matlab
+speed_measurements = [1338, 1657, 1892, 1771, 1601, 1548];
+speed_measurements(7) = 1438
+speed_measurements(end+1) = 1412
+speed_measurements = [speed_measurements 1400]
+speed_measurements(12) = 20
+```
+
+The first specifies the index of where to place the new entry.
+It assumes the length of the array and goes 1 further than the length.
+The second makes it clear that the new element is going directly after the end of the array.
+The third uses array building, where we create a new array that has the elements of the old followed by a new element, then assign that array to the same variable name.
+This method also works to append multiple values to the end of the array, and for adding values to the beginning like `[1400 speed_measurements]`.
+In the last method, the value is added to an index far off the end of the array.
+MATLAB *pads* the array with 0s between the end of the original array and the new index.
+
+### Column Vectors
+The arrays above are technically *row vectors* in that they are a single row with $n$ columns.
+MATLAB can also store data in *column vectors* using `;` to separate the rows instead of `,` separating the columns.
+For example:
+
+```matlab
+row_vec = [1, 2, 3]
+col_vec = [1; 2; 3]
+```
+
+### Array Arithmetic
+Basic arithmetic operations can be performed on arrays.
+Add and subtract are accomplished with `+` and `-`.
+Multiplication and division are accomplished with `.*` and `./`.
+Those `.` are important because they indicate that `*` and `/` should be done elementwise - multiply the first element of the array on the left with the first element of the array on the right, and the same for the second elements, and so on.
+With vectors there is the dot product, cross product, and matrix/vector multiplication, so to be specific about multiplying elementwise we use `.*`.
+Exponents follow the same pattern with `.^`.
+For example:
+
+```matlab
+% E_total = 1/2*m*v^2 + m*g*h
+masses  = [100, 150, 60]; % slug
+speeds  = [ 40,  23, 90]; % ft/s
+heights = [  0,  20, 50]; % ft
+g = 32.2; % ft/s^2
+
+E_kinetic = 0.5 * masses .* speeds.^2
+E_potential = masses * g .* heights
+E_total = E_kinetic + E_potential
+```
+
+MATLAB has *vectorized* these operations, meaning that adding two lists of 10,000 numbers takes the same amount of time to compute as adding two numbers.
+This is tremendously powerful and enables personal computers to solve relatively complex numerical models in a reasonable amount of time.
+
+### Vector Math
+
+MATLAB has several functions that operate specifically on arrays or vectors.
+The following functions operate on a single array:
+
+| Function | Description                       | MATLAB Help Center                                                     |
+| -------- | --------------------------------- | ---------------------------------------------------------------------- |
+| flip     | Reverse the elements in an array  | [flip](https://www.mathworks.com/help/matlab/ref/flip.html)            |
+| length   | Length of largest array dimension | [length](https://www.mathworks.com/help/matlab/ref/double.length.html) |
+| max      | Largest value in array            | [max](https://www.mathworks.com/help/matlab/ref/double.max.html)       |
+| mean     | Mean or average value in array    | [mean](https://www.mathworks.com/help/matlab/ref/double.mean.html)     |
+| median   | Median value of an array          | [median](https://www.mathworks.com/help/matlab/ref/double.median.html) |
+| min      | Minimum value of an array         | [min](https://www.mathworks.com/help/matlab/ref/double.min.html)       |
+| norm     | Vector norm of array              | [norm](https://www.mathworks.com/help/matlab/ref/norm.html)            |
+| prod     | Product of all values in array    | [prod](https://www.mathworks.com/help/matlab/ref/double.prod.html)     |
+| sort     | Sort array in ascending order     | [sort](https://www.mathworks.com/help/matlab/ref/double.sort.html)     |
+| std      | Standard deviation of array       | [std](https://www.mathworks.com/help/matlab/ref/double.std.html)       |
+| sum      | Total of all values in array      | [sum](https://www.mathworks.com/help/matlab/ref/double.sum.html)       |
+
+These function operate on multiple arrays:
+
+TODO: pick this up tomorrow
+
+
+### Native Functions for Arrays
+
+
 
 ```matlab
 wind_speed = [3.2, 4.8, 5.5, 4.2, 6.1];  % in m/s
