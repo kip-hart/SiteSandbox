@@ -150,29 +150,11 @@ The following functions operate on a single array:
 
 These function operate on multiple arrays:
 
-TODO: pick this up tomorrow
+| Function   | Description                  | MATLAB Help Center                                            |
+| ---------- | ---------------------------- | ------------------------------------------------------------- |
+| dot(a,b)   | Dot product of two vectors   | [dot](https://www.mathworks.com/help/matlab/ref/dot.html)     |
+| cross(a,b) | Cross product of two vectors | [cross](https://www.mathworks.com/help/matlab/ref/cross.html) |
 
-
-### Native Functions for Arrays
-
-
-
-```matlab
-wind_speed = [3.2, 4.8, 5.5, 4.2, 6.1];  % in m/s
-```
-
-Each value is indexed starting at 1, and you can access or modify values using parentheses:
-
-```matlab
-second_reading = wind_speed(2);     % Retrieves 4.8
-wind_speed(4) = 4.5;                % Update the 4th reading
-```
-
-Arrays can be used directly in calculations or statistical functions:
-
-```matlab
-avg_speed = mean(wind_speed);       % Calculates the average wind speed
-```
 
 ## Matrices in MATLAB
 
