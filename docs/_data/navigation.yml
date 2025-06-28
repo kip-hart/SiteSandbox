@@ -36,10 +36,10 @@ matlab:
         url: /matlab/variables
       - title: "User Scripts"
         url: /matlab/scripts
-      - title: "Structures"
-        url: /matlab/structures
       - title: "Native Functions"
         url: /matlab/native_functions
+      - title: "Structures"
+        url: /matlab/structures
       - title: "Arrays and Matrices"
         url: /matlab/arrays_matrices
       - title: "Plotting"
