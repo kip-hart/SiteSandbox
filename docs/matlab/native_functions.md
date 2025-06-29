@@ -56,6 +56,7 @@ If a function has multiple outputs, they are contained in square brackets `[]` l
 | `min(x, y)` | Returns the smaller of `x` and `y`. | `min(7, 12)` | `7` |
 
 ### Trigonometric Functions
+
 | Function | Description | Example | Result |
 |---|---|---|---|
 | `sin(x)` | Computes the sine of `x` (radians). | `sin(pi/2)` | `1` |
