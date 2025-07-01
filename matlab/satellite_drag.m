@@ -13,34 +13,34 @@
 % C_D = 2 (2 - sigma_N) sin^3(t) + 2*sin(t)*cos^2(t)
 
 % Convert Givens to MKS and radians
-U.M = 1;
-U.KM = 1e3 * U.M;
-U.KG = 1;
-U.S = 1;
-U.RAD = 1;
-U.DEG = pi*U.RAD/180;
+U_M = 1;
+U_KM = 1e3 * U_M;
+U_KG = 1;
+U_S = 1;
+U_RAD = 1;
+U_DEG = pi*U_RAD/180;
 
-U.N = U.KG * U.M/U.S^2;
+U_N = U_KG * U_M/U_S^2;
 
 
 % Air density
-rho_0 = 4.615e-9 * U.KG/U.M^3;
-H = 54 * U.KM;
-h = 400 * U.KM;
+rho_0 = 4.615e-9 * U_KG/U_M^3;
+H = 54 * U_KM;
+h = 400 * U_KM;
 
 % Speed
-V_sat = 7 * U.KM/U.S;
-omega = 7.2921e-5 * U.RAD/U.S;
-R_e = 6371  * U.KM;
-lambda = 38.98 * U.DEG;
+V_sat = 7 * U_KM/U_S;
+omega = 7.2921e-5 * U_RAD/U_S;
+R_e = 6371  * U_KM;
+lambda = 38.98 * U_DEG;
 
 % Drag coefficient
 sigma_N = 1;
 sigma_T = 1;
-theta = 65 * U.DEG;
+theta = 65 * U_DEG;
 
 % Drag area
-S_ref = 20 * U.M^2;
+S_ref = 20 * U_M^2;
 
 %% Calculations
 
@@ -58,4 +58,4 @@ C_D = 2 * (2 - sigma_N) * sin(theta)^3 + 2*sin(theta)*cos(theta)^2
 D = 0.5 * rho * V^2 * C_D * S_ref
 
 %% Solution
-disp(['The drag force is: ' num2str(D/U.N) ' N'])
+disp(['The drag force is: ' num2str(D/U_N) ' N'])
