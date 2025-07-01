@@ -52,7 +52,7 @@ V_air = omega * R_e * cos(lambda)
 V = V_sat - V_air
 
 % Drag Coefficient
-C_D = 2 * (2 - sigma_N) * sin(theta)^3 + 2*sin(theta)*cos(theta)^2
+C_D = 2 * (2 - sigma_N) * sin(theta)^3 + 2*sigma_T*sin(theta)*cos(theta)^2
 
 % Drag Force
 D = 0.5 * rho * V^2 * C_D * S_ref

@@ -100,7 +100,7 @@ $$V_{air} = \omega R_e \cos{\lambda}$$
 
 where $\omega$ = 7.2921e-5 rad/s, the radius of the earth $R_e$ = 6371 km, and the latitude $\lambda$ = 38.98 degrees. The drag coefficient on the satellite will be assumed to follow the hyperthermal limit to Maxwellian hypersonic rarefied aerodynamics:
 
-$$C_D = 2 (2 - \sigma_N) \sin^3\theta + 2 \sin\theta \cos^2\theta$$
+$$C_D = 2 (2 - \sigma_N) \sin^3\theta + 2 \sigma_T \sin\theta \cos^2\theta$$
 
 where $\sigma_N$ = $\sigma_T$ = 1, and $\theta$ = 65 degrees.
 Finally, the reference area for the satellite is the area of its solar arrays and given to be 20 m<sup>2</sup>.
