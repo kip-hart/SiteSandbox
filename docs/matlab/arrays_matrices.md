@@ -182,7 +182,7 @@ all_torque = performance(:,1);         % Retrieves the entire torque column as a
 
 Matrix operations—such as transposition, multiplication, or solving equations—are central to many engineering problems.
 
-## Operating on Whole Arrays and Matrices
+## Operating on Arrays
 
 MATLAB makes it simple to perform operations on entire arrays or columns in a matrix without handling items one at a time. For example, to convert all power outputs from watts to kilowatts, you can write:
 
@@ -236,7 +236,7 @@ Running this code produces:
 
 <div class="notice--info">{{ notice-text | markdownify }}</div>
 
-## Creating Arrays with a Known Size
+## Initializing Arrays
 
 When you already know the size of the data you need, MATLAB allows you to create an array filled with zeros. This is useful when you plan to fill in data later:
 
