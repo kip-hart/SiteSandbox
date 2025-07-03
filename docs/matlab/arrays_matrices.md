@@ -192,9 +192,10 @@ power_kW = performance(:,2) / 1000;  % Divides every element in the second colum
 
 This approach lets you perform calculations on all elements in a single step.
 
+{% capture notice-text %}
 ## Example: Wind Turbine Efficiency
-
 ### Question
+{:.no_toc}
 Given torque (Nm) and power output (W) data for a small wind turbine, calculate the rotational speed (in rad/s) for each time step using the formula:
 
 $$P = \tau \cdot \omega \quad $$
@@ -218,7 +219,7 @@ performance = [
 ```
 
 ### Solution
-
+{:.no_toc}
 You can calculate the rotational speed by performing element-wise division of the power and torque values:
 
 ```matlab
@@ -230,6 +231,10 @@ Running this code produces:
 ```matlab
 {% include matlab/arrays_torque.diary %}
 ```
+
+{% endcapture %}
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Creating Arrays with a Known Size
 
