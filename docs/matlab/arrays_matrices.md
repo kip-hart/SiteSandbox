@@ -197,16 +197,14 @@ This approach lets you perform calculations on all elements in a single step.
 ### Question
 Given torque (Nm) and power output (W) data for a small wind turbine, calculate the rotational speed (in rad/s) for each time step using the formula:
 
-$$P = \tau \cdot \omega \quad \Rightarrow \quad \omega = \frac{P}{\tau}$$
+$$P = \tau \cdot \omega \quad $$
 
 Where:
-- \( P \) is power in watts  
-- \( \tau \) is torque in newton-meters  
-- \( \omega \) is rotational speed in rad/s
+- ( $P$ ) is power in watts  
+- ( $\tau$ ) is torque in newton-meters  
+- ( $\omega$ ) is rotational speed in rad/s
 
-### Solution
-
-You can calculate the rotational speed by performing element-wise division of the power and torque values:
+The table data is the same as above:
 
 ```matlab
 % Torque (Nm) and Power (W) data
@@ -217,25 +215,20 @@ performance = [
     4.5,   89;
     4.2,   85
 ];
+```
 
-% Extract the torque and power columns
-torque = performance(:,1);
-power = performance(:,2);
+### Solution
 
-% Calculate rotational speed (rad/s) for each measurement
-omega = power ./ torque;
+You can calculate the rotational speed by performing element-wise division of the power and torque values:
+
+```matlab
+{% include matlab/arrays_torque.m %}
 ```
 
 Running this code produces:
 
 ```matlab
-omega =
-
-   18.2927
-   19.0698
-   19.5000
-   19.7778
-   20.2381
+{% include matlab/arrays_torque.diary %}
 ```
 
 ## Creating Arrays with a Known Size
