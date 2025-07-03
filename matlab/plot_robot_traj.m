@@ -73,4 +73,3 @@ end
 plot(trajectory(:,1), trajectory(:,2), 'b-', 'LineWidth', 1.5);
 legend('Start', 'Goal', 'Obstacles', 'Trajectory');
 title('Robot Path Planning with Circular Obstacle Avoidance');
-saveas(gcf,'robot_traj.png');
