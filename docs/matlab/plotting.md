@@ -6,6 +6,8 @@ In engineering, we visualize the relationship between variables to understand th
 MATLAB includes several useful tools for creating plots such as line graphs, contour plots, and 3D surfaces.
 Knowing how to present your findings is just as valuable as generating them, and plots are one way to present your data.
 
+Visit [Create 2-D Line Plot](https://www.mathworks.com/help/matlab/creating_plots/using-high-level-plotting-functions.html) for the MATLAB Help Center's documentation on creating line plots.
+
 {% include figure popup=true image_path="/assets/images/figures/matlab/plot_robot_traj/Figure_1.png" alt="Robot trajectory" caption="A robot's trajectory with obstacle avoidance." %}
 
 ## Basic Plotting
@@ -23,6 +25,21 @@ For example:
 Creates a new window containing this plot:
 
 {% include figure popup=true image_path="/assets/images/figures/matlab/plot_basic/Figure_1.png" alt="Basic example plot" caption="Example of basic plotting." %}
+
+While the above plot shows y vs x in a plot, it is missing axis labels.
+To add labels to the axes, use the `xlabel` and `ylabel` commands.
+The `title` command will add a title to the top of the plot.
+Lastly, you can add gridlines to the plot using `grid('on')`. 
+For example:
+
+```matlab
+{% include matlab/plot_basic_labeled.m %}
+```
+
+{% include figure popup=true image_path="/assets/images/figures/matlab/plot_basic_labeled/Figure_1.png" alt="Basic example plot with labels" caption="Example of basic plotting, with labels." %}
+
+
+The MATLAB Help Center has documentation of the [plot](https://www.mathworks.com/help/matlab/ref/plot.html) command.
 
 ## Customization
 

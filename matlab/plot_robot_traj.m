@@ -71,5 +71,5 @@ end
 
 % Final trajectory plot
 plot(trajectory(:,1), trajectory(:,2), 'b-', 'LineWidth', 1.5);
-legend('Start', 'Goal', 'Obstacles', 'Trajectory');
+legend('Start', 'Goal', 'Obstacles');
 title('Robot Path Planning with Circular Obstacle Avoidance');
