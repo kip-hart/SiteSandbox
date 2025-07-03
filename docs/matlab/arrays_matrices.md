@@ -198,7 +198,7 @@ This approach lets you perform calculations on all elements in a single step.
 {:.no_toc}
 Given torque (Nm) and power output (W) data for a small wind turbine, calculate the rotational speed (in rad/s) for each time step using the formula:
 
-$$P = \tau \cdot \omega \quad $$
+$$P = \tau \cdot \omega $$
 
 Where:
 - ( $P$ ) is power in watts  
