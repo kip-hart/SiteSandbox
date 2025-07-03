@@ -41,6 +41,27 @@ For example:
 
 The MATLAB Help Center has documentation of the [plot](https://www.mathworks.com/help/matlab/ref/plot.html) command.
 
+## Plotting Multiple Lines
+
+If you want to plot multiple lines on the same plot, you need to use the `hold` command.
+For example:
+
+```matlab
+{% include matlab/plot_hold.m %}
+```
+
+{% include figure popup=true image_path="/assets/images/figures/matlab/plot_hold/Figure_1.png" alt="Basic example plot with two lines" caption="Example of basic plotting, with two lines." %}
+
+If you do not use `hold on`, MATLAB will plot the first line, erase it, and then plot the second line.
+The `hold on` command tells MATLAB not to erase the existing plots.
+The [hold](https://www.mathworks.com/help/matlab/ref/hold.html) page in the MATLAB Help Center provides more documentation.
+
+Also included in the example above is the `legend` command.
+This adds a legend to the plot and provides context for the lines on the plot.
+MATLAB attempts to find the best location for the legend, but sometimes it covers up an important feature.
+To specify a corner, call the function like `legend(label1, label2, ..., 'Location', 'northwest')`.
+The [legend](https://www.mathworks.com/help/matlab/ref/legend.html) page in the MATLAB Help Center provides more documentation.
+
 ## Customization
 
 ## Setting Axes
