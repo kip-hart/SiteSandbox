@@ -1,0 +1,9 @@
+x = linspace(0, 2*pi, 20);
+y = cos(x);
+plot(x, y, 'LineWidth', 2, 'Color', 'green', 'LineStyle', '--', 'Marker', 'diamond', 'MarkerFaceColor', '#A98BEB')
+
+xlabel('Angle [rad]')
+ylabel('cos(x) [-]')
+title('Plot of Cosine')
+
+grid('on')
