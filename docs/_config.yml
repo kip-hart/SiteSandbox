@@ -145,7 +145,7 @@ footer:
   links:
     - label: "Canvas"
       icon: "fa-solid fa-users"
-      url: https://elms.umd.edu/
+      url: https://umd.instructure.com/courses/1385483
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: https://github.com/kip-hart/SiteSandbox
