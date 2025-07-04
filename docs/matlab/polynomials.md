@@ -237,3 +237,13 @@ The MATLAB Help Center has documentation on
 
 
 ## Reading Questions
+
+1. How do you evaluate a polynomial with coefficients in the array `p` at specific values of `x`?
+1. Does the order of coefficients in `p` matter? If so, how should they be ordered?
+1. What should the array `p` be for the polynomial $9 x - x^5$?
+1. What additional step must be done in order to add or subtract polynomials?
+1. How do you get the roots of a polynomial from its coefficients?
+1. How do you get the coefficients of a polynomial from its roots?
+1. What are the outputs of the `deconv` function?
+1. How can you find the line-of-best fit?
+1. What should you consider when deciding the order of the polynomial-of-best-fit?

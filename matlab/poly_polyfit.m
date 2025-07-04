@@ -16,13 +16,15 @@ y = data(:, 2);
 plot(x, y, 'ko')
 hold on
 
+x_plt = linspace(min(x), max(x)); % higher resolution than x
+
 % Cubic fit
 p_cubic = polyfit(x, y, 3);
-plot(x, polyval(p_cubic, x))
+plot(x_plt, polyval(p_cubic, x_plt))
 
 % 11th order fit
 p_11th = polyfit(x, y, 11);
-plot(x, polyval(p_11th, x));
+plot(x_plt, polyval(p_11th, x_plt));
 
 % Format plot
 hold off
