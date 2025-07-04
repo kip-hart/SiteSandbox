@@ -239,9 +239,40 @@ The MATLAB Help Center has documentation on
 
 ### Logarithmic Plots
 
+Logarithmic plots are used when data values span several orders of magnitude.
+MATLAB includes three primary functions for logarithmic visualization.
+The `semilogx` function applies a logarithmic scale to the x-axis, while `semilogy` applies it to the y-axis.
+For plots requiring logarithmic scaling on both axes, use the `loglog` function.
+These plots are particularly useful in the frequency domain, such as in acoustics, radio transmission, and control theory.
+
+The MATLAB Help Center has documentation on 
+[semilogx](https://www.mathworks.com/help/matlab/ref/semilogx.html), 
+[semilogy](https://www.mathworks.com/help/matlab/ref/semilogy.html), and 
+[loglog](https://www.mathworks.com/help/matlab/ref/loglog.html).
+
 ### Fill
 
+The `fill` function generates filled polygons by specifying vectors of x and y coordinates.
+For example, if `x` and `y` are the vertices of a polygon, then `fill(x,y,'r')` will plot that polygon in red.
+The `fill` function can also accept RGB and hexidecimal, like `plot`.
+You can also assign a unique color to each vertex and MATLAB will blend the colors and create an ombre effect.
+Another input to `fill` is `FaceAlpha`, which allows you to set the transparency of the filled polygon.
+The `fill` command is often used to specify keep-in or keep-out regions and to emphasize specific regions of a plot.
+
+The MATLAB Help Center has documentation on 
+[fill](https://www.mathworks.com/help/matlab/ref/fill.html).
+
+
 ### Bar Chart
+
+Bar charts can be used to represent data with discrete `x` values.
+For example, if you have machines in a factory and want to plot the total downtime of each machine, 
+that could be represented with a bar chart.
+With bar charts, it is especially important to use the `xticklabels` function to label the bars.
+
+The MATLAB Help Center has documentation on 
+[bar](https://www.mathworks.com/help/matlab/ref/bar.html).
+
 
 ### Histogram
 
