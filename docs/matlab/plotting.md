@@ -160,7 +160,7 @@ When you call `plot(x,y)`, MATLAB automatically scales the axes of the plot to c
 It will also sometimes add some buffer around those limits so the tick marks on the axes are reasonable.
 You can control the ranges on the x and y axes, the tick marks, and the labels for those tick marks to improve the plot.
 
-With the previous examples plotting sine and cosine, for example, we should put the x-ticks at fractions of $pi$, rather than at whole numbers of radians.
+With the previous examples plotting sine and cosine, for example, we should put the x-ticks at fractions of $\pi$, rather than at whole numbers of radians.
 The script below directly controls both axes of the plot:
 
 ```matlab
