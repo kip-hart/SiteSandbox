@@ -67,7 +67,7 @@ function run_single_script(fullPath)
         legends = findobj(FigHandle, 'Type', 'Legend');
         if ~isempty(legends)
             lgnd = legends(1);
-            lgnd.Interpreter = 'none';
+            lgnd.Position(3) = 0.18;
             lgnd.EdgeColor = 'r';
         end
 
