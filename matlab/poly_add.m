@@ -8,5 +8,5 @@
 p1 = [3 1 -8 2];
 p2 = [6 -10];
 
-padded_p2 = padarray(p2, 2, 0, 'pre')
+padded_p2 = [zeros(1,2) p2]
 p3 = p1 + padded_p2

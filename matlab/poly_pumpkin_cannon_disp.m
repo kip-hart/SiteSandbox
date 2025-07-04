@@ -30,3 +30,6 @@ p = [-1/2*g, v_vert, h_0];
 
 % Height at dt
 h = polyval(p, dt);
+
+%% Answer
+disp(['Height at ' num2str(dt/U.S) ' s: ' num2str(h/U.FT) ' ft'])

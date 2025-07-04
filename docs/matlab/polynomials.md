@@ -81,13 +81,13 @@ so we use the barrel angle to determine how fast the pumpkin is traveling in the
 These are combined in a script that looks like:
 
 ```matlab
-{% include matlab/poly_pumpkin_cannon.m %}
+{% include matlab/poly_pumpkin_cannon_disp.m %}
 ```
 
 Which produces this result:
 
 ```matlab
-{% include matlab/poly_pumpkin_cannon.diary %}
+{% include matlab/poly_pumpkin_cannon_disp.diary %}
 ```
 
 {% endcapture %}
@@ -145,7 +145,7 @@ The MATLAB Help Center has documentation on
 
 Sometimes we need to perform arithmetic operations on two polynomials like add, subtract, multiply, and divide.
 To add two polynomials together, first we need to make sure their arrays are the same length.
-We do this using the `padarray` function, which will pad an array with leading 0s.
+We do this using the `zeros` function, which will pad an array with leading 0s.
 For example:
 
 ```matlab
@@ -183,8 +183,57 @@ As an example:
 {% include matlab/poly_deconv.diary %}
 ``` 
 
+The MATLAB Help Center has documentation on 
+[zeros](https://www.mathworks.com/help/matlab/ref/zeros.html), 
+[conv](https://www.mathworks.com/help/matlab/ref/conv.html), and 
+[deconv](https://www.mathworks.com/help/matlab/ref/deconv.html).
+
 ## Polynomial Calculus
 
+MATLAB can differentiate and integrate polynomials,
+using the `polyder` and `polyint` functions respectively.
+In the pumpkin example, the `polyder` function can be used to find the vertical speed versus time.
+If we take the root of that, polynomial, we get the time where the vertical speed is zero, which is the time where the height is greatest.
+For example:
+
+```matlab
+{% include matlab/poly_pumpkin_cannon_polyder.m %}
+```
+```matlab
+{% include matlab/poly_pumpkin_cannon_polyder.diary %}
+``` 
+
+The `polyint` function integrates the polynomial.
+It is effectively the inverse of `polyder`.
+
+The MATLAB Help Center has documentation on 
+[polyder](https://www.mathworks.com/help/matlab/ref/polyder.html) and 
+[polyint](https://www.mathworks.com/help/matlab/ref/polyint.html).
+
 ## Polynomial Fitting
+
+Sometimes we are in a situation where we have gathered data and we want to find a polynomial approximation
+that goes through that data.
+One example would be parameter estimation - where we run an experiment and gather data that is the output of a polynomial but
+the quantites we are actually interested in are the underlying coefficients.
+Another example is where generating data points is very expensive and time consuming, like a program that takes days to run, so
+you could run that program at specific points then approximate the program's output with a polynomial that fits thost points.
+
+The `polyfit` function in MATLAB finds the polynomial-of-best-fit for a set of points.
+The syntax is `p = polyfit(x, y, n)`, where `n` is the order of the polynomial.
+For a line-of-best-fit, set `n` to 1.
+Polynomial fitting does require some care and understanding of the underlying data.
+Setting `n` to be a large number can cause over-fitting and become very sensitive to changes in the data.
+As an example:
+
+```matlab
+{% include matlab/poly_polyfit.m %}
+```
+
+{% include figure popup=true image_path="/assets/images/figures/matlab/poly_polyfit/Figure_1.png" alt="Fit to data" caption="Plot of fits to noisy data." %}
+
+The MATLAB Help Center has documentation on 
+[polyfit](https://www.mathworks.com/help/matlab/ref/polyfit.html).
+
 
 ## Reading Questions
