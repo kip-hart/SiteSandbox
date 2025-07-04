@@ -40,8 +40,8 @@ To evaluate the value of a polynomial at a value of $x$, use the `polyval` funct
 The syntax is `y = polyval(p, x)`, where `p` is the array of coefficients and `x` is the input.
 
 {% capture notice-text %}
-## Example: Pumpkin Cannon
-### Question
+### Example: Pumpkin Cannon
+#### Question
 {:.no_toc}
 At the *Punkin Chunkin* annual event, a compressed air cannon accelerates a pumpkin to a speed of 100 mph. 
 Assuming the barrel is angled 45 degrees relative to the ground and the pumpkin has an altitude of 15 ft when it leaves the cannon,
@@ -70,7 +70,7 @@ dt = 2*U.S;
 g = 32.2*U.FT/U.S^2;
 ```
 
-### Solution
+#### Solution
 {:.no_toc}
 You can find the height of the pumpkin at 2 seconds using the formula:
 
