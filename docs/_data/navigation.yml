@@ -54,7 +54,7 @@ matlab:
         url: /matlab/random
       - title: "User Functions"
         url: /matlab/user_functions
-      - title: "Global and Persistent Variables"
+      - title: "Globals and Persistents"
         url: /matlab/global_persistent
       - title: "File Input/Output"
         url: /matlab/file_io
