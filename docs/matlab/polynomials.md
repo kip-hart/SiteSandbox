@@ -193,7 +193,7 @@ The MATLAB Help Center has documentation on
 MATLAB can differentiate and integrate polynomials,
 using the `polyder` and `polyint` functions respectively.
 In the pumpkin example, the `polyder` function can be used to find the vertical speed versus time.
-If we take the root of that, polynomial, we get the time where the vertical speed is zero, which is the time where the height is greatest.
+If we take the root of that polynomial, we get the time where the vertical speed is zero, which is the time where the height is greatest.
 For example:
 
 ```matlab
