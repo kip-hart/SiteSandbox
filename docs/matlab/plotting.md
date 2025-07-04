@@ -158,11 +158,53 @@ The [Specify Line and Marker Appearance in Plots](https://www.mathworks.com/help
 
 ## Setting Axes
 
+When you call `plot(x,y)`, MATLAB automatically scales the axes of the plot to contain all the (x,y) coordinates.
+It will also sometimes add some buffer around those limits so the tick marks on the axes are reasonable.
+You can control the ranges on the x and y axes, the tick marks, and the labels for those tick marks to improve the plot.
+
+With the previous examples plotting sine and cosine, for example, we should put the x-ticks at fractions of $pi$, rather than at whole numbers of radians.
+The script below directly controls both axes of the plot:
+
+```matlab
+{% include matlab/plot_axis_controls.m %}
+```
+
+{% include figure popup=true image_path="/assets/images/figures/matlab/plot_axis_controls/Figure_1.png" alt="Plot with defined axes" caption="Example plot with defined x and y axes." %}
+
+There is no need to set `yticklabels` in the example above.
+Only use `xticklabels` and `yticklabels` if the standard output is not what you want.
+The most common use for these are when `x` is a list of dates or times, and you want the tick labels to be formatted as such.
+{: .notice}
+
+The MATLAB Help Center has documentation on 
+[xlim](https://www.mathworks.com/help/matlab/ref/xlim.html), 
+[ylim](https://www.mathworks.com/help/matlab/ref/ylim.html), 
+[xticks](https://www.mathworks.com/help/matlab/ref/xticks.html), 
+[yticks](https://www.mathworks.com/help/matlab/ref/yticks.html), 
+[xticklabels](https://www.mathworks.com/help/matlab/ref/xticklabels.html), and 
+[yticklabels](https://www.mathworks.com/help/matlab/ref/yticklabels.html).
+
 ## Saving Plots
 
 ## Subplots
 
 ## Special Plot Types
+
+### Logarithmic Plots
+
+### Fill
+
+### Bar Chart
+
+### Histogram
+
+### Box Plot
+
+### Contour Plots
+
+### Plotting on Maps
+
+### Vector Fields
 
 ## Reading Questions
 
