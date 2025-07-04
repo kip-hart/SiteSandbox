@@ -2,6 +2,14 @@ function run_all_scripts(directory)
     % Get the list of all files and folders in the directory
     files = dir(directory);
 
+    % Make a fake plot with legend, first one seems weird
+    plot([0, 1], [0, 1])
+    hold on
+    plot([0, 1], [0, 1,])
+    hold off
+    legend('foo', 'bar')
+    close
+
     % Loop through each item in the directory
     for i = 1:length(files)
         % Skip '.' and '..' directories
