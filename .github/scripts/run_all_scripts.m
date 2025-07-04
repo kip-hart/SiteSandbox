@@ -8,6 +8,7 @@ function run_all_scripts(directory)
     plot([0, 1], [0, 1,])
     hold off
     legend('foo', 'bar')
+    saveas(gcf, 'figures/tmp.png')
     close
 
     % Loop through each item in the directory
