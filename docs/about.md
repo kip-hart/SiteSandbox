@@ -34,12 +34,3 @@ This includes both GNC and modeling/simulation work on these programs.
 He regularly uses MATLAB and Simulink.
 Outside of work, Kip contributes to open-source Python projects.
 He is also an avid Lego fan, a rock collector, and a sailor.
-
-
-## To Do List
-
-* Build out MATLAB Week 1 pages
-* Build out C++ Week 1 pages
-* Add a C++ getting started page
-    + Figure out online IDE for C++
-* Add details to User Interface on MATLAB Getting Started.
