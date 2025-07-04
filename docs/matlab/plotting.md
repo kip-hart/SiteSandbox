@@ -276,14 +276,73 @@ The MATLAB Help Center has documentation on
 
 ### Histogram
 
-### Box Plot
+Histograms display the distribution of numerical data by dividing it into discrete intervals or "bins."
+These are especially useful for visualizing probabilistic quantities and statistical data.
+To create a histogram in MATLAB, use the `histogram` function.
+For example, `histogram(x)` will plot a histogram of the values of `x`.
+To specify the number of bins for the histogram, use `histogram(x, n)`.
+You can also specify the edges of the histogram bins using `histogram(x, edges)`.
+
+While it may seem like `histogram(x, n)` or `histogram(x, edges)` require extra effort,
+they can significantly influence conclusions drawn from the histogram if the number of samples in `x` is low.
+With small samples, take care in setting up the bins of the histogram to avoid misinterpretation of the data.
+{: .notice}
+
+The MATLAB Help Center has documentation on 
+[histogram](https://www.mathworks.com/help/matlab/ref/matlab.graphics.chart.primitive.histogram.html).
+
 
 ### Contour Plots
 
+Contour plots are like terrain height maps, but for any 3D surface.
+When height is a function of x and y, a contour plot shows curves of constant height.
+This is especially useful for plotting functions of two variables.
+The `contour` function is used like `contour(x, y, z)`, where `x` is a vector of length `m`,
+`y` is a vector of length `n`, and `z` is a matrix of size `m` x `n`.
+The `contourf` function works the same way as `contour`, but it fills between the contour levels.
+
+While contour plots are good for showing the general behavior of a function of two variables, they can be
+difficult for reading specific values.
+Imagine, for instance, if you received a PNG file with a `contourf` plot in it and you had to determine the z value for a specific (x,y) pair.
+You would have to grab the color at those coordinates and compare it to the colorbar - a very inaccurate process.
+Alternatively, the same data can be presented with `plot`, where you plot z vs x at multiple values of y ($z=f(x,y_{const.})$).
+
+The MATLAB Help Center has documentation on 
+[contour](https://www.mathworks.com/help/matlab/ref/contour.html) and 
+[contourf](https://www.mathworks.com/help/matlab/ref/contourf.html).
+
+
 ### Plotting on Maps
+
+MATLAB includes several functions designed for visualizing data in geographical contexts.
+The `geoplot` and `geoscatter` functions allow you to plot latitude and longitude coordinates on maps.
+You can choose the map style/data using the `geobasemap` function.
+These functions are very useful for plotting trajectories/ground tracks relative to features on Earth.
+
+The MATLAB Help Center has documentation on 
+[geoplot](https://www.mathworks.com/help/matlab/ref/geoplot.html),  
+[geoscatter](https://www.mathworks.com/help/matlab/ref/geoscatter.html), and
+[geobasemap](https://www.mathworks.com/help/matlab/ref/geobasemap.html).
+
 
 ### Vector Fields
 
+Vector fields, such as the magnetic field surrounding a magnet, can be plotted in MATLAB with the `quiver` function.
+The general inputs to quiver are `quiver(x, y, u, v)`, where `x` and `y` are arrays of the (x, y) coordinates of the *tails* of the vectors, `u` is the x-component, and `v` is the y-component.
+The magnitudes of the plotted vectors are scaled, to an appropriate size for the plot.
+Quiver plots can be useful for visualizing vector fields, aerodynamic flows, trajectories, and control signals. 
+
+The MATLAB Help Center has documentation on 
+[quiver](https://www.mathworks.com/help/matlab/ref/quiver.html).
+
 ## Reading Questions
 
-
+1. Which two inputs are required by the `plot` function?
+1. What are 3 ways to customize the output of the `plot` function?
+1. Which command allows you to plot more than one line in a figure?
+1. How do you add labels to the axes of a figure?
+1. How do you add a legend to a plot and specify its location?
+1. How would you plot a dotted magenta line with square markers?
+1. What two factors should you consider when picking colors for plots?
+1. How would you save the current figure to the file "results.png"?
+1. How would you create a figure with a row of 4 subplots with linked y axes?
