@@ -1,7 +1,7 @@
 t = linspace(0, 2*pi);
-x = cos(x);
-v = -sin(x);
-a = -cos(x);
+x = cos(t);
+v = -sin(t);
+a = -cos(t);
 
 tiledlayout(3,1);
 
