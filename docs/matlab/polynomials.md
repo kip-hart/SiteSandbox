@@ -115,7 +115,73 @@ The MATLAB Help Center has documentation on
 
 ## Roots of Polynomials
 
+Another common operation on polynomials is determining their roots.
+These are values of `x` where the polynomial evaluates to zero.
+In the pumpkin example, the roots of that polynomial are the times when the pumpkin has zero height.
+The MATLAB command is `roots` and the syntax is simply `r = roots(p)`.
+Continuing with the pumpkin example:
+
+```matlab
+{% include matlab/poly_pumpkin_cannon_roots.m %}
+```
+```matlab
+{% include matlab/poly_pumpkin_cannon_roots.diary %}
+```
+
+A polynomial of degree $n$, which is the largest power of $x$, always has $n$ roots.
+Sometimes these roots are complex, sometimes they are repeated,
+but there are always the same number of roots as the order of the polynomial.
+In fact, the roots of a polynomial can be used to calculate the equivelant polynomial coefficients.
+This function is called `poly` and it is like the inverse of `roots`.
+Its syntax is `p = poly(r)`.
+This is useful in situations where you have a list of desired root locations and
+need to find the equivalent polynomial for other analyses.
+
+The MATLAB Help Center has documentation on 
+[roots](https://www.mathworks.com/help/matlab/ref/roots.html) and 
+[poly](https://www.mathworks.com/help/matlab/ref/poly.html).
+
 ## Polynomial Arithmetic
+
+Sometimes we need to perform arithmetic operations on two polynomials like add, subtract, multiply, and divide.
+To add two polynomials together, first we need to make sure their arrays are the same length.
+We do this using the `padarray` function, which will pad an array with leading 0s.
+For example:
+
+```matlab
+{% include matlab/poly_add.m %}
+```
+```matlab
+{% include matlab/poly_add.diary %}
+```
+
+Subtracting two arrays follows the same process as adding, with `-` instead of `+`.
+To multiply two polynomials together, use the `conv` function (short for convolution).
+Its syntax is `conv(p1, p2)` and it will do all of the first-outside-inside-last for you,
+regardless of how long the polynomials are.
+You do not need to pad the shorter polynomial when using `conv`.
+As an example:
+
+```matlab
+{% include matlab/poly_conv.m %}
+```
+```matlab
+{% include matlab/poly_conv.diary %}
+```
+
+The most challenging of the four operations mentioned is dividing polynomials.
+This is performed using `deconv`, which has syntax `[x, r] = deconv(p1, p2)`.
+The numerator is `p1` and the denominator is `p2`.
+The output `x` is the "whole number" quotient while `r` is the remainder.
+Mathematically, you could recover `p1` by doing `p1 = conv(x, p2) + r`.
+As an example:
+
+```matlab
+{% include matlab/poly_deconv.m %}
+```
+```matlab
+{% include matlab/poly_deconv.diary %}
+``` 
 
 ## Polynomial Calculus
 
