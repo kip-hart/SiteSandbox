@@ -1,7 +1,7 @@
 poly_pumpkin_cannon  % the script in the example
 
 %% Evaluate entire trajectory
-dt = (0:0.1:100)*U.S;
+dt = (0:0.01:100)*U.S;
 h = polyval(p, dt);
 
 %% Plot trajectory above ground
