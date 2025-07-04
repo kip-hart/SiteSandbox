@@ -23,13 +23,6 @@ grid on;
 plot(start(1), start(2), 'go', 'MarkerSize', 10, 'LineWidth', 2);  % green start
 plot(goal(1), goal(2), 'rx', 'MarkerSize', 10, 'LineWidth', 2);    % red goal
 
-% Plot obstacles
-theta = linspace(0, 2*pi, 100);
-for i = 1:size(obstacles,1)
-    xc = obstacles(i,1); yc = obstacles(i,2); r = obstacles(i,3);
-    fill(xc + r*cos(theta), yc + r*sin(theta), [0.6 0.6 0.6]); % gray circles
-end
-
 % Initialize robot position
 pos = start;
 trajectory = pos;
@@ -71,7 +64,16 @@ end
 
 % Final trajectory plot
 plot(trajectory(:,1), trajectory(:,2), 'b-', 'LineWidth', 1.5);
-legend('Start', 'Goal', '','','','Trajectory','Location','southeast');
+
+% Plot obstacles
+theta = linspace(0, 2*pi, 100);
+for i = 1:size(obstacles,1)
+    xc = obstacles(i,1); yc = obstacles(i,2); r = obstacles(i,3);
+    fill(xc + r*cos(theta), yc + r*sin(theta), [0.6 0.6 0.6]); % gray circles
+end
+
+
+legend('Start', 'Goal','Trajectory','Location','southeast');
 xlabel('X [m]')
 ylabel('Y [m]')
 title('Robot Path Planning with Circular Obstacle Avoidance');

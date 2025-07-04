@@ -193,6 +193,12 @@ there is the `saveas` command.
 The two required inputes are the figure handle and the filename.
 For most applications, the figure handle is the current figure or `gcf` which stands for **g**et **c**urrent **f**igure.
 The filename is the name of the image file you want to create.
+For example:
+
+```matlab
+plot(x, y)
+saveas(gcf, 'my_plot.png')
+```
 
 Plots are most commonly saved as PNG files.
 The JPEG format is also available, but these look worse on screen than PNGs.
@@ -203,6 +209,31 @@ The MATLAB Help Center has documentation on
 [saveas](https://www.mathworks.com/help/matlab/ref/saveas.html).
 
 ## Subplots
+
+Figures can contain multiple plots within the same window, known as subplots.
+These can be useful for inspecting data that share the same x or y axes, but not both.
+First use the `tiledlayout` function to define how many rows and columns of plots there are.
+For 3 rows and 2 columns, use `tiledlayout(3,2)`.
+To select a subplot (or tile), use the `nexttile` command.
+Tiles fill along the rows left-to-right, then top-to-bottom.
+
+When you create a figure this way, in general zooming in on one plot does not affect the axes of the others.
+If you want to keep the axes synced, use the `linkaxes` command like `linkaxes([ax1, ax2], 'x')` to link the x axes for example.
+This is useful when inspecting multiple signals that vary with time.
+If you zoom in to a narrower range in time, you would want all of the other plots to zoom to the same range.
+For example:
+
+```matlab
+{% include matlab/plot_subplots.m %}
+```
+
+{% include figure popup=true image_path="/assets/images/figures/matlab/plot_subplots/Figure_1.png" alt="Figure with subplots" caption="Example figure with subplots." %}
+
+The MATLAB Help Center has documentation on 
+[tiledlayout](https://www.mathworks.com/help/matlab/ref/tiledlayout.html), 
+[nexttile](https://www.mathworks.com/help/matlab/ref/nexttile.html), and 
+[linkaxes](https://www.mathworks.com/help/matlab/ref/linkaxes.html).
+
 
 ## Special Plot Types
 
