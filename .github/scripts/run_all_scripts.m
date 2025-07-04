@@ -3,14 +3,17 @@ function run_all_scripts(directory)
     files = dir(directory);
 
     % Make a fake plot with legend, first one seems weird
+    %{
     plot([0, 1], [0, 1])
     hold on
     plot([0, 1], [0, 1,])
     hold off
-    legend('foo', 'bar')
+    lgnd = legend('foo', 'bar');
+    lgnd.Position
     mkdir('figures')
     saveas(gcf, 'figures/tmp.png')
     close
+    %}
 
     % Loop through each item in the directory
     for i = 1:length(files)
@@ -59,6 +62,15 @@ function run_single_script(fullPath)
 
     for iFig = 1:length(FigList)
         FigHandle = FigList(iFig);
+
+        % fix legends
+        legends = findobj(FigHandle, 'Type', 'Legend');
+        if ~isempty(legends)
+            lgnd = legends(1);
+            lgnd.Interpreter = 'none';
+            lgnd.Title = 'Proof';
+        end
+
         FigName   = ['Figure_' num2str(iFig) '.png']
         saveas(FigHandle, fullfile(FolderName, FigName));
     end
