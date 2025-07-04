@@ -68,7 +68,7 @@ function run_single_script(fullPath)
         if ~isempty(legends)
             lgnd = legends(1);
             lgnd.Interpreter = 'none';
-            lgnd.Title = 'Proof';
+            lgnd.EdgeColor = 'r';
         end
 
         FigName   = ['Figure_' num2str(iFig) '.png']
