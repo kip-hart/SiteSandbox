@@ -18,7 +18,8 @@ ylim([-1.1, 1.1])
 
 % Set the x ticks every pi/4 radians
 xticks(0:pi/4:2*pi)
-xticklabels({'0', '\pi/4', '\pi/2', '3\pi/4', '\pi', '5\pi/4', '3\pi/2', '7\pi/4', '2\pi'})
+xticklabels({'0', '\pi/4', '\pi/2', '3\pi/4', '\pi', ...
+             '5\pi/4', '3\pi/2', '7\pi/4', '2\pi'})
 
 % Set the y ticks every 0.25
 yticks(-1:0.25:1)

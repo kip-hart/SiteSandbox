@@ -72,7 +72,7 @@ for i = 1:size(obstacles,1)
     fill(xc + r*cos(theta), yc + r*sin(theta), [0.6 0.6 0.6]); % gray circles
 end
 
-legend('Start', 'End', 'Trajectory', 'Location', 'southeast')
+% legend('Start', 'End', 'Trajectory', 'Location', 'southeast')
 xlabel('X [m]')
 ylabel('Y [m]')
 title('Robot Path Planning with Circular Obstacle Avoidance');

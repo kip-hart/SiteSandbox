@@ -2,19 +2,6 @@ function run_all_scripts(directory)
     % Get the list of all files and folders in the directory
     files = dir(directory);
 
-    % Make a fake plot with legend, first one seems weird
-    %{
-    plot([0, 1], [0, 1])
-    hold on
-    plot([0, 1], [0, 1,])
-    hold off
-    lgnd = legend('foo', 'bar');
-    lgnd.Position
-    mkdir('figures')
-    saveas(gcf, 'figures/tmp.png')
-    close
-    %}
-
     % Loop through each item in the directory
     for i = 1:length(files)
         % Skip '.' and '..' directories
@@ -63,12 +50,11 @@ function run_single_script(fullPath)
     for iFig = 1:length(FigList)
         FigHandle = FigList(iFig);
 
-        % fix legends
+        % Longer legends to address GitHub Actions issue
         legends = findobj(FigHandle, 'Type', 'Legend');
         if ~isempty(legends)
             lgnd = legends(1);
-            lgnd.Position(3) = 0.18;
-            lgnd.EdgeColor = 'r';
+            lgnd.Position(3) = max(lgnd.Position(3), 0.18);
         end
 
         FigName   = ['Figure_' num2str(iFig) '.png']

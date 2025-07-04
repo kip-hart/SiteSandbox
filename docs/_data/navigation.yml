@@ -60,8 +60,6 @@ matlab:
         url: /matlab/global_persistent
       - title: "File Input/Output"
         url: /matlab/file_io
-      - title: "Publishing"
-        url: /matlab/publishing
   - title: "Advanced"
     children:
       - title: "Switch-Case Statements"
