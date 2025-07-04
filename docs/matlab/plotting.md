@@ -12,8 +12,6 @@ Visit [Create 2-D Line Plot](https://www.mathworks.com/help/matlab/creating_plot
 
 ## Basic Plotting
 
-To begin plotting in MATLAB, start with the `plot(x, y)` command, which creates a two-dimensional line graph of data. Here, `x` and `y` are arrays of the same length that represent paired data points—such as time and displacement, or pressure and temperature. MATLAB automatically scales the axes to fit your data, but you can manually adjust them using `xlim` and `ylim` if needed. After generating a plot, it’s a good habit to label the axes using `xlabel('Time (s)')` and `ylabel('Position (m)')`, and to give your graph a clear title using `title('Position Over Time')`. These enhancements make your plot easier to interpret for both yourself and your classmates.
-
 The built-in function `plot` creates line plots and takes two inputs: an array of x values and an array of y values.
 These arrays must be the same length, so there is one y value for each x value.
 For example:
@@ -185,6 +183,24 @@ The MATLAB Help Center has documentation on
 [yticklabels](https://www.mathworks.com/help/matlab/ref/yticklabels.html).
 
 ## Saving Plots
+
+Once you have formatted the lines, labels, and axes of your plot, you will often want to save that plot as a file.
+You can click File > Save or the Save icon in the window, then navigate to where you want to save it, give it a name,
+and click save.
+For one-off plots this is perfectly fine.
+If you want to avoid all of that button clicking and tell MATLAB directly where to save the file,
+there is the `saveas` command.
+The two required inputes are the figure handle and the filename.
+For most applications, the figure handle is the current figure or `gcf` which stands for **g**et **c**urrent **f**igure.
+The filename is the name of the image file you want to create.
+
+Plots are most commonly saved as PNG files.
+The JPEG format is also available, but these look worse on screen than PNGs.
+You can also save plots as PDFs, which have the best quality but are sometimes harder to use.
+In general, saving figures as PNGs is the best option most of the time.
+
+The MATLAB Help Center has documentation on 
+[saveas](https://www.mathworks.com/help/matlab/ref/saveas.html).
 
 ## Subplots
 

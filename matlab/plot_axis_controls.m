@@ -7,7 +7,10 @@ hold on
 plot(x, y2)
 hold off
 
-legend('First Line', 'Second Line')
+legend('cos(x)', 'sin(x)')
+xlabel('x [rad]')
+ylabel('f(x)')
+title('Trigonometric Functions')
 
 % Set the bounds on x and y axes
 xlim([0, 2*pi])
