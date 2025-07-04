@@ -101,11 +101,10 @@ If we do not know the time of flight initially, we could set `dt` to be a range 
 For example:
 
 ```matlab
-dt = 0:0.1:100;
-h = polyval(p, dt);
-mask = h >= 0;
-plot(dt(mask), h(mask));
+{% include matlab/poly_pumpkin_cannon_plot.m %}
 ```
+
+{% include figure popup=true image_path="/assets/images/figures/matlab/poly_pumpkin_cannon_plot/Figure_1.png" alt="Pumpkin trajectory" caption="Plot of pumpkin trajectory, evaluated with polyval." %}
 
 Here, we reasonably assume it will take no more than 100 seconds for the pumpkin to reach the ground.
 The `polyval` function will evaluate the polynomial `p` as if there was no ground and the pumpkin kept falling.

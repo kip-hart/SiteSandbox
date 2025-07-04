@@ -52,8 +52,6 @@ matlab:
         url: /matlab/polynomials
       - title: "Random Numbers"
         url: /matlab/random
-      - title: "Vector and Matrix Operations"
-        url: /matlab/vector_matrix
       - title: "User Functions"
         url: /matlab/user_functions
       - title: "Global and Persistent Variables"
