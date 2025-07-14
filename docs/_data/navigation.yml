@@ -18,8 +18,8 @@ general:
     url: /general/history
   - title: "Binary"
     url: /general/binary
-  - title: "Computer Architecture"
-    url: /general/computer_architecture
+  #- title: "Computer Architecture"
+  #  url: /general/computer_architecture
 
 
 # MATLAB Nav

@@ -97,6 +97,23 @@ The MATLAB Help Center has documentation on
 
 ## Conjugation and Symmetry
 
+The complex conjugate of a number $z = a + bi $ is defined as:
+
+$$ \bar{z} = a - bi $$
+
+In MATLAB, you compute the conjugate using the `conj` function:
+
+```matlab
+zc = conj(z);
+```
+
+Conjugation reflects points across the real axis in the complex plane.
+We often see conjugate pairs as the complex roots to the quadratic formula,
+like $r = a \pm b i$.
+For any general polynomial, if it has a complex root then the conjugate is also a root.
+This symmetry across the real axis underlies many algorithms in signal processing and control systems.
+It guarantees that real-world responses remain real, cancelling out imaginary components.
+
 ## Example: AC Circuit Impedance
 
 ## Reading Questions

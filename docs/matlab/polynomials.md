@@ -245,5 +245,6 @@ The MATLAB Help Center has documentation on
 1. How do you get the roots of a polynomial from its coefficients?
 1. How do you get the coefficients of a polynomial from its roots?
 1. What are the outputs of the `deconv` function?
+1. How would you raise a polynomial to the power 2? What about the power 5?
 1. How can you find the line-of-best fit?
 1. What should you consider when deciding the order of the polynomial-of-best-fit?
