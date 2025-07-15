@@ -163,6 +163,7 @@ This is the plot:
 
 {% include figure popup=true image_path="/assets/images/figures/matlab/complex_impedance/Figure_1.png" alt="Plot of magnitude and phase" caption="Impedance magnitude and phase for RLC example problem." %}
 
+{% endcapture %}
 
 <div class="notice--info">{{ notice-text | markdownify }}</div>
 
