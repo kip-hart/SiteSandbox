@@ -114,6 +114,63 @@ For any general polynomial, if it has a complex root then the conjugate is also 
 This symmetry across the real axis underlies many algorithms in signal processing and control systems.
 It guarantees that real-world responses remain real, cancelling out imaginary components.
 
+{% capture notice-text %}
 ## Example: AC Circuit Impedance
+### Question
+{:.no_toc}
+Consider a circuit with a resistor, inductor, and capacitor (RLC) all in series.
+Current flowing through this circuit will experience an effective impedance, which is like resistance but depends on the frequency of the alternating current.
+
+The circuit has the following properties:
+
+* Resistance, $R = 100 \Omega$
+* Inductance, $L = 0.2 H$
+* Capacitance, $C = 10 \mu F$
+
+The impedance of the RLC circuit depends on both the properties above and the frequency, $\omega$, of the alternating current:
+
+$$ Z = R + j\omega L - \frac{j}{\omega C} $$
+
+First, find the inductance of the circuit when $\omega$ = 10 rad/s, as well as the magnitude and phase angle (in degrees).
+
+Second, create a plot with two subplots for the magnitude and phase, with the magnitude plot on top and the phase plot beneath it.
+The x-axis of these plots should be frequency, ranging from 1 rad/s to 100 rad/s, and in log scale.
+The y-axis should be magnitude and phase, respectively.
+The y-axis of the magnitude plot should be log scale, while the y-axis of the phase plot should be linear scale with units of degrees.
+Turn the grid lines on in both subplots.
+
+### Solution
+{:.no_toc}
+
+```matlab
+{% include matlab/complex_impedance.m %}
+```
+
+To find the solution to the first part, we list the givens and calculate $Z$ according to the equation above.
+The magnitude is found with the `abs` function and the angle with the `angle` function.
+To convert the angle to degrees, I used the `rad2deg` function.
+You can also multiply by `pi/180`.
+These are the results:
+
+```matlab
+{% include matlab/complex_impedance.diary %}
+```
+
+The second part is the same as the first, except now $\omega$ is a range from 1 to 100 rad/s.
+I chose make `omega` to be linear in the powers of 10 so there would be better spacing between grid points.
+The specific values between 1 and 100 rad/s were not specified, so anything that makes the plots look smooth is fine.
+This is the plot:
+
+{% include figure popup=true image_path="/assets/images/figures/matlab/complex_impedance/Figure_1.png" alt="Plot of magnitude and phase" caption="Impedance magnitude and phase for RLC example problem." %}
+
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>
+
 
 ## Reading Questions
+
+1. In a complex number, what is the definition of $i$ and $j$?
+1. What is the complex conjugate of the number $5 + 3j$ ?
+1. How do you convert a magnitude and phase angle into a complex number?
+1. How do you find the magnitude and phase angle of a complex number?
+1. Why are complex numbers used in engineering if they don't "exist" in the real world?
