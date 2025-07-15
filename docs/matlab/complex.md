@@ -123,18 +123,18 @@ Current flowing through this circuit will experience an effective impedance, whi
 
 The circuit has the following properties:
 
-* Resistance, $R = 100 \Omega$
-* Inductance, $L = 0.2 H$
-* Capacitance, $C = 10 \mu F$
+* Resistance, $R =$ 100 $\Omega$
+* Inductance, $L =$ 0.2 $H$
+* Capacitance, $C =$ 10 $\mu F$
 
 The impedance of the RLC circuit depends on both the properties above and the frequency, $\omega$, of the alternating current:
 
 $$ Z = R + j\omega L - \frac{j}{\omega C} $$
 
-First, find the inductance of the circuit when $\omega$ = 10 rad/s, as well as the magnitude and phase angle (in degrees).
+First, find the inductance of the circuit when $\omega$ = 1,000 rad/s, as well as the magnitude and phase angle (in degrees).
 
 Second, create a plot with two subplots for the magnitude and phase, with the magnitude plot on top and the phase plot beneath it.
-The x-axis of these plots should be frequency, ranging from 1 rad/s to 100 rad/s, and in log scale.
+The x-axis of these plots should be frequency, ranging from 10 rad/s to 10,000 rad/s, and in log scale.
 The y-axis should be magnitude and phase, respectively.
 The y-axis of the magnitude plot should be log scale, while the y-axis of the phase plot should be linear scale with units of degrees.
 Turn the grid lines on in both subplots.

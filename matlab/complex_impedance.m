@@ -5,7 +5,7 @@ L = 0.2;
 C = 10e-6; % uF means 10^-6 Farad
 
 %% Part 1
-omega = 10;
+omega = 1000;
 
 Z = R + j*omega*L - j/(omega*C)
 
@@ -15,7 +15,7 @@ phase = rad2deg(angle(Z))
 %% Part 2
 
 % same as Part 1 but for range of omega
-omega = 10.^linspace(0, 2);
+omega = 10.^linspace(1, 5, 500);
 
 Z = R + j*omega*L - j./(omega*C);
 
