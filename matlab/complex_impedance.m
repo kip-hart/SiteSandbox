@@ -33,4 +33,5 @@ ax2 = nexttile;
 semilogx(omega, phase)
 xlabel('Frequency [rad/s]')
 ylabel('Phase Angle [deg]')
+ylim([-90, 90]) % cleaner result than the default
 grid on
