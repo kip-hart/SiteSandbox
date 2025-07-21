@@ -161,6 +161,7 @@ For more complicated engineering systems, there are uncertainties in whether tha
 {% capture notice-text %}
 ### Example: Lunar Lander
 #### Question
+{:.no_toc}
 At a lunar base, a rocket lands nearby and kicks up lunar soil (regolith) as the exhaust blasts the surface.
 The regolith particles are initially at ground level, altitude=0, and are accelerated to some uncertain velocity by the exhaust.
 The velocity angle is uniformly distributed from 0 to 5 degrees above the ground.
@@ -172,6 +173,7 @@ Determine the percent of regolith particles that will strike the base, using 800
 Of the particles that will strike the base, what is the average speed ($\sqrt{v_h^2+v_v^2}$) in m/s of those particles?
 
 #### Solution
+{:.no_toc}
 To solve this problem, we first create lists of samples of the uncertain values.
 Using element-wise operations, we calculate the final states of all the particles simultaneously.
 From there, we create a logical mask to determine which particles went far enough to strike the base.
@@ -183,6 +185,11 @@ We then find the average speed of that subset using the `mean` function and pick
 ```matlab
 {% include matlab/random_moon.diary %}
 ```
+
+
+{% endcapture %}
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>
 
 ## Reading Questions
 
