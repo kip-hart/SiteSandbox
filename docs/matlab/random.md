@@ -5,9 +5,9 @@ title: Random Numbers
 In engineering, we often work with uncertain quantities.
 What will the wind speed be on the day of the rocket launch?
 Where are the obstacles my robot needs to avoid?
-How do I handle the % error from these test results?
+How do I handle the % error from the results of my experiment?
 
-Random (and pseudorandom) numbers can created and used in MATLAB when working with uncertain quantities.
+Random (and pseudorandom) numbers can be created and used in MATLAB when working with uncertain quantities.
 
 ## Pseudorandom Numbers
 
@@ -83,6 +83,23 @@ The MATLAB Help Center has documentation on
 [randi](https://www.mathworks.com/help/matlab/ref/double.randi.html).
 
 ### Normal Distributions
+
+To generate draws from the standard normal distribution (mean of 0 and standard deviation of 1), use the `randn` function.
+Its syntax is `randn(m, n)`, where `m` is the number of rows and `n` is the number of columns in the output.
+Since these are draws from the standard normal, you need to scale and offset the values for a specific mean and standard deviation:
+
+$$ N[\mu, \sigma] = \mu + \sigma \cdot N[0, 1] $$
+
+For example:
+
+```matlab
+{% include matlab/random_normal.m %}
+```
+
+{% include figure popup=true image_path="/assets/images/figures/matlab/random_normal/Figure_1.png" alt="Wind draws" caption="Histogram of normally distributed wind draws." %}
+
+The MATLAB Help Center has documentation on  
+[randn](https://www.mathworks.com/help/matlab/ref/double.randn.html).
 
 ### Custom Distributions
 
