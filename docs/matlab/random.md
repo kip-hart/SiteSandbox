@@ -98,7 +98,7 @@ For example:
 
 {% include figure popup=true image_path="/assets/images/figures/matlab/random_normal/Figure_1.png" alt="Wind draws" caption="Histogram of normally distributed wind draws." %}
 
-The MATLAB Help Center has documentation on  
+The MATLAB Help Center has documentation on
 [randn](https://www.mathworks.com/help/matlab/ref/double.randn.html).
 
 ### Custom Distributions
