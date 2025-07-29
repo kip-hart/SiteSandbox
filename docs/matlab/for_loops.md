@@ -60,7 +60,7 @@ To break the cycle, we need to be able to handle estimated ranges for values rat
 Consider, for example, the design of interplanetary rocket that will send a satellite from Earth to Mars.
 We need to determine the fraction of the rocket's mass that will be fuel for the burn - it's propellant mass fraction $\zeta$ using the rocket equation:
 
-$$ \Delta v = I_{sp} g_0 \log\left(\frac{m_0}{m_f}\right) $$.
+$$ \Delta v = I_{sp} g_0 \log\left(\frac{m_0}{m_f}\right) $$
 
 The propellant mass fraction is defined as $\zeta = 1 - m_f/m_0$.
 We are given that the $\Delta v$ for the burn is 12 km/s and Earth's surface gravity is $g_0$=9.81 m/s<sup>2</sup>.
@@ -117,4 +117,3 @@ The MATLAB Help Center has documentation on
 1. Are vectorized operations generally slower or faster than for loops?
 1. Can a for loop be executed within another for loop?
 1. What are two differences between `for` and `parfor` in MATLAB?
-

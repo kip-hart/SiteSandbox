@@ -8,7 +8,7 @@ Isp = [380, 450];
 zeta = zeros(size(Isp));
 
 for ii=1:length(Isp)
-    m0_over_mf = exp(delta_V/(Isp(ii)*g_0));
+    m0_over_mf = exp(delta_v/(Isp(ii)*g_0));
     zeta(ii) = 1 - 1/m0_over_mf;
 end
 
