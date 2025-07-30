@@ -20,7 +20,7 @@ For example, when you call `sin(x)` you are not particularly interested in the a
 User-defined functions in MATLAB follow this general syntax:
 
 ```matlab
-function [output1, output2, ...] = function_name(input1, input2, ...)
+function [out1, out2, ...] = function_name(in1, inp2, ...)
     % Code to compute outputs
 end
 ```
