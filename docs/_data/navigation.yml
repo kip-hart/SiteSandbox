@@ -54,24 +54,22 @@ matlab:
         url: /matlab/random
       - title: "User Functions"
         url: /matlab/user_functions
-      - title: "File Input/Output"
-        url: /matlab/file_io
+      #- title: "File Input/Output"
+      #  url: /matlab/file_io
   - title: "Advanced"
     children:
-      - title: "Switch-Case Statements"
-        url: /matlab/switch_case
-      - title: "Logical Expressions"
-        url: /matlab/logicals
+      #- title: "Switch-Case Statements"
+      #  url: /matlab/switch_case
+      #- title: "Logical Expressions"
+      #  url: /matlab/logicals
       - title: "Conditionals"
         url: /matlab/conditionals
       - title: "For Loops"
         url: /matlab/for_loops
-      - title: "While Loops"
-        url: /matlab/while_loops
-      - title: "Classes"
-        url: /matlab/classes
-      - title: "Profiling"
-        url: /matlab/profiling
+      #- title: "While Loops"
+      #  url: /matlab/while_loops
+      #- title: "Classes"
+      #  url: /matlab/classes
   - title: "List of Examples"
     url: /matlab/examples/
   - title: "Sandbox Pages"
