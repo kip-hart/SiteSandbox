@@ -87,11 +87,13 @@ cpp:
       - title: "Program Structure"
         url: /cpp/program_structure
       - title: "Compiling & Executing"
-        url: /cpp/foo
+        url: /cpp/compiling_executing
       - title: "Variables & Data Types"
         url: /cpp/foo
       - title: "Basic Input/Output"
         url: /cpp/foo
+     # - title: "Basic Math"
+     #   url: /cpp/foo
      # - title: "Conditionals"
      #   url: /cpp/foo
      # - title: "For Loops"
