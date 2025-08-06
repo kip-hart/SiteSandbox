@@ -85,21 +85,21 @@ cpp:
   - title: "Basics"
     children:
       - title: "Program Structure"
-        url: /cpp/foo
+        url: /cpp/program_structure
       - title: "Compiling & Executing"
         url: /cpp/foo
       - title: "Variables & Data Types"
         url: /cpp/foo
       - title: "Basic Input/Output"
         url: /cpp/foo
-      - title: "Conditionals"
-        url: /cpp/foo
-      - title: "For Loops"
-        url: /cpp/foo
-      - title: "While Loops"
-        url: /cpp/foo
-      - title: "User Defined Functions"
-        url: /cpp/foo
+     # - title: "Conditionals"
+     #   url: /cpp/foo
+     # - title: "For Loops"
+     #   url: /cpp/foo
+     # - title: "While Loops"
+     #   url: /cpp/foo
+     # - title: "User Defined Functions"
+     #   url: /cpp/foo
   #- title: "Intermediate"
   #  children:
   #    - title: "Argument Passing Conventions"
