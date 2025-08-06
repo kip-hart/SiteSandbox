@@ -14,4 +14,4 @@ C++ is commonly used in various fields of engineering, due to its ability to han
 multiple programming paradigms.
 With its rich standard library and powerful features, C++ allows engineers to create high-performance programs and software. It is a solid foundation for advanced computing.
 
-Visit the GETTING STARTED page to complete the first-time setup for C++.
+Visit [Getting Started]({{ site.baseurl }}{% link cpp/getting_started.md %}) to complete the first-time setup for C++.

@@ -90,42 +90,42 @@ cpp:
         url: /cpp/foo
       - title: "Variables & Data Types"
         url: /cpp/foo
-      - title: "Screen Output"
-        url: /cpp/foo
-      - title: "Keyboard Input"
+      - title: "Basic Input/Output"
         url: /cpp/foo
       - title: "Conditionals"
         url: /cpp/foo
-      - title: "For and While Loops"
+      - title: "For Loops"
+        url: /cpp/foo
+      - title: "While Loops"
         url: /cpp/foo
       - title: "User Defined Functions"
         url: /cpp/foo
-  - title: "Intermediate"
-    children:
-      - title: "Argument Passing Conventions"
-        url: /cpp/foo
-      - title: "Arrays"
-        url: /cpp/foo
-      - title: "Static and Dynamic Memory Allocations"
-        url: /cpp/foo
-      - title: "Pointers"
-        url: /cpp/foo
-      - title: "File Input and Output"
-        url: /cpp/foo
-      - title: "Structures"
-        url: /cpp/foo
-      - title: "Structure Arrays"
-        url: /cpp/foo
-  - title: "Advanced"
-    children:
-      - title: "Overloading"
-        url: /cpp/foo
-      - title: "Classes"
-        url: /cpp/foo
-      - title: "Memory Management"
-        url: /cpp/foo
-      - title: "Templating"
-        url: /cpp/foo
+  #- title: "Intermediate"
+  #  children:
+  #    - title: "Argument Passing Conventions"
+  #      url: /cpp/foo
+  #    - title: "Arrays"
+  #      url: /cpp/foo
+  #    - title: "Static and Dynamic Memory Allocations"
+  #      url: /cpp/foo
+  #    - title: "Pointers"
+  #      url: /cpp/foo
+  #    - title: "File Input and Output"
+  #      url: /cpp/foo
+  #    - title: "Structures"
+  #      url: /cpp/foo
+  #    - title: "Structure Arrays"
+  #      url: /cpp/foo
+  #- title: "Advanced"
+  #  children:
+  #    - title: "Overloading"
+  #      url: /cpp/foo
+  #    - title: "Classes"
+  #      url: /cpp/foo
+  #    - title: "Memory Management"
+  #      url: /cpp/foo
+  #    - title: "Templating"
+  #      url: /cpp/foo
   - title: "List of Examples"
     url: /cpp/examples/
   - title: "Sandbox Pages"
