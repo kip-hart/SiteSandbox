@@ -89,9 +89,9 @@ cpp:
       - title: "Compiling & Executing"
         url: /cpp/compiling_executing
       - title: "Variables & Data Types"
-        url: /cpp/foo
+        url: /cpp/variables
       - title: "Basic Input/Output"
-        url: /cpp/foo
+        url: /cpp/input_output
      # - title: "Basic Math"
      #   url: /cpp/foo
      # - title: "Conditionals"
