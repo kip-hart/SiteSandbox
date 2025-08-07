@@ -70,6 +70,7 @@ jobs:
           mkdir -p ${{ env.CPP_DIR }}
           mkdir -p ${{ env.MATLAB_DIR }}
           mkdir -p ${{ env.FIGS_DIR }}
+          mkdir -p ${{ env.PUBS_DIR }}
 
       - name: Download C++ Artifacts
         uses: actions/download-artifact@v4
