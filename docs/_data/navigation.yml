@@ -94,8 +94,8 @@ cpp:
         url: /cpp/input_output
      # - title: "Basic Math"
      #   url: /cpp/foo
-     # - title: "Conditionals"
-     #   url: /cpp/foo
+      - title: "Conditionals"
+        url: /cpp/conditionals
      # - title: "For Loops"
      #   url: /cpp/foo
      # - title: "While Loops"
