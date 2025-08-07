@@ -25,7 +25,7 @@ This gives access to manipulators like `setprecision`,
 which controlls how many digits appear after the decimal point.
 You can then qualify the stream objects with the `std` namespace.
 
-Visit [<iostream>](https://cplusplus.com/reference/iostream/) and [<iomanip>](https://cplusplus.com/reference/iomanip/) to learn more about these libraries.
+Visit [\<iostream\>](https://cplusplus.com/reference/iostream/) and [\<iomanip\>](https://cplusplus.com/reference/iomanip/) to learn more about these libraries.
 
 ## Output with cout
 
