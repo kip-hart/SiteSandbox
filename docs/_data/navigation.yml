@@ -102,12 +102,12 @@ cpp:
      #   url: /cpp/foo
      # - title: "User Defined Functions"
      #   url: /cpp/foo
-  #- title: "Intermediate"
-  #  children:
+  - title: "Intermediate"
+    children:
   #    - title: "Argument Passing Conventions"
   #      url: /cpp/foo
-  #    - title: "Arrays"
-  #      url: /cpp/foo
+      - title: "Arrays"
+        url: /cpp/arrays
   #    - title: "Static and Dynamic Memory Allocations"
   #      url: /cpp/foo
   #    - title: "Pointers"
