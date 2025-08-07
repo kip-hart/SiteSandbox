@@ -89,9 +89,9 @@ jobs:
         run: |
           mkdir -p ${{ env.TMP_MATLAB }}
           unzip matlab-artifacts.zip -d ${{ env.TMP_MATLAB }}
+          mv ${{ env.TMP_MATLAB }}/figures/* ${{ env.FIGS_DIR }}
           mv ${{ env.TMP_MATLAB }}/matlab/html/* ${{ env.PUBS_DIR }}
-          mv ${{ env.TMP_MATLAB }}/matlab/ ${{ env.MATLAB_DIR }}
-          mv ${{ env.TMP_MATLAB }}/figures/ ${{ env.FIGS_DIR }}
+          mv ${{ env.TMP_MATLAB }}/matlab/* ${{ env.MATLAB_DIR }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
