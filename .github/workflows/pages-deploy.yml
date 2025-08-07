@@ -56,6 +56,7 @@ jobs:
       PUBS_DIR: docs/assets/published
       MATLAB_DIR: docs/_includes/matlab
       ZIP_FILE: docs/assets/code_examples.zip
+      TMP_MATLAB: tmp_matlab
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -86,10 +87,11 @@ jobs:
 
       - name: Unzip MATLAB artifacts
         run: |
-          unzip matlab-artifacts.zip -d .
-          mv matlab/html/* ${{ env.PUBS_DIR }}
-          mv matlab/ ${{ env.MATLAB_DIR }}
-          mv figures/ ${{ env.FIGS_DIR }}
+          mkdir -p ${{ env.TMP_MATLAB }}
+          unzip matlab-artifacts.zip -d ${{ env.TMP_MATLAB }}
+          mv ${{ env.TMP_MATLAB }}/matlab/html/* ${{ env.PUBS_DIR }}
+          mv ${{ env.TMP_MATLAB }}/matlab/ ${{ env.MATLAB_DIR }}
+          mv ${{ env.TMP_MATLAB }}/figures/ ${{ env.FIGS_DIR }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
