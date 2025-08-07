@@ -14,7 +14,18 @@ To use `cin` and `cout`, add the following directive to the top of your program:
 #include <iostream>
 ```
 
+To format numeric output, such as controlling the number of decimal places, you can also
+include the `iomanip` header:
+
+```cpp
+#include <iomanip>
+```
+
+This gives access to manipulators like `setprecision`,
+which controlls how many digits appear after the decimal point.
 You can then qualify the stream objects with the `std` namespace.
+
+Visit [<iostream>](https://cplusplus.com/reference/iostream/) and [<iomanip>](https://cplusplus.com/reference/iomanip/) to learn more about these libraries.
 
 ## Output with cout
 
@@ -29,6 +40,18 @@ cout << "Age: " << age << "\n";
 
 By default, insert does not add a newline character at the end.
 You can use `\n` or the manipulator `endl` to terminate the line and flush the stream.
+
+To specify the precision of the output value, use `setprecision`.
+For example:
+
+```cpp
+{% include cpp/setprecision/print_pi.cpp %}
+```
+Prints this line:
+
+```text
+{% include cpp/setprecision/screen_output.log %}
+```
 
 ## Input with cin
 
@@ -96,3 +119,4 @@ Hello, Kip!
 1. What is the difference between `\n` and `endl`?
 1. Write a line that prints "The value of x is: " and the value of `x`.
 1. What would the echo program do if the input was `Dr. Hart`?
+1. Which header must be included to use `setprecision`?
