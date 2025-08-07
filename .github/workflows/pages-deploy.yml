@@ -44,7 +44,46 @@ jobs:
 
   # MATLAB job
   matlab:
-    uses: ./.github/workflows/matlab-build.yml
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up MATLAB
+        uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2025a
+      - name: Run MATLAB Sandbox Script
+        uses: matlab-actions/run-command@v2
+        with:
+          command: >
+            addpath('.github/scripts');
+            run_all_scripts('matlab');
+      - name: Move Published Artifacts
+        run: |
+          mkdir -p published
+          mv matlab/html/* published
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+            name: matlab-artifacts
+            retention-days: 1
+            path: matlab/
+      - name: Upload figures
+        uses: actions/upload-artifact@v4
+        with:
+            name: matlab-figures
+            retention-days: 1
+            path: figures/
+      - name: Upload published documents
+        uses: actions/upload-artifact@v4
+        with:
+            name: matlab-published
+            retention-days: 1
+            path: published/
+        
+      - name: Display structure of repo files (3)
+        run: ls -R
 
   # Build job
   build:
@@ -56,7 +95,6 @@ jobs:
       PUBS_DIR: docs/assets/published
       MATLAB_DIR: docs/_includes/matlab
       ZIP_FILE: docs/assets/code_examples.zip
-      TMP_MATLAB: tmp_matlab
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -65,33 +103,31 @@ jobs:
         run: |
           mkdir -p "$(dirname ${{ env.ZIP_FILE }})"
           zip -r ${{ env.ZIP_FILE }} cpp matlab
-
       - name: Create artifacts directories
         run: |
           mkdir -p ${{ env.CPP_DIR }}
           mkdir -p ${{ env.MATLAB_DIR }}
           mkdir -p ${{ env.FIGS_DIR }}
-          mkdir -p ${{ env.PUBS_DIR }}
-
       - name: Download C++ Artifacts
         uses: actions/download-artifact@v4
         with:
           name: cpp-artifacts
           path: ${{ env.CPP_DIR }}
-      
-      - name: Download MATLAB Artifacts
+      - name: Download Figure Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: matlab-figures
+          path: ${{ env.FIGS_DIR }}
+      - name: Download Published Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: matlab-published
+          path: ${{ env.PUBS_DIR }}
+      - name: Download MATLAB artifacts
         uses: actions/download-artifact@v4
         with:
           name: matlab-artifacts
-          path: .
-
-      - name: Unzip MATLAB artifacts
-        run: |
-          mkdir -p ${{ env.TMP_MATLAB }}
-          unzip matlab-artifacts.zip -d ${{ env.TMP_MATLAB }}
-          mv ${{ env.TMP_MATLAB }}/figures/* ${{ env.FIGS_DIR }}
-          mv ${{ env.TMP_MATLAB }}/matlab/html/* ${{ env.PUBS_DIR }}
-          mv ${{ env.TMP_MATLAB }}/matlab/* ${{ env.MATLAB_DIR }}
+          path: ${{ env.MATLAB_DIR }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
