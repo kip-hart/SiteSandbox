@@ -44,46 +44,7 @@ jobs:
 
   # MATLAB job
   matlab:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up MATLAB
-        uses: matlab-actions/setup-matlab@v2
-        with:
-          release: R2025a
-      - name: Run MATLAB Sandbox Script
-        uses: matlab-actions/run-command@v2
-        with:
-          command: >
-            addpath('.github/scripts');
-            run_all_scripts('matlab');
-      - name: Move Published Artifacts
-        run: |
-          mkdir -p published
-          mv matlab/html/* published
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-            name: matlab-artifacts
-            retention-days: 1
-            path: matlab/
-      - name: Upload figures
-        uses: actions/upload-artifact@v4
-        with:
-            name: matlab-figures
-            retention-days: 1
-            path: figures/
-      - name: Upload published documents
-        uses: actions/upload-artifact@v4
-        with:
-            name: matlab-published
-            retention-days: 1
-            path: published/
-        
-      - name: Display structure of repo files (3)
-        run: ls -R
+    uses: ./.github/workflows/matlab-build.yml
 
   # Build job
   build:
@@ -115,21 +76,19 @@ jobs:
         with:
           name: cpp-artifacts
           path: ${{ env.CPP_DIR }}
-      - name: Download Figure Artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: matlab-figures
-          path: ${{ env.FIGS_DIR }}
-      - name: Download Published Artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: matlab-published
-          path: ${{ env.PUBS_DIR }}
-      - name: Download MATLAB artifacts
+      
+      - name: Download MATLAB Artifacts
         uses: actions/download-artifact@v4
         with:
           name: matlab-artifacts
-          path: ${{ env.MATLAB_DIR }}
+          path: .
+
+      - name: Unzip MATLAB artifacts
+        run: |
+          unzip matlab-artifacts.zip -d .
+          mv matlab/html/* ${{ env.PUBS_DIR }}
+          mv matlab/ ${{ env.MATLAB_DIR }}
+          mv figures/ ${{ env.FIGS_DIR }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

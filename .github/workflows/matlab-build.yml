@@ -1,0 +1,57 @@
+name: MATLAB Build
+
+on:
+  workflow_call:
+    outputs:
+      cache-hit:
+        description: "Indicates whether the cache was hit"
+        value: ${{ jobs.matlab.outputs.cache-hit }}
+
+jobs:
+  matlab:
+    runs-on: ubuntu-latest
+    outputs:
+      cache-hit: ${{ steps.cache-artifacts.outputs.cache-hit }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Calculate hash of matlab/ folder
+        id: hash_folder
+        run: |
+          echo "MATLAB_HASH=$(find matlab/ -type f -print0 | sort -z | xargs -0 sha1sum | sha1sum | cut -d ' ' -f 1)" >> $GITHUB_ENV
+
+      - name: Restore artifacts from cache
+        id: cache-artifacts
+        uses: actions/cache@v4
+        with:
+          path: matlab-artifacts.zip
+          key: ${{ runner.os }}-matlab-${{ env.MATLAB_HASH }}
+          restore-keys: |
+            ${{ runner.os }}-matlab-
+
+      - name: Run MATLAB Sandbox Script if cache not found
+        if: steps.cache-artifacts.outputs.cache-hit != 'true'
+        uses: matlab-actions/run-command@v2
+        with:
+          release: R2025a
+          command: >
+            addpath('.github/scripts');
+            run_all_scripts('matlab');
+
+      - name: Zip up all MATLAB artifacts if cache not found
+        if: steps.cache-artifacts.outputs.cache-hit != 'true'
+        run: |
+          zip -r matlab-artifacts.zip matlab/ published/ figures/
+
+      - name: Unzip artifacts if cache was hit
+        if: steps.cache-artifacts.outputs.cache-hit == 'true'
+        run: |
+          unzip matlab-artifacts.zip
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: matlab-artifacts
+          retention-days: 1
+          path: matlab-artifacts.zip
