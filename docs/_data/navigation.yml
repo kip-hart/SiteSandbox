@@ -98,8 +98,8 @@ cpp:
         url: /cpp/conditionals
       - title: "For Loops"
         url: /cpp/for_loops
-     # - title: "While Loops"
-     #   url: /cpp/foo
+      - title: "While Loops"
+        url: /cpp/while_loops
      # - title: "User Defined Functions"
      #   url: /cpp/foo
   - title: "Intermediate"
