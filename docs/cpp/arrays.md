@@ -109,6 +109,83 @@ Static arrays have their advantages and disadvantages, compared to other ways of
     - __Use Cases__: Not suitable for dynamic data
 
 
+## Dynamic Arrays
+Unlike static arrays, dynamic arrays in C++ allow you to allocate memory at runtime.This means the size of the array can be determined during program execution,
+making dynamic arrays ideal for situations where the number of elements is not known in advance.
+
+Dynamic arrays are created using the `new` keyword, which allocates memory on the heap.
+Because heap memory is managed manually, you must also use `delete[]` to free the memory when you're done.
+
+### Declaring and Initializing
+
+To declare a dynamic array, use a pointer and allocate memory with `new`.
+For example:
+
+```cpp
+int* numbers = new int[5];
+```
+
+This creates a pointer `numbers` and allocates memory for 5 integers on the heap.
+You can initialize elements individually:
+
+```cpp
+numbers[0] = 10;
+numbers[1] = 20;
+// ...
+```
+
+or use a loop to initialize all the elements:
+
+```cpp
+for (int i = 0; i < 5; ++i) {
+    numbers[i] = i * i;
+}
+```
+
+Just like static arrays, indexing beyond the allocated size leads to undefined behavior.
+
+### Releasing Memory
+
+Since dynamic arrays use heap memory, you must release it manually to avoid memory leaks:
+
+```cpp
+delete[] numbers;
+```
+
+Failing to call `delete[]` results in memory that remains allocated until the program ends.
+This can be problematic in long-running applications, or with large arrays.
+For example, a small robot operating for hours may run out of memory if dynamic arrays are not properly deleted.
+
+### Resizing Dynamic Arrays
+
+C++ does not support resizing raw dynamic arrays directly.
+To resize, you must allocate a new array, copy the old contents, then delete the old array:
+
+```cpp
+int* oldArray = numbers;
+numbers = new int[10]; // new size
+for (int i = 0; i < 5; ++i) {
+    numbers[i] = oldArray[i];
+}
+delete[] oldArray;
+```
+
+For easier resizing and memory management, consider using the [std::vector](https://en.cppreference.com/w/cpp/container/vector.html) class
+from the C++ standard library.
+
+### Pros and Cons
+
+Dynamic arrays offer flexibility but require careful memory management.
+
+* Advantages
+    - __Flexibility__: Size can be determined at runtime
+    - __Use Cases__: Suitable for variable-sized data sets
+* Disadvantages
+    - __Memory Management__: Manual allocation and deallocation
+    - __Performance__: Slower access due to heap allocation
+    - __Safety__: Prone to memory leaks
+
+
 ## Reading Questions
 
 1. Write the declaration for a static array of eight `float` values named `measurements`.
@@ -117,3 +194,8 @@ Static arrays have their advantages and disadvantages, compared to other ways of
 1. Does C++ raise an error if you index beyond the end of an array?
 1. Can you get the last value of an array using `end` in C++?
 1. Can you `cin` the size of a static array?
+1. Write the declaration for a dynamic array of 10 `int` values named `scores`.
+1. How do you release the memory allocated for a dynamic array named `scores`?
+1. What happens if you forget to call `delete[]` on a dynamic array?
+1. How would you resize a dynamic array from size 5 to size 10 while preserving its contents?
+1. Why might you use `std::vector` instead of dynamic arrays in C++?
