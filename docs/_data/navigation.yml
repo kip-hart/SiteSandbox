@@ -96,8 +96,8 @@ cpp:
      #   url: /cpp/foo
       - title: "Conditionals"
         url: /cpp/conditionals
-     # - title: "For Loops"
-     #   url: /cpp/foo
+      - title: "For Loops"
+        url: /cpp/for_loops
      # - title: "While Loops"
      #   url: /cpp/foo
      # - title: "User Defined Functions"
