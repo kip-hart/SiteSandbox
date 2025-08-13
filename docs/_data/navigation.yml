@@ -100,8 +100,8 @@ cpp:
         url: /cpp/for_loops
       - title: "While Loops"
         url: /cpp/while_loops
-     # - title: "User Defined Functions"
-     #   url: /cpp/foo
+      - title: "User-Defined Functions"
+        url: /cpp/user_functions
   - title: "Intermediate"
     children:
   #    - title: "Argument Passing Conventions"
