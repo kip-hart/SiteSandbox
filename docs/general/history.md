@@ -37,12 +37,12 @@ Finer resolution, analogous to having many rows on an abacus for the tenths, hun
 
 <figure class="align-center">
 	<a title="Jccsvq, CC0, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg">
-    <img alt="Traditional suanpan (Chinese abacus) illustrating the use of suspended beads" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg/512px-Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg"></a>
+    <img alt="Traditional suanpan (Chinese abacus) illustrating the use of suspended beads" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg/500px-Traditional_Chinese_abacus_illustrating_the_suspended_bead_use.jpg"></a>
 	<figcaption class="figure-caption text-center">Traditional suanpan (Chinese abacus) illustrating the use of suspended beads.</figcaption>
 </figure>
 
 <figure class="align-center">
-    <a title="Pearson Scott Foresman, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Slide_Rule_%28PSF%29.png"><img width="512" alt="Slide Rule (PSF)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Slide_Rule_%28PSF%29.png/512px-Slide_Rule_%28PSF%29.png?20200326085333"></a>
+    <a title="Pearson Scott Foresman, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/9/99/Slide_Rule_%28PSF%29.png"><img width="500" alt="Slide Rule (PSF)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Slide_Rule_%28PSF%29.png/500px-Slide_Rule_%28PSF%29.png?20200326085333"></a>
     <figcaption class="figure-caption text-center">Diagram showing the use of a slide rule.</figcaption>
 </figure>
 
@@ -67,12 +67,12 @@ It is unlikely they used arithmetic machines, however, as their work was primari
 
 
 <figure class="align-center">
-    <a title="Daderot, CC0, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/3/39/Calculating_machine_replica%2C_Blaise_Pascal%2C_c._1642%2C_TM21265_-_Tekniska_museet_-_Stockholm%2C_Sweden_-_DSC01564.JPG"><img width="512" alt="Calculating machine replica, Blaise Pascal, c. 1642, TM21265 - Tekniska museet - Stockholm, Sweden - DSC01564" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Calculating_machine_replica%2C_Blaise_Pascal%2C_c._1642%2C_TM21265_-_Tekniska_museet_-_Stockholm%2C_Sweden_-_DSC01564.JPG/512px-Calculating_machine_replica%2C_Blaise_Pascal%2C_c._1642%2C_TM21265_-_Tekniska_museet_-_Stockholm%2C_Sweden_-_DSC01564.JPG?20150816224806"></a>
+    <a title="Daderot, CC0, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/3/39/Calculating_machine_replica%2C_Blaise_Pascal%2C_c._1642%2C_TM21265_-_Tekniska_museet_-_Stockholm%2C_Sweden_-_DSC01564.JPG"><img width="500" alt="Calculating machine replica, Blaise Pascal, c. 1642, TM21265 - Tekniska museet - Stockholm, Sweden - DSC01564" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Calculating_machine_replica%2C_Blaise_Pascal%2C_c._1642%2C_TM21265_-_Tekniska_museet_-_Stockholm%2C_Sweden_-_DSC01564.JPG/500px-Calculating_machine_replica%2C_Blaise_Pascal%2C_c._1642%2C_TM21265_-_Tekniska_museet_-_Stockholm%2C_Sweden_-_DSC01564.JPG?20150816224806"></a>
     <figcaption class="figure-caption text-center">Pascaline replica at the National Museum of Science and Technology (Sweden).</figcaption>
 </figure>
 
 <figure class="align-center">
-    <a title="J. A. V. Turck, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Leibniz_Stepped_Reckoner.png"><img width="512" alt="Leibnitz calculator (‘Staffelwalze’ = lit. step drum/cylinder ‘Stepped Reckoner’), 1694" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Leibniz_Stepped_Reckoner.png/512px-Leibniz_Stepped_Reckoner.png?20080116124853"></a>
+    <a title="J. A. V. Turck, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Leibniz_Stepped_Reckoner.png"><img width="500" alt="Leibnitz calculator (‘Staffelwalze’ = lit. step drum/cylinder ‘Stepped Reckoner’), 1694" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Leibniz_Stepped_Reckoner.png/500px-Leibniz_Stepped_Reckoner.png?20080116124853"></a>
     <figcaption class="figure-caption text-center">Photograph of a Leibniz stepped reckoner discovered in 1879.</figcaption>
 </figure>
 
@@ -151,17 +151,17 @@ The Wright brothers similarly relied on experimental methods, though they also p
 {: .notice}
 
 <figure class="align-center">
-    <a title="Tulipasylvestris, CC0, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/e/e5/Jacquardv%C3%A4vstol_med_stansade_h%C3%A5lkort_Norrk%C3%B6pings_stadsmuseum.jpg"><img width="256" alt="Jacquardvävstol med stansade hålkort Norrköpings stadsmuseum" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Jacquardv%C3%A4vstol_med_stansade_h%C3%A5lkort_Norrk%C3%B6pings_stadsmuseum.jpg/256px-Jacquardv%C3%A4vstol_med_stansade_h%C3%A5lkort_Norrk%C3%B6pings_stadsmuseum.jpg?20210904193817"></a>
+    <a title="Tulipasylvestris, CC0, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/e/e5/Jacquardv%C3%A4vstol_med_stansade_h%C3%A5lkort_Norrk%C3%B6pings_stadsmuseum.jpg"><img width="250" alt="Jacquardvävstol med stansade hålkort Norrköpings stadsmuseum" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Jacquardv%C3%A4vstol_med_stansade_h%C3%A5lkort_Norrk%C3%B6pings_stadsmuseum.jpg/250px-Jacquardv%C3%A4vstol_med_stansade_h%C3%A5lkort_Norrk%C3%B6pings_stadsmuseum.jpg?20210904193817"></a>
     <figcaption class="figure-caption text-center">Jacquard loom in Norrkoping City Museum (Sweden).</figcaption>
 </figure>
 
 <figure class="align-center">
-    <a title="Ezrdr, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/1/13/Arithmometre_%28cropped%29.jpg"><img width="512" alt="Arithmometre (cropped)" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Arithmometre_%28cropped%29.jpg?20231116170352"></a>
+    <a title="Ezrdr, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/1/13/Arithmometre_%28cropped%29.jpg"><img width="500" alt="Arithmometre (cropped)" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Arithmometre_%28cropped%29.jpg?20231116170352"></a>
     <figcaption class="figure-caption text-center">Arithmometer from the late 1890s.</figcaption>
 </figure>
 
 <figure class="align-center">
-    <a title="Sebastian Wallroth, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/f/f9/Babbages_difference_engine_1832.jpg"><img width="512" alt="Babbages difference engine 1832" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Babbages_difference_engine_1832.jpg/512px-Babbages_difference_engine_1832.jpg?20120506181435"></a>
+    <a title="Sebastian Wallroth, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/f/f9/Babbages_difference_engine_1832.jpg"><img width="500" alt="Babbages difference engine 1832" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Babbages_difference_engine_1832.jpg/500px-Babbages_difference_engine_1832.jpg?20120506181435"></a>
     <figcaption class="figure-caption text-center">Babbage difference engine No. 1 in Science Museum (London).</figcaption>
 </figure>
 
@@ -273,7 +273,7 @@ There was also a water-based computer, where the water level in various reservoi
 {: .notice}
 
 <figure class="align-center">
-    <a title="U.S. Army Photo, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/d/d3/Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg"><img width="512" alt="ENIAC at Aberdeen Proving Ground, Maryland. Glen Beck (background) and Betty Snyder (foreground) program the ENIAC in building 328 at the Ballistic Research Laboratory" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg/512px-Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg?20220704165421"></a>
+    <a title="U.S. Army Photo, Public domain, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/d/d3/Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg"><img width="500" alt="ENIAC at Aberdeen Proving Ground, Maryland. Glen Beck (background) and Betty Snyder (foreground) program the ENIAC in building 328 at the Ballistic Research Laboratory" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg/500px-Glen_Beck_and_Betty_Snyder_program_the_ENIAC_in_building_328_at_the_Ballistic_Research_Laboratory.jpg?20220704165421"></a>
     <figcaption class="figure-caption text-center">ENIAC at Aberdeen Proving Ground, Maryland. Glen Beck (background) and Betty Snyder (foreground) program the ENIAC in building 328 at the Ballistic Research Laboratory.</figcaption>
 </figure>
 

@@ -165,7 +165,7 @@ The single precision float allocates those 32 bits in the following manner:
 * 23 bits for the mantissa
 
 <figure class="align-center">
-<a title="Codekaizen, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/e/e8/IEEE_754_Single_Floating_Point_Format.svg"><img width="512" alt="IEEE 754 Single Floating Point Format" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/IEEE_754_Single_Floating_Point_Format.svg/512px-IEEE_754_Single_Floating_Point_Format.svg.png?20211006203109"></a>
+<a title="Codekaizen, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/e/e8/IEEE_754_Single_Floating_Point_Format.svg"><img width="500" alt="IEEE 754 Single Floating Point Format" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/IEEE_754_Single_Floating_Point_Format.svg/500px-IEEE_754_Single_Floating_Point_Format.svg.png?20211006203109"></a>
 	<figcaption class="figure-caption text-center">Memory allocation for single-precision floating point numbers.<br>Image credit: Codekaizen.</figcaption>
 </figure>
 
