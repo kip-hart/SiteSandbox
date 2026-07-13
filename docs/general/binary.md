@@ -224,6 +224,63 @@ Either current is flowing or it is not.
 These states can easily be represented as 1 (on) and 0 (off) in binary.
 This simplicity allows for reliable data representation and processing within electronic circuits.
 
+Early calculating machines controlled these two states with physical switches.
+Wiring two switches in series only lets current flow if *both* switches are closed, while wiring them in parallel lets current flow if *either* switch is closed - the same behavior as the AND and OR logic gates described below.
+Modern computers instead use transistors: tiny electronic components that use a small control voltage to switch a connection on or off, with no moving parts.
+Transistors replaced the bulkier, more fragile vacuum tubes used in early electronic computers like the ENIAC (see [History]({{ site.baseurl }}{% link general/history.md %})), and can be miniaturized down to the scale of a few atoms.
+A modern processor can contain billions of transistors, each one switching on and off billions of times per second.
+
+## Logic Gates
+A logic gate is a small circuit, built from a handful of transistors, that outputs a single binary value based on one or more binary inputs.
+Every operation a computer performs, from arithmetic to memory access, is ultimately built up from combinations of logic gates.
+The most fundamental gates are:
+
+* **AND**: outputs 1 only if all inputs are 1.
+* **OR**: outputs 1 if at least one input is 1.
+* **NOT**: outputs the opposite of its single input (also called an inverter).
+
+Three more gates are commonly formed by combining these:
+
+* **NAND** ("not AND"): outputs 0 only if all inputs are 1; the opposite of AND.
+* **NOR** ("not OR"): outputs 1 only if all inputs are 0; the opposite of OR.
+* **XOR** ("exclusive or"): outputs 1 if its two inputs are different.
+* **XNOR** ("exclusive nor"): outputs 1 if its two inputs are the same; the opposite of XOR.
+
+The table below summarizes each two-input gate for all four combinations of $A$ and $B$:
+
+| $A$ | $B$ | AND | OR | NAND | NOR | XOR | XNOR |
+|-----|-----|-----|----|------|-----|-----|------|
+|  0  |  0  |  0  |  0 |   1  |  1  |  0  |   1  |
+|  0  |  1  |  0  |  1 |   1  |  0  |  1  |   0  |
+|  1  |  0  |  0  |  1 |   1  |  0  |  1  |   0  |
+|  1  |  1  |  1  |  1 |   0  |  0  |  0  |   1  |
+
+### Adding Binary Numbers with Logic Gates
+Recall the rules for adding two binary digits by hand: if both digits are 0, the sum digit is 0; if exactly one digit is 1, the sum digit is 1; and if both digits are 1, the sum digit is 0 with a 1 carried into the next place.
+Comparing this to the truth table above, the sum digit is exactly the XOR of the two input digits, and the carry digit is exactly their AND.
+A circuit built from one XOR gate and one AND gate this way is called a *half adder*, and it is the basic building block computers use to add binary numbers.
+
+{% capture notice-text %}
+### Example: Half Adder
+#### Question
+{:.no_toc}
+Use a half adder to find the sum and carry digits for the 1's place when adding the binary numbers $A=101$ (5 in decimal) and $B=001$ (1 in decimal).
+
+#### Solution
+{:.no_toc}
+The 1's-place digit of $A$ is 1, and the 1's-place digit of $B$ is also 1.
+
+Passing both digits into an XOR gate gives a sum digit of 0, since the two inputs match.
+Passing the same two digits into an AND gate gives a carry digit of 1, since both inputs are 1.
+
+This carry digit must be added into the 2's place along with the 2's-place digits of $A$ and $B$, which is now three inputs instead of two.
+A half adder alone cannot combine three inputs, so an additional gate is needed at every place beyond the first to account for the incoming carry.
+Working through each place this way eventually gives the full sum, 110 in binary, or 6 in decimal - matching $5+1=6$.
+
+{% endcapture %}
+
+<div class="notice--info">{{ notice-text | markdownify }}</div>
+
 ## How Computers Use Binary
 1. Data Representation: Every piece of data in a computer — whether it's text, images, audio, or video—is ultimately stored as binary numbers.
    For example, a single character, such as 'A', is represented by a binary code using standards such as ASCII.  
@@ -259,16 +316,11 @@ This simplicity allows for reliable data representation and processing within el
    | Y      | 89      | 01011001   |
    | Z      | 90      | 01011010   |
 
-2. Logic and Operations: Binary is the foundation of logic gates, which are the building blocks of a computer's processor.
-   Logic gates perform operations like AND, OR, and NOT using binary input.
-
-   * The AND gate outputs 1 only if both inputs are 1.
-   * The OR gate outputs 1 if at least one input is 1.
-   * The NOT gate outputs 1 if the input is 0.
+2. Logic and Operations: Binary is the foundation of [logic gates](#logic-gates), the building blocks of a computer's processor. Logic gates combine binary inputs to perform both logical comparisons and arithmetic, such as the addition example above.
 
 3. Storage: Binary is also used in computer memory. A bit is the smallest unit of data, and groups of 8 bits form a byte, which is the standard unit for storing information. The letters in the above ASCII table all use 8 bits. Therefore, each letter is a single byte. Similarly, integers can be stored in several common multiples of 8 bits. Using 32 and 64 bits are common, however this is entirely dependent on the use case. For example, a quadrotor drone has 4 rotors, so only 2 bits are necessary to identify a rotor.
 
-4. Arithmetic Operations: Computers perform calculations in binary. For example, adding two binary numbers like 101 and 011 follows the same rules as decimal addition, with carryovers:
+4. Arithmetic Operations: Computers perform calculations in binary using circuits of logic gates, such as the half adders described above chained together. For example, adding two binary numbers like 101 and 011 follows the same rules as decimal addition, with carryovers:
 
    ```text
      101

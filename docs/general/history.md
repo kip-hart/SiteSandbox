@@ -174,6 +174,21 @@ The video below demonstrates the working of Babbage's Difference Engine No. 2, a
 
 {% include video id="0anIyVGeWOI" provider="youtube" %}
 
+As populations grew, so did the scale of calculations required to keep track of them.
+The 1880 U.S. Census counted roughly 50 million people, including for the first time a single city (New York) with a population over one million, and took eight years to fully tabulate by hand.
+At that rate, results from the 1890 census would not have been ready before the 1900 census began.
+
+To solve this problem, engineer [Herman Hollerith](https://www.britannica.com/biography/Herman-Hollerith) built an electric tabulating machine that read data punched onto cards - an idea borrowed directly from the Jacquard loom.
+A clerk punched a card for each person, recording characteristics such as age, sex, race, marital status, and military service.
+The tabulating machine sensed the punched holes with spring-loaded pins: whenever a pin passed through a hole and closed an electrical circuit, the corresponding counter dial advanced by one.
+Using Hollerith's machines, the 1890 census was fully tabulated in about six years, despite counting 63 million people, 13 million more than in 1880.
+Hollerith's tabulating company later merged with several others to form the Computing-Tabulating-Recording Company, renamed International Business Machines (IBM) in 1924.
+
+<figure class="align-center">
+    <a title="Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:1890_Census_Hollerith_Electrical_Counting_Machines_Sci_Amer.jpg"><img width="500" alt="Illustration of a woman operating a Hollerith electric tabulating machine for the 1890 U.S. Census" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/1890_Census_Hollerith_Electrical_Counting_Machines_Sci_Amer.jpg/500px-1890_Census_Hollerith_Electrical_Counting_Machines_Sci_Amer.jpg"></a>
+    <figcaption class="figure-caption text-center">The Hollerith electric tabulating machine in use for the 1890 U.S. Census. Illustration from <i>Scientific American</i>, Aug. 30, 1890.</figcaption>
+</figure>
+
 ## The Rise of Electronic Computing: 20th Century  
 The early 20th century marked a pivotal shift from mechanical computation to electronic systems.
 As technological capabilities grew, engineers sought faster, more reliable ways to process information.
@@ -349,8 +364,10 @@ Today, computing is woven into every aspect of life, driving scientific discover
 
 5. What was Ada Lovelace's role with the Analytical Engine?
 
-6. How did the Turing Machine impact computer design?
+6. How did Hollerith's tabulating machine reduce the time needed to process the census, and what company did his company eventually become?
 
-7. Why is the ENIAC considered a revolutionary machine?
+7. How did the Turing Machine impact computer design?
 
-8. How did the widespread adoption of personal computers, beginning in the 1980s, changed the practice of engineering?
+8. Why is the ENIAC considered a revolutionary machine?
+
+9. How did the widespread adoption of personal computers, beginning in the 1980s, changed the practice of engineering?
