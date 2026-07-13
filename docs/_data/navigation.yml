@@ -4,6 +4,8 @@ main:
     url: /general/
   - title: "MATLAB"
     url: /matlab/
+  - title: "Python"
+    url: /python/
   - title: "C++"
     url: /cpp/
   - title: "About"
@@ -28,7 +30,7 @@ matlab:
     url: /matlab/
   - title: "Getting Started"
     url: /matlab/getting_started
-  - title: "Basics"
+  - title: "Week 1"
     children:
       - title: "Arithmetic"
         url: /matlab/arithmetic
@@ -44,7 +46,7 @@ matlab:
         url: /matlab/arrays_matrices
       - title: "Plotting"
         url: /matlab/plotting
-  - title: "Intermediate"
+  - title: "Week 2"
     children:
       - title: "Complex Numbers"
         url: /matlab/complex
@@ -56,7 +58,7 @@ matlab:
         url: /matlab/user_functions
       #- title: "File Input/Output"
       #  url: /matlab/file_io
-  - title: "Advanced"
+  - title: "Week 3"
     children:
       #- title: "Switch-Case Statements"
       #  url: /matlab/switch_case
@@ -76,13 +78,65 @@ matlab:
     url: /matlab/sandbox
 
 
+# Python Nav
+python:
+  - title: "Home"
+    url: /python/
+  - title: "Getting Started"
+    url: /python/getting_started
+  - title: "Week 1"
+    children:
+      - title: "Variables & Output"
+        url: /python/variables
+      - title: "Input & Data Types"
+        url: /python/input_data_types
+      - title: "Using Libraries"
+        url: /python/libraries
+      - title: "Conditionals"
+        url: /python/conditionals
+      - title: "For Loops"
+        url: /python/for_loops
+      - title: "While Loops"
+        url: /python/while_loops
+  - title: "Week 2"
+    children:
+      - title: "User-Defined Functions"
+        url: /python/user_functions
+      - title: "Lists & Tuples"
+        url: /python/lists_tuples
+      - title: "List Comprehensions"
+        url: /python/list_comprehensions
+      - title: "NumPy Arrays"
+        url: /python/numpy
+      - title: "Plotting with Matplotlib"
+        url: /python/plotting
+      - title: "File Input/Output"
+        url: /python/file_io
+  - title: "Week 3"
+    children:
+      - title: "Dictionaries"
+        url: /python/dictionaries
+      - title: "Lists of Dictionaries"
+        url: /python/dict_lists
+      - title: "Classes & Objects"
+        url: /python/classes
+      - title: "Class Variables, Methods & Objects"
+        url: /python/class_methods
+      - title: "Type Hints & Dataclasses"
+        url: /python/dataclasses
+  - title: "List of Examples"
+    url: /python/examples/
+  - title: "Sandbox Pages"
+    url: /python/sandbox
+
+
 # C++ Nav
 cpp:
   - title: "Home"
     url: /cpp/
   - title: "Getting Started"
     url: /cpp/getting_started
-  - title: "Basics"
+  - title: "Week 1"
     children:
       - title: "Program Structure"
         url: /cpp/program_structure
@@ -102,7 +156,7 @@ cpp:
         url: /cpp/while_loops
       - title: "User-Defined Functions"
         url: /cpp/user_functions
-  - title: "Intermediate"
+  - title: "Week 2"
     children:
   #    - title: "Argument Passing Conventions"
   #      url: /cpp/foo
@@ -118,7 +172,7 @@ cpp:
   #      url: /cpp/foo
   #    - title: "Structure Arrays"
   #      url: /cpp/foo
-  #- title: "Advanced"
+  #- title: "Week 3"
   #  children:
   #    - title: "Overloading"
   #      url: /cpp/foo

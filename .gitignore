@@ -33,3 +33,8 @@ codegen/
 
 # Cloud based storage dotfile
 .MATLABDriveTag
+
+# Python Files
+# ----------------------------------------------------------------------------
+__pycache__/
+*.pyc

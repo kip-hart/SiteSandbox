@@ -19,9 +19,9 @@ locale                   : "en-US"
 rtl                      : false # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Fundamentals of Computing Course Notes"
 title_separator          : "-"
-subtitle                 : "UMD Summer II ENAE/ENME202" # site tagline that appears below site title in masthead
+subtitle                 : "UMD Summer II ENAE202" # site tagline that appears below site title in masthead
 name                     : "Kip Hart"
-description              : "Course notes for the Summer II session of ENAE/ENME202 at the University of Maryland."
+description              : "Course notes for the Summer II session of ENAE202 at the University of Maryland."
 url                      : https://kip-hart.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : /SiteSandbox # the subpath of your site, e.g. "/blog"
 repository               : kip-hart/SiteSandbox # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -309,6 +309,7 @@ pdf:
 # Code Source Files
 cpp_dir: cpp/
 matlab_dir: matlab/
+python_dir: python/
 
 # Collections
 
@@ -327,6 +328,14 @@ defaults:
     values:
       sidebar:
         nav: "general"
+      toc: true
+  # Python
+  - scope:
+      path: "python"
+      type: pages
+    values:
+      sidebar:
+        nav: "python"
       toc: true
   # C++
   - scope:

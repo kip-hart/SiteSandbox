@@ -11,7 +11,7 @@ header:
     - label: "<i class='fas fa-download'></i> Download Code Examples"
       url: assets/code_examples.zip
   caption: "Photo credit: Blue Origin"
-excerpt: "Course notes for the Summer II session of ENAE/ENME202 at the University of Maryland."
+excerpt: "Course notes for the Summer II session of ENAE202 at the University of Maryland."
 feature_row:
   - image_path: /assets/images/matlab_logo_banner.png
     alt: "MATLAB"
@@ -20,10 +20,17 @@ feature_row:
     url: "/matlab/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
+  - image_path: /assets/images/python_logo_banner.png
+    alt: "Python"
+    title: "Python"
+    excerpt: "General-purpose language with a large ecosystem of scientific libraries."
+    url: "/python/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
   - image_path: /assets/images/cpp_logo_banner.png
     alt: "C++"
     title: "C++"
-    excerpt: "Object-oriented language ideal for embedded and large-scale computing."
+    excerpt: "Object-oriented language ideal for embedded and large-scale computing. No longer under active development."
     url: "/cpp/"
     btn_class: "btn--primary"
     btn_label: "Learn more"   

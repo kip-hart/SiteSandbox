@@ -4,6 +4,12 @@ sidebar:
     nav: "cpp"
 ---
 
+{% capture notice-text %}
+**This section is no longer under active development.** ENAE202 has replaced C++ with Python, and these notes are kept here for reference only. See the [Python Course Notes]({{ site.baseurl }}{% link python.md %}) for current course content.
+{% endcapture %}
+
+<div class="notice--warning">{{ notice-text | markdownify }}</div>
+
 {% include figure image_path="/assets/images/cpp_logo_banner.png" alt="C++ logo" %}
 
 [C++](https://cplusplus.com/) is a widely-used, high-level programming language.
