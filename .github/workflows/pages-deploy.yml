@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install C++ compiler
         run: sudo apt-get update && sudo apt-get install -y g++
@@ -36,7 +36,7 @@ jobs:
         run: bash .github/scripts/run_all_cpp.sh
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: cpp-artifacts
           retention-days: 1
@@ -47,10 +47,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -61,7 +61,7 @@ jobs:
         run: bash .github/scripts/run_all_python.sh
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: python-artifacts
           retention-days: 1
@@ -72,14 +72,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up MATLAB
-        uses: matlab-actions/setup-matlab@v2
+        uses: matlab-actions/setup-matlab@v3
         with:
           release: R2025a
       - name: Run MATLAB Sandbox Script
-        uses: matlab-actions/run-command@v2
+        uses: matlab-actions/run-command@v3
         with:
           command: >
             addpath('.github/scripts');
@@ -89,19 +89,19 @@ jobs:
           mkdir -p published
           mv matlab/html/* published
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
             name: matlab-artifacts
             retention-days: 1
             path: matlab/
       - name: Upload figures
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
             name: matlab-figures
             retention-days: 1
             path: figures/
       - name: Upload published documents
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
             name: matlab-published
             retention-days: 1
@@ -123,7 +123,7 @@ jobs:
       ZIP_FILE: docs/assets/code_examples.zip
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Create source zip file
         run: |
@@ -136,33 +136,33 @@ jobs:
           mkdir -p ${{ env.PYTHON_DIR }}
           mkdir -p ${{ env.FIGS_DIR }}
       - name: Download C++ Artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: cpp-artifacts
           path: ${{ env.CPP_DIR }}
       - name: Download Python Artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: python-artifacts
           path: ${{ env.PYTHON_DIR }}
       - name: Download Figure Artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: matlab-figures
           path: ${{ env.FIGS_DIR }}
       - name: Download Published Artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: matlab-published
           path: ${{ env.PUBS_DIR }}
       - name: Download MATLAB artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: matlab-artifacts
           path: ${{ env.MATLAB_DIR }}
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
         
       - name: Display structure of downloaded files (4)
         run: ls -R
@@ -172,7 +172,7 @@ jobs:
           source: ./docs
           destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
 
   # Deployment job
   deploy:
@@ -184,4 +184,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
