@@ -27,6 +27,36 @@ formulas = [m*x + b, e - m * c^2, rho * R * T];
 The [Constructing a Matrix of Data](https://www.mathworks.com/help/matlab/math/creating-and-concatenating-matrices.html#OverviewCreatingAndConcatenatingExample-1) section of the MATLAB Help Center
 also describes creating arrays.
 
+### Creating Arrays with Ranges
+Typing out every element by hand is impractical for large arrays.
+The colon operator, `<start>:<stop>` or `<start>:<step>:<stop>`, creates an array of evenly-spaced values directly - the same `:` syntax used for indexing below, but here it builds a brand new array instead of selecting from an existing one.
+If the step is omitted it defaults to 1.
+For example:
+
+```matlab
+t = 0:0.1:1
+counts = 1:5
+```
+
+`t` is the array `[0, 0.1, 0.2, ..., 1.0]`, and `counts` is `[1, 2, 3, 4, 5]`.
+
+An alternative is the `linspace` function, which creates an array of evenly-spaced values by specifying how many points you want instead of a step size.
+The syntax is `linspace(start, stop, n)`, where `n` is the number of points, including both endpoints.
+If `n` is omitted, it defaults to 100.
+For example:
+
+```matlab
+x = linspace(0, 2*pi, 5)
+```
+
+creates 5 evenly-spaced points between 0 and $2\pi$, inclusive.
+`linspace` is especially useful for plotting smooth curves over a fixed range, since you do not need to pick a step size that lands exactly on the endpoint.
+The colon operator is more natural when you know the exact spacing you want, such as one sample every 0.01 seconds.
+
+The MATLAB Help Center has documentation on
+[linspace](https://www.mathworks.com/help/matlab/ref/linspace.html) and the
+[colon operator](https://www.mathworks.com/help/matlab/ref/colon.html).
+
 ### Accessing Array Elements
 When an array is defined in the workspace, you can access individual values in the array using the parentheses, `()`.
 The *index* of the first element in the array is 1, the second is 2, and so on.
@@ -250,8 +280,10 @@ This method helps MATLAB prepare space for your data efficiently.
 ## Reading Questions
 
 1. What is the difference between a one-dimensional array and a matrix in MATLAB?
-2. How do you access the second element of an array?
-3. What command retrieves an entire column from a matrix?
-4. How can you perform a calculation on all elements of an array or matrix at once?
-5. What does the `./` operator do in a MATLAB expression?
-6. How does creating an array using `zeros(n,1)` help when you know the required size of the array?
+2. What is the difference between creating an array with the colon operator (e.g. `0:0.1:1`) and with `linspace`?
+3. How would you create an array of 10 evenly-spaced points between -5 and 5 using `linspace`?
+4. How do you access the second element of an array?
+5. What command retrieves an entire column from a matrix?
+6. How can you perform a calculation on all elements of an array or matrix at once?
+7. What does the `./` operator do in a MATLAB expression?
+8. How does creating an array using `zeros(n,1)` help when you know the required size of the array?

@@ -6,7 +6,7 @@ In MATLAB, **native** or **built-in** functions are pre-defined, highly-optimize
 For example, `x^0.5` follows the operations to raise any number to another number, while `sqrt(x)` is optimized for specifically finding the square root of a number.
 Operations more complex than basic arithmetic are accomplished using functions.
 Most native functions in MATLAB are *vectorized*, meaning it takes virtually the same amount of time to compute `sqrt` of a single number and of a list of numbers.
-MATLAB provides an array of built-in functions, and in X we explore writing our own custom functions.
+MATLAB provides an array of built-in functions, and in [User Functions]({{ site.baseurl }}{% link matlab/user_functions.md %}) we explore writing our own custom functions.
 
 For a quick reference of commonly used native functions, visit [Basic Functions Reference](https://www.mathworks.com/content/dam/mathworks/fact-sheet/matlab-basic-functions-reference.pdf) in the MATLAB Help Center.
 
@@ -24,7 +24,7 @@ y2 = max(a, b)
 
 % 3. Print text to screen
 answer = 42;
-disp(['The answer is :' str(answer)])
+disp(['The answer is :' num2str(answer)])
 
 % 4. Using functions in-line
 y4 = a*sin(b) + a*cos(b)
