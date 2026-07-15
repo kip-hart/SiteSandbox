@@ -41,5 +41,5 @@ end
 if all_correct
     fprintf('\nAll checks passed! Nice work.\n');
 else
-    fprintf('\nSome checks did not pass yet - review the flagged variables above and try again.\n');
+    fprintf('\nSome checks did not pass yet. Review the flagged variables above and try again.\n');
 end
