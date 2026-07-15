@@ -334,3 +334,16 @@ The binary system is fundamental to the operation of modern mechanical and aeros
 From controlling the precise movements of robotic arms in manufacturing to managing the complex navigation systems of spacecraft, binary enables reliable communication between software and hardware.
 For example, binary data streams are critical in processing sensor readings and executing control algorithms in real-time, ensuring that engines operate efficiently or that an aircraft adjusts its flight path accurately.
 By understanding binary, engineers gain insight into how digital signals translate into physical actions, forming the foundation for innovation in these advanced fields.
+
+## Reading Questions
+
+1. Why do computers use binary (base 2) instead of base 10 to represent numbers internally?
+1. What is the decimal equivalent of the binary number 1101?
+1. What are the steps for converting a decimal integer into binary?
+1. How is a negative integer represented in binary using two's complement?
+1. In a single-precision (32-bit) float, how many bits are used for the sign, exponent, and mantissa?
+1. Why are most floating point numbers only approximations, rather than exact values, when stored in binary?
+1. How does wiring two switches in series relate to the AND logic gate? What about wiring them in parallel?
+1. In a half adder, which logic gate produces the sum output and which produces the carry output?
+1. How many bits are in a byte, and how many bytes does a single ASCII character use?
+1. Why might an engineer choose to represent a quadrotor drone's rotor number with only 2 bits instead of a full byte?
