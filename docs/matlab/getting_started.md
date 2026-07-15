@@ -37,3 +37,5 @@ If you click the shortcut repeatedly, your computer will try to run
 multiple instances at once.
 
 ## User Interface
+Once MATLAB opens, you'll see several panels arranged around the screen - the Command Window, Workspace, Current Folder, and more - plus a toolbar across the top.
+Visit [MATLAB User Interface]({{ site.baseurl }}{% link matlab/user_interface.md %}) for a tour of what each panel is for.

@@ -30,6 +30,8 @@ matlab:
     url: /matlab/
   - title: "Getting Started"
     url: /matlab/getting_started
+  - title: "User Interface"
+    url: /matlab/user_interface
   - title: "Week 1"
     children:
       - title: "Arithmetic"
