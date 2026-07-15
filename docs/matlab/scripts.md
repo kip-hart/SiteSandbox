@@ -209,7 +209,7 @@ To keep variable definitions contained and isolated from each other, it is bette
 ## Practice Problem: SLS Liftoff
 
 Not every rocket that reaches the pad actually leaves the ground.
-For a rocket to lift off, its engines must produce more thrust than the rocket weighs - otherwise gravity wins and it just sits there.
+For a rocket to lift off, its engines must produce more thrust than the rocket weighs, otherwise gravity wins and it just sits there.
 Engineers describe this margin with the **thrust-to-weight ratio (TWR)**: the engine thrust divided by the rocket's weight.
 A TWR greater than 1 means the rocket can lift off; the larger the TWR, the faster it accelerates off the pad.
 
@@ -225,7 +225,7 @@ Write a script named **`sls_liftoff.m`** that computes the following, using $g =
 3. `F_net` - the net upward force at liftoff, in newtons (thrust minus weight)
 4. `a` - the rocket's acceleration at liftoff, in m/s<sup>2</sup>, using Newton's second law ($F_{net} = ma$)
 
-Use variables for the given thrust and mass too, rather than typing the numbers directly into each formula - this keeps your script readable and reusable, the same way the center of mass example above does.
+Use variables for the given thrust and mass too, rather than typing the numbers directly into each formula. This keeps your script readable and reusable, the same way the center of mass example above does.
 Your variable names for the four answers above must match exactly (`W`, `TWR`, `F_net`, `a`) so that the checker below can find them.
 
 ### Checking Your Work
