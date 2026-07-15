@@ -232,3 +232,38 @@ To keep variable definitions contained and isolated from each other, it is bette
 1. Which built-in MATLAB function records activity from the Command Window?
 1. What are some advantages to calling scripts from within other scripts?
 1. What disadvantages are there to calling scripts within scripts?
+
+## Practice Problem: SLS Liftoff
+
+Not every rocket that reaches the pad actually leaves the ground.
+For a rocket to lift off, its engines must produce more thrust than the rocket weighs - otherwise gravity wins and it just sits there.
+Engineers describe this margin with the **thrust-to-weight ratio (TWR)**: the engine thrust divided by the rocket's weight.
+A TWR greater than 1 means the rocket can lift off; the larger the TWR, the faster it accelerates off the pad.
+
+In this practice problem, you'll write a MATLAB script that calculates the liftoff performance of NASA's Space Launch System (SLS), the rocket behind the Artemis Moon missions.
+At liftoff, the SLS's four core engines and two solid rocket boosters produce a combined thrust of 39,100,000 N, and the fully-fueled rocket has a mass of 2,600,000 kg.
+
+### Your Task
+
+Write a script named **`sls_liftoff.m`** that computes the following, using $g = 9.81$ m/s<sup>2</sup> for gravity:
+
+1. `W` - the rocket's weight, in newtons ($W = mg$)
+2. `TWR` - the thrust-to-weight ratio (thrust divided by weight)
+3. `F_net` - the net upward force at liftoff, in newtons (thrust minus weight)
+4. `a` - the rocket's acceleration at liftoff, in m/s<sup>2</sup>, using Newton's second law ($F_{net} = ma$)
+
+Use variables for the given thrust and mass too, rather than typing the numbers directly into each formula - this keeps your script readable and reusable, the same way the center of mass example above does.
+Your variable names for the four answers above must match exactly (`W`, `TWR`, `F_net`, `a`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_sls_liftoff.m]({{ site.baseurl }}/assets/practice/matlab/check_sls_liftoff.m) and save it in the *same folder* as your `sls_liftoff.m` script.
+Make sure that folder is your Current Folder in MATLAB, then run:
+
+```matlab
+>> check_sls_liftoff
+```
+
+The checker runs your script and reports whether each of the four values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}
