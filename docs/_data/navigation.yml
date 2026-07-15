@@ -86,6 +86,8 @@ python:
     url: /python/
   - title: "Getting Started"
     url: /python/getting_started
+  - title: "User Interface"
+    url: /python/user_interface
   - title: "Week 1"
     children:
       - title: "Variables & Output"
