@@ -85,11 +85,11 @@ Each nested `if` must have its own `end`.
 {% include matlab/conditionals_nested.diary %}
 ```
 
-## Best Practices
+## A Few Tips
 
-* Avoid syntax errors using `elseif` instead of `else if`
-* Use short-circuit operators (`&&` and `||`) for improved performance with compound conditions
-* Avoid deeply nested logic when possible. If needed, convert code blocks into dedicated functions with their own `if` statements
+Writing `else if` as two words, rather than the single keyword `elseif`, is a common syntax error - MATLAB will treat it as a new, separate `if` statement that needs its own `end`, rather than a continuation of the outer one.
+Prefer the short-circuit operators, `&&` and `||`, over `&` and `|` for compound conditions, since they stop evaluating as soon as the result is known.
+Finally, if a nested `if` statement starts to grow several levels deep, it is often clearer to pull that logic out into its own [function]({{ site.baseurl }}{% link matlab/user_functions.md %}) rather than keep nesting.
 
 ## Reading Questions
 

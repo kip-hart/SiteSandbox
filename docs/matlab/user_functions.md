@@ -88,11 +88,15 @@ All inputs are contained within a set of parentheses that follow the function na
 The outputs are contained within square brackets and come before the function name and assignment operator.
 
 ```matlab
-function [v, a] = kinematics(s, t)
-    v = s ./ t;
-    a = diff(v) ./ diff(t);
+function [area, perimeter] = rectangle_props(width, height)
+    area = width .* height;
+    perimeter = 2 * (width + height);
 end
 ```
+
+This function takes two inputs, `width` and `height`, and returns two outputs, `area` and `perimeter`.
+To capture both outputs when calling the function, list them in square brackets on the left side of the assignment: `[a, p] = rectangle_props(3, 4)`.
+If you only need one output, you can omit the brackets and capture just the first one: `a = rectangle_props(3, 4)`.
 
 ## Scope and Variables
 
@@ -102,10 +106,9 @@ This helps prevent accidental overwriting of data and improves modularity.
 
 ## Best Practices
 
-* Use descriptive names for functions
-* Use generic names for input and output variables
-* Include comments and documentation in functions
-* Avoid hardcoding values inside functions
+* Use descriptive names for functions and their inputs/outputs, so a reader can guess what they do without reading the body
+* Include comments describing the purpose of the function and any non-obvious steps
+* Avoid hardcoding values inside a function - pass them in as inputs instead, so the function stays reusable
 * Keep the scope of each function narrow - one task per function
 
 ## Reading Questions

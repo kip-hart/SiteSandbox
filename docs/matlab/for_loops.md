@@ -35,7 +35,7 @@ For example, this for loop prints the powers of two up to 10:
 
 ## Looping Over an Array
 
-One of the most common uses of for loops in MATLAB is to perform a series of calculates *for* each element in an array.
+One of the most common uses of for loops in MATLAB is to perform a series of calculations *for* each element in an array.
 This should only be considered as an option if the calculation does not support vectorized inputs.
 For example, the following two calculations produce the same result, but the first is vectorized while the second uses a for loop.
 
@@ -95,12 +95,12 @@ A *nested* for loop is when a for loop is contained within another for loop.
 This structure is useful when iterating over multiple dimensions of data, or performing operations with multiple levels of repetition.
 For example, you could use a for loop to propagate the trajectory of an airplane, then nest that within another for loop where you vary the wind speed, the number of passengers, the air temperature, etc.
 
-MATLAB can nesting for loops to any depth, however the compute time will grow rapidly as more loops are added.
+MATLAB can nest for loops to any depth, however the compute time will grow rapidly as more loops are added.
 In the example above, if I have 1,000 timesteps and 30 wind speeds, then MATLAB will perform the inner loop calculations 30,000 times.
 If there are 15 different cases of passenger count, I could loop over that as well, which would bring the number of inner loop calculations to 450,000.
 This increase in the number of calculations is the *curse of dimensionality* and drives the need to make calculations as fast as possible.
 
-## Paralellization
+## Parallelization
 
 MATLAB does allow for accelerated performance with for loops using `parfor` instead of `for`.
 This does take time initially to set up the parallel computing pool, but the intent is to parallelize the operations within a for loop.

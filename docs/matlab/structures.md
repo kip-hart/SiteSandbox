@@ -3,7 +3,7 @@ title: Structures
 ---
 
 In MATLAB, you can define almost any number of variables in the workspace.
-This makes it very practical in engineering, where we design and analyze complex systems across mutliple disciplines.
+This makes it very practical in engineering, where we design and analyze complex systems across multiple disciplines.
 For example, the tires on a car have geometric properties like diameter and width, the rubber they are made from has certain material properties like elasticity, those properties depend on the outside air temperature, and so on.
 There are properties for the motor, the cabin, the frame, and the cargo. 
 Mentally, we organize all these variables by which part of the car they describe.
@@ -92,8 +92,8 @@ Note that **multiplying** by the conversion factor puts the value **into** feet,
 
 The fields in a structure can be updated at any time.
 Using the previous example, we can define `tire.total_diameter` after calculating its value.
-Its important to remember that if any of the values used to calculate the tire diameter are updated,
-the in `tire.total_diameter` will not be updated automatically.
+It's important to remember that if any of the values used to calculate the tire diameter are updated,
+the value in `tire.total_diameter` will not be updated automatically.
 You will need to recalculate it after those changes.
 To make that update automatic requires [Classes](https://www.mathworks.com/help/matlab/object-oriented-programming.html).
 
