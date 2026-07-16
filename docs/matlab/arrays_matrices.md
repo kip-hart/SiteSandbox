@@ -262,3 +262,40 @@ This method helps MATLAB prepare space for your data efficiently.
 6. How can you perform a calculation on all elements of an array or matrix at once?
 7. What does the `./` operator do in a MATLAB expression?
 8. How does creating an array using `zeros(n,1)` help when you know the required size of the array?
+
+## Practice Problem: Airspeed Envelope Check
+
+During flight tests, an aircraft's airspeed is logged throughout the flight and reviewed afterward to confirm it stayed within safe limits.
+Fly too slow, and the wings can stall.
+
+In this practice problem, you'll write a MATLAB script that reviews airspeed data logged during a student pilot's practice in the traffic pattern of a single-engine trainer aircraft, flagging any readings that dropped below a safe threshold.
+
+### Your Task
+
+Write a script named **`airspeed_envelope.m`** that starts from the given airspeed data, recorded in knots every 5 seconds:
+
+```matlab
+airspeed_knots = [62, 58, 65, 70, 55, 61, 68, 59, 72, 57];
+```
+
+Using a safe airspeed threshold of 60 knots, compute:
+
+1. `unsafe_mask` - a logical array that is `true` wherever `airspeed_knots` is below the safe threshold
+2. `unsafe_knots` - the airspeed readings that fell below the threshold, extracted from `airspeed_knots` using `unsafe_mask`
+3. `unsafe_mph` - `unsafe_knots` converted to miles per hour (1 knot = 1.15078 mph)
+
+Use a variable for the safe threshold too, rather than typing 60 directly into your logical expression.
+Your variable names for the three answers above must match exactly (`unsafe_mask`, `unsafe_knots`, `unsafe_mph`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_airspeed_envelope.m]({{ site.baseurl }}/assets/practice/matlab/check_airspeed_envelope.m) and save it in the *same folder* as your `airspeed_envelope.m` script.
+Make sure that folder is your Current Folder in MATLAB, then run:
+
+```matlab
+>> check_airspeed_envelope
+```
+
+The checker runs your script and reports whether each of the three values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}
