@@ -38,34 +38,36 @@ matlab:
         url: /matlab/arithmetic
       - title: "Variables"
         url: /matlab/variables
-      - title: "User Scripts"
-        url: /matlab/scripts
       - title: "Native Functions"
         url: /matlab/native_functions
-      - title: "Structures"
-        url: /matlab/structures
-      - title: "Arrays and Matrices"
-        url: /matlab/arrays_matrices
-      - title: "Plotting"
-        url: /matlab/plotting
-  - title: "Week 2"
-    children:
+      - title: "User Scripts"
+        url: /matlab/scripts
       - title: "Complex Numbers"
         url: /matlab/complex
+      - title: "Arrays and Matrices"
+        url: /matlab/arrays_matrices
+  - title: "Week 2"
+    children:
+      - title: "Plotting"
+        url: /matlab/plotting
       - title: "Polynomials"
         url: /matlab/polynomials
+      - title: "Vector Math"
+        url: /matlab/vector_math
       - title: "Random Numbers"
         url: /matlab/random
-      - title: "User Functions"
-        url: /matlab/user_functions
   - title: "Week 3"
     children:
-      - title: "Conditionals"
-        url: /matlab/conditionals
       - title: "For Loops"
         url: /matlab/for_loops
+      - title: "User Functions"
+        url: /matlab/user_functions
+      - title: "Conditionals"
+        url: /matlab/conditionals
       - title: "While Loops"
         url: /matlab/while_loops
+      - title: "Structures"
+        url: /matlab/structures
   - title: "Supplemental"
     children:
       - title: "Publishing Scripts"

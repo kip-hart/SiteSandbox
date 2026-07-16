@@ -159,32 +159,7 @@ E_total = E_kinetic + E_potential
 MATLAB has *vectorized* these operations, meaning that adding two lists of 10,000 numbers takes the same amount of time to compute as adding two numbers.
 This is tremendously powerful and enables personal computers to solve relatively complex numerical models in a reasonable amount of time.
 
-### Vector Math
-
-MATLAB has several functions that operate specifically on arrays or vectors.
-The following functions operate on a single array:
-
-| Function | Description                       | MATLAB Help Center                                                     |
-| -------- | --------------------------------- | ---------------------------------------------------------------------- |
-| flip     | Reverse the elements in an array  | [flip](https://www.mathworks.com/help/matlab/ref/flip.html)            |
-| length   | Length of largest array dimension | [length](https://www.mathworks.com/help/matlab/ref/double.length.html) |
-| max      | Largest value in array            | [max](https://www.mathworks.com/help/matlab/ref/double.max.html)       |
-| mean     | Mean or average value in array    | [mean](https://www.mathworks.com/help/matlab/ref/double.mean.html)     |
-| median   | Median value of an array          | [median](https://www.mathworks.com/help/matlab/ref/double.median.html) |
-| min      | Minimum value of an array         | [min](https://www.mathworks.com/help/matlab/ref/double.min.html)       |
-| norm     | Vector norm of array              | [norm](https://www.mathworks.com/help/matlab/ref/norm.html)            |
-| prod     | Product of all values in array    | [prod](https://www.mathworks.com/help/matlab/ref/double.prod.html)     |
-| sort     | Sort array in ascending order     | [sort](https://www.mathworks.com/help/matlab/ref/double.sort.html)     |
-| std      | Standard deviation of array       | [std](https://www.mathworks.com/help/matlab/ref/double.std.html)       |
-| sum      | Total of all values in array      | [sum](https://www.mathworks.com/help/matlab/ref/double.sum.html)       |
-
-These function operate on multiple arrays:
-
-| Function   | Description                  | MATLAB Help Center                                            |
-| ---------- | ---------------------------- | ------------------------------------------------------------- |
-| dot(a,b)   | Dot product of two vectors   | [dot](https://www.mathworks.com/help/matlab/ref/dot.html)     |
-| cross(a,b) | Cross product of two vectors | [cross](https://www.mathworks.com/help/matlab/ref/cross.html) |
-
+MATLAB also has a set of functions built specifically for arrays and vectors, like magnitude, dot product, and cross product, covered on the [Vector Math]({{ site.baseurl }}{% link matlab/vector_math.md %}) page.
 
 ## Matrices in MATLAB
 
