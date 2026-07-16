@@ -2,8 +2,6 @@
 title: Publishing Scripts
 ---
 
-This page is supplemental material - it isn't part of the course's lecture schedule, but is here for anyone curious to go further with MATLAB scripts.
-
 MATLAB scripts are written in plain text `.m` files, which can be difficult to read and
 do not contain any of the results from running the script.
 Publishing the script converts the plain text to rich text PDFs that are easy to read and contain the results.

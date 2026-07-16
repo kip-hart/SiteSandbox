@@ -2,8 +2,6 @@
 title: Classes
 ---
 
-This page is supplemental material - it isn't part of the course's lecture schedule, but is here for anyone curious to go further with MATLAB.
-
 A [structure]({{ site.baseurl }}{% link matlab/structures.md %}) groups related data together under one variable, with fields you access using a dot, like `tire.diameter`.
 A **class** takes that same idea a step further: it groups data together *and* bundles in the functions that operate on that data, so both travel together as a single unit.
 

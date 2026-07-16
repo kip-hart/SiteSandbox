@@ -2,8 +2,6 @@
 title: Switch-Case Statements
 ---
 
-This page is supplemental material - it isn't part of the course's lecture schedule, but is here for anyone curious to go further with [conditionals]({{ site.baseurl }}{% link matlab/conditionals.md %}).
-
 A `switch` statement is an alternative to `if`-`elseif`-`else` for the specific case of comparing one value against several possible exact matches.
 Anything a `switch` statement can do could also be written with `if`-`elseif`, but when you're checking a single variable against a list of specific values, `switch` is often easier to read.
 

@@ -2,8 +2,6 @@
 title: Live Scripts
 ---
 
-This page is supplemental material - it isn't part of the course's lecture schedule, but is here for anyone curious to go further with MATLAB scripts.
-
 Live scripts are similar to [published scripts]({{ site.baseurl }}{% link matlab/publishing.md %}), with one main difference: results are recalculated live, right below the code that produced them, as you edit.
 This is an interactive experience, where you can adjust the inputs to the script and immediately see the effects on outputs, formatted text, and plots, without needing to run a separate `publish` command.
 
