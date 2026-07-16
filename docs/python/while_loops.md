@@ -32,7 +32,7 @@ For example, this loop prints the powers of two that are less than 100:
 {% include python/while_loop_powers/screen_output.log %}
 ```
 
-Notice that a for loop would be awkward here - we'd need to already know that 2<sup>6</sup>=64 is the last power of two under 100 before writing `for p in range(7):`.
+Notice that a for loop would be awkward here. We'd need to already know that 2<sup>6</sup>=64 is the last power of two under 100 before writing `for p in range(7):`.
 With a while loop, we just state the condition we care about (`value < 100`) and let Python handle the rest.
 
 ## For Loops vs. While Loops
@@ -55,7 +55,7 @@ Write a Python script that determines how many full weeks the station can go bef
 #### Solution
 {:.no_toc}
 
-We don't know the number of weeks in advance - that's exactly what we're solving for - so a while loop is the right tool.
+We don't know the number of weeks in advance. That's exactly what we're solving for, so a while loop is the right tool.
 The loop keeps subtracting the weekly altitude loss as long as the altitude is still above the reboost threshold, counting how many weeks that takes.
 
 ```python

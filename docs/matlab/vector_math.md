@@ -2,8 +2,7 @@
 title: Vector Math
 ---
 
-Beyond basic [array arithmetic]({{ site.baseurl }}{% link matlab/arrays_matrices.md %}#array-arithmetic), MATLAB has several functions that operate specifically on arrays and vectors.
-These come up constantly in engineering: averaging a set of sensor readings, finding the magnitude of a force vector, or computing the work done by a force over a displacement.
+Beyond basic [array arithmetic]({{ site.baseurl }}{% link matlab/arrays_matrices.md %}#array-arithmetic), MATLAB has several functions built specifically for arrays and vectors, such as averaging a set of sensor readings, finding the magnitude of a force vector, or computing the work done by a force over a displacement.
 
 ## Functions on a Single Array
 
@@ -23,7 +22,7 @@ The following functions operate on a single array:
 | std      | Standard deviation of array       | [std](https://www.mathworks.com/help/matlab/ref/double.std.html)       |
 | sum      | Total of all values in array      | [sum](https://www.mathworks.com/help/matlab/ref/double.sum.html)       |
 
-`norm` is worth calling out on its own: for a vector, it computes the magnitude, $\sqrt{x^2 + y^2 + z^2 + ...}$, which comes up any time you need the size of a force, velocity, or displacement rather than its individual components.
+For a vector, `norm` computes the magnitude, $\sqrt{x^2 + y^2 + z^2 + ...}$, which you need any time you care about the size of a force, velocity, or displacement rather than its individual components.
 
 ```matlab
 {% include matlab/vector_math_basic.m %}

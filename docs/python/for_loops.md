@@ -34,7 +34,7 @@ For example, this for loop prints the powers of two up to 1024:
 ## Looping Over a List
 
 One of the most common uses of for loops in Python is to perform a series of calculations for each element in a list.
-Unlike MATLAB, plain Python does not have built-in vectorized math, so looping over a list is the normal way to process it - not something to avoid.
+Unlike MATLAB, plain Python does not have built-in vectorized math, so looping over a list is the normal way to process it.
 (Once you've learned about NumPy arrays, later in the course, some of these calculations can be vectorized similarly to MATLAB. See [NumPy Arrays]({{ site.baseurl }}{% link python/numpy.md %}).)
 
 ```python
