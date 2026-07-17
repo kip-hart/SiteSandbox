@@ -175,3 +175,45 @@ This is the plot:
 1. How do you convert a magnitude and phase angle into a complex number?
 1. How do you find the magnitude and phase angle of a complex number?
 1. Why are complex numbers used in engineering if they don't "exist" in the real world?
+
+## Practice Problem: Wind Triangle
+
+A pilot flying through moving air doesn't travel in the direction they're pointed, or at the speed they're flying through the air.
+Wind adds its own speed and direction to the aircraft's, and the two combine into a different path and speed over the ground.
+This combination, called a *wind triangle*, is really just vector addition, which is exactly what complex numbers do.
+
+In this practice problem, you'll write a MATLAB script that adds an aircraft's true airspeed to the wind to find its groundspeed and track.
+To keep things simple, express every direction as an angle in degrees measured counterclockwise from east, the same convention MATLAB's `angle` function uses, rather than a compass bearing.
+
+### Your Task
+
+Write a script named **`wind_triangle.m`** that starts from the following givens:
+
+```matlab
+tas = 180; % knots, true airspeed
+heading = 30; % degrees, aircraft heading (ccw from east)
+
+wind_speed = 25; % knots
+wind_dir = 300; % degrees, direction the wind is blowing toward (ccw from east)
+```
+
+Compute:
+
+1. `v_ground` - the ground velocity, as a single complex number, found by adding the airspeed and wind velocity vectors together (each written in polar form, $r e^{i\theta}$, using `deg2rad` to convert `heading` and `wind_dir` to radians)
+2. `groundspeed` - the magnitude of `v_ground`
+3. `track_deg` - the angle of `v_ground`, in degrees
+
+Your variable names for the three answers above must match exactly (`v_ground`, `groundspeed`, `track_deg`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_wind_triangle.m]({{ site.baseurl }}/assets/practice/matlab/check_wind_triangle.m) and save it in the *same folder* as your `wind_triangle.m` script.
+Make sure that folder is your Current Folder in MATLAB, then run:
+
+```matlab
+>> check_wind_triangle
+```
+
+The checker runs your script and reports whether each of the three values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}
