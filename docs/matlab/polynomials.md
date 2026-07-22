@@ -248,3 +248,42 @@ The MATLAB Help Center has documentation on
 1. How would you raise a polynomial to the power 2? What about the power 5?
 1. How can you find the line-of-best fit?
 1. What should you consider when deciding the order of the polynomial-of-best-fit?
+
+## Practice Problem: Airdrop Payload
+
+A cargo aircraft flying at a constant altitude releases a supply payload straight down, with no parachute.
+At the moment of release, the payload has zero vertical velocity, so its height over time follows the same falling-body polynomial as the pumpkin cannon example above, just without the initial vertical speed term.
+
+In this practice problem, you'll write a MATLAB script that finds when and how fast the payload reaches the ground.
+
+### Your Task
+
+Write a script named **`airdrop.m`** that starts from the given release conditions:
+
+```matlab
+g = 32.2; % ft/s^2
+h0 = 3000; % ft, altitude at release
+```
+
+Compute:
+
+1. `p` - the coefficients of the height polynomial $h(t) = -\frac{1}{2} g t^2 + h_0$
+2. `t_impact` - the time, in seconds, when the payload reaches the ground (the positive root of `p`)
+3. `h_5s` - the payload's height, in feet, 5 seconds after release
+4. `v_impact` - the payload's vertical velocity, in ft/s, at the moment of impact
+
+For `v_impact`, use `polyder` to differentiate `p` into the velocity polynomial, then evaluate it at `t_impact` with `polyval`.
+Your variable names for the four answers above must match exactly (`p`, `t_impact`, `h_5s`, `v_impact`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_airdrop.m]({{ site.baseurl }}/assets/practice/matlab/check_airdrop.m) and save it in the *same folder* as your `airdrop.m` script.
+Make sure that folder is your Current Folder in MATLAB, then run:
+
+```matlab
+>> check_airdrop
+```
+
+The checker runs your script and reports whether each of the four values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}

@@ -202,3 +202,45 @@ We then find the average speed of that subset using the `mean` function and pick
 1. How do you generate 500 samples from a normal distribution with $\mu$=10 and $\sigma$=2?
 1. How would you draw 500 samples from two independent standard normal distributions?
 1. How do you find the 95th percentile of a list of uncertain values?
+
+## Practice Problem: Turbofan Fuel Flow Margin
+
+A turbofan's fuel flow rate at cruise is never exactly one number.
+Manufacturing tolerances and sensor calibration mean the true value varies a little engine to engine, and an engineer needs to know how often that variation could push the fuel flow above the maximum the fuel system is rated for.
+
+In this practice problem, you'll write a MATLAB script that models the fuel flow rate as a normal distribution, then checks how often it exceeds a maximum allowable value.
+
+### Your Task
+
+Write a script named **`fuel_flow.m`** that starts from the given parameters:
+
+```matlab
+rng(7);
+n = 5000;
+mu = 1.85; % lb/s, mean fuel flow at cruise
+sigma = 0.06; % lb/s, standard deviation
+max_flow = 2.00; % lb/s, maximum allowable fuel flow
+```
+
+Compute:
+
+1. `flow_samples` - `n` samples drawn from a normal distribution with mean `mu` and standard deviation `sigma`, using `randn`
+2. `exceed_mask` - a logical array that is `true` wherever `flow_samples` exceeds `max_flow`
+3. `percent_exceed` - the percent of samples in `flow_samples` that exceed `max_flow`
+4. `mean_exceed_flow` - the mean fuel flow, in lb/s, among only the samples that exceeded `max_flow`
+
+Call `rng(7)` before drawing any samples, and don't call it again later in your script; that seed is what makes your results match the checker below.
+Your variable names for the four answers above must match exactly (`flow_samples`, `exceed_mask`, `percent_exceed`, `mean_exceed_flow`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_fuel_flow.m]({{ site.baseurl }}/assets/practice/matlab/check_fuel_flow.m) and save it in the *same folder* as your `fuel_flow.m` script.
+Make sure that folder is your Current Folder in MATLAB, then run:
+
+```matlab
+>> check_fuel_flow
+```
+
+The checker runs your script and reports whether each of the four values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}

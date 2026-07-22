@@ -346,3 +346,36 @@ The MATLAB Help Center has documentation on
 1. What two factors should you consider when picking colors for plots?
 1. How would you save the current figure to the file "results.png"?
 1. How would you create a figure with a row of 4 subplots with linked y axes?
+
+## Practice Problem: Turbojet Thrust Curve
+
+Before an engine is cleared to fly, it's tested on a stand, where sensors record how much thrust it produces at different throttle settings.
+Plotting that data is the first step in checking whether the engine performs the way it was designed to.
+
+In this practice problem, you'll write a MATLAB script that plots thrust versus RPM for a turbojet engine.
+
+### Your Task
+
+Write a script named **`thrust_curve.m`** that starts from the given test stand data:
+
+```matlab
+rpm = [4000, 6000, 8000, 10000, 12000, 14000]; % RPM
+thrust = [1200, 2100, 3400, 5000, 6900, 9100]; % lbf
+```
+
+Using `plot`, plot `thrust` versus `rpm`.
+Add an x-axis label, a y-axis label, and a title, each describing what's plotted.
+Turn the grid on.
+
+### Checking Your Work
+
+Download [check_thrust_curve.m]({{ site.baseurl }}/assets/practice/matlab/check_thrust_curve.m) and save it in the *same folder* as your `thrust_curve.m` script.
+Make sure that folder is your Current Folder in MATLAB, then run:
+
+```matlab
+>> check_thrust_curve
+```
+
+The checker runs your script and reports whether the plotted data, axis labels, title, and grid are all set correctly.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}
