@@ -64,6 +64,8 @@ matlab:
         url: /matlab/user_functions
       - title: "Conditionals"
         url: /matlab/conditionals
+      - title: "Error Handling"
+        url: /matlab/error_handling
       - title: "While Loops"
         url: /matlab/while_loops
       - title: "Structures"
