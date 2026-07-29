@@ -117,3 +117,39 @@ The MATLAB Help Center has documentation on
 1. Are vectorized operations generally slower or faster than for loops?
 1. Can a for loop be executed within another for loop?
 1. What are two differences between `for` and `parfor` in MATLAB?
+
+## Practice Problem: Compressor Stage Pressure
+
+A jet engine's compressor raises the pressure of incoming air in several stages, with each stage multiplying the pressure by its own stage pressure ratio.
+The pressure after each stage depends on the pressure after the stage before it, which makes this a natural fit for a for loop.
+
+In this practice problem, you'll write a MATLAB script that steps through a compressor's stages, tracking the pressure after each one.
+
+### Your Task
+
+Write a script named **`compressor_stages.m`** that starts from the given stage pressure ratios and inlet pressure:
+
+```matlab
+stage_ratios = [1.3, 1.28, 1.25, 1.22, 1.20]; % pressure ratio per stage
+p_inlet = 14.7; % psi
+```
+
+Using a for loop, compute:
+
+1. `stage_pressures` - an array, the same length as `stage_ratios`, where each element is the pressure *after* that stage (the pressure before stage 1 is `p_inlet`, and each stage's output pressure is its input pressure times its own stage ratio)
+2. `overall_ratio` - the overall pressure ratio across the whole compressor (the final stage pressure divided by `p_inlet`)
+
+Your variable names for the two answers above must match exactly (`stage_pressures`, `overall_ratio`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_compressor_stages.m]({{ site.baseurl }}/assets/practice/matlab/check_compressor_stages.m) and save it in the *same folder* as your `compressor_stages.m` script.
+Make sure that folder is your Current Folder in MATLAB, then run:
+
+```matlab
+>> check_compressor_stages
+```
+
+The checker runs your script and reports whether each of the two values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}

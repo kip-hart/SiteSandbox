@@ -115,3 +115,49 @@ We can go a step further and contain all the properties of the car, breaking it 
 1. How does storing unit conversion factors in a structure help solve problems with SI and English units?
 1. Why does updating a base field (`tire.width`) not automatically refresh a dependent value (`tire.total_diameter`)?
 1. What is the benefit of nesting structures?
+
+## Practice Problem: Aircraft Weight & Balance
+
+An aircraft's weight and balance depends on several components: the empty aircraft, the fuel, the pilot, and any baggage.
+Each one has both a weight and an *arm*, the distance from a reference point (the datum) to where that weight acts.
+Organizing these as a structure keeps each component's weight and arm together, the same way `tire.width` and `tire.rim_diameter` stayed together earlier on this page.
+
+In this practice problem, you'll write a MATLAB script that computes an aircraft's total weight and its center of gravity from a structure of component data.
+
+### Your Task
+
+Write a script named **`weight_balance.m`** that starts from the following structure:
+
+```matlab
+aircraft.empty_weight = 5200; % lbf
+aircraft.empty_arm = 82; % in, distance from datum
+
+aircraft.fuel_weight = 600;
+aircraft.fuel_arm = 95;
+
+aircraft.pilot_weight = 180;
+aircraft.pilot_arm = 75;
+
+aircraft.baggage_weight = 40;
+aircraft.baggage_arm = 120;
+```
+
+Compute:
+
+1. `total_weight` - the sum of the four component weights
+2. `cg` - the center of gravity, in inches from the datum, found as the weight-averaged arm: $cg = \frac{\sum w_i a_i}{\sum w_i}$
+
+Your variable names for the two answers above must match exactly (`total_weight`, `cg`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_weight_balance.m]({{ site.baseurl }}/assets/practice/matlab/check_weight_balance.m) and save it in the *same folder* as your `weight_balance.m` script.
+Make sure that folder is your Current Folder in MATLAB, then run:
+
+```matlab
+>> check_weight_balance
+```
+
+The checker runs your script and reports whether each of the two values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}

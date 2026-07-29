@@ -118,3 +118,46 @@ This helps prevent accidental overwriting of data and improves modularity.
 1. Describe which variables from a script are and are not available to a function called by that script.
 1. How would you define a function that calculates the volume of a cylinder given its radius and height?
 1. How can functions improve the readability and maintainability of your code?
+
+## Practice Problem: Rotor Disk Loading
+
+Disk loading is a helicopter's weight divided by its rotor disk area, and it's a quick way to compare how hard different rotorcraft are working their rotors.
+
+$$ DL = \frac{W}{\pi R^2} $$
+
+In this practice problem, you'll write a MATLAB function that calculates disk loading, then use it to compare two helicopters.
+
+### Your Task
+
+Write a function named **`disk_loading.m`** that takes `weight` and `radius` as inputs and returns `DL`, the disk loading, using the formula above.
+
+Then write a script named **`rotor_compare.m`** that starts from the following givens for two helicopters:
+
+```matlab
+weight_a = 6000; % lbf
+radius_a = 18; % ft
+
+weight_b = 22000; % lbf
+radius_b = 24; % ft
+```
+
+Using your `disk_loading` function, compute:
+
+1. `DL_a` - the disk loading of helicopter A
+2. `DL_b` - the disk loading of helicopter B
+3. `DL_ratio` - `DL_b` divided by `DL_a`
+
+Your variable names for the three answers above must match exactly (`DL_a`, `DL_b`, `DL_ratio`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_rotor_compare.m]({{ site.baseurl }}/assets/practice/matlab/check_rotor_compare.m) and save it in the *same folder* as your `disk_loading.m` and `rotor_compare.m` files.
+Make sure that folder is your Current Folder in MATLAB, then run:
+
+```matlab
+>> check_rotor_compare
+```
+
+The checker runs your script and reports whether each of the three values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}

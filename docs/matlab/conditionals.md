@@ -97,3 +97,41 @@ Finally, if a nested `if` statement starts to grow several levels deep, it is of
 1. What happens if multiple conditions in an `if-elseif-else` block are all true?
 1. What is the difference between `&` and `&&` in MATLAB?
 1. How would you write a conditional statement that checks if the value `x` is between 5 and 10, inclusive?
+
+## Practice Problem: Fuel Reserve Status
+
+Pilots plan fuel around more than just "will I make it there." Regulations require a minimum reserve in case of a diversion or delay, and how much time that reserve represents changes as fuel burns down.
+
+In this practice problem, you'll write a MATLAB script that classifies a fuel reserve as Normal, Caution, or Reserve based on how much flight time it represents.
+
+### Your Task
+
+Write a script named **`fuel_reserve.m`** that starts from the given fuel state:
+
+```matlab
+fuel_lb = 180; % lb, fuel remaining
+burn_rate = 140; % lb/hr
+```
+
+Compute:
+
+1. `endurance_hr` - the remaining flight time, in hours (`fuel_lb` divided by `burn_rate`)
+2. `status` - a string classifying `endurance_hr` using an `if`-`elseif`-`else` statement:
+   * `'Normal'` if `endurance_hr` is 1.5 or more
+   * `'Caution'` if `endurance_hr` is at least 0.75 but less than 1.5
+   * `'Reserve'` if `endurance_hr` is less than 0.75
+
+Your variable names for the two answers above must match exactly (`endurance_hr`, `status`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_fuel_reserve.m]({{ site.baseurl }}/assets/practice/matlab/check_fuel_reserve.m) and save it in the *same folder* as your `fuel_reserve.m` script.
+Make sure that folder is your Current Folder in MATLAB, then run:
+
+```matlab
+>> check_fuel_reserve
+```
+
+The checker runs your script and reports whether each of the two values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}

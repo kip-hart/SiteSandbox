@@ -92,3 +92,40 @@ Before running a while loop for the first time, double check that something insi
 1. What happens if a while loop's condition is false the first time it is checked?
 1. What causes an infinite loop, and how do you stop one that is already running?
 1. Would a for loop or a while loop be better suited to summing numbers typed in by a user until they type 0? Why?
+
+## Practice Problem: Engine Spool-Up Time
+
+Before a jet engine can produce useful thrust, its core has to spool up from a standstill to idle speed.
+How long that takes isn't known ahead of time. It depends on how fast the core accelerates, which makes this a natural fit for a while loop.
+
+In this practice problem, you'll write a MATLAB script that finds how long a jet engine takes to reach idle.
+
+### Your Task
+
+Write a script named **`engine_spoolup.m`** that starts from the given starting conditions:
+
+```matlab
+n2 = 0; % percent, core speed at the start
+spool_rate = 3.2; % percent per second
+idle_threshold = 56; % percent
+```
+
+Using a while loop that increases `n2` by `spool_rate` on each pass, compute:
+
+1. `seconds` - the number of seconds it takes for `n2` to reach or exceed `idle_threshold`
+2. `n2_final` - the value of `n2` once the loop stops
+
+Your variable names for the two answers above must match exactly (`seconds`, `n2_final`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_engine_spoolup.m]({{ site.baseurl }}/assets/practice/matlab/check_engine_spoolup.m) and save it in the *same folder* as your `engine_spoolup.m` script.
+Make sure that folder is your Current Folder in MATLAB, then run:
+
+```matlab
+>> check_engine_spoolup
+```
+
+The checker runs your script and reports whether each of the two values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}
