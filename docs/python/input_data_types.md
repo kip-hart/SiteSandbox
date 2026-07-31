@@ -104,3 +104,28 @@ If the `float(...)` conversion were left out, `fuel_lb * 0.4536` would raise an 
 1. What happens if you call `int()` on text that isn't a valid whole number, like `int("hello")`?
 1. What is the data type of the value `False`?
 1. Write a line of code that reads a user's height (in text) and converts it to a `float` named `height_m`.
+
+## Practice Problem: Altitude Unit Conversion
+
+### Your Task
+
+Write a script named **`altitude_conversion.py`** that:
+
+1. Prompts the user with `input()` for an altitude in meters, and converts the result to a `float` named `altitude_m`
+2. Computes `altitude_ft`, the equivalent altitude in feet (1 m = 3.281 ft)
+3. Prints the result with an f-string, rounded to 1 decimal place
+
+Your variable name for the converted value must match exactly (`altitude_ft`) so that the checker below can find it.
+
+### Checking Your Work
+
+Download [check_altitude_conversion.py]({{ site.baseurl }}/assets/practice/python/check_altitude_conversion.py) and save it in the *same folder* as your `altitude_conversion.py` script.
+Open a terminal in that folder and run:
+
+```text
+python check_altitude_conversion.py
+```
+
+The checker supplies its own test value for the `input()` prompt, so it won't wait for you to type anything - it just runs your script and reports whether `altitude_ft` is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}

@@ -94,3 +94,39 @@ Write a Python script that computes the balloon's altitude and prints it rounded
 1. What character does `print()` automatically add to the end of its output?
 1. Write a line of code that prints the values of two variables, `x` and `y`, separated by a comma and space, in the form `x = 3, y = 7`.
 1. What does adding `:.2f` inside an f-string's curly braces do?
+
+## Practice Problem: Fuel Burn Report
+
+During a test flight, fuel remaining is logged at the start and end of the flight so the average burn rate can be calculated afterward.
+
+### Your Task
+
+Write a script named **`fuel_burn_report.py`** that starts from the given fuel state:
+
+```python
+fuel_start_lb = 2400
+fuel_end_lb = 1150
+flight_time_hr = 2.5
+```
+
+Compute:
+
+1. `fuel_burned_lb` - the fuel burned during the flight, in pounds (`fuel_start_lb` minus `fuel_end_lb`)
+2. `burn_rate_lbhr` - the average burn rate, in pounds per hour (`fuel_burned_lb` divided by `flight_time_hr`)
+
+Print the burn rate with an f-string, rounded to 1 decimal place.
+
+Your variable names for the two answers above must match exactly (`fuel_burned_lb`, `burn_rate_lbhr`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_fuel_burn_report.py]({{ site.baseurl }}/assets/practice/python/check_fuel_burn_report.py) and save it in the *same folder* as your `fuel_burn_report.py` script.
+Open a terminal in that folder and run:
+
+```text
+python check_fuel_burn_report.py
+```
+
+The checker runs your script and reports whether each of the two values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}

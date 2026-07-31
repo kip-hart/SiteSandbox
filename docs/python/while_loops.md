@@ -89,3 +89,35 @@ Before running a while loop for the first time, double check that something insi
 1. What happens if a while loop's condition is false the first time it is checked?
 1. What causes an infinite loop, and how do you stop one that is already running?
 1. Would a for loop or a while loop be better suited to summing numbers typed in by a user until they type 0? Why?
+
+## Practice Problem: Battery Depletion Countdown
+
+### Your Task
+
+Write a script named **`battery_countdown.py`** that starts from the given values:
+
+```python
+charge_pct = 92
+drain_rate_pct = 7
+```
+
+Use a while loop that repeatedly subtracts `drain_rate_pct` from `charge_pct`, once per simulated hour, for as long as `charge_pct` is 20 or more.
+Track:
+
+1. `hours_until_critical` - the number of hours the loop runs before stopping
+2. `charge_pct` - itself, updated by the loop, holding its final value once the loop ends
+
+Your variable names for the two answers above must match exactly (`hours_until_critical`, `charge_pct`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_battery_countdown.py]({{ site.baseurl }}/assets/practice/python/check_battery_countdown.py) and save it in the *same folder* as your `battery_countdown.py` script.
+Open a terminal in that folder and run:
+
+```text
+python check_battery_countdown.py
+```
+
+The checker runs your script and reports whether each of the two values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}

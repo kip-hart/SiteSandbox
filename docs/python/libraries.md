@@ -66,3 +66,32 @@ If you see that error, double check the spelling of the library name, then make 
 1. What do `np` and `plt` refer to, by convention?
 1. What error does Python raise if you try to import a library that isn't installed?
 1. How do you install a third-party library like numpy?
+
+## Practice Problem: Descent Angle
+
+### Your Task
+
+Write a script named **`descent_angle.py`** that starts from the given values:
+
+```python
+horizontal_distance_m = 8000
+altitude_loss_m = 500
+```
+
+Import the `math` module, then compute `descent_angle_deg`, the descent angle in degrees, using `math.atan` and `math.degrees`.
+Print the result with an f-string, rounded to 2 decimal places.
+
+Your variable name for the answer must match exactly (`descent_angle_deg`) so that the checker below can find it.
+
+### Checking Your Work
+
+Download [check_descent_angle.py]({{ site.baseurl }}/assets/practice/python/check_descent_angle.py) and save it in the *same folder* as your `descent_angle.py` script.
+Open a terminal in that folder and run:
+
+```text
+python check_descent_angle.py
+```
+
+The checker runs your script and reports whether `descent_angle_deg` is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}

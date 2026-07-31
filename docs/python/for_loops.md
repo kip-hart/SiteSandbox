@@ -106,3 +106,34 @@ Each nested for loop needs its own consistent indentation, one level deeper than
 1. What values does `range(5)` produce, and how many times would a for loop over it execute?
 1. How does Python know where the body of a for loop ends, since it doesn't use an `end` keyword?
 1. Can a for loop be executed within another for loop?
+
+## Practice Problem: Cumulative Fuel Burn
+
+### Your Task
+
+Write a script named **`fuel_burn_loop.py`** that starts from the given values:
+
+```python
+fuel_start_lb = 3000
+hourly_burn_lb = [450, 430, 410, 395]
+```
+
+Use a for loop over `hourly_burn_lb` to compute:
+
+1. `fuel_remaining` - a list containing the fuel remaining after each hour, in order (start from `fuel_start_lb` and subtract each hour's burn as you go)
+2. `total_burned_lb` - the total fuel burned over all hours
+
+Your variable names for the two answers above must match exactly (`fuel_remaining`, `total_burned_lb`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_fuel_burn_loop.py]({{ site.baseurl }}/assets/practice/python/check_fuel_burn_loop.py) and save it in the *same folder* as your `fuel_burn_loop.py` script.
+Open a terminal in that folder and run:
+
+```text
+python check_fuel_burn_loop.py
+```
+
+The checker runs your script and reports whether each of the two values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}

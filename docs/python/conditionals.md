@@ -102,3 +102,40 @@ Finally, if a nested `if` statement starts to grow several levels deep, it is of
 1. What happens if multiple conditions in an `if`-`elif`-`else` block are all true?
 1. What is the difference between `=` and `==` in Python?
 1. How would you write a conditional statement that checks if the value `x` is between 5 and 10, inclusive?
+
+## Practice Problem: Runway Length Check
+
+Regulations require a safety margin between the runway length available and the distance an aircraft actually needs to take off.
+How much margin is left changes with every runway, so it has to be checked before every takeoff.
+
+### Your Task
+
+Write a script named **`runway_check.py`** that starts from the given values:
+
+```python
+runway_length_ft = 5200
+required_distance_ft = 4300
+```
+
+Compute:
+
+1. `margin_ft` - the difference between the runway length and the required takeoff distance
+2. `status` - a string classifying `margin_ft` using an `if`-`elif`-`else` statement:
+   * `"Go"` if `margin_ft` is 1000 or more
+   * `"Caution"` if `margin_ft` is at least 500 but less than 1000
+   * `"No-Go"` if `margin_ft` is less than 500
+
+Your variable names for the two answers above must match exactly (`margin_ft`, `status`) so that the checker below can find them.
+
+### Checking Your Work
+
+Download [check_runway_check.py]({{ site.baseurl }}/assets/practice/python/check_runway_check.py) and save it in the *same folder* as your `runway_check.py` script.
+Open a terminal in that folder and run:
+
+```text
+python check_runway_check.py
+```
+
+The checker runs your script and reports whether each of the two values is correct.
+This is practice, not a graded assignment. If something doesn't pass, use the feedback to find and fix the issue, then run the checker again.
+{: .notice}
