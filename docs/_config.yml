@@ -331,6 +331,13 @@ defaults:
       toc: true
   # Python
   - scope:
+      path: "python/examples"
+      type: pages
+    values:
+      sidebar:
+        nav: "python"
+      toc: false
+  - scope:
       path: "python"
       type: pages
     values:
