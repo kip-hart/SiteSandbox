@@ -46,6 +46,33 @@ The four types used above are the most common ones you'll encounter early on:
 
 Unlike C++, you never write these type names when creating a variable - Python infers the type from the value itself, as covered on the [Variables & Output]({{ site.baseurl }}{% link python/variables.md %}) page.
 
+## Lists and Tuples
+
+Two more common types hold more than one value at a time: lists and tuples.
+Both are ordered sequences of values, indexed the same way as a string, but they differ in whether that sequence can change after it's created.
+This section covers just the basics. See [Lists & Tuples]({{ site.baseurl }}{% link python/lists_tuples.md %}) for indexing, slicing, and the full set of list operations.
+
+A list is created with square brackets and can be changed after creation. Values can be added, removed, or reassigned:
+
+```python
+{% include python/list_basics/main.py %}
+```
+```text
+{% include python/list_basics/screen_output.log %}
+```
+
+A tuple is created with parentheses and, unlike a list, cannot be changed once created.
+Tuples are often used for a fixed group of related values, such as a coordinate pair:
+
+```python
+{% include python/tuple_basics/main.py %}
+```
+```text
+{% include python/tuple_basics/screen_output.log %}
+```
+
+Writing `lat, lon = coordinates` is called *tuple unpacking*. It assigns each value in the tuple to its own variable in a single line.
+
 ## Type Conversion
 Because `input()` always returns a `str`, you often need to explicitly convert it to a number before using it in a calculation.
 Python provides a built-in function for each type that attempts to convert its argument:
@@ -104,6 +131,8 @@ If the `float(...)` conversion were left out, `fuel_lb * 0.4536` would raise an 
 1. What happens if you call `int()` on text that isn't a valid whole number, like `int("hello")`?
 1. What is the data type of the value `False`?
 1. Write a line of code that reads a user's height (in text) and converts it to a `float` named `height_m`.
+1. What is the main difference between a list and a tuple?
+1. What does tuple unpacking mean?
 
 ## Practice Problem: Altitude Unit Conversion
 
