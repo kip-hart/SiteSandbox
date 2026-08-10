@@ -34,6 +34,46 @@ Unlike a string or a tuple, a list can be changed after it's created:
 `append` adds a value to the end, `insert` adds one at a specific position, `pop` removes and returns the last value, and `remove` deletes the first value that matches the one given.
 Each of these changes the list in place, rather than creating a new one.
 
+A few more methods round out the common ways to modify a list:
+
+```python
+{% include python/lists_more_methods/main.py %}
+```
+```text
+{% include python/lists_more_methods/screen_output.log %}
+```
+
+`extend` adds every value from another list, `count` reports how many times a value appears, `index` finds the position of the first match, and `reverse` flips the list in place.
+
+## Concatenation and Repetition
+
+`+` and `*` work on lists, but not the way they work on numbers:
+
+```python
+{% include python/lists_concat_repeat/main.py %}
+```
+```text
+{% include python/lists_concat_repeat/screen_output.log %}
+```
+
+`a + b` joins the two lists end to end, and `a * 3` repeats the list's contents three times.
+Neither one does element-wise math; that's what [NumPy Arrays]({{ site.baseurl }}{% link python/numpy.md %}) are for.
+
+## Assignment Does Not Copy a List
+
+Assigning a list to a new variable does not create a second, independent list; it just gives the same list a second name:
+
+```python
+{% include python/lists_aliasing/main.py %}
+```
+```text
+{% include python/lists_aliasing/screen_output.log %}
+```
+
+`alias` and `original` refer to the same list, so a change made through `alias` shows up when reading `original` too.
+Calling `.copy()` (or `list(original)`) creates an independent list, so changes to the copy don't affect the original.
+This is a common source of bugs when it's unexpected.
+
 ## Common List Operations
 
 A handful of built-in functions work on any list:
@@ -109,3 +149,6 @@ Nested lists get unwieldy quickly for anything numeric, which is one of the reas
 1. Why can't a list element be reassigned inside a tuple?
 1. If a function ends with `return v, T`, what type of value does it return, and how would you unpack it into two variables?
 1. How would you access the middle element of `grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]`?
+1. What does `[1, 2] + [3, 4]` produce? What about `[1, 2] * 2`?
+1. If `b = a` for two lists, and then `b.append(5)` is called, does `a` change? Why?
+1. How would you make an independent copy of a list, rather than a second name for the same list?
