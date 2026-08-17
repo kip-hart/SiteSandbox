@@ -45,7 +45,8 @@ Unlike MATLAB, plain Python does not have built-in vectorized math, so looping o
 ```
 
 Here, `value` takes on each number in `measurements` in turn, and `math.sqrt(value)` is computed and printed on every pass.
-Lists are covered in more detail on the [Lists & Tuples]({{ site.baseurl }}{% link python/lists_tuples.md %}) page; for now, a list is just a sequence of values written between square brackets and separated by commas.
+Lists are covered in more detail on the [Lists & Tuples]({{ site.baseurl }}{% link python/lists_tuples.md %}) page.
+For now, a list is just a sequence of values written between square brackets and separated by commas.
 
 {% capture notice-text %}
 ### Example: Rocket Engine with Inexact Performance

@@ -5,7 +5,8 @@ title: NumPy Arrays
 NumPy is a third-party library for numeric arrays and the math operations that go with them.
 It fills a gap that plain Python lists leave open: fast, element-wise math over a whole sequence of numbers at once.
 
-The [Using Libraries]({{ site.baseurl }}{% link python/libraries.md %}) page covers importing a library in general; NumPy is almost always imported under the alias `np`.
+The [Using Libraries]({{ site.baseurl }}{% link python/libraries.md %}) page covers importing a library in general.
+NumPy is almost always imported under the alias `np`.
 
 The NumPy documentation has a [Quickstart guide](https://numpy.org/doc/stable/user/quickstart.html).
 
@@ -61,7 +62,8 @@ Passing `dtype=float` (or another type) when creating an array forces that type,
 {% include python/numpy_reshape/screen_output.log %}
 ```
 
-The new shape's dimensions must multiply out to the same total count as the original; reshaping 6 elements into `(2, 3)` works because $2 \times 3 = 6$, but reshaping into `(2, 4)` would raise an error.
+The new shape's dimensions must multiply out to the same total count as the original.
+Reshaping 6 elements into `(2, 3)` works because $2 \times 3 = 6$, but reshaping into `(2, 4)` would raise an error.
 
 ## Element-wise Arithmetic
 
@@ -164,7 +166,8 @@ A NumPy array can have more than one dimension, which is how matrices are repres
 {% include python/numpy_2d/screen_output.log %}
 ```
 
-`@` performs true matrix multiplication, while `*` still multiplies element by element, even for a 2D array; mixing these up is a common source of bugs.
+`@` performs true matrix multiplication, while `*` still multiplies element by element, even for a 2D array.
+Mixing these up is a common source of bugs.
 `np.linalg` provides other linear algebra operations, including `det` for the determinant and `norm` for a vector's magnitude.
 
 ## Reading Questions

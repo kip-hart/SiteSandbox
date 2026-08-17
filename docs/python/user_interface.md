@@ -18,7 +18,8 @@ This isn't necessary for the exercises in this course, but is worth knowing abou
 
 ## Editor
 The Editor is the large central area where you write code.
-Each open file appears as its own tab across the top; a dot on a tab means that file has unsaved changes.
+Each open file appears as its own tab across the top.
+A dot on a tab means that file has unsaved changes.
 Save the current file with `Ctrl+S` (Windows/Linux) or `Cmd+S` (macOS).
 With the Python extension installed, the Editor provides syntax highlighting and autocompletion as you type.
 

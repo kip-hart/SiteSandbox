@@ -13,7 +13,7 @@ The Python documentation has a guide on [Defining Functions](https://docs.python
 Functions are reusable blocks of code that accept inputs, perform operations, and return outputs.
 They are especially useful when a calculation needs to be performed multiple times with different inputs.
 They can also abstract the details of a complex operation into a simpler interface.
-For example, when you call `math.sqrt(x)` you are not particularly interested in the algorithm used to compute a square root; you just want the answer.
+For example, when you call `math.sqrt(x)` you are not particularly interested in the algorithm used to compute a square root. You just want the answer.
 
 ## Syntax
 
@@ -129,7 +129,7 @@ A function can be stored in a variable, passed as an argument to another functio
 {% include python/func_higher_order/screen_output.log %}
 ```
 
-`apply_twice` works with whatever function it's given; it just calls that function twice, without needing to know what the function does.
+`apply_twice` works with whatever function it's given, calling that function twice without needing to know what it does.
 A function that accepts or returns another function like this is called a *higher-order function*.
 
 ## Variable Scope

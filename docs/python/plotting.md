@@ -5,7 +5,8 @@ title: Plotting with Matplotlib
 Matplotlib is a third-party library for creating plots, including line graphs, scatter plots, and many other chart types.
 It's almost always used together with [NumPy Arrays]({{ site.baseurl }}{% link python/numpy.md %}), since the values being plotted are usually the result of a numeric computation.
 
-The [Using Libraries]({{ site.baseurl }}{% link python/libraries.md %}) page covers importing a library in general; the plotting functions used in this course all come from `matplotlib.pyplot`, almost always imported under the alias `plt`.
+The [Using Libraries]({{ site.baseurl }}{% link python/libraries.md %}) page covers importing a library in general.
+The plotting functions used in this course all come from `matplotlib.pyplot`, almost always imported under the alias `plt`.
 
 The Matplotlib documentation has a [Quick start guide](https://matplotlib.org/stable/users/explain/quick_start.html).
 
@@ -19,7 +20,8 @@ A minimal plot starts a new figure, plots `y` against `x`, and displays it:
 
 {% include figure popup=true image_path="/assets/images/figures/python/plot_basic/Figure_1.png" alt="Sine wave plot" caption="Example of a basic line plot." %}
 
-`plt.figure()` starts a new, blank figure; without it, a second `plt.plot()` call later in the same script would draw on top of the first figure instead of starting a new one.
+`plt.figure()` starts a new, blank figure.
+Without it, a second `plt.plot()` call later in the same script would draw on top of the first figure instead of starting a new one.
 `plt.xlabel`, `plt.ylabel`, and `plt.title` label the plot, and `plt.grid(True)` adds gridlines.
 `plt.show()` displays the figure in a window.
 
@@ -70,7 +72,8 @@ The first argument to `plt.bar()` is the list of category labels, and the second
 
 {% include figure popup=true image_path="/assets/images/figures/python/plot_hist/Figure_1.png" alt="Histogram of simulated gravity readings" caption="Example of a histogram." %}
 
-`bins=20` splits the data's range into 20 equal-width intervals; increasing the number of bins shows finer detail in the distribution's shape, at the cost of a noisier-looking chart.
+`bins=20` splits the data's range into 20 equal-width intervals.
+Increasing the number of bins shows finer detail in the distribution's shape, at the cost of a noisier-looking chart.
 
 ## Saving a Figure
 
@@ -81,7 +84,8 @@ plt.plot(x, y)
 plt.savefig("my_plot.png")
 ```
 
-PNG is the most common format for saving a plot; matplotlib also supports PDF and other formats based on the file extension given.
+PNG is the most common format for saving a plot.
+Matplotlib also supports PDF and other formats based on the file extension given.
 
 The Matplotlib documentation has reference pages for
 [plot](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html),

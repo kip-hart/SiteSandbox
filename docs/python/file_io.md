@@ -60,7 +60,8 @@ Looping over the open file object directly reads it one line at a time instead:
 {% include python/file_read_lines/screen_output.log %}
 ```
 
-`repr(line)` is used here only to make the trailing `\n` at the end of each line visible; a plain `print(line)` would also work, just with an extra blank line between each one.
+`repr(line)` is used here only to make the trailing `\n` at the end of each line visible.
+A plain `print(line)` would also work, just with an extra blank line between each one.
 
 ## Parsing Fields with strip() and split()
 
@@ -126,7 +127,7 @@ Opening a file with `"a"` (append mode) adds to the end of an existing file inst
 
 | Mode | Meaning |
 |------|---------|
-| `"r"` | Read (default; raises an error if the file doesn't exist) |
+| `"r"` | Read (the default), raises an error if the file doesn't exist |
 | `"w"` | Write (overwrites the file if it exists, creates it if not) |
 | `"a"` | Append (adds to the end, creates the file if not) |
 | `"r+"` | Read and write, without truncating |

@@ -28,7 +28,8 @@ If none of the conditions are true, the `else` block is executed.
 The `elif` and `else` blocks are both optional, and there can be any number of `elif` blocks.
 
 Unlike MATLAB or C++, Python does not use an `end` keyword or curly braces to mark where a block starts and stops.
-Instead, every line belonging to the same block must be indented by the same amount; the block ends as soon as a line returns to the previous indentation level.
+Instead, every line belonging to the same block must be indented by the same amount.
+The block ends as soon as a line returns to the previous indentation level.
 The colon `:` at the end of the `if`, `elif`, and `else` lines is required, and forgetting it is a common source of syntax errors.
 
 ## Logical Expressions
@@ -92,7 +93,8 @@ Each nested `if` needs its own consistent indentation, one level deeper than the
 ## A Few Tips
 
 Writing `else if` as two words, rather than the single keyword `elif`, is a common syntax error carried over from other languages. Python does not recognize `else if` at all.
-Similarly, using a single `=` instead of `==` inside a condition is a frequent mistake; `=` assigns a value, while `==` compares two values, and Python will raise a `SyntaxError` if you try to assign inside an `if` condition.
+Similarly, using a single `=` instead of `==` inside a condition is a frequent mistake.
+`=` assigns a value, while `==` compares two values, and Python will raise a `SyntaxError` if you try to assign inside an `if` condition.
 Finally, if a nested `if` statement starts to grow several levels deep, it is often clearer to pull that logic out into its own [function]({{ site.baseurl }}{% link python/user_functions.md %}) rather than keep nesting.
 
 ## Reading Questions

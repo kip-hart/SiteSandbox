@@ -24,7 +24,7 @@ A list comprehension follows this pattern:
 {% include python/comp_manual_vs/screen_output.log %}
 ```
 
-Both loops above produce the same list; the comprehension just does it in one line instead of three.
+Both loops above produce the same list. The comprehension just does it in one line instead of three.
 
 ## Filtering with a Condition
 
@@ -37,7 +37,8 @@ Adding `if condition` after the `for` clause skips any item for which the condit
 {% include python/comp_filter/screen_output.log %}
 ```
 
-Only values of `i` where `i % 2 == 0` is true make it into `evens`; every other value is skipped entirely, not included as some placeholder.
+Only values of `i` where `i % 2 == 0` is true make it into `evens`.
+Every other value is skipped entirely, not included as some placeholder.
 
 ## Comprehension with an if/else Expression
 
@@ -91,7 +92,7 @@ A comprehension can be nested inside another, which is one way to build a 2D gri
 ```
 
 The outer comprehension builds one row per value of `i`, and the inner comprehension builds that row's three columns.
-Nested comprehensions get hard to read quickly; if you find yourself nesting more than two levels, a regular for loop is often clearer.
+Nested comprehensions get hard to read quickly. If you find yourself nesting more than two levels, a regular for loop is often clearer.
 
 A comprehension can also use two `for` clauses side by side, rather than nested, to flatten a list of lists into a single flat list:
 

@@ -57,11 +57,12 @@ A few more methods round out the common ways to modify a list:
 ```
 
 `a + b` joins the two lists end to end, and `a * 3` repeats the list's contents three times.
-Neither one does element-wise math; that's what [NumPy Arrays]({{ site.baseurl }}{% link python/numpy.md %}) are for.
+Neither one does element-wise math.
+That's what [NumPy Arrays]({{ site.baseurl }}{% link python/numpy.md %}) are for.
 
 ## Assignment Does Not Copy a List
 
-Assigning a list to a new variable does not create a second, independent list; it just gives the same list a second name:
+Assigning a list to a new variable does not create a second, independent list. It just gives the same list a second name:
 
 ```python
 {% include python/lists_aliasing/main.py %}
@@ -125,7 +126,7 @@ A function can only `return` a single value, but that value can be a tuple, whic
 ```
 
 `orbit_stats` returns `v, T`, which Python packs into a tuple automatically.
-Writing `velocity, period = orbit_stats(398600, 6778)` unpacks that tuple directly into two variables; assigning the result to a single variable, as in `result`, keeps it as one tuple.
+Writing `velocity, period = orbit_stats(398600, 6778)` unpacks that tuple directly into two variables. Assigning the result to a single variable, as in `result`, keeps it as one tuple.
 
 ## Nested Lists
 

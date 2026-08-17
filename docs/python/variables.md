@@ -45,7 +45,7 @@ A few things to notice:
 
 * `print()` automatically adds a newline at the end of its output, so you do not need to add `\n` yourself like you would with `cout` in C++.
 * Passing several values, separated by commas, prints them separated by a single space. This works even when mixing text and numbers - `print()` converts each value to text for you.
-* Typing a bare variable name on its own line, like `altitude`, only echoes its value when working directly in an interactive Python session. Inside a script file, it does nothing; you must call `print()`.
+* Typing a bare variable name on its own line, like `altitude`, only echoes its value when working directly in an interactive Python session. Inside a script file, it does nothing, so you must call `print()`.
 
 ## Formatting Output
 For engineering calculations, printing every digit of a floating point number is rarely useful.
@@ -61,7 +61,8 @@ An f-string (formatted string) lets you embed variables directly inside a string
 
 An f-string is written like a normal string, but with an `f` immediately before the opening quote.
 Anything inside curly braces `{}` is evaluated as Python code and inserted into the string.
-Adding `:.2f` after a value formats it as a fixed-point number with 2 digits after the decimal point; the number of digits can be changed to whatever precision is appropriate.
+Adding `:.2f` after a value formats it as a fixed-point number with 2 digits after the decimal point.
+The number of digits can be changed to whatever precision is appropriate.
 
 {% capture notice-text %}
 ### Example: Formatted Altitude Report
