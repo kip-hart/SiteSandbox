@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Defining a Function"
+pydir: python/func_basics
 ---
 
 ```python

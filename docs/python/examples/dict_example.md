@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Aircraft Mass Breakdown"
+pydir: python/dict_example
 ---
 
 ```python

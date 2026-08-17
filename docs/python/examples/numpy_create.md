@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Creating Arrays"
+pydir: python/numpy_create
 ---
 
 ```python

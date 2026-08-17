@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Calling a Function in a Comprehension"
+pydir: python/comp_function
 ---
 
 ```python

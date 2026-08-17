@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Why NumPy?"
+pydir: python/numpy_why
 ---
 
 ```python

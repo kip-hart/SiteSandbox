@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Controlling How an Object Prints"
+pydir: python/class_repr
 ---
 
 ```python

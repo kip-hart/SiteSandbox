@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Array Reductions"
+pydir: python/numpy_reductions
 ---
 
 ```python

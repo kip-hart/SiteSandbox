@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Keyword vs. Positional Arguments"
+pydir: python/func_keyword_args
 ---
 
 ```python

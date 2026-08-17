@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Recursion: Factorial"
+pydir: python/func_recursion
 ---
 
 ```python

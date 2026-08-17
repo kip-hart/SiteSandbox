@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "A Dictionary as a Lookup Table"
+pydir: python/dict_lookup
 ---
 
 ```python

@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Class Variables"
+pydir: python/class_variables
 ---
 
 ```python

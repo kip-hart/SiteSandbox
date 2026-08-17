@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Nested Comprehension"
+pydir: python/comp_nested
 ---
 
 ```python

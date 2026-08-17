@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Defining a Class"
+pydir: python/class_basics
 ---
 
 ```python

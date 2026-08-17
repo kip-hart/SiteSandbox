@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Iterating Over Rows"
+pydir: python/dictlist_iterate
 ---
 
 ```python

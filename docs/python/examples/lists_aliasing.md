@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "List Aliasing and Copying"
+pydir: python/lists_aliasing
 ---
 
 ```python

@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Element-wise Arithmetic"
+pydir: python/numpy_elementwise
 ---
 
 ```python

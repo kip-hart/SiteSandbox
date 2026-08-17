@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Reshaping an Array"
+pydir: python/numpy_reshape
 ---
 
 ```python

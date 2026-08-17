@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Parsing Fields with strip() and split()"
+pydir: python/file_parse_fields
 ---
 
 ```python

@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Filtering in a Comprehension"
+pydir: python/comp_filter
 ---
 
 ```python

@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Rocket Thrust-to-Weight"
+pydir: python/class_example
 ---
 
 ```python

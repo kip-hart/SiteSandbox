@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Summarizing Rows"
+pydir: python/dictlist_aggregate
 ---
 
 ```python

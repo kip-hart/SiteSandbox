@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Accessing Dictionary Values"
+pydir: python/dict_access
 ---
 
 ```python

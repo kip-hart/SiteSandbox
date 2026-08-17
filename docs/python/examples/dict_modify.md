@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Adding, Updating, and Removing Entries"
+pydir: python/dict_modify
 ---
 
 ```python

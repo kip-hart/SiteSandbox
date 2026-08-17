@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Methods That Modify an Object"
+pydir: python/class_modify_state
 ---
 
 ```python

@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Array Shape and dtype"
+pydir: python/numpy_shape_dtype
 ---
 
 ```python

@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Inheritance"
+pydir: python/class_inheritance
 ---
 
 ```python

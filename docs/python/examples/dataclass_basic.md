@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Using @dataclass"
+pydir: python/dataclass_basic
 ---
 
 ```python

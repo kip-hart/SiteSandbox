@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Telemetry Readings"
+pydir: python/dataclass_example
 ---
 
 ```python

@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Filtering Noisy Sensor Readings"
+pydir: python/numpy_example
 ---
 
 ```python

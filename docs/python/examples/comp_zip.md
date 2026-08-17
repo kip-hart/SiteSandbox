@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Comprehension over zip()"
+pydir: python/comp_zip
 ---
 
 ```python

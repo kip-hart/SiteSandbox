@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Broadcasting"
+pydir: python/numpy_broadcast
 ---
 
 ```python

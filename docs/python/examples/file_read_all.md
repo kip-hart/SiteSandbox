@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Reading an Entire File"
+pydir: python/file_read_all
 ---
 
 ```python

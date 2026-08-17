@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Variable Scope"
+pydir: python/func_scope
 ---
 
 ```python

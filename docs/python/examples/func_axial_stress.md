@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Axial Stress Function"
+pydir: python/func_axial_stress
 ---
 
 ```python

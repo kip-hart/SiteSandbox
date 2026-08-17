@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "A Data-Holding Class Written by Hand"
+pydir: python/dataclass_boilerplate
 ---
 
 ```python

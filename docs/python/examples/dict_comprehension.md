@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Dictionary Comprehensions"
+pydir: python/dict_comprehension
 ---
 
 ```python

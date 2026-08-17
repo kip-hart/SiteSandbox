@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Objects That Hold Other Objects"
+pydir: python/class_collection
 ---
 
 ```python

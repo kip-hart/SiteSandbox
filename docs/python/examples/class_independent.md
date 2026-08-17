@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Independent Objects"
+pydir: python/class_independent
 ---
 
 ```python

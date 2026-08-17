@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Creating a Dictionary"
+pydir: python/dict_basics
 ---
 
 ```python

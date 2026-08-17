@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Class Methods"
+pydir: python/class_methods_demo
 ---
 
 ```python

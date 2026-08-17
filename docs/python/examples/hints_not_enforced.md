@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Type Hints Are Not Enforced"
+pydir: python/hints_not_enforced
 ---
 
 ```python

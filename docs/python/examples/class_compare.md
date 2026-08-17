@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Comparing Objects"
+pydir: python/class_compare
 ---
 
 ```python

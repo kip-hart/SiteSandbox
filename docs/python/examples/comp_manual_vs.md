@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Comprehension vs. For Loop"
+pydir: python/comp_manual_vs
 ---
 
 ```python

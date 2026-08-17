@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Private Attributes by Convention"
+pydir: python/class_private
 ---
 
 ```python

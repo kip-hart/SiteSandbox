@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Validating Fields with __post_init__"
+pydir: python/dataclass_postinit
 ---
 
 ```python

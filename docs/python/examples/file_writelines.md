@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Writing Several Lines at Once"
+pydir: python/file_writelines
 ---
 
 ```python

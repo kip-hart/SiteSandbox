@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "2D Arrays and Matrix Operations"
+pydir: python/numpy_2d
 ---
 
 ```python

@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Comprehension with if/else"
+pydir: python/comp_ifelse
 ---
 
 ```python

@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Functions as Values"
+pydir: python/func_higher_order
 ---
 
 ```python

@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Methods on a Dataclass"
+pydir: python/dataclass_methods
 ---
 
 ```python

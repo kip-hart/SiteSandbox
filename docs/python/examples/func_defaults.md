@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Default Parameter Values"
+pydir: python/func_defaults
 ---
 
 ```python

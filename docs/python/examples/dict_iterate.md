@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Iterating Over a Dictionary"
+pydir: python/dict_iterate
 ---
 
 ```python

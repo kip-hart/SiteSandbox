@@ -1,6 +1,6 @@
 ---
-title: "Selective Import"
-pydir: python/library_from_import
+title: "Spacecraft Mass Budget"
+pydir: python/class_methods_example
 ---
 
 ```python
